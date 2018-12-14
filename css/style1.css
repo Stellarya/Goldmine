@@ -250,7 +250,37 @@ main li a.active {
     color: white;
 }
 
-li tag_competence {
+.tag_competence:hover {
+    background-color: rgb(76, 10, 58);
+    color: white;
+    border: black 1px;
+    text-align: center;
+    margin: 5px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 40px;
+    padding: 0 2em;
+    -webkit-transition: all .3s ease;
+}
+
+.tag_competence {
+    color: black;
+    background-color: white;
+    border: black 1px;
+    text-align: center;
+    margin: 5px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 40px;
+    padding: 0 2em;
+    -webkit-transition: all .3s ease;
+}
+
+li a.tag_competence {
     display: block;
     color: black;
     background-color: white;
