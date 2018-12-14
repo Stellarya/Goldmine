@@ -216,7 +216,7 @@ main th a {
     color:white;
 }
 
-main th a:hover {
+.fa-minus-circle:hover {
     color:rgb(235, 33, 46);
 }
 
