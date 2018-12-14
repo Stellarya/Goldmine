@@ -180,6 +180,45 @@ ul.CTAs a {
 #block_messagerie, #block_securite, #block_diver, #block_svi, #block_os-serveurs {
     display: none;
 }
+
+/* ---------------------------------------------------
+    RATING STARS
+----------------------------------------------------- */
+
+.rating {
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    font-size:17px;
+    color: grey;
+}
+.rating-star {
+    padding: 0 2px;
+    margin: 0;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+}
+.rating-star:after {
+    font-family: FontAwesome;
+    content:'\f005';
+}
+
+.rating-star.checked ~ .rating-star:after,
+.rating-star.checked:after {
+    content:'\f005';
+    color: #ffc107;
+}
+
+.rating:hover .rating-star:after {content:'\f005';}
+
+.rating-star:hover ~ .rating-star:after,
+.rating-star:hover:after {
+    content:'\f005' !important;
+    color: #ffc107;
+}
+
+
     /* ---------------------------------------------------
         CONTENT STYLE
     ----------------------------------------------------- */
