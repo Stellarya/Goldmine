@@ -250,7 +250,7 @@ main li a.active {
     color: white;
 }
 
-li a.tag_competence {
+li tag_competence {
     display: block;
     color: black;
     background-color: white;
