@@ -182,6 +182,41 @@ ul.CTAs a {
 }
 
 /* ---------------------------------------------------
+    INFOBULLES
+----------------------------------------------------- */
+/* Tooltip container */
+.tag_competence {
+
+}
+
+/* Tooltip text */
+.tag_competence .tooltiptext {
+    position:absolute;
+    min-width: 100px;
+    max-width: 200px;
+    margin-top:-5px;
+    margin-left:-60px;
+    color:rgb(76,10,58);
+    line-height: 20px;
+    padding: 5px;
+    background:rgba(255, 255, 255,.8);
+    border-radius:3px;
+    box-shadow:0 0 2px rgba(0,0,0,.5);
+    transform:scale(0) rotate(-12deg);
+    opacity:0;
+    z-index: 2;
+    transition:all .25s;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tag_competence:hover .tooltiptext, .tag_competence:focus .tooltiptext {
+    transform:scale(1) rotate(0);
+    opacity:1;
+
+}
+
+
+/* ---------------------------------------------------
     RATING STARS
 ----------------------------------------------------- */
 
@@ -189,9 +224,10 @@ ul.CTAs a {
     overflow: hidden;
     display: inline-block;
     position: relative;
-    font-size:17px;
+    font-size: 17px;
     color: grey;
 }
+
 .rating-star {
     padding: 0 2px;
     margin: 0;
@@ -199,29 +235,32 @@ ul.CTAs a {
     display: inline-block;
     float: right;
 }
+
 .rating-star:after {
     font-family: FontAwesome;
-    content:'\f005';
+    content: '\f005';
 }
 
 .rating-star.checked ~ .rating-star:after,
 .rating-star.checked:after {
-    content:'\f005';
+    content: '\f005';
     color: #ffc107;
 }
 
-.rating:hover .rating-star:after {content:'\f005';}
+.rating:hover .rating-star:after {
+    content: '\f005';
+}
 
 .rating-star:hover ~ .rating-star:after,
 .rating-star:hover:after {
-    content:'\f005' !important;
+    content: '\f005' !important;
     color: #ffc107;
 }
 
 
-    /* ---------------------------------------------------
-        CONTENT STYLE
-    ----------------------------------------------------- */
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
 
 #content {
     width: 100%;
@@ -252,11 +291,11 @@ main li {
 }
 
 main th a {
-    color:white;
+    color: white;
 }
 
 .fa-minus-circle:hover {
-    color:rgb(235, 33, 46);
+    color: rgb(235, 33, 46);
 }
 
 main li a.onglet {
