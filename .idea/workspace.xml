@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a82fd9d8-7525-4484-b0ee-c780d0e48d5d" name="Default Changelist" comment="" />
+    <list default="true" id="a82fd9d8-7525-4484-b0ee-c780d0e48d5d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goldmine.html" beforeDir="false" afterPath="$PROJECT_DIR$/goldmine.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -13,25 +16,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/goldmine.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39259">
-              <caret line="2543" column="7" lean-forward="true" selection-start-line="2543" selection-start-column="7" selection-end-line="2543" selection-end-column="7" />
+            <state relative-caret-position="-1985">
+              <caret line="2915" column="57" selection-start-line="2915" selection-start-column="57" selection-end-line="2915" selection-end-column="57" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style1.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="252" column="3" selection-start-line="252" selection-start-column="3" selection-end-line="252" selection-end-column="3" />
+            <state relative-caret-position="323">
+              <caret line="198" column="22" selection-start-line="198" selection-start-column="22" selection-end-line="198" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -39,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20383">
-              <caret line="1199" column="1" selection-start-line="1199" selection-start-column="1" selection-end-line="1199" selection-end-column="1" />
+            <state relative-caret-position="653">
+              <caret line="757" column="16" selection-start-line="757" selection-start-column="16" selection-end-line="757" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -48,7 +53,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
+            <state relative-caret-position="841">
               <caret line="53" column="14" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
             </state>
           </provider>
@@ -91,13 +96,14 @@
       <find>color</find>
       <find>hover</find>
       <find>nav</find>
-      <find>i</find>
       <find>pane</find>
       <find>x-</find>
       <find>fiche</find>
       <find>x_pa</find>
       <find>fic</find>
       <find>table100-head1</find>
+      <find>select</find>
+      <find>tag</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -126,8 +132,8 @@
         <option value="$PROJECT_DIR$/css/silvermine.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/custom.css" />
-        <option value="$PROJECT_DIR$/goldmine.html" />
         <option value="$PROJECT_DIR$/css/style1.css" />
+        <option value="$PROJECT_DIR$/goldmine.html" />
       </list>
     </option>
   </component>
@@ -225,18 +231,19 @@
       <workItem from="1544605130466" duration="13066000" />
       <workItem from="1544624176349" duration="7604000" />
       <workItem from="1544689129426" duration="26114000" />
-      <workItem from="1544775424886" duration="814000" />
+      <workItem from="1544775424886" duration="17035000" />
+      <workItem from="1544797691903" duration="6459000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73286000" />
+    <option name="totallyTimeSpent" value="95966000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12118019" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12118019" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -316,13 +323,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/menuRestoPOECGauche/FAB1/src/main/webapp/inscription.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="10" selection-start-line="43" selection-start-column="4" selection-end-line="46" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/menuRestoPOECGauche/FAB1/src/main/webapp/inscription.html" />
     <entry file="file://$PROJECT_DIR$/css/template-search.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14178">
@@ -339,9 +340,7 @@
     <entry file="file://$PROJECT_DIR$/js/jquery-3.3.1.slim-js.js" />
     <entry file="file://$PROJECT_DIR$/index4.html" />
     <entry file="file://$PROJECT_DIR$/css/style4.css" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Table_Responsive_v1.zip/Table_Responsive_v1/js/main.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Table_Responsive_v1.zip/Table_Responsive_v1/js/main.js" />
     <entry file="file://$USER_HOME$/Downloads/Table_Responsive_v1/Table_Responsive_v1/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -362,32 +361,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goldmine.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39259">
-          <caret line="2543" column="7" lean-forward="true" selection-start-line="2543" selection-start-column="7" selection-end-line="2543" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20383">
-          <caret line="1199" column="1" selection-start-line="1199" selection-start-column="1" selection-end-line="1199" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="14" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/Table_Responsive_v1/Table_Responsive_v1/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1683">
@@ -395,10 +368,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="757" column="16" selection-start-line="757" selection-start-column="16" selection-end-line="757" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="841">
+          <caret line="53" column="14" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/style1.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="252" column="3" selection-start-line="252" selection-start-column="3" selection-end-line="252" selection-end-column="3" />
+        <state relative-caret-position="323">
+          <caret line="198" column="22" selection-start-line="198" selection-start-column="22" selection-end-line="198" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goldmine.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1985">
+          <caret line="2915" column="57" selection-start-line="2915" selection-start-column="57" selection-end-line="2915" selection-end-column="57" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
