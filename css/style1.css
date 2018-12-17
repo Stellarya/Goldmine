@@ -185,9 +185,6 @@ ul.CTAs a {
     INFOBULLES
 ----------------------------------------------------- */
 /* Tooltip container */
-.tag_competence {
-
-}
 
 /* Tooltip text */
 .tag_competence .tooltiptext {
@@ -236,9 +233,20 @@ ul.CTAs a {
     float: right;
 }
 
+.reset-star:after {
+    font-family: FontAwesome;
+    content: '\f00d';
+}
+
 .rating-star:after {
     font-family: FontAwesome;
     content: '\f005';
+}
+
+.reset-star.checked ~ .reset-star:after,
+.reset-star.checked:after{
+    content: '\f00d';
+    color: red;
 }
 
 .rating-star.checked ~ .rating-star:after,
@@ -247,8 +255,18 @@ ul.CTAs a {
     color: #ffc107;
 }
 
+.reset-star:hover .reset-star:after {
+    content: '\f00d';
+}
+
 .rating:hover .rating-star:after {
     content: '\f005';
+}
+
+.reset-star:hover ~ .reset-star:after,
+.reset-star:hover:after {
+    content: '\f00d' !important;
+    color: red;
 }
 
 .rating-star:hover ~ .rating-star:after,
@@ -298,6 +316,11 @@ main th a {
     color: rgb(235, 33, 46);
 }
 
+.fa-plus-circle {
+    color: forestgreen;
+    font-size: 18px;
+}
+
 main li a.onglet {
     display: block;
     color: rgb(76, 10, 58);
@@ -337,7 +360,7 @@ main li a.active {
     text-decoration: none;
     position: relative;
     display: inline-block;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 40px;
     padding: 0 2em;
     -webkit-transition: all .3s ease;
@@ -352,7 +375,7 @@ main li a.active {
     text-decoration: none;
     position: relative;
     display: inline-block;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 40px;
     padding: 0 2em;
     -webkit-transition: all .3s ease;
@@ -477,7 +500,7 @@ table td.r, table th.r {
     color: #fff;
     line-height: 1.2;
     font-weight: unset;
-    text-align: right;
+    text-align: left;
     padding-right: 25px;
 }
 
@@ -499,12 +522,12 @@ tbody tr:hover {
 }
 
 .column1, .column3 {
-    width: 260px;
+    min-width: 150px;
     padding-left: 10px;
 }
 
 .column2, .column4 {
-    width: 160px;
+    width: 150px;
 }
 
 .column5 {
@@ -591,8 +614,7 @@ tbody tr:hover {
     .column5,
     .column6,
     .column1,
-    .column2,
-    .column3 {
+    .column2 {
         width: 100%;
     }
 
