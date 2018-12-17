@@ -99,8 +99,8 @@
         <main class="page-content violet">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-3 col-12 fiche_id">
-                        <!-- Détails collaborateur -->
+                    <!--<div class="fiche_id" id="fiche-a-collapse" style="width: 25%">
+
                         <div class="x_panel" style="color: #1b1e21">
                             <div class="x_title">
                                 <h2>
@@ -134,7 +134,7 @@
 
                                     </ul>
                                 </div>
-                                <!--<div class="ln_solid"></div>
+                                <div class="ln_solid"></div>
                                 <div class="technosCollaborateurPossedees editable">
                                     <h4>Compétences acquises</h4>
                                     <span id="aucuneTechno" style="display: none;">Aucune techno renseignée</span>
@@ -149,27 +149,28 @@
                                           id="10">PHP</span>
                                     <span class="tags badge bg-green text-uppercase technoCollaborateurPossedee"
                                           id="19">PL/SQL</span>
-                                    <span class="hidden" id="marqueurTechnosCollaborateurPossedees"></span></div>-->
+                                    <span class="hidden" id="marqueurTechnosCollaborateurPossedees"></span></div>
 
                                 <div class="ln_emphasis hidden-xs">
-                                    <!--<span class="closed-collapse" style="cursor: pointer;">
+                                    <span class="closed-collapse" style="cursor: pointer;">
                                         <i class="fa fa-angle-down fa-2x"></i>
                                     </span>
                                             <span class="opened-collapse" style="display: none; cursor: pointer;">
                                         <i class="fa fa-angle-up fa-2x"></i>
-                                    </span>-->
+                                    </span>
                                 </div>
 
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-9 col-12 competences_eval">
+                    </div>-->
+                    <div class="competences_eval">
 
                         <header class="header">
                             <div class="container-fluid">
                                 <nav>
                                     <h3>Mes compétences - Auto-evaluation</h3>
                                     <ul>
+                                        <li id="fiche-collapse" class="onglet-profil">PROFIL</li>
                                         <li><a href="goldmine.html" class="active onglet">TECHNIQUE</a></li>
                                         <li><a href="" class="onglet">FONCTIONNELLE</a></li>
                                         <li><a href="" class="onglet">METIER</a></li>
@@ -183,82 +184,37 @@
                             <div class="container-fluid">
                                 <nav>
                                     <ul>
-                                        <li id="tag_java" class="tag_competence">Java <span class="tooltiptext"> Spring boot, Spring batch, J2EE, Android, JSF, JSP/Struts, Swing </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_web">Web <span class="tooltiptext"> HTML5, CSS3, WS REST, WS SOAP </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_javascript">Javascript <span
-                                                class="tooltiptext"> Javascript, Typescript, AngularJS, Angular2, NodeJS </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_php">PHP <span class="tooltiptext"> PHP, Symfony </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_dotnet">.Net <span class="tooltiptext"> C#, .ASP, ASP.Net, APS.Net MCV, WPF, WCF, Silverlight, Web API, Core.Net, Visual Basic, VBScript, VBA Access, Xamarin </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_langages">Langages <span class="tooltiptext"> C++, Python, Shell, Powershell, Perl, Groovy, R </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_framework">Framework <span
-                                                class="tooltiptext"> Cordova, Electron,<br> Windev, Delphi 10</span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_reporting">BI/Reporting <span
-                                                class="tooltiptext"> RPG, Crystalreport, Qlickview, BO,<br> Birt, Pentaho, Jasper,<br> Kibana, Grafana </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_bdd">BDD <span class="tooltiptext"> PL/SQL, Oracle, DB2, MySQL, SQL Server, PostgreSQL, SQL Lite, MongoDB, CouchBase, JSON, Redis </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_svi">SVI <span class="tooltiptext"> VoiceXML, Envox </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_bus-messages">Bus Messages <span
-                                                class="tooltiptext">RapidMQ, ActivMQ, <br> Kafka, MSQueue</span></li>
-                                        <li class="tag_competence" id="tag_serveur-appli">Serveurs d'appli <span
-                                                class="tooltiptext">IIS, Apache Tomcat, Wildfly, Glassfish, Node Webkit, Cassini, Nginx </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_virtualisation">Virtualisation <span
-                                                class="tooltiptext"> VMWare, Docker </span></li>
-                                        <li class="tag_competence" id="tag_exploitation">Exploitation <span
-                                                class="tooltiptext">OpCon, Centreon/Nagios </span></li>
-                                        <li class="tag_competence" id="tag_os">OS <span class="tooltiptext"> Unix, Linux, Windows, MacOS, iOS </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_produits">Produits <span class="tooltiptext"> Talend ETL, Talend ESB, MS SSIS, Elastic Stack, Media Transfer, Liferay6, Liferay 7, SharePoint, Drupal, Joomla!, Alfresco</span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_outils">Outils <span class="tooltiptext">PowerAMC, Entreprise Architect, Excel, IWS</span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_tests">Tests <span class="tooltiptext"> Selenium/Sahi, JMeter, SoapUI, Junit, Nunit, Jprofiler </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_kit-adventiel">Kit Adventiel <span
-                                                class="tooltiptext"> JS Front, JS Back, Spring, JEE, .Net, Android </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_integration-continue">Integration continue
-                                            <span class="tooltiptext"> TFS, PIC Adventiel, Jenkins, Sonar, Nexus, Maven, Puppet, Ansible, Gradle </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_protocoles">Protocoles <span
-                                                class="tooltiptext"> Sigfox, Lora </span></li>
-                                        <li class="tag_competence" id="tag_iot">IOT <span class="tooltiptext"> Rasberry PI, Arduino, Capteurs, Beacon </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_reseau-lan">Réseau LAN/WAN <span
-                                                class="tooltiptext"> Switch HP, Switch Cisco, Routage/VLan/VxLan, BGP, Wi-Fi </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_reseau-securite">Réseau Sécurité <span
-                                                class="tooltiptext"> Firewall-ASA, Firewall-Fortinet, Firewall-PFSense, HA Proxy, Nginx, WAF(Forninet), Wallix, VPS/OpenVPN </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_reseau-toip">Réseau ToIP <span
-                                                class="tooltiptext"> Xivo, Asterisk, Jitsi </span></li>
-                                        <li class="tag_competence" id="tag_os-serveur">OS Serveur <span
-                                                class="tooltiptext"> Windows Server 2012 R2/2016, W. Server-AD, W.Server-RDP, W.Server IIS, W.Server-HyperV, VMWare Esxi/Vcenter, Linux RedHat, Linux Debian, Unix AIX, AS/400 - OS/400, Linux CentOS 6/7 </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_stockage">Stockage (SAN) <span
-                                                class="tooltiptext"> Switchs Brocade, Baies EMC </span></li>
-                                        <li class="tag_competence" id="tag_outillage-exploitation">Outillage
-                                            d'exploitation <span class="tooltiptext"> Scripts Bash, Script Powershell, FTP/Curl/..., Mediatransfer, Veeam, NetBackup.TSM </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_outillage-industrialisation">
-                                            Industrialisation <span class="tooltiptext"> Puppet, Foreman, Ansible, Python</span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_messagerie">Messagerie <span
-                                                class="tooltiptext"> Exchange 2010/2016, AntiSpam, Office365 </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_securite">Sécurité <span class="tooltiptext"> Antivirus-Eset, Cryptographie, ISO27001, ISO27005, RGPD </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_divers">Divers <span class="tooltiptext"> Annuaire, Gluster, Kubernetes, SLX, GitLab iTop, IWS, APache, Galera, Jboss, SSO, GLPI/OCS</span>
-                                        </li>
+                                        <li id="tag_java" class="tag_competence">Java <span class="tooltiptext" data-toggle="tooltip"> Spring boot, Spring batch, J2EE, Android, JSF, JSP/Struts, Swing </span></li>
+                                        <li class="tag_competence" id="tag_web">Web <span class="tooltiptext" data-toggle="tooltip"> HTML5, CSS3, WS REST, WS SOAP </span></li>
+                                        <li class="tag_competence" id="tag_javascript">Javascript <span class="tooltiptext" data-toggle="tooltip"> Javascript, Typescript, AngularJS, Angular2, NodeJS </span></li>
+                                        <li class="tag_competence" id="tag_php">PHP <span class="tooltiptext" data-toggle="tooltip"> PHP, Symfony </span></li>
+                                        <li class="tag_competence" id="tag_dotnet">.Net <span class="tooltiptext" data-toggle="tooltip"> C#, .ASP, ASP.Net, APS.Net MCV, WPF, WCF, Silverlight, Web API, Core.Net, Visual Basic, VBScript, VBA Access, Xamarin </span></li>
+                                        <li class="tag_competence" id="tag_langages">Langages <span class="tooltiptext" data-toggle="tooltip"> C++, Python, Shell, Powershell, Perl, Groovy, R </span></li>
+                                        <li class="tag_competence" id="tag_framework">Framework <span class="tooltiptext" data-toggle="tooltip"> Cordova, Electron,<br> Windev, Delphi 10</span> </li>
+                                        <li class="tag_competence" id="tag_reporting">BI/Reporting <span class="tooltiptext" data-toggle="tooltip"> RPG, Crystalreport, Qlickview, BO,<br> Birt, Pentaho, Jasper,<br> Kibana, Grafana </span></li>
+                                        <li class="tag_competence" id="tag_bdd">BDD <span class="tooltiptext" data-toggle="tooltip"> PL/SQL, Oracle, DB2, MySQL, SQL Server, PostgreSQL, SQL Lite, MongoDB, CouchBase, JSON, Redis </span></li>
+                                        <li class="tag_competence" id="tag_svi">SVI <span class="tooltiptext" data-toggle="tooltip"> VoiceXML, Envox </span></li>
+                                        <li class="tag_competence" id="tag_bus-messages">Bus Messages <span class="tooltiptext" data-toggle="tooltip">RapidMQ, ActivMQ, <br> Kafka, MSQueue</span></li>
+                                        <li class="tag_competence" id="tag_serveur-appli">Serveurs d'appli <span class="tooltiptext" data-toggle="tooltip">IIS, Apache Tomcat, Wildfly, Glassfish, Node Webkit, Cassini, Nginx </span> </li>
+                                        <li class="tag_competence" id="tag_virtualisation">Virtualisation <span class="tooltiptext" data-toggle="tooltip"> VMWare, Docker </span></li>
+                                        <li class="tag_competence" id="tag_exploitation">Exploitation <span class="tooltiptext" data-toggle="tooltip">OpCon, Centreon/Nagios </span></li>
+                                        <li class="tag_competence" id="tag_os">OS <span class="tooltiptext" data-toggle="tooltip"> Unix, Linux, Windows, MacOS, iOS </span></li>
+                                        <li class="tag_competence" id="tag_produits">Produits <span class="tooltiptext" data-toggle="tooltip"> Talend ETL, Talend ESB, MS SSIS, Elastic Stack, Media Transfer, Liferay6, Liferay 7, SharePoint, Drupal, Joomla!, Alfresco</span></li>
+                                        <li class="tag_competence" id="tag_outils">Outils <span class="tooltiptext" data-toggle="tooltip">PowerAMC, Entreprise Architect, Excel, IWS</span></li>
+                                        <li class="tag_competence" id="tag_tests">Tests <span class="tooltiptext" data-toggle="tooltip"> Selenium/Sahi, JMeter, SoapUI, Junit, Nunit, Jprofiler </span></li>
+                                        <li class="tag_competence" id="tag_kit-adventiel">Kit Adventiel <span class="tooltiptext" data-toggle="tooltip"> JS Front, JS Back, Spring, JEE, .Net, Android </span></li>
+                                        <li class="tag_competence" id="tag_integration-continue">Integration continue <span class="tooltiptext" data-toggle="tooltip"> TFS, PIC Adventiel, Jenkins, Sonar, Nexus, Maven, Puppet, Ansible, Gradle </span></li>
+                                        <li class="tag_competence" id="tag_protocoles">Protocoles <span class="tooltiptext" data-toggle="tooltip"> Sigfox, Lora </span></li>
+                                        <li class="tag_competence" id="tag_iot">IOT <span class="tooltiptext" data-toggle="tooltip"> Rasberry PI, Arduino, Capteurs, Beacon </span></li>
+                                        <li class="tag_competence" id="tag_reseau-lan">Réseau LAN/WAN <span class="tooltiptext" data-toggle="tooltip"> Switch HP, Switch Cisco, Routage/VLan/VxLan, BGP, Wi-Fi </span></li>
+                                        <li class="tag_competence" id="tag_reseau-securite">Réseau Sécurité <span class="tooltiptext" data-toggle="tooltip"> Firewall-ASA, Firewall-Fortinet, Firewall-PFSense, HA Proxy, Nginx, WAF(Forninet), Wallix, VPS/OpenVPN </span></li>
+                                        <li class="tag_competence" id="tag_reseau-toip">Réseau ToIP <span class="tooltiptext" data-toggle="tooltip"> Xivo, Asterisk, Jitsi </span></li>
+                                        <li class="tag_competence" id="tag_os-serveur">OS Serveur <span class="tooltiptext" data-toggle="tooltip"> Windows Server 2012 R2/2016, W. Server-AD, W.Server-RDP, W.Server IIS, W.Server-HyperV, VMWare Esxi/Vcenter, Linux RedHat, Linux Debian, Unix AIX, AS/400 - OS/400, Linux CentOS 6/7 </span></li>
+                                        <li class="tag_competence" id="tag_stockage">Stockage (SAN) <span class="tooltiptext" data-toggle="tooltip"> Switchs Brocade, Baies EMC </span></li>
+                                        <li class="tag_competence" id="tag_outillage-industrialisation"> Industrialisation <span class="tooltiptext" data-toggle="tooltip"> Puppet, Foreman, Ansible, Python</span> </li>
+                                        <li class="tag_competence" id="tag_messagerie">Messagerie <span class="tooltiptext" data-toggle="tooltip"> Exchange 2010/2016, AntiSpam, Office365 </span></li>
+                                        <li class="tag_competence" id="tag_securite">Sécurité <span class="tooltiptext" data-toggle="tooltip"> Antivirus-Eset, Cryptographie, ISO27001, ISO27005, RGPD </span></li>
+                                        <li class="tag_competence" id="tag_divers">Divers <span class="tooltiptext" data-toggle="tooltip"> Annuaire, Gluster, Kubernetes, SLX, GitLab iTop, IWS, APache, Galera, Jboss, SSO, GLPI/OCS</span></li>
 
                                     </ul>
                                 </nav>
@@ -275,16 +231,15 @@
                                                 <table>
                                                     <thead>
                                                     <tr>
-                                                        <th colspan="2" class=" table100-head1"> JAVA <i
-                                                                class="fas fa-minus-circle" id="minus_java"></i></th>
+                                                        <th colspan="2" class=" table100-head1"><span>JAVA <i
+                                                                class="fas fa-minus-circle" id="minus_java"></i></span>
+                                                        </th>
                                                     </tr>
 
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-
                                                         <td class="column1">Spring boot</td>
-
                                                         <td class="column2">
                                                             <div class="rating">
                                                                 <span class="rating-star" title="expert"
@@ -300,12 +255,9 @@
                                                                       data-value="0"></span>
                                                             </div>
                                                         </td>
-
                                                     </tr>
                                                     <tr>
-
                                                         <td class="column1">Spring batch</td>
-
                                                         <td class="column2">
                                                             <div class="rating">
                                                                     <span class="rating-star" title="expert"
@@ -415,8 +367,10 @@
                                                     </tr>
                                                     <tr>
                                                         <td colspan="2">
-                                                            <i class="fas fa-plus-circle"
-                                                               title="Ajouter un commentaire"></i>
+                                                            <span><i class="fas fa-plus-circle"
+                                                                     title="Ajouter un commentaire"></i></span>
+                                                            <span></span>
+                                                            <span></span>
                                                         </td>
                                                     </tr>
                                                     </tbody>
@@ -4282,340 +4236,9 @@
 
         var submitStars = $(this).attr('data-value');
     });
+
 </script>
-
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('#sidebarCollapse').on('click', function () {
-            $('#sidebar').toggleClass('active');
-        });
-
-        <!-- ************* Transformation tag en block ******************* -->
-
-        $("#tag_java").click(function () {
-            $("#tag_java").hide();
-            $("#block_java").show();
-        });
-
-        $("#tag_web").click(function () {
-            $("#tag_web").hide();
-            $("#block_web").show();
-        });
-
-        $("#tag_javascript").click(function () {
-            $("#tag_javascript").hide();
-            $("#block_javascript").show();
-        });
-
-        $("#tag_php").click(function () {
-            $("#tag_php").hide();
-            $("#block_php").show();
-        });
-
-        $("#tag_dotnet").click(function () {
-            $("#tag_dotnet").hide();
-            $("#block_dotnet").show();
-        });
-
-        $("#tag_langages").click(function () {
-            $("#tag_langages").hide();
-            $("#block_langages").show();
-        });
-
-        $("#tag_framework").click(function () {
-            $("#tag_framework").hide();
-            $("#block_framework").show();
-        });
-
-        $("#tag_reporting").click(function () {
-            $("#tag_reporting").hide();
-            $("#block_reporting").show();
-        });
-
-        $("#tag_bdd").click(function () {
-            $("#tag_bdd").hide();
-            $("#block_bdd").show();
-        });
-
-        $("#tag_svi").click(function () {
-            $("#tag_svi").hide();
-            $("#block_svi").show();
-        });
-
-        $("#tag_bus-messages").click(function () {
-            $("#tag_bus-messages").hide();
-            $("#block_bus-message").show();
-        });
-
-        $("#tag_serveur-appli").click(function () {
-            $("#tag_serveur-appli").hide();
-            $("#block_serveur-appli").show();
-        });
-
-        $("#tag_virtualisation").click(function () {
-            $("#tag_virtualisation").hide();
-            $("#block_virtualisation").show();
-        });
-
-        $("#tag_exploitation").click(function () {
-            $("#tag_exploitation").hide();
-            $("#block_exploitation").show();
-        });
-
-        $("#tag_os").click(function () {
-            $("#tag_os").hide();
-            $("#block_os").show();
-        });
-
-        $("#tag_produits").click(function () {
-            $("#tag_produits").hide();
-            $("#block_produits").show();
-        });
-
-        $("#tag_outils").click(function () {
-            $("#tag_outils").hide();
-            $("#block_outils").show();
-        });
-
-        $("#tag_tests").click(function () {
-            $("#tag_tests").hide();
-            $("#block_tests").show();
-        });
-
-        $("#tag_kit-adventiel").click(function () {
-            $("#tag_kit-adventiel").hide();
-            $("#block_kit-adventiel").show();
-        });
-
-        $("#tag_integration-continue").click(function () {
-            $("#tag_integration-continue").hide();
-            $("#block_integration-continue").show();
-        });
-
-        $("#tag_protocoles").click(function () {
-            $("#tag_protocoles").hide();
-            $("#block_protocoles").show();
-        });
-
-        $("#tag_iot").click(function () {
-            $("#tag_iot").hide();
-            $("#block_iot").show();
-        });
-
-        $("#tag_reseau-lan").click(function () {
-            $("#tag_reseau-lan").hide();
-            $("#block_reseau-lan").show();
-        });
-
-        $("#tag_reseau-securite").click(function () {
-            $("#tag_reseau-securite").hide();
-            $("#block_reseau-securite").show();
-        });
-
-        $("#tag_reseau-toip").click(function () {
-            $("#tag_reseau-toip").hide();
-            $("#block_reseau-toip").show();
-        });
-
-        $("#tag_os-serveur").click(function () {
-            $("#tag_os-serveur").hide();
-            $("#block_os-serveurs").show();
-        });
-
-        $("#tag_stockage").click(function () {
-            $("#tag_stockage").hide();
-            $("#block_stockage-san").show();
-        });
-
-        $("#tag_outillage-exploitation").click(function () {
-            $("#tag_outillage-exploitation").hide();
-            $("#block_outillage-exploitation").show();
-        });
-
-        $("#tag_messagerie").click(function () {
-            $("#tag_messagerie").hide();
-            $("#block_messagerie").show();
-        });
-
-        $("#tag_outillage-industrialisation").click(function () {
-            $("#tag_outillage-industrialisation").hide();
-            $("#block_outillage-industrialisation").show();
-        });
-
-        $("#tag_divers").click(function () {
-            $("#tag_divers").hide();
-            $("#block_diver").show();
-        });
-
-        $("#tag_securite").click(function () {
-            $("#tag_securite").hide();
-            $("#block_securite").show();
-        });
-
-        <!-- ************* Remise block en tag ******************* -->
-
-        $("#minus_java").click(function () {
-            $("#tag_java").show();
-            $("#block_java").hide();
-        });
-
-        $("#minus_web").click(function () {
-            $("#tag_web").show();
-            $("#block_web").hide();
-        });
-
-        $("#minus_javascript").click(function () {
-            $("#tag_javascript").show();
-            $("#block_javascript").hide();
-        });
-
-        $("#minus_php").click(function () {
-            $("#tag_php").show();
-            $("#block_php").hide();
-        });
-
-        $("#minus_dotnet").click(function () {
-            $("#tag_dotnet").show();
-            $("#block_dotnet").hide();
-        });
-
-        $("#minus_languages").click(function () {
-            $("#tag_langages").show();
-            $("#block_langages").hide();
-        });
-
-        $("#minus_framework").click(function () {
-            $("#tag_framework").show();
-            $("#block_framework").hide();
-        });
-
-        $("#minus_reporting").click(function () {
-            $("#tag_reporting").show();
-            $("#block_reporting").hide();
-        });
-
-        $("#minus_bdd").click(function () {
-            $("#tag_bdd").show();
-            $("#block_bdd").hide();
-        });
-
-        $("#minus_svi").click(function () {
-            $("#tag_svi").show();
-            $("#block_svi").hide();
-        });
-
-        $("#minus_bus-message").click(function () {
-            $("#tag_bus-messages").show();
-            $("#block_bus-message").hide();
-        });
-
-        $("#minus_serveur-appli").click(function () {
-            $("#tag_serveur-appli").show();
-            $("#block_serveur-appli").hide();
-        });
-
-        $("#minus_virtualisation").click(function () {
-            $("#tag_virtualisation").show();
-            $("#block_virtualisation").hide();
-        });
-
-        $("#minus_exploitation").click(function () {
-            $("#tag_exploitation").show();
-            $("#block_exploitation").hide();
-        });
-
-        $("#minus_os").click(function () {
-            $("#tag_os").show();
-            $("#block_os").hide();
-        });
-
-        $("#minus_produits").click(function () {
-            $("#tag_produits").show();
-            $("#block_produits").hide();
-        });
-
-        $("#minus_outils").click(function () {
-            $("#tag_outils").show();
-            $("#block_outils").hide();
-        });
-
-        $("#minus_tests").click(function () {
-            $("#tag_tests").show();
-            $("#block_tests").hide();
-        });
-
-        $("#minus_adventiel").click(function () {
-            $("#tag_kit-adventiel").show();
-            $("#block_kit-adventiel").hide();
-        });
-
-        $("#minus_integration-continue").click(function () {
-            $("#tag_integration-continue").show();
-            $("#block_integration-continue").hide();
-        });
-
-        $("#minus_protocole").click(function () {
-            $("#tag_protocoles").show();
-            $("#block_protocoles").hide();
-        });
-
-        $("#minus_iot").click(function () {
-            $("#tag_iot").show();
-            $("#block_iot").hide();
-        });
-
-        $("#minus_reseau-lan").click(function () {
-            $("#tag_reseau-lan").show();
-            $("#block_reseau-lan").hide();
-        });
-
-        $("#minus_reseau-securite").click(function () {
-            $("#tag_reseau-securite").show();
-            $("#block_reseau-securite").hide();
-        });
-
-        $("#minus_reseau-toip").click(function () {
-            $("#tag_reseau-toip").show();
-            $("#block_reseau-toip").hide();
-        });
-
-        $("#minus_os-serveurs").click(function () {
-            $("#tag_os-serveur").show();
-            $("#block_os-serveurs").hide();
-        });
-
-        $("#minus_stockage-san").click(function () {
-            $("#tag_stockage").show();
-            $("#block_stockage-san").hide();
-        });
-
-        $("#minus_outillage-exploitation").click(function () {
-            $("#tag_outillage-exploitation").show();
-            $("#block_outillage-exploitation").hide();
-        });
-
-        $("#minus_messagerie").click(function () {
-            $("#tag_messagerie").show();
-            $("#block_messagerie").hide();
-        });
-
-        $("#minus_outillage-industrialisation").click(function () {
-            $("#tag_outillage-industrialisation").show();
-            $("#block_outillage-industrialisation").hide();
-        });
-
-        $("#minus_divers").click(function () {
-            $("#tag_divers").show();
-            $("#block_diver").hide();
-        });
-
-        $("#minus_securite").click(function () {
-            $("#tag_securite").show();
-            $("#block_securite").hide();
-        });
-    });
-
-
+<script type="text/javascript" src="js/goldmine.js">
 </script>
 </body>
 

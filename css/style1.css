@@ -181,31 +181,60 @@ ul.CTAs a {
     display: none;
 }
 
+
 /* ---------------------------------------------------
     INFOBULLES
 ----------------------------------------------------- */
 /* Tooltip container */
 
 /* Tooltip text */
-.tag_competence .tooltiptext {
+.onglet-profil .tooltiptext {
     position:absolute;
-    min-width: 100px;
-    max-width: 200px;
-    margin-top:-5px;
-    margin-left:-60px;
-    color:rgb(76,10,58);
-    line-height: 20px;
-    padding: 5px;
-    background:rgba(255, 255, 255,.8);
-    border-radius:3px;
-    box-shadow:0 0 2px rgba(0,0,0,.5);
-    transform:scale(0) rotate(-12deg);
+    width: 350px;
     opacity:0;
-    z-index: 2;
+    z-index: 20;
+    overflow: inherit;
+    transform:scale(0) rotate(-12deg);
     transition:all .25s;
 }
 
+.tag_competence .tooltiptext{
+    position:absolute;
+    min-width: 100px;
+    max-width: 200px;
+    color:rgb(76,10,58);
+    margin-top: 5px;
+    margin-left: -40px;
+    line-height: 20px;
+    padding: 5px;
+    background:rgba(255, 255, 255,.8);
+    border-radius:5px;
+    box-shadow:0 0 2px rgba(0,0,0,.5);
+    transform:scale(0) rotate(-12deg);
+    opacity:0;
+    z-index: 8;
+    transition:all .25s;
+}
+
+.tag_competence .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgb(76, 10, 58) transparent;
+}
+
+
 /* Show the tooltip text when you mouse over the tooltip container */
+.onglet-profil:hover .tooltiptext, .onglet-profil:focus .tooltiptext {
+    transform:scale(1) rotate(0);
+    opacity:1;
+    z-index: 10;
+}
+
 .tag_competence:hover .tooltiptext, .tag_competence:focus .tooltiptext {
     transform:scale(1) rotate(0);
     opacity:1;
@@ -293,6 +322,7 @@ main .header {
     margin-bottom: 8px;
     padding: 0px;
     text-align: center;
+    z-index: 10;
 }
 
 main ul {
@@ -300,8 +330,8 @@ main ul {
     position: sticky;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     display: inline-block;
+    z-index: 8;
 }
 
 main li {
@@ -318,7 +348,11 @@ main th a {
 
 .fa-plus-circle {
     color: forestgreen;
-    font-size: 18px;
+    font-size: 20px;
+}
+
+#fiche-a-collapse {
+    display: none;
 }
 
 main li a.onglet {
@@ -330,6 +364,26 @@ main li a.onglet {
     margin-left: 10px;
     margin-right: 10px;
     text-decoration: none;
+}
+.onglet-profil {
+    background-color: rgb(241, 114, 48);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 40px;
+    padding: 0 2em;
+    -webkit-transition: all .3s ease;
+}
+
+li.onglet-profil:hover{
+    background-color: white;
+    color: rgb(241, 114, 48);
 }
 
 main li > a {
@@ -413,14 +467,7 @@ li > a.tag_competence {
     border: black;
     border: 1px;
     padding: 15px;
-    min-height: 550px;
-    max-height: 700px;
-}
-
-#conteneur {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
+    height: 530px;
 }
 
 #conteneur table {
