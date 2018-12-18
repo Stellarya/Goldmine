@@ -188,15 +188,8 @@ ul.CTAs a {
 /* Tooltip container */
 
 /* Tooltip text */
-.onglet-profil .tooltiptext {
-    position:absolute;
-    width: 350px;
-    opacity:0;
-    z-index: 20;
-    overflow: inherit;
-    transform:scale(0) rotate(-12deg);
-    transition:all .25s;
-}
+
+
 
 .tag_competence .tooltiptext{
     position:absolute;
@@ -214,6 +207,13 @@ ul.CTAs a {
     opacity:0;
     z-index: 8;
     transition:all .25s;
+}
+
+@-moz-document url-prefix() {
+    .tag_competence .tooltiptext {
+        margin-top: 45px;
+        margin-left: -60px;
+    }
 }
 
 .tag_competence .tooltiptext::after {
