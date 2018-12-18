@@ -3,20 +3,6 @@ $(document).ready(function () {
         $('#sidebar').toggleClass('active');
     });
 
-    $('.rating-star').click(function () {
-        $(this).parents('.rating').find('.rating-star').removeClass('checked');
-        $(this).addClass('checked');
-
-        var submitStars = $(this).attr('data-value');
-    });
-
-    $('.reset-star').click(function () {
-        $(this).parents('.rating').find('.rating-star').removeClass('checked');
-        /*$(this).addClass('checked');*/ /* Si Mickael souhaite que la croix reste rouge*/
-
-        var submitStars = $(this).attr('data-value');
-    });
-
     <!-- ************* Transformation tag en block ******************* -->
 
     $("#fiche-collapse").click(function () {
@@ -343,5 +329,21 @@ $(document).ready(function () {
     $("#minus_securite").click(function () {
         $("#tag_securite").show();
         $("#block_securite").hide();
+    });
+
+    <!-- ************* Rating stars ******************* -->
+
+    $('.rating-star').click(function () {
+        $(this).parents('.rating').find('.rating-star').removeClass('checked');
+        $(this).addClass('checked');
+
+        var submitStars = $(this).attr('data-value');
+    });
+
+    $('.reset-star').click(function () {
+        $(this).parents('.rating').find('.rating-star').removeClass('checked');
+        /*$(this).addClass('checked');*/ /* Si Mickael souhaite que la croix reste rouge*/
+
+        var submitStars = $(this).attr('data-value');
     });
 });
