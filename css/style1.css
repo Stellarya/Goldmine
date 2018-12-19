@@ -233,7 +233,7 @@ ul.CTAs a {
     RATING STARS
 ----------------------------------------------------- */
 
-.rating {
+.rating, .reset-star {
     overflow: hidden;
     display: inline-block;
     position: relative;
@@ -271,6 +271,12 @@ ul.CTAs a {
     color: #ffc107;
 }
 
+.rating-star.unchecked ~ .rating-star:after,
+.rating-star.unchecked:after {
+    content: '\f005';
+    color: grey;
+}
+
 .reset-star:hover .reset-star:after {
     content: '\f00d';
 }
@@ -290,6 +296,7 @@ ul.CTAs a {
     content: '\f005' !important;
     color: #ffc107;
 }
+
 
 
 /* ---------------------------------------------------
@@ -462,8 +469,8 @@ main th a {
 
 #cssmenu > ul > li:hover > a:after,
 #cssmenu > ul > li > a:hover:after{
-    background: white;
-    border: rgb(76, 10, 58) 2px solid;
+    background: rgba(255, 255, 255, 0.5);
+    border: rgba(76, 10, 58, 0.5) 2px solid;
     border-bottom: none;
     padding-right: 5px;
     padding-left: 5px;

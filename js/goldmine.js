@@ -328,13 +328,11 @@ $(document).ready(function () {
         $(this).parents('.rating').find('.rating-star').removeClass('checked');
         $(this).addClass('checked');
 
-        var submitStars = $(this).attr('data-value');
     });
 
     $('.reset-star').click(function () {
         $(this).parents('.rating').find('.rating-star').removeClass('checked');
-        /*$(this).addClass('checked');*/ /* Si Mickael souhaite que la croix reste rouge*/
-
-        var submitStars = $(this).attr('data-value');
     });
+    
+
 });
