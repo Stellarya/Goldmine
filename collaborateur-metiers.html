@@ -1,10 +1,645 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collaborateurs Auto-Evaluation</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/silvermine.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/util.css">
+
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+            integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+            crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+            integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+            crossorigin="anonymous"></script>
 </head>
+
 <body>
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar" class="sidebar-wrapper " data-toggle="collapse" aria-expanded="false">
+        <div class="sidebar-header">
+            <img src="img/logo.png" height="53" style="margin-top: -10px"/>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-tachometer-alt"></i>
+                        Tableau de bord
+                    </a>
+                </li>
+                <li>
+                    <a href="Recherche.html">
+                        <i class="fas fa-search"></i>
+                        Recherche
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="collaborateur-technique.html">
+                        <i class="fas fa-user"></i>
+                        Collaborateurs
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-user-plus"></i>
+                        Candidatures
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-users"></i>
+                        Effectifs
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-chart-pie"></i>
+                        Graphiques
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content container">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <main class="page-content violet">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="competences_eval">
+
+                        <header class="header">
+                            <div class="container-fluid">
+                                <nav>
+                                    <h3>Mes compétences - Auto-evaluation</h3>
+                                    <ul>
+                                        <li id="fiche-collapse" class="onglet-profil">PROFIL</li>
+                                        <li><a href="collaborateur-technique.html" class="onglet">TECHNIQUE</a></li>
+                                        <li><a href="collaborateur-fonctions.html" class="onglet">FONCTIONNELLE</a></li>
+                                        <li><a href="collaborateur-metiers.html" class=active onglet">METIER</a></li>
+                                        <li><a href="collaborateur-applis.html" class="onglet">APPLICATIONS</a></li>
+                                        <li><a href="collaborateur-langue.html" class="onglet">LANGUES</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </header>
+                        <div class="tags">
+                            <div class="container-fluid">
+                                <nav>
+                                    <ul>
+                                        <li id="tag_java" class="tag_competence">Java <span class="tooltiptext"
+                                                                                            data-toggle="tooltip"> Spring boot, Spring batch, J2EE, Android, JSF, JSP/Struts, Swing </span>
+                                        </li>
+                                        <li class="tag_competence" id="tag_web">Web <span class="tooltiptext"
+                                                                                          data-toggle="tooltip"> HTML5, CSS3, WS REST, WS SOAP </span>
+                                        </li>
+                                        <li class="tag_competence" id="tag_javascript">Javascript <span
+                                                class="tooltiptext" data-toggle="tooltip"> Javascript, Typescript, AngularJS, Angular2, NodeJS </span>
+                                        </li>
+                                        <li class="tag_competence" id="tag_php">PHP <span class="tooltiptext"
+                                                                                          data-toggle="tooltip"> PHP, Symfony </span>
+                                        </li>
+                                        <li class="tag_competence" id="tag_dotnet">.Net <span class="tooltiptext" data-toggle="tooltip"> C#, .ASP, ASP.Net, APS.Net MCV, WPF, WCF, Silverlight, Web API, Core.Net, Visual Basic, VBScript, VBA Access, Xamarin </span>
+                                        </li>
+                                        <li class="tag_competence" id="tag_langages">Langages <span class="tooltiptext" data-toggle="tooltip"> C++, Python, Shell, Powershell, Perl, Groovy, R </span></li>
+                                        <li class="tag_competence" id="tag_framework">Framework <span class="tooltiptext" data-toggle="tooltip"> Cordova, Electron,<br> Windev, Delphi 10</span></li>
+                                        <li class="tag_competence" id="tag_reporting">BI/Reporting <span class="tooltiptext" data-toggle="tooltip"> RPG, Crystalreport, Qlickview, BO,<br> Birt, Pentaho, Jasper,<br> Kibana, Grafana </span></li>
+                                        <li class="tag_competence" id="tag_bdd">BDD <span class="tooltiptext" data-toggle="tooltip"> PL/SQL, Oracle, DB2, MySQL, SQL Server, PostgreSQL, SQL Lite, MongoDB, CouchBase, JSON, Redis </span></li>
+                                        <li class="tag_competence" id="tag_svi">SVI <span class="tooltiptext" data-toggle="tooltip"> VoiceXML, Envox </span></li>
+                                        <li class="tag_competence" id="tag_bus-messages">Bus Messages <span class="tooltiptext" data-toggle="tooltip">RapidMQ, ActivMQ, <br> Kafka, MSQueue</span></li>
+                                        <li class="tag_competence" id="tag_serveur-appli">Serveurs d'appli <span class="tooltiptext" data-toggle="tooltip">IIS, Apache Tomcat, Wildfly, Glassfish, Node Webkit, Cassini, Nginx </span>
+                                        </li>data-toggle="tooltip"> Annuaire, Gluster, Kubernetes, SLX, GitLab iTop, IWS, APache, Galera, Jboss, SSO, GLPI/OCS</span></li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <div id="conteneur" class="container-fluid">
+                            <div class="row">
+                                <div class="col-12" id="block_fonction">
+                                    <div class="limiter">
+                                        <div class="wrap-table100">
+                                            <div class="table100">
+                                                <table>
+                                                    <thead>
+                                                    <tr>
+                                                        <th colspan="7" class="table100-head1"> FONCTIONS</th>
+                                                        <th class="table100-head1">
+                                                            <span id="minus_java" class="block_col_2"><i
+                                                                    class="fas fa-minus-circle" ></i></span>
+                                                        </th>
+                                                    </tr>
+
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="column1">Spécification Générale/CDC</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="column1">Administration système</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="column1">Pilotage Agile KANBAN</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="column1">Gestion de la vie applicative</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="column1">Spécification Detaillée</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="column1">Encadrement d'équipes</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="column1">Pilotage de tests</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="column1">Innovation, veille</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="column1">Dossier architecture technique</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="column1">Pilotage de TMA</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="column1">Animation COPIL, COPRO, Comité Tech</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="column1">Planification des activités</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="column1">Conception logicielle</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="column1">Pilotage de projet >100j</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="column1">Animation ateliers SPEC</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="column1">Dcumentation</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="column1">Tests unitaires</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="column1">Pilotage de projet >500j</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="column1">Réponse à AO</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="column1">Gestion des risques</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="column1">Integration</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="column1">Pilotage Agile SCRUM</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="column1">Gestion des niveaux de service</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="column1">Gestion de la relation client</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="column1">AMOA</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="column1">Support utilisateurs</td>
+                                                        <td class="column2">
+                                                            <div class="rating">
+                                                                <span class="rating-star" title="expert"
+                                                                      data-value="4"></span>
+                                                                <span class="rating-star" title="autonome"
+                                                                      data-value="3"></span>
+                                                                <span class="rating-star"
+                                                                      title="peut intervenir avec de l'aide"
+                                                                      data-value="2"></span>
+                                                                <span class="rating-star" title="notions"
+                                                                      data-value="1"></span>
+                                                                <span class="reset-star" title="reset/jamais vu"
+                                                                      data-value="0"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="column1"></td>
+                                                        <td class="column2"></td>
+                                                        <td class="column1"></td>
+                                                        <td class="column2"></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td colspan="8">
+                                                            <div class="commentaires">
+                                                                <div class='cell-input'><input type='text' placeholder='Commentaire'></div>
+                                                                <div class='cell-button'><div class='commentaire_button'><i class="fas fa-arrow-circle-right"></i></div></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+
+<!-- jQuery CDN - Slim version (=without AJAX) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/goldmine.js"></script>
+<!--  ***************************** Rating Stars **************************************-->
+
 
 </body>
+
 </html>
