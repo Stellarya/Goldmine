@@ -151,12 +151,6 @@ a[data-toggle="collapse"] {
     transform: translateY(-50%);
 }
 
-ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: #6d7fcc;
-}
-
 ul.CTAs {
     padding: 20px;
 }
@@ -418,7 +412,7 @@ main th a {
     font-size: 15px;
     font-weight: 400;
     text-decoration: none;
-    color: #444444;
+    color: rgb(76, 10, 58);
     -webkit-transition: all .2s ease;
     -moz-transition: all .2s ease;
     -ms-transition: all .2s ease;
@@ -434,6 +428,7 @@ main th a {
 #cssmenu > ul > li > a:hover {
     color: rgb(76, 10, 58);
 }
+
 #cssmenu > ul > li > a:after {
     position: absolute;
     left: 0;
@@ -448,12 +443,18 @@ main th a {
     -webkit-transition: all .2s ease;
     -o-transition: all .2s ease;
     transition: all .2s ease;
-    -webkit-transform: perspective(5px) rotateX(2deg);
+    -webkit-transform: perspective(15px) rotateX(2deg);
     -webkit-transform-origin: bottom;
-    -moz-transform: perspective(5px) rotateX(2deg);
+    -moz-transform: perspective(15px) rotateX(2deg);
     -moz-transform-origin: bottom;
-    transform: perspective(5px) rotateX(2deg);
+    transform: perspective(15px) rotateX(3degdeg);
     transform-origin: bottom;
+}
+
+@-moz-document url-prefix() {
+    #cssmenu > ul > li > a:after {
+        bottom: -3px;
+    }
 }
 #cssmenu > ul > li.active > a:after {
     background: rgb(76, 10, 58);
