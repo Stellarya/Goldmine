@@ -228,13 +228,6 @@ ul.CTAs a {
 }
 
 
-/* Show the tooltip text when you mouse over the tooltip container */
-.onglet-profil:hover .tooltiptext, .onglet-profil:focus .tooltiptext {
-    transform:scale(1) rotate(0);
-    opacity:1;
-    z-index: 10;
-}
-
 .tag_competence:hover .tooltiptext, .tag_competence:focus .tooltiptext {
     transform:scale(1) rotate(0);
     opacity:1;
@@ -347,13 +340,20 @@ main th a {
 }
 
 .fa-plus-circle {
+    color: rgb(76, 10, 58);
+    font-size: 17px;
+}
+
+.fa-plus-circle:hover{
     color: forestgreen;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 #fiche-a-collapse {
     display: none;
 }
+
+
 
 main li a.onglet {
     display: block;
@@ -433,6 +433,7 @@ main li a.active {
     font-size: 15px;
     line-height: 40px;
     padding: 0 2em;
+    text-transform: uppercase;
     -webkit-transition: all .3s ease;
 }
 
