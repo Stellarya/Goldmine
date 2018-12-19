@@ -600,56 +600,7 @@ li > a.tag_competence {
     COMMENTAIRES
 ----------------------------------------------------- */
 
-div.commentaires {
-    display: inline-flex;
-    width: 100%;
-    margin: auto 0;
-}
 
-div.cell-input{
-    width: 90%;
-}
-div.cell-button{
-    width: 25px;
-}
-div.container div.cell {
-    display: table-cell;
-}
-div.container div.cell:last-child {
-    /* Makes sure this cell is only wide enough
-       for the button label. */
-    width: 1px;
-}
-
-input[type=text], div.button {
-    width: 100%;
-    height: 25px;
-
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-
-    font-family: inherit;
-    font-size: inherit;
-}
-
-input[type=text] {
-    margin: 0;
-    padding: 0 2px;
-    background-color: #f8f8f8;
-    border: 0;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-div.commentaire_button {
-    line-height: 25px;
-    padding: 0px 5px;
-    color: #fff;
-    background-color: rgb(76, 10, 58);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-
-}
 
 /* ---------------------------------------------------
     TABLE STYLE
