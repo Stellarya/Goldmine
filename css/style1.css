@@ -714,7 +714,7 @@ label {
     transition: all 0.2s ease-out;
 }
 .block_col_2, .block_col_4 {
-    margin-left: 80%;
+    margin-right: 10%;
 }
 
 
@@ -733,8 +733,8 @@ input:placeholder-shown + label {
 }
 
 .column5 {
-    width: 170px;
-    text-align: right;
+    width: 30px;
+    text-align: center;
 }
 
 .column6 {
@@ -743,7 +743,9 @@ input:placeholder-shown + label {
     padding-right: 62px;
 }
 
-
+.note_manager {
+    width: 20px;
+}
 
 @media screen and (max-width: 992px) {
     table {

@@ -333,6 +333,6 @@ $(document).ready(function () {
     $('.reset-star').click(function () {
         $(this).parents('.rating').find('.rating-star').removeClass('checked');
     });
-    
+
 
 });
