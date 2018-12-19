@@ -335,26 +335,141 @@ main th a {
     color: white;
 }
 
-.fa-minus-circle:hover {
-    color: rgb(235, 33, 46);
+.violet {
+    background-color: rgba(76, 10, 89, 0.01);
+    height: 100vh;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
-.fa-plus-circle {
+
+.fiche_id {
+    background-color: white;
+    border: black;
+    border: 1px;
+    padding: 15px;
+    height: 530px;
+}
+
+#conteneur table {
+    margin-left: 5px;
+    margin-right: 15px;
+    align-items: stretch;
+    margin-top: 15px;
+}
+
+
+/* ---------------------------------------------------
+    MENU STYLE
+----------------------------------------------------- */
+
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: flex;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+#cssmenu {
+    width: auto;
+    border-bottom: 3px solid rgb(76, 10, 58);
+    font-family: Raleway, sans-serif;
+    line-height: 1;
+}
+
+#cssmenu > ul > li {
+    float: left;
+}
+#cssmenu.align-center > ul {
+    font-size: 0;
+    text-align: center;
+}
+#cssmenu.align-center > ul > li {
+    display: inline-block;
+    float: none;
+}
+#cssmenu.align-right > ul > li {
+    float: right;
+}
+#cssmenu.align-right > ul > li > a {
+    margin-right: 0;
+    margin-left: -4px;
+}
+#cssmenu > ul > li > a {
+    z-index: 2;
+    padding: 18px 25px 12px 25px;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #444444;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    margin-right: -4px;
+}
+#cssmenu > ul > li.active > a  {
+    color: #ffffff;
+}
+
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li > a:hover {
     color: rgb(76, 10, 58);
-    font-size: 17px;
+}
+#cssmenu > ul > li > a:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 120%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    content: "";
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    -webkit-transform: perspective(5px) rotateX(2deg);
+    -webkit-transform-origin: bottom;
+    -moz-transform: perspective(5px) rotateX(2deg);
+    -moz-transform-origin: bottom;
+    transform: perspective(5px) rotateX(2deg);
+    transform-origin: bottom;
+}
+#cssmenu > ul > li.active > a:after {
+    background: rgb(76, 10, 58);
 }
 
-.fa-plus-circle:hover{
-    color: forestgreen;
-    font-size: 17px;
+#cssmenu > ul > li:hover > a:after,
+#cssmenu > ul > li > a:hover:after{
+    background: white;
+    border: rgb(76, 10, 58) 2px solid;
+    border-bottom: none;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
-#fiche-a-collapse {
-    display: none;
-}
 
-
-
+/*
 main li a.onglet {
     display: block;
     color: rgb(76, 10, 58);
@@ -404,7 +519,11 @@ main li > a:hover {
 main li a.active {
     background-color: rgb(76, 10, 58);
     color: white;
-}
+}*/
+
+/* ---------------------------------------------------
+    TAG STYLE
+----------------------------------------------------- */
 
 .tag_competence:hover {
     background-color: rgb(76, 10, 58);
@@ -456,28 +575,24 @@ li > a.tag_competence {
     -webkit-transition: all .3s ease;
 }
 
-.violet {
-    background-color: rgba(76, 10, 89, 0.01);
-    height: 100vh;
-    margin-top: 20px;
-    margin-left: 20px;
+.fa-minus-circle:hover {
+    color: rgb(235, 33, 46);
 }
 
-
-.fiche_id {
-    background-color: white;
-    border: black;
-    border: 1px;
-    padding: 15px;
-    height: 530px;
+.fa-plus-circle {
+    color: rgb(76, 10, 58);
+    font-size: 17px;
 }
 
-#conteneur table {
-    margin-left: 5px;
-    margin-right: 15px;
-    align-items: stretch;
-    margin-top: 15px;
+.fa-plus-circle:hover{
+    color: forestgreen;
+    font-size: 17px;
 }
+
+#fiche-a-collapse {
+    display: none;
+}
+
 
 
 /* ---------------------------------------------------
