@@ -200,7 +200,7 @@ ul.CTAs a {
     margin-left: -40px;
     line-height: 20px;
     padding: 5px;
-    background:rgba(255, 255, 255,.8);
+    background:rgb(255, 255, 255);
     border-radius:5px;
     box-shadow:0 0 2px rgba(0,0,0,.5);
     transform:scale(0) rotate(-12deg);
