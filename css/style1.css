@@ -232,6 +232,9 @@ ul.CTAs a {
 /* ---------------------------------------------------
     RATING STARS
 ----------------------------------------------------- */
+.reset-star {
+    margin-right: 10px;
+}
 
 .rating, .reset-star {
     overflow: hidden;
@@ -532,8 +535,9 @@ li > a.tag_competence {
     padding: 0 2em;
     -webkit-transition: all 1s ease;
 }
+
 .fa-minus-circle {
-    margin-left: 70%;
+    margin-left:80%;
 }
 
 
@@ -556,7 +560,7 @@ li > a.tag_competence {
 
 
 /* ---------------------------------------------------
-    TABLE STYLE
+    MANAGER STYLE
 ----------------------------------------------------- */
 .note_manager {
     width: 35px;
@@ -658,7 +662,7 @@ table td.r, table th.r {
     line-height: 1.2;
     font-weight: unset;
     text-align: left;
-    padding: 5px 5px 5px 10px;
+    padding: 5px 25px 5px 10px;
 }
 
 tbody tr:nth-child(even) {
@@ -693,7 +697,7 @@ label {
     transition: all 0.2s ease-out;
 }
 .block_col_2, .block_col_4 {
-    margin-right: 10%;
+    padding-right: 10px;
 }
 
 
@@ -708,7 +712,7 @@ input:placeholder-shown + label {
 }
 
 .column2, .column4 {
-    width: 120px;
+    width: 150px;
 }
 
 .column5 {
