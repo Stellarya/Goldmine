@@ -561,7 +561,7 @@ main li a.active {
     line-height: 40px;
     padding: 0 2em;
     text-transform: uppercase;
-    -webkit-transition: all .3s ease;
+    -webkit-transition: all .3s ease-in-out;
 }
 
 li a.tag_competence {
@@ -580,7 +580,7 @@ li > a.tag_competence {
     font-size: 12px;
     line-height: 40px;
     padding: 0 2em;
-    -webkit-transition: all .3s ease;
+    -webkit-transition: all 1s ease;
 }
 
 .fa-minus-circle:hover {
@@ -593,7 +593,7 @@ li > a.tag_competence {
 }
 
 .fa-plus-circle:hover{
-    color: forestgreen;
+    color: white;
     font-size: 17px;
 }
 
@@ -608,6 +608,23 @@ li > a.tag_competence {
 ----------------------------------------------------- */
 
 
+
+/* ---------------------------------------------------
+    TABLE STYLE
+----------------------------------------------------- */
+.note_manager {
+    width: 35px;
+}
+
+input[type=number] {
+    border: none;
+    border-bottom: 2px solid rgba(76, 10 ,58, 0.5);
+    -webkit-transition: border .3s ease;
+}
+
+input[type=number]:focus {
+    border: 2px solid rgba(76, 10 ,58, 0.5);
+}
 
 /* ---------------------------------------------------
     TABLE STYLE
@@ -729,12 +746,13 @@ input:placeholder-shown + label {
 }
 
 .column2, .column4 {
-    width: 150px;
+    width: 120px;
 }
 
 .column5 {
-    width: 30px;
+    width: 40px;
     text-align: center;
+    padding-right: 15px;
 }
 
 .column6 {
@@ -743,9 +761,6 @@ input:placeholder-shown + label {
     padding-right: 62px;
 }
 
-.note_manager {
-    width: 20px;
-}
 
 @media screen and (max-width: 992px) {
     table {
