@@ -271,12 +271,6 @@ ul.CTAs a {
     color: #ffc107;
 }
 
-.rating-star.unchecked ~ .rating-star:after,
-.rating-star.unchecked:after {
-    content: '\f005';
-    color: grey;
-}
-
 .reset-star:hover .reset-star:after {
     content: '\f00d';
 }
@@ -297,6 +291,11 @@ ul.CTAs a {
     color: #ffc107;
 }
 
+.rating-star.checked:hover ~ .rating-star.checked:after,
+.rating-star.checked:hover:after{
+    content: '\f005';
+    color: grey;
+}
 
 
 /* ---------------------------------------------------
@@ -454,7 +453,7 @@ main th a {
     -webkit-transform-origin: bottom;
     -moz-transform: perspective(15px) rotateX(2deg);
     -moz-transform-origin: bottom;
-    transform: perspective(15px) rotateX(3degdeg);
+    transform: perspective(15px) rotateX(3deg);
     transform-origin: bottom;
 }
 
@@ -477,81 +476,14 @@ main th a {
 }
 
 
-/*
-main li a.onglet {
-    display: block;
-    color: rgb(76, 10, 58);
-    background-color: rgba(76, 10, 58, 0.1);
-    font-weight: bold;
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-decoration: none;
-}
-.onglet-profil {
-    background-color: white;
-    color: rgb(241, 114, 48);
-
-    font-weight: bold;
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-decoration: none;
-    position: relative;
-    display: inline-block;
-    font-size: 18px;
-    line-height: 40px;
-    padding: 0 2em;
-    -webkit-transition: all .3s ease;
-}
-
-li.onglet-profil:hover{
-    background-color: rgb(241, 114, 48);
-    color: white;
-}
-
-main li > a {
-    position: relative;
-    display: inline-block;
-    font-size: 18px;
-    line-height: 40px;
-    padding: 0 2em;
-    -webkit-transition: all .3s ease;
-}
-
-main li > a:hover {
-    background-color: rgb(76, 10, 58);
-    color: white;
-}
-
-main li a.active {
-    background-color: rgb(76, 10, 58);
-    color: white;
-}*/
-
 /* ---------------------------------------------------
     TAG STYLE
 ----------------------------------------------------- */
 
-.tag_competence:hover {
-    background-color: rgb(76, 10, 58);
-    color: white;
-    border: black 1px;
-    text-align: center;
-    margin: 5px;
-    text-decoration: none;
-    position: relative;
-    display: inline-block;
-    font-size: 15px;
-    line-height: 40px;
-    padding: 0 2em;
-    -webkit-transition: all .3s ease;
-}
 
 .tag_competence {
-    color: black;
+    color: rgb(76, 10, 58);
     background-color: white;
-    border: black 1px;
     text-align: center;
     margin: 5px;
     text-decoration: none;
@@ -562,6 +494,24 @@ main li a.active {
     padding: 0 2em;
     text-transform: uppercase;
     -webkit-transition: all .3s ease-in-out;
+}
+li.tag_competence:hover .fa-plus-circle {
+    color: white;
+    font-size: 17px;
+}
+
+li.tag_competence:hover  {
+    background-color: rgb(76, 10, 58);
+    color: white;
+    text-align: center;
+    margin: 5px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 40px;
+    padding: 0 2em;
+    -webkit-transition: all .3s ease;
 }
 
 li a.tag_competence {
@@ -582,23 +532,19 @@ li > a.tag_competence {
     padding: 0 2em;
     -webkit-transition: all 1s ease;
 }
+.fa-minus-circle {
+    margin-left: 70%;
+}
+
 
 .fa-minus-circle:hover {
     color: rgb(235, 33, 46);
+
 }
 
 .fa-plus-circle {
     color: rgb(76, 10, 58);
     font-size: 17px;
-}
-
-.fa-plus-circle:hover{
-    color: white;
-    font-size: 17px;
-}
-
-#fiche-a-collapse {
-    display: none;
 }
 
 
@@ -633,6 +579,11 @@ input[type=number] {
 
 input[type=number]:focus {
     border: 2px solid rgba(76, 10 ,58, 0.5);
+}
+
+input[type=number]:active, input[type=number]:visited {
+    border: 3px solid red;
+    background: rgba(76, 10 ,58, 0.2);
 }
 
 

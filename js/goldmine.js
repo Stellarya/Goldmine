@@ -334,5 +334,4 @@ $(document).ready(function () {
         $(this).parents('.rating').find('.rating-star').removeClass('checked');
     });
 
-
 });
