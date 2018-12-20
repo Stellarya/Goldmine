@@ -614,10 +614,19 @@ li > a.tag_competence {
 ----------------------------------------------------- */
 .note_manager {
     width: 35px;
+
 }
 
 input[type=number] {
     border: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 1px;
+    outline: none;
     border-bottom: 2px solid rgba(76, 10 ,58, 0.5);
     -webkit-transition: border .3s ease;
 }
@@ -625,6 +634,8 @@ input[type=number] {
 input[type=number]:focus {
     border: 2px solid rgba(76, 10 ,58, 0.5);
 }
+
+
 
 /* ---------------------------------------------------
     TABLE STYLE
