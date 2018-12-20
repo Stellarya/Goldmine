@@ -327,12 +327,40 @@ $(document).ready(function () {
     $('.rating-star').click(function () {
         $(this).parents('.rating').find('.rating-star').removeClass('checked');
         $(this).addClass('checked');
-
     });
 
     $('.reset-star').click(function () {
         $(this).parents('.rating').find('.rating-star').removeClass('checked');
     });
 
-    
+    <!-- ************* input fonction ******************* -->
+
+    $('input#java-1').on('input', function() {
+        $("#java-1").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#java-2').on('input', function() {
+        $("#java-2").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#java-3').on('input', function() {
+        $("#java-3").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#java-4').on('input', function() {
+        $("#java-4").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#java-5').on('input', function() {
+        $("#java-5").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#java-6').on('input', function() {
+        $("#java-6").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#java-7').on('input', function() {
+        $("#java-7").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
 });
