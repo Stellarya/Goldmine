@@ -479,6 +479,93 @@ main th a {
 }
 
 
+
+/* ---------------------------------------------------
+    MODAL BOX STYLE
+----------------------------------------------------- */
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: rgb(76, 10, 58);
+    color: white;
+}
+
+h2.comment_title {
+    font-size: 20px;
+}
+
+.label_comment {
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+    padding: 0 10px 10px 10px;
+    margin: 0 5px 5px 5px;
+    color: white;
+}
+
+.textarea_comment {
+    border-radius: 5px;
+    margin: 10px;
+    margin-top: 30px;
+    width: 95%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    margin-left: 25%;
+    margin-top: 10%;
+    z-index: 50; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 50%; /* Full width */
+    height: 50%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    margin: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
 /* ---------------------------------------------------
     TAG STYLE
 ----------------------------------------------------- */
@@ -498,7 +585,7 @@ main th a {
     text-transform: uppercase;
     -webkit-transition: all .3s ease-in-out;
 }
-li.tag_competence:hover .fa-plus-circle {
+li.tag_competence:hover .fa-plus-circle, .fa-comment-alt {
     color: white;
     font-size: 17px;
 }
@@ -537,10 +624,16 @@ li > a.tag_competence {
 }
 
 .fa-minus-circle {
-    margin-left:80%;
+    margin-left:10%;
 }
 
+.fa-comment-alt{
+    margin-left:40%;
+}
 
+.fa-comment-alt:hover {
+    color: forestgreen;
+}
 .fa-minus-circle:hover {
     color: rgb(235, 33, 46);
 
@@ -689,9 +782,7 @@ tbody tr:hover {
 
 label {
     position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 12px;
+
     opacity: 1;
     transform: translateY(0);
     transition: all 0.2s ease-out;
