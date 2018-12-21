@@ -324,15 +324,6 @@ $(document).ready(function () {
 
     <!-- ************* Rating stars ******************* -->
 
-    $('.rating-star').click(function () {
-        $(this).parents('.rating').find('.rating-star').removeClass('checked');
-        $(this).addClass('checked');
-    });
-
-    $('.reset-star').click(function () {
-        $(this).parents('.rating').find('.rating-star').removeClass('checked');
-    });
-
     <!-- ************* modal box ******************* -->
     $('#commentaire-btn_java').on('click', function () {
         $('#myPopup').toggleClass('show');

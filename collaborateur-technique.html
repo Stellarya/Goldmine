@@ -292,8 +292,19 @@
                                                             JAVA
                                                         </th>
                                                         <th class="table100-head1">
-                                                            <span class="commentaire-btn"><i
-                                                                    class="fas fa-comment-alt" ></i></span>
+                                                            <div class="popup">
+                                                                <span id="commentaire-btn_java"><i
+                                                                        class="fas fa-comment-alt" ></i></span>
+                                                                <span class="popuptext" id="myPopup">
+                                                                    <textarea name="" class="textarea-commentaire" cols="10"
+                                                                              rows="5" placeholder="Votre commentaire"></textarea>
+                                                                    <button class="btn-sbmt-comment">Valider</button>
+                                                                
+                                                                </span>
+                                                            </div>
+
+
+
                                                             <span id="minus_java" class="block_col_2"><i
                                                                     class="fas fa-minus-circle" ></i></span>
                                                         </th>
@@ -4469,8 +4480,14 @@
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/goldmine.js"></script>
-<!--  ***************************** Rating Stars **************************************-->
 
+<script>
+    // When the user clicks on div, open the popup
+    function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+    }
+</script>
 
 </body>
 

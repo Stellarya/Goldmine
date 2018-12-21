@@ -282,23 +282,7 @@ ul.CTAs a {
     content: '\f005';
 }
 
-.reset-star:hover ~ .reset-star:after,
-.reset-star:hover:after {
-    content: '\f00d' !important;
-    color: red;
-}
 
-.rating-star:hover ~ .rating-star:after,
-.rating-star:hover:after {
-    content: '\f005' !important;
-    color: #ffc107;
-}
-
-.rating-star.checked:hover ~ .rating-star.checked:after,
-.rating-star.checked:hover:after{
-    content: '\f005';
-    color: grey;
-}
 
 
 /* ---------------------------------------------------
@@ -604,9 +588,9 @@ li > a.tag_competence {
 }
 
 textarea.textarea-commentaire {
-     border: none;
-     border-radius: 5px;
-     background: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.6);
     font-size: 15px;
 }
 
