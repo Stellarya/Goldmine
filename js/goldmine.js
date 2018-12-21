@@ -556,4 +556,374 @@ $(document).ready(function () {
         $("#bus_message-4").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
     });
 
+    $('input#serveu_appli-1').on('input', function() {
+        $("#serveu_appli-1").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#serveu_appli-2').on('input', function() {
+        $("#serveu_appli-2").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#serveu_appli-3').on('input', function() {
+        $("#serveu_appli-3").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#serveu_appli-4').on('input', function() {
+        $("#serveu_appli-4").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#serveu_appli-5').on('input', function() {
+        $("#serveu_appli-5").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#serveu_appli-6').on('input', function() {
+        $("#serveu_appli-6").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#serveu_appli-7').on('input', function() {
+        $("#serveu_appli-7").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#exploitation-1').on('input', function() {
+        $("#exploitation-1").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#exploitation-2').on('input', function() {
+        $("#exploitation-2").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#exploitation-3').on('input', function() {
+        $("#exploitation-3").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#exploitation-4').on('input', function() {
+        $("#exploitation-4").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#exploitation-5').on('input', function() {
+        $("#exploitation-5").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#exploitation-6').on('input', function() {
+        $("#exploitation-6").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#exploitation-7').on('input', function() {
+        $("#exploitation-7").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#exploitation-8').on('input', function() {
+        $("#exploitation-8").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#virtualisation-1').on('input', function() {
+        $("#virtualisation-1").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#virtualisation-2').on('input', function() {
+        $("#virtualisation-2").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#os-1').on('input', function() {
+        $("#os-1").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#os-2').on('input', function() {
+        $("#os-2").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#os-3').on('input', function() {
+        $("#os-3").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#os-4').on('input', function() {
+        $("#os-4").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#os-5').on('input', function() {
+        $("#os-5").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#produits-1').on('input', function() {
+        $("#produits-1").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#produits-2').on('input', function() {
+        $("#produits-2").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#produits-3').on('input', function() {
+        $("#produits-3").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#produits-4').on('input', function() {
+        $("#produits-4").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#produits-5').on('input', function() {
+        $("#produits-5").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#produits-6').on('input', function() {
+        $("#produits-6").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#produits-7').on('input', function() {
+        $("#produits-7").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#produits-8').on('input', function() {
+        $("#produits-8").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#produits-9').on('input', function() {
+        $("#produits-9").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#produits-10').on('input', function() {
+        $("#produits-10").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#produits-11').on('input', function() {
+        $("#produits-11").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#outils-1').on('input', function() {
+        $("#outils-1").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#outils-2').on('input', function() {
+        $("#outils-2").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#outils-3').on('input', function() {
+        $("#outils-3").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#outils-4').on('input', function() {
+        $("#outils-4").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#tests-1').on('input', function() {
+        $("#tests-1").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#tests-2').on('input', function() {
+        $("#tests-2").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#tests-3').on('input', function() {
+        $("#tests-3").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#tests-4').on('input', function() {
+        $("#tests-4").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#tests-5').on('input', function() {
+        $("#tests-5").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#tests-6').on('input', function() {
+        $("#tests-6").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#adventiel-1').on('input', function() {
+        $("#adventiel-1").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#adventiel-2').on('input', function() {
+        $("#adventiel-2").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#adventiel-3').on('input', function() {
+        $("#adventiel-3").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#adventiel-4').on('input', function() {
+        $("#adventiel-4").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#adventiel-5').on('input', function() {
+        $("#adventiel-5").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#adventiel-6').on('input', function() {
+        $("#adventiel-6").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#protocole-1').on('input', function() {
+        $("#protocole-1").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#protocole-2').on('input', function() {
+        $("#protocole-2").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#integration_continue-1').on('input', function() {
+        $("#integration_continue-1").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#integration_continue-2').on('input', function() {
+        $("#integration_continue-2").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#integration_continue-3').on('input', function() {
+        $("#integration_continue-3").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#integration_continue-4').on('input', function() {
+        $("#integration_continue-4").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#integration_continue-5').on('input', function() {
+        $("#integration_continue-5").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#integration_continue-6').on('input', function() {
+        $("#integration_continue-6").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#integration_continue-7').on('input', function() {
+        $("#integration_continue-7").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#integration_continue-8').on('input', function() {
+        $("#integration_continue-8").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#integration_continue-9').on('input', function() {
+        $("#integration_continue-9").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#iot-1').on('input', function() {
+        $("#iot-1").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#iot-2').on('input', function() {
+        $("#iot-2").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#iot-3').on('input', function() {
+        $("#iot-3").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#iot-4').on('input', function() {
+        $("#iot-4").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#reseau_lan-1').on('input', function() {
+        $("#reseau_lan-1").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#reseau_lan-2').on('input', function() {
+        $("#reseau_lan-2").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#reseau_lan-3').on('input', function() {
+        $("#reseau_lan-3").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#reseau_lan-4').on('input', function() {
+        $("#reseau_lan-4").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#reseau_lan-5').on('input', function() {
+        $("#reseau_lan-5").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#reseau_securite-1').on('input', function() {
+        $("#reseau_securite-1").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#reseau_securite-2').on('input', function() {
+        $("#reseau_securite-2").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#reseau_securite-3').on('input', function() {
+        $("#reseau_securite-3").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#reseau_securite-4').on('input', function() {
+        $("#reseau_securite-4").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#reseau_securite-5').on('input', function() {
+        $("#reseau_securite-5").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#reseau_securite-6').on('input', function() {
+        $("#reseau_securite-6").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#reseau_securite-7').on('input', function() {
+        $("#reseau_securite-7").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#reseau_securite-8').on('input', function() {
+        $("#reseau_securite-8").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#reseau_toip-1').on('input', function() {
+        $("#reseau_toip-1").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#reseau_toip-2').on('input', function() {
+        $("#reseau_toip-2").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#reseau_toip-3').on('input', function() {
+        $("#reseau_toip-3").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#industrialisation-1').on('input', function() {
+        $("#industrialisation-1").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#industrialisation-2').on('input', function() {
+        $("#industrialisation-2").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#industrialisation-3').on('input', function() {
+        $("#industrialisation-3").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#industrialisation-4').on('input', function() {
+        $("#industrialisation-4").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#os_serveurs-1').on('input', function() {
+        $("#os_serveurs-1").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#os_serveurs-2').on('input', function() {
+        $("#os_serveurs-2").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#os_serveurs-3').on('input', function() {
+        $("#os_serveurs-3").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#os_serveurs-4').on('input', function() {
+        $("#os_serveurs-4").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#os_serveurs-5').on('input', function() {
+        $("#os_serveurs-5").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#os_serveurs-6').on('input', function() {
+        $("#os_serveurs-6").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#os_serveurs-7').on('input', function() {
+        $("#os_serveurs-7").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#os_serveurs-8').on('input', function() {
+        $("#os_serveurs-8").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#os_serveurs-9').on('input', function() {
+        $("#os_serveurs-9").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#os_serveurs-10').on('input', function() {
+        $("#os_serveurs-10").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#os_serveurs-11').on('input', function() {
+        $("#os_serveurs-11").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#stockage-1').on('input', function() {
+        $("#stockage-1").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#stockage-2').on('input', function() {
+        $("#stockage-2").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#messagerie-1').on('input', function() {
+        $("#messagerie-1").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#messagerie-2').on('input', function() {
+        $("#messagerie-2").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#messagerie-3').on('input', function() {
+        $("#messagerie-3").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#divers-1').on('input', function() {
+        $("#divers-1").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#divers-2').on('input', function() {
+        $("#divers-2").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#divers-3').on('input', function() {
+        $("#divers-3").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#divers-4').on('input', function() {
+        $("#divers-4").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#divers-5').on('input', function() {
+        $("#divers-5").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#divers-6').on('input', function() {
+        $("#divers-6").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#divers-7').on('input', function() {
+        $("#divers-7").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#divers-8').on('input', function() {
+        $("#divers-8").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#divers-9').on('input', function() {
+        $("#divers-9").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#divers-10').on('input', function() {
+        $("#divers-10").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#divers-11').on('input', function() {
+        $("#divers-11").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#divers-12').on('input', function() {
+        $("#divers-12").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+
+    $('input#securite-1').on('input', function() {
+        $("#securite-1").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#securite-2').on('input', function() {
+        $("#securite-2").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#securite-3').on('input', function() {
+        $("#securite-3").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#securite-4').on('input', function() {
+        $("#securite-4").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#securite-5').on('input', function() {
+        $("#securite-5").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
 });
