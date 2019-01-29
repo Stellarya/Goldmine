@@ -691,7 +691,9 @@ input[type=number]:focus {
 /* ---------------------------------------------------
     TABLE STYLE
 ----------------------------------------------------- */
-
+.table-striped {
+    margin-top: 20px;
+}
 
 .limiter {
     width: 100%;

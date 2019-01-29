@@ -55,7 +55,7 @@ $(document).ready(function () {
 
     var number_of_rows = json_obj.devs.length;
     var k = 0;
-    var table_body = '<table border="1" id="example"><thead><tr><th>Nom</th><th>Prenom</th><th>Fonction</th><th>Comps 1</th><th>Comps 2</th><th>Comps 3</th></thead><tbody>';
+    var table_body = '<table border="1" id="example"><thead class="thead-dark"><tr><th>Nom</th><th>Prenom</th><th>Fonction</th><th>Comps 1</th><th>Comps 2</th><th>Comps 3</th></thead><tbody>';
     for(j in json_obj.devs){
         for(i =0;i<json_obj.devs.length;i++){
             table_body+='<tr>';

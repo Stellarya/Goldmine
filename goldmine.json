@@ -6,15 +6,32 @@
 			"bu": "BU 1",
 			"fonction": "CDP Confirmé",
 			"Comps":[
-				"web","php",".net"]
+
+            {
+
+               "Comp 1": "Web",
+
+               "Comp 2": "PHP",
+
+               "Comp 3": ".Net"
+
+            }]
 
 		},
 		{
 			"nom": "Aligant",
 			"prenom": "Line",
 			"bu": "BU 1",
-			"fonction": "Dév Alternance",
-			"Comps":["web","php"]
+			"fonction": "Dev Alternance",
+			"Comps":[
+
+            {
+
+               "Comp 1": "Web",
+
+               "Comp 2": "PHP"
+
+            }]
 
 		},
 		{
@@ -22,7 +39,19 @@
 			"prenom": "Gwendall",
 			"bu": "BU 4",
 			"fonction": "Architecte Senior",
-			"Comps":["java","web","javascript",".net"]
+			"Comps":[
+
+            {
+
+               "Comp 1": "java",
+
+               "Comp 2": "web",
+
+               "Comp 3": "javascript",
+
+               "Comp 4": ".net"
+
+            }]
 
 		},
 		{
@@ -30,7 +59,13 @@
 			"prenom": "Marie",
 			"bu": "BU 2",
 			"fonction": "Dév Alternance",
-			"Comps":["web"]
+			"Comps":[
+
+            {
+
+               "Comp 1": "web"
+
+            }]
 
 		},
 		{
@@ -38,7 +73,17 @@
 			"prenom": "Thierry",
 			"bu": "BU 1",
 			"fonction": "Architecte Confirmé",
-			"Comps":["java","web","javascript"]
+			"Comps":[
+
+            {
+
+               "Comp 1": "java",
+
+               "Comp 2": "web",
+
+               "Comp 3": "javascript"
+
+            }]
 
 		},
 		{
@@ -46,7 +91,17 @@
 			"prenom": "Eric",
 			"bu": "BU 2",
 			"fonction": "Architecte junior",
-			"Comps":["java","web","javascript"]
+			"Comps":[
+
+            {
+
+               "Comp 1": "java",
+
+               "Comp 2": "web",
+
+               "Comp 3": "javascript"
+
+            }]
 
 		}
 	]
