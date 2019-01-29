@@ -124,7 +124,9 @@
                                                 <span id="nb_results">108 </span>results</div>
                                         </div>
                                         <div id="tags_search">
-
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="langages" value=""/>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="advance-search">
@@ -234,7 +236,25 @@
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/goldmine.js"></script>
 <script src="js/choices.js"></script>
+<script type="text/javascript">
 
+    $('input[name="langage"]').amsifySuggestags({
+        suggestions: ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupitor', 'Uranus', 'Neptune', 'Pluto'],
+        whiteList: true
+    });
+
+    $('input[name="fruits"]').amsifySuggestags({
+        suggestions: ['Apple', 'Banana', 'Cherries', 'Dates', 'Guava'],
+        classes: ['bg-primary', 'bg-success', 'bg-danger', 'bg-warning', 'bg-info'],
+        whiteList: true,
+        afterAdd : function(value) {
+            console.info(value);
+        },
+        afterRemove : function(value) {
+            console.info(value);
+        },
+    });
+</script>
 <script>
     const customSelects = document.querySelectorAll("select");
     const deleteBtn = document.getElementById('delete')
