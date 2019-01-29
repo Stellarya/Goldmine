@@ -2,34 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a82fd9d8-7525-4484-b0ee-c780d0e48d5d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/examples/api.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/basic.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/cities.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/confirm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/contacts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/create-filter.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/css/normalize.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/css/stylesheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/customization.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/dynamic.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/events.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/github.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/images/bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/images/check@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/images/repo-forked.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/images/repo-source.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/images/spinner.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/js/es5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/js/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/js/jqueryui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/lock.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/movies.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/optgroups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/performance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/plugins.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/required.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/rtl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GOLDMINE/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GOLDMINE/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GOLDMINE/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GOLDMINE/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GOLDMINE/INFORMATIONS.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GOLDMINE/Recherche.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GOLDMINE/collaborateur-applis.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GOLDMINE/collaborateur-fonctions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GOLDMINE/collaborateur-langue.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GOLDMINE/collaborateur-metiers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GOLDMINE/collaborateur-technique.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GOLDMINE/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/GOLDMINE/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GOLDMINE/css/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/GOLDMINE/css/style1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GOLDMINE/evaluation-MANAGER.html" beforeDir="false" afterPath="$PROJECT_DIR$/GOLDMINE/evaluation-MANAGER.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GOLDMINE/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/GOLDMINE/img/logo.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,7 +29,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Recherche.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="385">
@@ -56,19 +43,45 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/jquery_research.js">
+        <entry file="file://$PROJECT_DIR$/GOLDMINE/evaluation-MANAGER.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GOLDMINE/evaluation-MANAGER2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+            <state relative-caret-position="357">
+              <caret line="627" column="66" lean-forward="true" selection-start-line="627" selection-start-column="66" selection-end-line="627" selection-end-column="66" />
+              <folding>
+                <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#1;n#div#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#h3#0;n#nav#0;n#div#0;n#header#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/json_test.js">
+        <entry file="file://$PROJECT_DIR$/GOLDMINE/css/style1.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="57" column="77" selection-start-line="57" selection-start-column="77" selection-end-line="57" selection-end-column="77" />
+            <state relative-caret-position="369">
+              <caret line="465" column="22" lean-forward="true" selection-start-line="465" selection-start-column="22" selection-end-line="465" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GOLDMINE/css/custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-31" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GOLDMINE/css/style-manager.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="173" column="48" selection-start-line="173" selection-start-column="43" selection-end-line="173" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -105,7 +118,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>x_pa</find>
       <find>fic</find>
       <find>table100-head1</find>
       <find>select</find>
@@ -135,10 +147,11 @@
       <find>containe</find>
       <find>contain</find>
       <find>ta</find>
+      <find>diver</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/GOLDMINE" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -162,6 +175,9 @@
         <option value="$PROJECT_DIR$/js/jquery_research.js" />
         <option value="$PROJECT_DIR$/css/style1.css" />
         <option value="$PROJECT_DIR$/Recherche.html" />
+        <option value="$PROJECT_DIR$/GOLDMINE/evaluation-COLLABORATEUR2.html" />
+        <option value="$PROJECT_DIR$/GOLDMINE/css/style1.css" />
+        <option value="$PROJECT_DIR$/GOLDMINE/evaluation-MANAGER2.html" />
       </list>
     </option>
   </component>
@@ -171,7 +187,7 @@
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
@@ -189,6 +205,17 @@
             <path>
               <item name="Goldmine" type="b2602c69:ProjectViewProjectNode" />
               <item name="Goldmine" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Goldmine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Goldmine" type="462c0819:PsiDirectoryNode" />
+              <item name="GOLDMINE" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Goldmine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Goldmine" type="462c0819:PsiDirectoryNode" />
+              <item name="GOLDMINE" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -266,17 +293,18 @@
       <workItem from="1545206473142" duration="20586000" />
       <workItem from="1545293556327" duration="19221000" />
       <workItem from="1545380609835" duration="20137000" />
-      <workItem from="1548663574557" duration="20967000" />
+      <workItem from="1548663574557" duration="22134000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223405000" />
+    <option name="totallyTimeSpent" value="224572000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12118019" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17492098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -300,13 +328,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/navbar.html" />
-    <entry file="file://$PROJECT_DIR$/css/navbar.css" />
-    <entry file="file://$PROJECT_DIR$/js/popper.min.js" />
-    <entry file="file://$PROJECT_DIR$/goldmine-sidebar.html" />
-    <entry file="file://$PROJECT_DIR$/js/jquery-3.3.1.slim-js.js" />
-    <entry file="file://$PROJECT_DIR$/index4.html" />
-    <entry file="file://$PROJECT_DIR$/css/style4.css" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Table_Responsive_v1.zip/Table_Responsive_v1/js/main.js" />
     <entry file="file://$USER_HOME$/Downloads/Table_Responsive_v1/Table_Responsive_v1/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -629,6 +650,56 @@
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h3#0;n#nav#0;n#div#0;n#header#0;n#div#0;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GOLDMINE/evaluation-COLLABORATEUR2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="82" column="16" lean-forward="true" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#h3#0;n#nav#0;n#div#0;n#header#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GOLDMINE/evaluation-COLLABORATEUR.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GOLDMINE/evaluation-MANAGER.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GOLDMINE/css/style1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="465" column="22" lean-forward="true" selection-start-line="465" selection-start-column="22" selection-end-line="465" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GOLDMINE/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GOLDMINE/css/style-manager.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="173" column="48" selection-start-line="173" selection-start-column="43" selection-end-line="173" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GOLDMINE/evaluation-MANAGER2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="627" column="66" lean-forward="true" selection-start-line="627" selection-start-column="66" selection-end-line="627" selection-end-column="66" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#1;n#div#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#h3#0;n#nav#0;n#div#0;n#header#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
