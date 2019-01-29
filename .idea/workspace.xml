@@ -2,15 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a82fd9d8-7525-4484-b0ee-c780d0e48d5d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recherche.html" beforeDir="false" afterPath="$PROJECT_DIR$/Recherche.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-search-7/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/search_plugin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-search-7/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-search-7/js/extention/choices.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/choices.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-search-7/js/extention/custom-materialize.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-search-7/js/extention/flatpickr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-search-7/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-search-7/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/api.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cities.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/confirm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/contacts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/create-filter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/css/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/customization.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/dynamic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/events.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/github.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/images/check@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/images/repo-forked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/images/repo-source.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/images/spinner.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/js/es5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/js/jqueryui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/lock.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/movies.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/optgroups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/performance.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/plugins.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/required.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/rtl.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -68,24 +87,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="400">
               <caret line="694" column="21" selection-start-line="694" selection-start-column="21" selection-end-line="694" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/goldmine.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/S1 - HTML-CSS/TP_combat_coqs/JS/js_script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="31" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -193,12 +194,7 @@
             <path>
               <item name="Goldmine" type="b2602c69:ProjectViewProjectNode" />
               <item name="Goldmine" type="462c0819:PsiDirectoryNode" />
-              <item name="examples" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Goldmine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Goldmine" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="Tagging-System-Autocomplete-Amsify-Suggestags" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -270,12 +266,12 @@
       <workItem from="1545206473142" duration="20586000" />
       <workItem from="1545293556327" duration="19221000" />
       <workItem from="1545380609835" duration="20137000" />
-      <workItem from="1548663574557" duration="20171000" />
+      <workItem from="1548663574557" duration="20967000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222609000" />
+    <option name="totallyTimeSpent" value="223405000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -304,25 +300,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/jquery.js" />
-    <entry file="file://$PROJECT_DIR$/css/custom.css.ts" />
-    <entry file="file://$PROJECT_DIR$/js/silvermine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="88" column="3" selection-start-line="88" selection-start-column="3" selection-end-line="88" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/menuRestoPOECGauche/FAB1/src/main/webapp/inscription.html" />
-    <entry file="file://$PROJECT_DIR$/css/template-search.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14178">
-          <caret line="834" column="12" selection-start-line="834" selection-start-column="10" selection-end-line="834" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/sidebar-theme.css" />
-    <entry file="file://$PROJECT_DIR$/exemple.html" />
     <entry file="file://$PROJECT_DIR$/navbar.html" />
     <entry file="file://$PROJECT_DIR$/css/navbar.css" />
     <entry file="file://$PROJECT_DIR$/js/popper.min.js" />
@@ -623,6 +600,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-663" />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/cities.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/movies.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/contacts.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/basic.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/create-filter.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/dynamic.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/plugins.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Recherche.html">
       <provider selected="true" editor-type-id="text-editor">
