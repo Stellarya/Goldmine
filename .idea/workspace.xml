@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a82fd9d8-7525-4484-b0ee-c780d0e48d5d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Isabelle-Goldmine/css/search_plugin.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Isabelle-Goldmine/evaluation-COLLABORATEUR.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Isabelle-Goldmine/evaluation-COLLABORATEUR2.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Isabelle-Goldmine/evaluation-MANAGER2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Isabelle-Goldmine/goldmine.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Isabelle-Goldmine/img/logo - Copie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Isabelle-Goldmine/js/choices.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Isabelle-Goldmine/js/jquery_research.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Isabelle-Goldmine/js/json_test.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Isabelle-Goldmine/old/collaborateur-applis.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Isabelle-Goldmine/old/collaborateur-metiers.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -14,7 +19,7 @@
       <change beforePath="$PROJECT_DIR$/Isabelle-Goldmine/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Isabelle-Goldmine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Isabelle-Goldmine/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Isabelle-Goldmine/INFORMATIONS.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Isabelle-Goldmine/Recherche.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Isabelle-Goldmine/Recherche.html" beforeDir="false" afterPath="$PROJECT_DIR$/Isabelle-Goldmine/Recherche.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Isabelle-Goldmine/collaborateur-applis.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Isabelle-Goldmine/collaborateur-fonctions.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Isabelle-Goldmine/collaborateur-langue.html" beforeDir="false" />
@@ -24,15 +29,18 @@
       <change beforePath="$PROJECT_DIR$/Isabelle-Goldmine/css/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/Isabelle-Goldmine/css/style1.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Isabelle-Goldmine/evaluation-MANAGER.html" beforeDir="false" afterPath="$PROJECT_DIR$/Isabelle-Goldmine/evaluation-MANAGER.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Isabelle-Goldmine/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/Isabelle-Goldmine/img/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recherche.html" beforeDir="false" afterPath="$PROJECT_DIR$/Recherche.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tagging-System-Autocomplete-Amsify-Suggestags/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tagging-System-Autocomplete-Amsify-Suggestags/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tagging-System-Autocomplete-Amsify-Suggestags/css/amsify.suggestags.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tagging-System-Autocomplete-Amsify-Suggestags/examples/bootstrap/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tagging-System-Autocomplete-Amsify-Suggestags/examples/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tagging-System-Autocomplete-Amsify-Suggestags/examples/materialize/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tagging-System-Autocomplete-Amsify-Suggestags/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tagging-System-Autocomplete-Amsify-Suggestags/js/jquery.amsify.suggestags.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recherche.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/collaborateur-applis.html" beforeDir="false" afterPath="$PROJECT_DIR$/collaborateur-applis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collaborateur-fonctions.html" beforeDir="false" afterPath="$PROJECT_DIR$/collaborateur-fonctions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collaborateur-langue.html" beforeDir="false" afterPath="$PROJECT_DIR$/collaborateur-langue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collaborateur-metiers.html" beforeDir="false" afterPath="$PROJECT_DIR$/collaborateur-metiers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collaborateur-technique.html" beforeDir="false" afterPath="$PROJECT_DIR$/collaborateur-technique.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/search_plugin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation-MANAGER.html" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation-MANAGER.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goldmine.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/choices.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery_research.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/json_test.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,7 +54,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Recherche.html">
+        <entry file="file://$PROJECT_DIR$/Isabelle-Goldmine/Recherche.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
               <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
@@ -75,7 +83,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/goldmine.json">
+        <entry file="file://$PROJECT_DIR$/Isabelle-Goldmine/goldmine.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
@@ -168,6 +176,7 @@
         <option value="$PROJECT_DIR$/Isabelle-Goldmine/evaluation-COLLABORATEUR.html" />
         <option value="$PROJECT_DIR$/Tagging-System-Autocomplete-Amsify-Suggestags/js/jquery.amsify.suggestags.js" />
         <option value="$PROJECT_DIR$/Recherche.html" />
+        <option value="$PROJECT_DIR$/Isabelle-Goldmine/Recherche.html" />
       </list>
     </option>
   </component>
@@ -195,12 +204,12 @@
             <path>
               <item name="Goldmine" type="b2602c69:ProjectViewProjectNode" />
               <item name="Goldmine" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="Isabelle-Goldmine" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Goldmine" type="b2602c69:ProjectViewProjectNode" />
               <item name="Goldmine" type="462c0819:PsiDirectoryNode" />
-              <item name="Isabelle-Goldmine" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -222,7 +231,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Goldmine_V2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -230,6 +239,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\marie.evanno\WebstormProjects\Goldmine\Isabelle-Goldmine\css" />
+      <recent name="C:\Users\marie.evanno\WebstormProjects\Goldmine\Isabelle-Goldmine" />
+      <recent name="C:\Users\marie.evanno\WebstormProjects\Goldmine\Isabelle-Goldmine\js" />
       <recent name="C:\Users\marie.evanno\WebstormProjects\Goldmine\js" />
       <recent name="C:\Users\marie.evanno\WebstormProjects\Goldmine\css" />
     </key>
@@ -272,12 +284,12 @@
       <workItem from="1545206473142" duration="20586000" />
       <workItem from="1545293556327" duration="19221000" />
       <workItem from="1545380609835" duration="20137000" />
-      <workItem from="1548663574557" duration="24328000" />
+      <workItem from="1548663574557" duration="25056000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226766000" />
+    <option name="totallyTimeSpent" value="227494000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -431,7 +443,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/search_plugin.css">
+    <entry file="file://$PROJECT_DIR$/Isabelle-Goldmine/css/search_plugin.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="810" column="7" selection-start-line="810" selection-start-column="7" selection-end-line="810" selection-end-column="7" />
@@ -553,14 +565,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/json_test.js">
+    <entry file="file://$PROJECT_DIR$/Isabelle-Goldmine/js/json_test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
           <caret line="57" column="77" selection-start-line="57" selection-start-column="77" selection-end-line="57" selection-end-column="77" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery_research.js">
+    <entry file="file://$PROJECT_DIR$/Isabelle-Goldmine/js/jquery_research.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
@@ -574,14 +586,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goldmine.json">
+    <entry file="file://$PROJECT_DIR$/Isabelle-Goldmine/goldmine.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/choices.js">
+    <entry file="file://$PROJECT_DIR$/Isabelle-Goldmine/js/choices.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-663" />
       </provider>
@@ -692,7 +704,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Recherche.html">
+    <entry file="file://$PROJECT_DIR$/Isabelle-Goldmine/Recherche.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
