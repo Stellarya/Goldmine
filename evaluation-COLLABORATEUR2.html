@@ -11,6 +11,7 @@
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
           integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+		     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/silvermine.css">
@@ -19,56 +20,45 @@
 
 
     <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-            integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
-            crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-            integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
-            crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/solid.js" integrity="sha384-F4BRNf3onawQt7LDHDJm/hwm3wBtbLIfGk1VSB/3nn3E+7Rox1YpYcKJMsmHBJIl" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/regular.js" integrity="sha384-V+AkgA1cZ+p3DRK63AHCaXvO68V7B5eHoxl7QVN21zftbkFn/sGAIVR7vmQL3Zhp" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/fontawesome.js" integrity="sha384-treYPdjUrP4rW5q82SnECO7TPVAz4bpas16yuE9F5o7CeBn2YYw1yr5oC8s8Mf8t" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 <div class="wrapper">
     <!-- Sidebar  -->
-    <nav id="sidebar" class="sidebar-wrapper " data-toggle="collapse" aria-expanded="false">
+        <nav id="sidebar" class="sidebar-wrapper " data-toggle="collapse" aria-expanded="false" >
         <div class="sidebar-header">
-            <img src="img/logo.png" height="53" style="margin-top: -10px"/>
+            <img src="img/logo.png" height="150" style="margin-top: -10px"/>
         </div>
 
         <div class="sidebar-menu">
             <ul class="list-unstyled components">
-                <li>
+                <!--<li>
                     <a href="#">
                         <i class="fa fa-tachometer-alt"></i>
                         Tableau de bord
                     </a>
+                </li>-->
+               
+
+                <li class="active">
+                    <a href="collaborateur-technique.html">
+                        <i class="fas fa-user"></i>
+                        Mes compétences
+                    </a>
                 </li>
-                <li>
+				
+				 <li>
                     <a href="Recherche.html">
                         <i class="fas fa-search"></i>
                         Recherche
                     </a>
                 </li>
 
-                <li class="active">
-                    <a href="collaborateur-technique.html">
-                        <i class="fas fa-user"></i>
-                        Collaborateurs
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-user-plus"></i>
-                        Candidatures
-                    </a>
-
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-users"></i>
-                        Effectifs
-                    </a>
-                </li>
+  
                 <li>
                     <a href="#">
                         <i class="fa fa-chart-pie"></i>
@@ -84,71 +74,46 @@
     <div id="content container">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+            <div class="container-fluid" style="margin-top: 10px;padding-left: 0;margin-left: -3px;">
 
                 <button type="button" id="sidebarCollapse" class="btn btn-info">
                     <i class="fas fa-bars"></i>
                 </button>
+				
+				
+				<div style="float:right;font-size:16px;color:#531055;">
+			   <i class="fa fa-user" style="font-weight:20px;margin-right:10px"></i>  Marie Evanno
+			   </div>
             </div>
+			
+			
         </nav>
-
         <main class="page-content violet">
             <div class="container-fluid">
                 <div class="row">
                     <div class="competences_eval">
 
+                        
                         <header class="header">
                             <div class="container-fluid">
-                                <header class="header">
-                                    <div class="container-fluid">
-                                        <nav id="cssmenu">
-                                            <h3 style="padding-left: 40px">Mes compétences - Auto-evaluation</h3>
-                                            <ul style="padding-left: 10%;">
-                                                <li class="onglet-profil"><a href="">PRENOM NOM</a></li>
-                                                <li><a href="collaborateur-technique.html" >TECHNIQUE</a></li>
-                                                <li class="active"><a href="collaborateur-fonctions.html">FONCTIONNELLE</a></li>
-                                                <li><a href="collaborateur-metiers.html">METIER</a></li>
-                                                <li><a href="collaborateur-applis.html">APPLICATIONS</a></li>
-                                                <li><a href="collaborateur-langue.html">LANGUES</a></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </header>
-                            </div>
-                        </header>
-                        <div class="tags" style="visibility: hidden">
-                            <div class="container-fluid">
-                                <nav>
+                                <nav id="cssmenu">
+                                    <h3 style="margin-bottom: 11px; margin-left: 10px">Compétences - <span
+                                            style="font-size:18px;color:#a72d89;display:inline-block;margin-top:-6px">Auto-evaluation</span>
+                                    </h3>
                                     <ul>
-                                        <li id="tag_java" class="tag_competence">Java <span class="tooltiptext"
-                                                                                            data-toggle="tooltip"> Spring boot, Spring batch, J2EE, Android, JSF, JSP/Struts, Swing </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_web">Web <span class="tooltiptext"
-                                                                                          data-toggle="tooltip"> HTML5, CSS3, WS REST, WS SOAP </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_javascript">Javascript <span
-                                                class="tooltiptext" data-toggle="tooltip"> Javascript, Typescript, AngularJS, Angular2, NodeJS </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_php">PHP <span class="tooltiptext"
-                                                                                          data-toggle="tooltip"> PHP, Symfony </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_dotnet">.Net <span class="tooltiptext" data-toggle="tooltip"> C#, .ASP, ASP.Net, APS.Net MCV, WPF, WCF, Silverlight, Web API, Core.Net, Visual Basic, VBScript, VBA Access, Xamarin </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_langages">Langages <span class="tooltiptext" data-toggle="tooltip"> C++, Python, Shell, Powershell, Perl, Groovy, R </span></li>
-                                        <li class="tag_competence" id="tag_framework">Framework <span class="tooltiptext" data-toggle="tooltip"> Cordova, Electron,<br> Windev, Delphi 10</span></li>
-                                        <li class="tag_competence" id="tag_reporting">BI/Reporting <span class="tooltiptext" data-toggle="tooltip"> RPG, Crystalreport, Qlickview, BO,<br> Birt, Pentaho, Jasper,<br> Kibana, Grafana </span></li>
-                                        <li class="tag_competence" id="tag_bdd">BDD <span class="tooltiptext" data-toggle="tooltip"> PL/SQL, Oracle, DB2, MySQL, SQL Server, PostgreSQL, SQL Lite, MongoDB, CouchBase, JSON, Redis </span></li>
-                                        <li class="tag_competence" id="tag_svi">SVI <span class="tooltiptext" data-toggle="tooltip"> VoiceXML, Envox </span></li>
-                                        <li class="tag_competence" id="tag_bus-messages">Bus Messages <span class="tooltiptext" data-toggle="tooltip">RapidMQ, ActivMQ, <br> Kafka, MSQueue</span></li>
-                                        <li class="tag_competence" id="tag_serveur-appli">Serveurs d'appli <span class="tooltiptext" data-toggle="tooltip">IIS, Apache Tomcat, Wildfly, Glassfish, Node Webkit, Cassini, Nginx </span>
-                                        </li>data-toggle="tooltip"> Annuaire, Gluster, Kubernetes, SLX, GitLab iTop, IWS, APache, Galera, Jboss, SSO, GLPI/OCS</span></li>
-
+                                        <li class="onglet-profil" style="padding-left: 50px; margin-left: 150px"><a href="">PROFIL</a></li>
+                                        <li style="margin-left: 10px"><a href="evaluation-COLLABORATEUR.html">TECHNIQUE</a></li>
+                                        <li class="active" style="margin-left: 10px"><a href="evaluation-COLLABORATEUR2.html">FONCTIONNELLE</a></li>
+                                        <li style="margin-left: 10px"><a href="#">METIER</a></li>
+                                        <li style="margin-left: 10px"><a href="#">APPLICATIONS</a></li>
+                                        <li style="margin-left: 10px"><a href="#">LANGUES</a></li>
                                     </ul>
                                 </nav>
                             </div>
-                        </div>
+                        </header>
+                       
 
-                        <div id="conteneur" class="container-fluid">
+                        <div id="conteneur" class="container-fluid" style="margin-top:30px">
                             <div class="row">
                                 <div class="col-12" id="block_fonction">
                                     <div class="limiter">
@@ -157,10 +122,10 @@
                                                 <table>
                                                     <thead>
                                                     <tr>
-                                                        <th colspan="7" class="table100-head1"> FONCTIONS</th>
+                                                        <th colspan="4" class="table100-head1"> FONCTIONS</th>
                                                         <th class="table100-head1">
-                                                            <span id="minus_java" class="block_col_2"><i
-                                                                    class="fas fa-minus-circle" ></i></span>
+                                                            <!--<span id="minus_java" class="block_col_2"><i
+                                                                    class="fas fa-minus-circle" ></i></span>-->
                                                         </th>
                                                     </tr>
 
@@ -199,6 +164,8 @@
                                                                       data-value="0"></span>
                                                             </div>
                                                         </td>
+														</tr>
+														<tr>
                                                         <td class="column1">Pilotage Agile KANBAN</td>
                                                         <td class="column2">
                                                             <div class="rating">
@@ -266,6 +233,8 @@
                                                                       data-value="0"></span>
                                                             </div>
                                                         </td>
+														</tr>
+														<tr>
                                                         <td class="column1">Pilotage de tests</td>
                                                         <td class="column2">
                                                             <div class="rating">
@@ -333,6 +302,8 @@
                                                                       data-value="0"></span>
                                                             </div>
                                                         </td>
+														</tr>
+														<tr>
                                                         <td class="column1">Animation COPIL, COPRO, Comité Tech</td>
                                                         <td class="column2">
                                                             <div class="rating">
@@ -400,6 +371,8 @@
                                                                       data-value="0"></span>
                                                             </div>
                                                         </td>
+														</tr>
+														<tr>
                                                         <td class="column1">Animation ateliers SPEC</td>
                                                         <td class="column2">
                                                             <div class="rating">
@@ -467,6 +440,8 @@
                                                                       data-value="0"></span>
                                                             </div>
                                                         </td>
+														</tr>
+														<tr>
                                                         <td class="column1">Réponse à AO</td>
                                                         <td class="column2">
                                                             <div class="rating">
@@ -534,6 +509,8 @@
                                                                       data-value="0"></span>
                                                             </div>
                                                         </td>
+														</tr>
+														<tr>
                                                         <td class="column1">Gestion des niveaux de service</td>
                                                         <td class="column2">
                                                             <div class="rating">
@@ -608,13 +585,10 @@
                                                     </tr>
 
                                                     <tr>
-                                                        <td colspan="8">
-                                                            <div class="commentaires">
-                                                                <div class='cell-input'><input type='text' placeholder='Commentaire'></div>
-                                                                <div class='cell-button'><div class='commentaire_button'><i class="fas fa-arrow-circle-right"></i></div></div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
+														<td colspan="4" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>

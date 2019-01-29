@@ -1,14 +1,14 @@
 /*
     DEMO STYLE
 */
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700";
 
 html {
     height: 200%;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'roboto', sans-serif;
     background: #fafafa;
     height: 200%;
 }
@@ -30,7 +30,7 @@ a:focus {
 }
 
 .navbar {
-    padding: 15px 10px;
+    padding: 4px 10px;
     background: #fff;
     border: none;
     border-radius: 0;
@@ -95,25 +95,25 @@ a:focus {
 }
 
 #sidebar {
-    min-width: 250px;
-    max-width: 250px;
-    background: rgb(76, 10, 58);
+    min-width: 195px;
+    max-width: 195px;
+    background: #531055;
     color: #fff;
     transition: all 0.3s;
 }
 
 #sidebar.active {
-    margin-left: -250px;
+    margin-left: -195px;
 }
 
 #sidebar .sidebar-header {
-    padding: 20px;
-    background: rgb(76, 10, 58);
+    padding: 20px 10px;
+    background: #531055;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    background: rgb(76, 10, 58);
+    background: #531055;
 }
 
 #sidebar ul p {
@@ -123,7 +123,7 @@ a:focus {
 
 #sidebar ul li a {
     padding: 10px;
-    font-size: 1.3em;
+    font-size: 1.1em;
     color: #fff;
     display: block;
 }
@@ -190,7 +190,7 @@ ul.CTAs a {
     min-width: 100px;
     max-width: 200px;
     color:rgb(76,10,58);
-    margin-top: 5px;
+    margin-top: 25px;
     margin-left: -40px;
     line-height: 20px;
     padding: 5px;
@@ -201,12 +201,14 @@ ul.CTAs a {
     opacity:0;
     z-index: 8;
     transition:all .25s;
+	text-transform:lowercase;
 }
 
 @-moz-document url-prefix() {
     .tag_competence .tooltiptext {
-        margin-top: 45px;
-        margin-left: -60px;
+        margin-top: 35px;
+
+margin-left: 40%;
     }
 }
 
@@ -254,7 +256,8 @@ ul.CTAs a {
 
 .reset-star:after {
     font-family: FontAwesome;
-    content: '\f00d';
+    content: '\f056';
+	color:#CCC
 }
 
 .rating-star:after {
@@ -264,7 +267,7 @@ ul.CTAs a {
 
 .reset-star.checked ~ .reset-star:after,
 .reset-star.checked:after{
-    content: '\f00d';
+    content: '\f005';
     color: red;
 }
 
@@ -284,7 +287,7 @@ ul.CTAs a {
 
 .reset-star:hover ~ .reset-star:after,
 .reset-star:hover:after {
-    content: '\f00d' !important;
+    content: '\f056' !important;
     color: red;
 }
 
@@ -348,7 +351,7 @@ main th a {
 .violet {
     background-color: rgba(76, 10, 89, 0.001);
     height: 100vh;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-left: 20px;
 }
 
@@ -362,10 +365,10 @@ main th a {
 }
 
 #conteneur table {
-    margin-left: 5px;
-    margin-right: 15px;
+
     align-items: stretch;
-    margin-top: 15px;
+
+
 }
 
 
@@ -399,9 +402,10 @@ main th a {
 }
 #cssmenu {
     width: auto;
-    border-bottom: 3px solid rgb(76, 10, 58);
+    border-bottom: 2px solid rgb(76, 10, 58);
     font-family: Raleway, sans-serif;
     line-height: 1;
+	margin-top:8px
 }
 
 #cssmenu > ul > li {
@@ -423,49 +427,47 @@ main th a {
     margin-left: -4px;
 }
 #cssmenu > ul > li > a {
-    z-index: 2;
-    padding: 18px 25px 12px 25px;
-    font-size: 15px;
-    font-weight: 400;
-    text-decoration: none;
-    color: rgb(76, 10, 58);
-    -webkit-transition: all .2s ease;
-    -moz-transition: all .2s ease;
-    -ms-transition: all .2s ease;
-    -o-transition: all .2s ease;
-    transition: all .2s ease;
-    margin-right: -4px;
+z-index: 2;
+
+padding: 18px 25px 12px 25px;
+
+font-size: 15px;
+
+font-weight: 400;
+
+text-decoration: none;
+
+color: rgb(76, 10, 58);
+
+-webkit-transition: all .2s ease;
+
+-moz-transition: all .2s ease;
+
+-ms-transition: all .2s ease;
+
+-o-transition: all .2s ease;
+
+transition: all .2s ease;
+
+margin-right: -4px;
+
+background: #ededed;
+
+margin: 0 2px;
 }
 #cssmenu > ul > li.active > a  {
     color: #ffffff;
+	background:#531055
 }
 
 #cssmenu > ul > li:hover > a,
 #cssmenu > ul > li > a:hover {
-    color: rgb(76, 10, 58);
+    color: #FFF;
+	background:#531055}
 }
 
-#cssmenu > ul > li > a:after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    width: 100%;
-    height: 120%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    content: "";
-    -webkit-transition: all .2s ease;
-    -o-transition: all .2s ease;
-    transition: all .2s ease;
-    -webkit-transform: perspective(15px) rotateX(2deg);
-    -webkit-transform-origin: bottom;
-    -moz-transform: perspective(15px) rotateX(2deg);
-    -moz-transform-origin: bottom;
-    transform: perspective(15px) rotateX(3deg);
-    transform-origin: bottom;
-}
+
+
 
 @-moz-document url-prefix() {
     #cssmenu > ul > li > a:after {
@@ -486,6 +488,38 @@ main th a {
 }
 
 
+/* ---------------------------------------------------
+    NOTIF
+----------------------------------------------------- */
+.notif {
+display: block;
+
+position: absolute;
+
+border-radius: 15px;
+
+height: 15px;
+
+width: 15px;
+
+background: #a72d89;
+
+line-height: 15px;
+
+color: #FFF;
+
+font-size: 11px;
+
+text-align: center;
+
+right: 2px;
+
+z-index: 100;
+
+top: -7px;
+
+font-weight: bold;
+}
 
 /* ---------------------------------------------------
     MODAL BOX STYLE
@@ -497,18 +531,31 @@ main th a {
 
 
 .tag_competence {
-    color: rgb(76, 10, 58);
+    color: #555455;
     background-color: white;
     text-align: center;
-    margin: 5px;
+    margin: 2px;
     text-decoration: none;
     position: relative;
     display: inline-block;
-    font-size: 15px;
-    line-height: 40px;
-    padding: 0 2em;
+    font-size: 13px;
+    line-height: 30px;
+    padding: 0px 41px 0px 18px;
+    position: relative;
     text-transform: uppercase;
     -webkit-transition: all .3s ease-in-out;
+    font-family: "Roboto";
+    border: 1px solid #CCC;
+
+
+}
+
+ul li.tag_competence span {
+	top:1px;
+	right:10px;
+	position:absolute;
+	display:block
+	
 }
 li.tag_competence:hover .fa-plus-circle, .fa-comment-alt {
     color: white;
@@ -518,15 +565,7 @@ li.tag_competence:hover .fa-plus-circle, .fa-comment-alt {
 li.tag_competence:hover  {
     background-color: rgb(76, 10, 58);
     color: white;
-    text-align: center;
-    margin: 5px;
-    text-decoration: none;
-    position: relative;
-    display: inline-block;
-    font-size: 15px;
-    line-height: 40px;
-    padding: 0 2em;
-    -webkit-transition: all .3s ease;
+
 }
 
 li a.tag_competence {
@@ -560,7 +599,7 @@ li > a.tag_competence {
     color: forestgreen;
 }
 .fa-minus-circle:hover {
-    color: rgb(235, 33, 46);
+    color: #e53012;
 
 }
 
@@ -589,22 +628,36 @@ li > a.tag_competence {
 
 /* The actual popup */
 .popup .popuptext {
-    visibility: hidden;
-    width: 250px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 5px;
-    position: absolute;
-    z-index: 1;
-    top: 130%;
-    left: 30%;
-    margin-left: -150px;
+visibility: hidden;
+
+width: 250px;
+
+background-color: #FFF;
+
+color: #fff;
+
+text-align: center;
+
+border-radius: 6px;
+
+padding: 8px 5px;
+
+position: absolute;
+
+z-index: 1;
+
+top: 132%;
+
+left: 30%;
+
+margin-left: -150px;
+-webkit-box-shadow: -4px 2px 16px -3px rgba(0,0,0,0.52);
+-moz-box-shadow: -4px 2px 16px -3px rgba(0,0,0,0.52);
+box-shadow: -4px 2px 16px -3px rgba(0,0,0,0.52);
 }
 
 textarea.textarea-commentaire {
-     border: none;
+     border: 1px solid #CCC;
      border-radius: 5px;
      background: rgba(255, 255, 255, 0.6);
     font-size: 15px;
@@ -691,11 +744,14 @@ input[type=number]:focus {
 /* ---------------------------------------------------
     TABLE STYLE
 ----------------------------------------------------- */
-
+.table-dark {
+    margin-top: 20px;
+}
 
 .limiter {
     width: 100%;
     margin: 0 auto;
+	margin-bottom: 20px;
 }
 
 table {
@@ -717,7 +773,8 @@ table td, table th {
 
 table thead tr {
     height: 35px;
-    background: rgb(76, 10, 58);
+    color: #531055;
+	background:#FFF
 }
 
 table tbody tr {
@@ -744,21 +801,25 @@ table td.r, table th.r {
     text-align: center;
 }
 
+.table100 {
+	border:1px solid #CCC
+}
+
 
 .table100-head th {
     font-size: 18px;
-    color: #fff;
+    color: #531055;
     line-height: 1.2;
     font-weight: unset;
 }
 
 .table100-head1 {
-    font-size: 18px;
-    color: #fff;
+    font-size: 17px;
+    color: #531055;
     line-height: 1.2;
-    font-weight: unset;
+    font-weight: bold;
     text-align: left;
-    padding: 5px 25px 5px 10px;
+    padding: 5px 10px 5px 10px;
 }
 
 tbody tr:nth-child(even) {
@@ -767,7 +828,7 @@ tbody tr:nth-child(even) {
 
 tbody tr {
     font-size: 15px;
-    color: #808080;
+    color: #444;
     line-height: 1.2;
     font-weight: unset;
 }
@@ -790,8 +851,20 @@ label {
     transform: translateY(0);
     transition: all 0.2s ease-out;
 }
+
+input {border:1px solid #CCC}
 .block_col_2, .block_col_4 {
     padding-right: 10px;
+	position: absolute;
+	top: 7px;
+right: 0;
+}
+
+.manager .block_col_2, .manager .block_col_4 {
+    padding-right: 25px;
+	position: relative;
+	top:0
+
 }
 
 
@@ -801,13 +874,20 @@ input:placeholder-shown + label {
 }
 
 .column1, .column3 {
-    min-width: 150px;
+    /*min-width: 150px;*/
     padding-left: 10px;
 }
 
 .column2, .column4 {
-    width: 150px;
+    /*width: 150px;*/
 }
+
+.manager2 .column2,.manager .column4 {
+    width: 100px;
+}
+
+.manager2 .column5 {
+width:250px}
 
 .column5 {
     width: 40px;
@@ -916,7 +996,7 @@ input:placeholder-shown + label {
 
 @media (max-width: 768px) {
     #sidebar {
-        margin-left: -250px;
+        margin-left: -195px;
     }
 
     #sidebar.active {

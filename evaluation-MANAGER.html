@@ -11,28 +11,27 @@
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
           integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+		     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="css/style-manager.css">
+    <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/silvermine.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/util.css">
 
 
     <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-            integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
-            crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-            integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
-            crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/solid.js" integrity="sha384-F4BRNf3onawQt7LDHDJm/hwm3wBtbLIfGk1VSB/3nn3E+7Rox1YpYcKJMsmHBJIl" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/regular.js" integrity="sha384-V+AkgA1cZ+p3DRK63AHCaXvO68V7B5eHoxl7QVN21zftbkFn/sGAIVR7vmQL3Zhp" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/fontawesome.js" integrity="sha384-treYPdjUrP4rW5q82SnECO7TPVAz4bpas16yuE9F5o7CeBn2YYw1yr5oC8s8Mf8t" crossorigin="anonymous"></script>
+
 </head>
 
-<body>
+<body class="manager">
 <div class="wrapper">
     <!-- Sidebar  -->
     <nav id="sidebar" class="sidebar-wrapper " data-toggle="collapse" aria-expanded="false">
         <div class="sidebar-header">
-            <img src="img/logo.png" alt="" height="53" style="margin-top: -10px"/>
+            <img src="img/logo.png" height="150" style="margin-top: -10px"/>
         </div>
 
         <div class="sidebar-menu">
@@ -56,19 +55,8 @@
                         Collaborateurs
                     </a>
                 </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-user-plus"></i>
-                        Candidatures
-                    </a>
 
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-users"></i>
-                        Effectifs
-                    </a>
-                </li>
+
                 <li>
                     <a href="#">
                         <i class="fa fa-chart-pie"></i>
@@ -89,6 +77,10 @@
                 <button type="button" id="sidebarCollapse" class="btn btn-info">
                     <i class="fas fa-bars"></i>
                 </button>
+				
+				<div style="float:right;font-size:16px;color:#531055;">
+			   <i class="fa fa-user" style="font-weight:20px;margin-right:10px"></i>  Mickaël Hebert
+			   </div>
             </div>
         </nav>
 
@@ -96,35 +88,38 @@
             <div class="container-fluid">
                 <div class="row">
                    <div class="competences_eval">
-                        <header class="header">
+                        <header class="header" style="margin-bottom:0">
                             <div class="container-fluid">
                                 <nav id="cssmenu">
-                                    <h3 style="padding-left: 40px">Mes compétences - Auto-evaluation</h3>
-                                    <ul style="padding-left: 10%;">
-                                        <li class="onglet-profil"><a href="">Marie EVANNO</a></li>
-                                        <li class="active"><a href="collaborateur-technique.html" >TECHNIQUE</a></li>
-                                        <li><a href="collaborateur-fonctions.html">FONCTIONNELLE</a></li>
-                                        <li><a href="collaborateur-metiers.html">METIER</a></li>
-                                        <li><a href="collaborateur-applis.html">APPLICATIONS</a></li>
-                                        <li><a href="collaborateur-langue.html">LANGUES</a></li>
+                                    <h3>Compétences - <span style="font-size:18px;color:#a72d89;display:inline-block;margin-top:-6"> Marie Evanno </span></h3>
+                                    <ul> 
+                                        <li class="onglet-profil"  style="padding-left: 50px"><a href="">PROFIL </a></li>
+                                        <li class="active" ><a href="evaluation-MANAGER.html" >TECHNIQUE</a></li>
+                                        <li ><a href="evaluation-MANAGER2.html">FONCTIONNELLE</a></li>
+                                        <li><a href="#">METIER</a></li>
+                                        <li><a href="#">APPLICATIONS</a></li>
+                                        <li><a href="#">LANGUES</a></li>
                                     </ul>
                                 </nav>
                             </div>
                         </header>
-                        <div class="tags">
+						<center>
+						<a href="#" id="pluscomp"><div style="color:#531055;padding:15px 10px;display:inline-block">Ajouter une nouvelle compétence  <i class="fa fa-plus"></i></div></a>
+						</center>
+                        <div class="tags" style="display:none">
                             <div class="container-fluid">
                                 <nav>
                                     <ul>
-                                        <li id="tag_java" class="tag_competence">JAVA <span id="plus_java"><i class="fas fa-plus-circle"></i></span>
+                                        <li id="tag_java" class="tag_competence" style="display:none">JAVA <span id="plus_java"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Spring boot, Spring batch, J2EE, Android, JSF, JSP/Struts, Swing </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_web">Web <span id="plus_web"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_web" style="display:none">Web <span id="plus_web"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> HTML5, CSS3, WS REST, WS SOAP </span>
                                         </li>
                                         <li class="tag_competence" id="tag_javascript">Javascript <span id="plus_javascript"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Javascript, Typescript, AngularJS, Angular2, NodeJS </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_php">PHP <span id="plus_php"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_php" style="display:none">PHP <span id="plus_php"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> PHP, Symfony </span>
                                         </li>
                                         <li class="tag_competence" id="tag_dotnet">.Net <span id="plus_dotnet"><i class="fas fa-plus-circle"></i></span>
@@ -133,13 +128,13 @@
                                         <li class="tag_competence" id="tag_langages">Langages <span id="plus_langages"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> C++, Python, Shell, Powershell, Perl, Groovy, R </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_framework">Framework <span id="plus_framework"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_framework" style="display:none">Framework <span id="plus_framework"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Cordova, Electron,<br> Windev, Delphi 10</span>
                                         </li>
                                         <li class="tag_competence" id="tag_reporting">BI/Reporting <span id="plus_reporting"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> RPG, Crystalreport, Qlickview, BO,<br> Birt, Pentaho, Jasper,<br> Kibana, Grafana </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_bdd">BDD <span id="plus_bdd"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_bdd" >BDD <span id="plus_bdd"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> PL/SQL, Oracle, DB2, MySQL, SQL Server, PostgreSQL, SQL Lite, MongoDB, CouchBase, JSON, Redis </span>
                                         </li>
                                         <li class="tag_competence" id="tag_svi">SVI <span id="plus_svi"><i class="fas fa-plus-circle"></i></span>
@@ -148,7 +143,7 @@
                                         <li class="tag_competence" id="tag_bus-messages">Bus Messages <span id="plus_bus-messages"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip">RapidMQ, ActivMQ, <br> Kafka, MSQueue</span>
                                         </li>
-                                        <li class="tag_competence" id="tag_serveur-appli">Serveurs d'appli <span id="plus_serveur-appli"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_serveur-appli" style="display:none">Serveurs d'appli <span id="plus_serveur-appli"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip">IIS, Apache Tomcat, Wildfly, Glassfish, Node Webkit, Cassini, Nginx </span>
                                         </li>
                                         <li class="tag_competence" id="tag_virtualisation">Virtualisation <span id="plus_virtualisation"><i class="fas fa-plus-circle"></i></span>
@@ -157,13 +152,13 @@
                                         <li class="tag_competence" id="tag_exploitation">Exploitation <span id="plus_exploitation"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip">OpCon, Centreon/Nagios </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_os">OS <span id="plus_os"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_os" style="display:none">OS <span id="plus_os"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Unix, Linux, Windows, MacOS, iOS </span>
                                         </li>
                                         <li class="tag_competence" id="tag_produits">Produits <span id="plus_produits"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Talend ETL, Talend ESB, MS SSIS, Elastic Stack, Media Transfer, Liferay6, Liferay 7, SharePoint, Drupal, Joomla!, Alfresco</span>
                                         </li>
-                                        <li class="tag_competence" id="tag_outils">Outils <span id="plus_outils"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_outils" style="display:none">Outils <span id="plus_outils"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip">PowerAMC, Entreprise Architect, Excel, IWS</span>
                                         </li>
                                         <li class="tag_competence" id="tag_tests">Tests <span id="plus_tests"><i class="fas fa-plus-circle"></i></span>
@@ -214,20 +209,26 @@
                             </div>
                         </div>
 
-                        <div id="conteneur" class="container-fluid">
+                        <div id="conteneur" class="container-fluid" style="margin-top:20px">
                             <div class="row">
-                                <div class="col-md-3 col-12" id="block_java">
+                                <div class="col-md-3 col-12" id="block_java" style="display:block">
                                     <div class="limiter">
                                         <div class="wrap-table100">
                                             <div class="table100">
                                                 <table>
                                                     <thead>
                                                     <tr>
-                                                        <th colspan="2" class="table100-head1">
+                                                        <th  class="table100-head1" colspan="2">
                                                             JAVA
+	
                                                         </th>
                                                         <th class="table100-head1">
-                                                            <span id="minus_java" class="block_col_2"><i
+														
+														
+                                                            <span id="minus_java" class="block_col_2">
+															
+															
+															<i
                                                                     class="fas fa-minus-circle" ></i></span>
                                                         </th>
                                                     </tr>
@@ -251,7 +252,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="java-1" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="java-1" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -270,7 +271,7 @@
                                                             </div>
                                                         </td>
                                                         <td>
-                                                            <input type="number" class="note_manager" id="java-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="java-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -290,7 +291,7 @@
                                                             </div>
                                                         </td>
                                                         <td>
-                                                            <input type="number" class="note_manager" id="java-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="java-3" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -299,18 +300,18 @@
                                                             <div class="rating">
                                                                     <span class="rating-star" title="expert"
                                                                           data-value="4"></span>
-                                                                <span class="rating-star" title="autonome"
+                                                                <span class="rating-star  checked" title="autonome"
                                                                       data-value="3"></span>
                                                                 <span class="rating-star"
                                                                       title="peut intervenir avec de l'aide"
                                                                       data-value="2"></span>
-                                                                <span class="rating-star" title="notions"
+                                                                <span class="rating-star  checked" title="notions"
                                                                       data-value="1"></span>
 
                                                             </div>
                                                         </td>
                                                         <td>
-                                                            <input type="number" class="note_manager" id="java-4" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="java-4" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -330,7 +331,7 @@
                                                             </div>
                                                         </td>
                                                         <td>
-                                                            <input type="number" class="note_manager" id="java-5" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="java-5" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -350,7 +351,7 @@
                                                             </div>
                                                         </td>
                                                         <td>
-                                                            <input type="number" class="note_manager" id="java-6" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="java-6" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -369,16 +370,23 @@
                                                             </div>
                                                         </td>
                                                         <td>
-                                                            <input type="number" class="note_manager" id="java-7" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="java-7" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
+													<tr>
+														<td colspan="3" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														   <div style="display:inline;margin:3px;color:rgb(128, 128, 128);position:relative"><span class="notif"> 1</span> <i class="far fa-comment" style="font-size:17px;margin-right:10px" > </i></div>
+
+														    commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-12" id="block_web">
+                                <div class="col-md-3 col-12" id="block_web" style="display:block">
                                     <div class="limiter">
                                         <div class="wrap-table100">
                                             <div class="table100">
@@ -409,7 +417,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="web-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="web-1" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -428,7 +436,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="web-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="web-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -447,7 +455,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="web-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="web-3" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -466,12 +474,17 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="web-4" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="web-4" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr></tr>
                                                     <tr></tr>
                                                     <tr></tr>
+													<tr>
+														<td colspan="3" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -510,7 +523,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="javascript-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="javascript-1" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -529,7 +542,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="javascript-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="javascript-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -548,7 +561,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="javascript-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="javascript-3" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -567,7 +580,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="javascript-4" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="javascript-4" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -586,18 +599,23 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="javascript-5" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="javascript-5" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr></tr>
                                                     <tr></tr>
+													<tr>
+														<td colspan="3" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-12" id="block_php">
+                                <div class="col-md-3 col-12" id="block_php" style="display:block">
                                     <div class="limiter">
                                         <div class="wrap-table100">
                                             <div class="table100">
@@ -620,7 +638,7 @@
                                                                       data-value="4"></span>
                                                                 <span class="rating-star" title="autonome"
                                                                       data-value="3"></span>
-                                                                <span class="rating-star"
+                                                                <span class="rating-star  checked"
                                                                       title="peut intervenir avec de l'aide"
                                                                       data-value="2"></span>
                                                                 <span class="rating-star" title="notions"
@@ -628,7 +646,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="php-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="php-1" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -647,7 +665,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="php-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="php-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr></tr>
@@ -655,6 +673,11 @@
                                                     <tr></tr>
                                                     <tr></tr>
                                                     <tr></tr>
+													<tr>
+														<td colspan="3" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
 
                                                     </tbody>
                                                 </table>
@@ -693,7 +716,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="dotnet-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="dotnet-1" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">Web API</td>
                                                         <td class="column4">
@@ -710,7 +733,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="dotnet-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="dotnet-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -729,7 +752,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="dotnet-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="dotnet-3" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">Core.net</td>
                                                         <td class="column4">
@@ -746,7 +769,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="dotnet-4" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="dotnet-4" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -765,7 +788,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="dotnet-5" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="dotnet-5" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">Visual Basic</td>
                                                         <td class="column4">
@@ -782,7 +805,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="dotnet-6" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="dotnet-6" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -801,7 +824,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="dotnet-7" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="dotnet-7" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">VBScript</td>
                                                         <td class="column4">
@@ -818,7 +841,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="dotnet-8" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="dotnet-8" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -837,7 +860,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="dotnet-9" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="dotnet-9" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">VBA Access</td>
                                                         <td class="column4">
@@ -854,7 +877,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="dotnet-10" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="dotnet-10" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -873,7 +896,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="dotnet-11" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="dotnet-11" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">Xamarin</td>
                                                         <td class="column4">
@@ -890,7 +913,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="dotnet-12" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="dotnet-12" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -909,12 +932,17 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="dotnet-13" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="dotnet-13" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
                                                     </tr>
+													<tr>
+														<td colspan="6" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -952,7 +980,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="language-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="language-1" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -971,7 +999,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="language-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="language-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -990,7 +1018,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="language-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="language-3" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1009,7 +1037,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="language-4" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="language-4" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1028,7 +1056,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="language-5" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="language-5" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1047,7 +1075,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="language-6" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="language-6" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1066,16 +1094,21 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="language-7" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="language-7" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
+													<tr>
+														<td colspan="3" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-12" id="block_framework">
+                                <div class="col-md-3 col-12" id="block_framework" style="display:block">
                                     <div class="limiter">
                                         <div class="wrap-table100">
                                             <div class="table100">
@@ -1101,12 +1134,12 @@
                                                                 <span class="rating-star"
                                                                       title="peut intervenir avec de l'aide"
                                                                       data-value="2"></span>
-                                                                <span class="rating-star" title="notions"
+                                                                <span class="rating-star  checked" title="notions"
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="framework-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="framework-1" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1125,7 +1158,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="framework-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="framework-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1144,7 +1177,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="framework-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="framework-3" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1163,12 +1196,17 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="framework-4" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="framework-4" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr></tr>
                                                     <tr></tr>
                                                     <tr></tr>
+													<tr>
+														<td colspan="3" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -1206,7 +1244,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reporting-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reporting-1" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">Kibana</td>
                                                         <td class="column4">
@@ -1223,7 +1261,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reporting-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reporting-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1242,7 +1280,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reporting-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reporting-3" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">Grafana</td>
                                                         <td class="column4">
@@ -1259,7 +1297,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reporting-4" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reporting-4" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1278,7 +1316,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reporting-5" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reporting-5" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
@@ -1300,7 +1338,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reporting-6" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reporting-6" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
@@ -1322,7 +1360,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reporting-7" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reporting-7" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
@@ -1344,12 +1382,13 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reporting-8" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reporting-8" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
                                                     </tr>
+													
                                                     <tr>
                                                         <td class="column1">Jasper</td>
                                                         <td class="column2">
@@ -1366,12 +1405,17 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reporting-9" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reporting-9" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
                                                     </tr>
+													<tr>
+														<td colspan="6" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -1410,7 +1454,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="bdd-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="bdd-1" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">MongoDB</td>
                                                         <td class="column4">
@@ -1427,7 +1471,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="bdd-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="bdd-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1446,7 +1490,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="bdd-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="bdd-3" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">CouchBase</td>
                                                         <td class="column4">
@@ -1463,7 +1507,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="bdd-4" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="bdd-4" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1482,7 +1526,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="bdd-5" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="bdd-5" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">PostgreSQL JSON</td>
                                                         <td class="column4">
@@ -1499,7 +1543,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="bdd-6" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="bdd-6" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1518,7 +1562,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="bdd-7" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="bdd-7" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">Redis</td>
                                                         <td class="column4">
@@ -1535,7 +1579,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="bdd-8" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="bdd-8" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1554,7 +1598,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="bdd-9" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="bdd-9" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
@@ -1576,7 +1620,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="bdd-10" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="bdd-10" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
@@ -1598,12 +1642,17 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="bdd-11" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="bdd-11" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
                                                     </tr>
+													<tr>
+														<td colspan="6" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -1641,7 +1690,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="svi-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="svi-1" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1660,7 +1709,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="svi-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="svi-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr></tr>
@@ -1668,6 +1717,11 @@
                                                     <tr></tr>
                                                     <tr></tr>
                                                     <tr></tr>
+													<tr>
+														<td colspan="3" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
 
                                                     </tbody>
                                                 </table>
@@ -1707,7 +1761,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="bus_message-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="bus_message-1" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1726,7 +1780,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="bus_message-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="bus_message-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1745,7 +1799,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="bus_message-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="bus_message-3" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1764,19 +1818,24 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="bus_message-4" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="bus_message-4" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr></tr>
                                                     <tr></tr>
                                                     <tr></tr>
+													<tr>
+														<td colspan="3" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-12" id="block_serveur-appli" >
+                                <div class="col-md-3 col-12" id="block_serveur-appli"  style="display:block">
                                     <div class="limiter">
                                         <div class="wrap-table100">
                                             <div class="table100">
@@ -1802,12 +1861,12 @@
                                                                 <span class="rating-star"
                                                                       title="peut intervenir avec de l'aide"
                                                                       data-value="2"></span>
-                                                                <span class="rating-star" title="notions"
+                                                                <span class="rating-star  checked" title="notions"
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="serveu_appli-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="serveu_appli-1" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1826,7 +1885,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="serveu_appli-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="serveu_appli-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1845,7 +1904,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="serveu_appli-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="serveu_appli-3" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1864,7 +1923,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="serveu_appli-4" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="serveu_appli-4" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1883,7 +1942,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="serveu_appli-5" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="serveu_appli-5" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1902,7 +1961,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="serveu_appli-6" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="serveu_appli-6" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1921,9 +1980,14 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="serveu_appli-7" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="serveu_appli-7" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
+													<tr>
+														<td colspan="3" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -1962,7 +2026,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="virtualisation-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="virtualisation-1" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1981,7 +2045,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="virtualisation-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="virtualisation-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr></tr>
@@ -1989,6 +2053,11 @@
                                                     <tr></tr>
                                                     <tr></tr>
                                                     <tr></tr>
+													<tr>
+														<td colspan="3" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -2026,7 +2095,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="exploitation-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="exploitation-1" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column1">Scripts Bash</td>
                                                         <td class="column2">
@@ -2043,7 +2112,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="exploitation-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="exploitation-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -2062,7 +2131,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="exploitation-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="exploitation-3" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
@@ -2084,7 +2153,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="exploitation-4" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="exploitation-4" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
@@ -2106,7 +2175,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="exploitation-5" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="exploitation-5" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
@@ -2128,7 +2197,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="exploitation-6" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="exploitation-6" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
@@ -2150,7 +2219,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="exploitation-7" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="exploitation-7" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
@@ -2172,19 +2241,24 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="exploitation-8" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="exploitation-8" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
                                                     </tr>
+													<tr>
+														<td colspan="6" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-12" id="block_os">
+                                <div class="col-md-3 col-12" id="block_os" style="display:block">
                                     <div class="limiter">
                                         <div class="wrap-table100">
                                             <div class="table100">
@@ -2215,7 +2289,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="os-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="os-1" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -2234,7 +2308,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="os-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="os-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -2253,7 +2327,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="os-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="os-3" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -2272,7 +2346,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="os-4" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="os-4" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -2291,11 +2365,16 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="os-5" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="os-5" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr></tr>
                                                     <tr></tr>
+													<tr>
+														<td colspan="3" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -2333,7 +2412,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="produits-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="produits-1" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">SharePoint</td>
                                                         <td class="column4">
@@ -2350,7 +2429,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="produits-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="produits-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -2369,7 +2448,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="produits-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="produits-3" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">Drupal</td>
                                                         <td class="column4">
@@ -2388,7 +2467,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="produits-4" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="produits-4" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -2407,7 +2486,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="produits-5" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="produits-5" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">Joomla!</td>
                                                         <td class="column4">
@@ -2424,7 +2503,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="produits-6" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="produits-6" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -2443,7 +2522,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="produits-7" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="produits-7" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">Alfresco</td>
                                                         <td class="column4">
@@ -2460,7 +2539,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="produits-8" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="produits-8" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -2479,7 +2558,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="produits-9" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="produits-9" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
@@ -2501,7 +2580,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="produits-10" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="produits-10" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
@@ -2523,12 +2602,17 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="produits-11" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="produits-11" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
                                                     </tr>
+													<tr>
+														<td colspan="6" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
 
                                                     </tbody>
                                                 </table>
@@ -2568,7 +2652,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="outils-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="outils-1" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -2587,7 +2671,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="outils-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="outils-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -2606,7 +2690,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="outils-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="outils-3" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -2625,12 +2709,17 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="outils-4" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="outils-4" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr></tr>
                                                     <tr></tr>
                                                     <tr></tr>
+													<tr>
+														<td colspan="3" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -2668,7 +2757,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="tests-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="tests-1" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -2687,7 +2776,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="tests-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="tests-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -2706,7 +2795,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="tests-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="tests-3" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -2725,7 +2814,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="tests-4" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="tests-4" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -2744,7 +2833,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="tests-5" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="tests-5" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -2763,10 +2852,15 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="tests-6" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="tests-6" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr></tr>
+													<tr>
+														<td colspan="3" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -2804,7 +2898,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="adventiel-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="adventiel-1" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -2823,7 +2917,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="adventiel-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="adventiel-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -2842,7 +2936,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="adventiel-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="adventiel-3" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -2861,7 +2955,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="adventiel-4" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="adventiel-4" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -2880,7 +2974,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="adventiel-5" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="adventiel-5" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -2899,10 +2993,15 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="adventiel-6" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="adventiel-6" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr></tr>
+													<tr>
+														<td colspan="3" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -2940,7 +3039,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="protocole-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="protocole-1" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -2961,7 +3060,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="protocole-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="protocole-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr></tr>
@@ -2969,6 +3068,11 @@
                                                     <tr></tr>
                                                     <tr></tr>
                                                     <tr></tr>
+													<tr>
+														<td colspan="3" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -3006,7 +3110,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="integration_continue-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="integration_continue-1" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">Ansible</td>
                                                         <td class="column4">
@@ -3023,7 +3127,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="integration_continue-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="integration_continue-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -3042,7 +3146,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="integration_continue-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="integration_continue-3" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">Gradle</td>
                                                         <td class="column4">
@@ -3059,7 +3163,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="integration_continue-4" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="integration_continue-4" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -3078,7 +3182,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="integration_continue-5" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="integration_continue-5" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
@@ -3100,7 +3204,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="integration_continue-6" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="integration_continue-6" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
@@ -3122,7 +3226,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="integration_continue-7" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="integration_continue-7" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
@@ -3144,7 +3248,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="integration_continue-8" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="integration_continue-8" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
@@ -3166,12 +3270,16 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="integration_continue-9" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="integration_continue-9" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
-                                                    </tr>
+                                                    </tr><tr>
+														<td colspan="6" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -3209,7 +3317,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="iot-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="iot-1" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -3228,7 +3336,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="iot-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="iot-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -3247,7 +3355,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="iot-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="iot-3" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -3266,12 +3374,17 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="iot-4" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="iot-4" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr></tr>
                                                     <tr></tr>
                                                     <tr></tr>
+													<tr>
+														<td colspan="3" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -3309,7 +3422,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reseau_lan-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reseau_lan-1" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -3328,7 +3441,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reseau_lan-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reseau_lan-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -3347,7 +3460,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reseau_lan-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reseau_lan-3" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -3366,7 +3479,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reseau_lan-4" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reseau_lan-4" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -3385,11 +3498,16 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reseau_lan-5" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reseau_lan-5" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr></tr>
                                                     <tr></tr>
+													<tr>
+														<td colspan="3" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -3427,7 +3545,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reseau_securite-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reseau_securite-1" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">VPS/OpenVPN</td>
                                                         <td class="column4">
@@ -3444,7 +3562,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reseau_securite-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reseau_securite-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -3463,7 +3581,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reseau_securite-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reseau_securite-3" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
@@ -3485,7 +3603,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reseau_securite-4" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reseau_securite-4" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
@@ -3507,7 +3625,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reseau_securite-5" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reseau_securite-5" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
@@ -3529,7 +3647,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reseau_securite-6" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reseau_securite-6" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
@@ -3551,7 +3669,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reseau_securite-7" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reseau_securite-7" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
@@ -3573,12 +3691,17 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reseau_securite-8" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reseau_securite-8" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
                                                     </tr>
+													<tr>
+														<td colspan="6" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -3616,7 +3739,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reseau_toip-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reseau_toip-1" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -3635,7 +3758,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reseau_toip-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reseau_toip-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -3654,13 +3777,18 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="reseau_toip-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="reseau_toip-3" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr></tr>
                                                     <tr></tr>
                                                     <tr></tr>
                                                     <tr></tr>
+													<tr>
+														<td colspan="3" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -3698,7 +3826,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="industrialisation-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="industrialisation-1" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -3717,7 +3845,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="industrialisation-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="industrialisation-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -3736,7 +3864,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="industrialisation-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="industrialisation-3" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -3755,12 +3883,17 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            v<input type="number" class="note_manager" id="industrialisation-4" min="0" max="4" step="1" >
+                                                            v<input type="text" class="note_manager" id="industrialisation-4" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr></tr>
                                                     <tr></tr>
                                                     <tr></tr>
+													<tr>
+														<td colspan="3" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -3798,7 +3931,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="os_serveurs-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="os_serveurs-1" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">Linux Debian</td>
                                                         <td class="column4">
@@ -3815,7 +3948,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="os_serveurs-11" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="os_serveurs-11" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -3834,7 +3967,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="os_serveurs-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="os_serveurs-2" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">Unix AIX</td>
                                                         <td class="column4">
@@ -3851,7 +3984,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="os_serveurs-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="os_serveurs-3" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -3870,7 +4003,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="os_serveurs-4" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="os_serveurs-4" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">AS/400 - OS/400</td>
                                                         <td class="column4">
@@ -3887,7 +4020,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="os_serveurs-5" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="os_serveurs-5" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -3906,7 +4039,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="os_serveurs-6" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="os_serveurs-6" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column1">Linux CentOS 6/7</td>
                                                         <td class="column2">
@@ -3923,7 +4056,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="os_serveurs-7" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="os_serveurs-7" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -3942,7 +4075,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="os_serveurs-8" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="os_serveurs-8" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
@@ -3964,7 +4097,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="os_serveurs-9" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="os_serveurs-9" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
@@ -3986,12 +4119,17 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="os_serveurs-10" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="os_serveurs-10" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
                                                     </tr>
+													<tr>
+														<td colspan="6" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -4029,7 +4167,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="stockage-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="stockage-1" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -4050,7 +4188,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="stockage-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="stockage-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr></tr>
@@ -4058,6 +4196,11 @@
                                                     <tr></tr>
                                                     <tr></tr>
                                                     <tr></tr>
+													<tr>
+														<td colspan="3" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -4095,7 +4238,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="messagerie-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="messagerie-1" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -4114,7 +4257,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="messagerie-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="messagerie-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -4133,13 +4276,18 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="messagerie-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="messagerie-3" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr></tr>
                                                     <tr></tr>
                                                     <tr></tr>
                                                     <tr></tr>
+													<tr>
+														<td colspan="3" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -4177,7 +4325,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="securite-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="securite-1" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -4196,7 +4344,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="securite-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="securite-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -4215,7 +4363,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="securite-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="securite-3" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -4234,7 +4382,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="securite-4" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="securite-4" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -4253,11 +4401,16 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="securite-5" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="securite-5" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr></tr>
                                                     <tr></tr>
+													<tr>
+														<td colspan="3" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -4295,7 +4448,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="divers-1" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="divers-1" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">Apache</td>
                                                         <td class="column4">
@@ -4312,7 +4465,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="divers-2" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="divers-2" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -4331,7 +4484,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="divers-3" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="divers-3" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">Galera</td>
                                                         <td class="column4">
@@ -4348,7 +4501,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="divers-4" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="divers-4" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -4367,7 +4520,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="divers-5" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="divers-5" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column3">Jboss</td>
                                                         <td class="column4">
@@ -4384,7 +4537,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="divers-6" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="divers-6" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -4403,7 +4556,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="divers-7" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="divers-7" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column1">SSO</td>
                                                         <td class="column2">
@@ -4420,7 +4573,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="divers-8" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="divers-8" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -4439,7 +4592,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="divers-9" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="divers-9" min="0" max="4" step="1" >
                                                         </td>
                                                         <td class="column1">GLPI/OCS</td>
                                                         <td class="column2">
@@ -4456,7 +4609,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="divers-10" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="divers-10" min="0" max="4" step="1" >
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -4475,7 +4628,7 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="divers-11" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="divers-11" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
@@ -4497,12 +4650,17 @@
                                                             </div>
                                                         </td>
                                                         <td class="column5">
-                                                            <input type="number" class="note_manager" id="divers-12" min="0" max="4" step="1" >
+                                                            <input type="text" class="note_manager" id="divers-12" min="0" max="4" step="1" >
                                                         </td>
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
                                                     </tr>
+													<tr>
+														<td colspan="6" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
+														    <i class="far fa-comment"></i> commentaire
+														</td>
+													</tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -4529,6 +4687,24 @@
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/goldmine-manager.js"></script>
 <!--  ***************************** Rating Stars **************************************-->
+
+
+
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+
+
+
+        $("#pluscomp").click(function(){
+
+            $(".tags").toggle("slow");
+
+        });
+
+    });
+
+    </script>
 
 
 </body>

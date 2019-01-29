@@ -11,13 +11,17 @@
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
           integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/silvermine.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/util.css">
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"/>
+    <link href="css/search_plugin.css" rel="stylesheet"/>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
             integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
@@ -25,6 +29,8 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
             integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
             crossorigin="anonymous"></script>
+    <script src="js/jquery_research.js"></script>
+    <!--<script src="js/json_test.js"></script>-->
 </head>
 
 <body>
@@ -32,43 +38,34 @@
     <!-- Sidebar  -->
     <nav id="sidebar" class="sidebar-wrapper " data-toggle="collapse" aria-expanded="false">
         <div class="sidebar-header">
-            <img src="img/logo.png" height="53" style="margin-top: -10px"/>
+            <img src="img/logo.png" height="150" style="margin-top: -10px"/>
         </div>
 
         <div class="sidebar-menu">
             <ul class="list-unstyled components">
-                <li>
+                <!--<li>
                     <a href="#">
                         <i class="fa fa-tachometer-alt"></i>
                         Tableau de bord
                     </a>
-                </li>
+                </li>-->
+
+
                 <li>
+                    <a href="evaluation-COLLABORATEUR.html">
+                        <i class="fas fa-user"></i>
+                        Mes compétences
+                    </a>
+                </li>
+
+                <li class="active">
                     <a href="Recherche.html">
                         <i class="fas fa-search"></i>
                         Recherche
                     </a>
                 </li>
 
-                <li class="active">
-                    <a href="collaborateur-technique.html">
-                        <i class="fas fa-user"></i>
-                        Collaborateurs
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-user-plus"></i>
-                        Candidatures
-                    </a>
 
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-users"></i>
-                        Effectifs
-                    </a>
-                </li>
                 <li>
                     <a href="#">
                         <i class="fa fa-chart-pie"></i>
@@ -84,133 +81,151 @@
     <div id="content container">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+            <div class="container-fluid" style="margin-top: 10px;padding-left: 0;margin-left: -3px;">
 
                 <button type="button" id="sidebarCollapse" class="btn btn-info">
                     <i class="fas fa-bars"></i>
                 </button>
+
+
+                <div style="float:right;font-size:16px;color:#531055;">
+                    <i class="fa fa-user" style="font-weight:300;margin-right:10px"></i> Marie Evanno
+                </div>
             </div>
+
+
         </nav>
 
         <main class="page-content violet">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="competences_eval">
-                        <header class="header">
-                            <div class="container-fluid">
-                                <nav>
-                                    <h3>Recherche de Collaborateurs</h3>
-                                    <ul>
-                                        <li id="fiche-collapse" class="onglet-profil">PROFIL</li>
-                                        <li><a href="collaborateur-technique.html" class="active onglet">TECHNIQUE</a></li>
-                                        <li><a href="" class="onglet">FONCTIONNELLE</a></li>
-                                        <li><a href="" class="onglet">METIER</a></li>
-                                        <li><a href="" class="onglet">APPLICATIONS</a></li>
-                                        <li><a href="" class="onglet">LANGUES</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </header>
-                        <div class="tags">
-                            <div class="container-fluid">
-                                <nav>
-                                    <ul>
-                                        <li id="tag_java" class="tag_competence">Java <span class="tooltiptext"
-                                                                                            data-toggle="tooltip"> Spring boot, Spring batch, J2EE, Android, JSF, JSP/Struts, Swing </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_web">Web <span class="tooltiptext"
-                                                                                          data-toggle="tooltip"> HTML5, CSS3, WS REST, WS SOAP </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_javascript">Javascript <span
-                                                class="tooltiptext" data-toggle="tooltip"> Javascript, Typescript, AngularJS, Angular2, NodeJS </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_php">PHP <span class="tooltiptext"
-                                                                                          data-toggle="tooltip"> PHP, Symfony </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_dotnet">.Net <span class="tooltiptext"
-                                                                                              data-toggle="tooltip"> C#, .ASP, ASP.Net, APS.Net MCV, WPF, WCF, Silverlight, Web API, Core.Net, Visual Basic, VBScript, VBA Access, Xamarin </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_langages">Langages <span class="tooltiptext"
-                                                                                                    data-toggle="tooltip"> C++, Python, Shell, Powershell, Perl, Groovy, R </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_framework">Framework <span
-                                                class="tooltiptext" data-toggle="tooltip"> Cordova, Electron,<br> Windev, Delphi 10</span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_reporting">BI/Reporting <span
-                                                class="tooltiptext" data-toggle="tooltip"> RPG, Crystalreport, Qlickview, BO,<br> Birt, Pentaho, Jasper,<br> Kibana, Grafana </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_bdd">BDD <span class="tooltiptext"
-                                                                                          data-toggle="tooltip"> PL/SQL, Oracle, DB2, MySQL, SQL Server, PostgreSQL, SQL Lite, MongoDB, CouchBase, JSON, Redis </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_svi">SVI <span class="tooltiptext"
-                                                                                          data-toggle="tooltip"> VoiceXML, Envox </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_bus-messages">Bus Messages <span
-                                                class="tooltiptext" data-toggle="tooltip">RapidMQ, ActivMQ, <br> Kafka, MSQueue</span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_serveur-appli">Serveurs d'appli <span
-                                                class="tooltiptext" data-toggle="tooltip">IIS, Apache Tomcat, Wildfly, Glassfish, Node Webkit, Cassini, Nginx </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_virtualisation">Virtualisation <span
-                                                class="tooltiptext" data-toggle="tooltip"> VMWare, Docker </span></li>
-                                        <li class="tag_competence" id="tag_exploitation">Exploitation <span
-                                                class="tooltiptext" data-toggle="tooltip">OpCon, Centreon/Nagios </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_os">OS <span class="tooltiptext"
-                                                                                        data-toggle="tooltip"> Unix, Linux, Windows, MacOS, iOS </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_produits">Produits <span class="tooltiptext"
-                                                                                                    data-toggle="tooltip"> Talend ETL, Talend ESB, MS SSIS, Elastic Stack, Media Transfer, Liferay6, Liferay 7, SharePoint, Drupal, Joomla!, Alfresco</span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_outils">Outils <span class="tooltiptext"
-                                                                                                data-toggle="tooltip">PowerAMC, Entreprise Architect, Excel, IWS</span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_tests">Tests <span class="tooltiptext"
-                                                                                              data-toggle="tooltip"> Selenium/Sahi, JMeter, SoapUI, Junit, Nunit, Jprofiler </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_kit-adventiel">Kit Adventiel <span
-                                                class="tooltiptext" data-toggle="tooltip"> JS Front, JS Back, Spring, JEE, .Net, Android </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_integration-continue">Integration continue
-                                            <span class="tooltiptext" data-toggle="tooltip"> TFS, PIC Adventiel, Jenkins, Sonar, Nexus, Maven, Puppet, Ansible, Gradle </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_protocoles">Protocoles <span
-                                                class="tooltiptext" data-toggle="tooltip"> Sigfox, Lora </span></li>
-                                        <li class="tag_competence" id="tag_iot">IOT <span class="tooltiptext"
-                                                                                          data-toggle="tooltip"> Rasberry PI, Arduino, Capteurs, Beacon </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_reseau-lan">Réseau LAN/WAN <span
-                                                class="tooltiptext" data-toggle="tooltip"> Switch HP, Switch Cisco, Routage/VLan/VxLan, BGP, Wi-Fi </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_reseau-securite">Réseau Sécurité <span
-                                                class="tooltiptext" data-toggle="tooltip"> Firewall-ASA, Firewall-Fortinet, Firewall-PFSense, HA Proxy, Nginx, WAF(Forninet), Wallix, VPS/OpenVPN </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_reseau-toip">Réseau ToIP <span
-                                                class="tooltiptext" data-toggle="tooltip"> Xivo, Asterisk, Jitsi </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_os-serveur">OS Serveur <span
-                                                class="tooltiptext" data-toggle="tooltip"> Windows Server 2012 R2/2016, W. Server-AD, W.Server-RDP, W.Server IIS, W.Server-HyperV, VMWare Esxi/Vcenter, Linux RedHat, Linux Debian, Unix AIX, AS/400 - OS/400, Linux CentOS 6/7 </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_stockage">Stockage (SAN) <span
-                                                class="tooltiptext"
-                                                data-toggle="tooltip"> Switchs Brocade, Baies EMC </span></li>
-                                        <li class="tag_competence" id="tag_outillage-industrialisation">
-                                            Industrialisation <span class="tooltiptext" data-toggle="tooltip"> Puppet, Foreman, Ansible, Python</span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_messagerie">Messagerie <span
-                                                class="tooltiptext" data-toggle="tooltip"> Exchange 2010/2016, AntiSpam, Office365 </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_securite">Sécurité <span class="tooltiptext"
-                                                                                                    data-toggle="tooltip"> Antivirus-Eset, Cryptographie, ISO27001, ISO27005, RGPD </span>
-                                        </li>
-                                        <li class="tag_competence" id="tag_divers">Divers <span class="tooltiptext"
-                                                                                                data-toggle="tooltip"> Annuaire, Gluster, Kubernetes, SLX, GitLab iTop, IWS, APache, Galera, Jboss, SSO, GLPI/OCS</span>
-                                        </li>
 
-                                    </ul>
-                                </nav>
-                            </div>
+                <div class="row">
+                    <header class="header col-12">
+
+                        <nav id="cssmenu">
+                            <h3 style="padding-left: 40px">Recherche de Collaborateurs</h3>
+
+                        </nav>
+
+                    </header>
+                    <div class="col-12 col-md-6">
+                        <div class="s007">
+                            <form>
+                                <div class="inner-form">
+                                    <div class="basic-search">
+                                        <div class="input-field">
+                                            <div class="icon-wrap">
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                     xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20"
+                                                     viewBox="0 0 20 20">
+                                                    <path d="M18.869 19.162l-5.943-6.484c1.339-1.401 2.075-3.233 2.075-5.178 0-2.003-0.78-3.887-2.197-5.303s-3.3-2.197-5.303-2.197-3.887 0.78-5.303 2.197-2.197 3.3-2.197 5.303 0.78 3.887 2.197 5.303 3.3 2.197 5.303 2.197c1.726 0 3.362-0.579 4.688-1.645l5.943 6.483c0.099 0.108 0.233 0.162 0.369 0.162 0.121 0 0.242-0.043 0.338-0.131 0.204-0.187 0.217-0.503 0.031-0.706zM1 7.5c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5-2.916 6.5-6.5 6.5-6.5-2.916-6.5-6.5z"></path>
+                                                </svg>
+                                            </div>
+                                            <input id="search" type="text" placeholder="Recherche Collaborateur..."/>
+                                            <div class="result-count">
+                                                <span id="nb_results">108 </span>results
+                                            </div>
+                                        </div>
+                                        <div id="tags_search">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="langages" value=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="advance-search">
+                                        <span class="desc">Advanced Search</span>
+                                        <div class="row">
+                                            <div class="input-field">
+                                                <div class="input-select">
+                                                    <select data-trigger="" name="choices-single-defaul">
+                                                        <option placeholder="" value="">ACCESSORIES</option>
+                                                        <option>ACCESSORIES</option>
+                                                        <option>SUBJECT B</option>
+                                                        <option>SUBJECT C</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="input-field">
+                                                <div class="input-select">
+                                                    <select data-trigger="" name="choices-single-defaul">
+                                                        <option placeholder="" value="">COLOR</option>
+                                                        <option>GREEN</option>
+                                                        <option>SUBJECT B</option>
+                                                        <option>SUBJECT C</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="input-field">
+                                                <div class="input-select">
+                                                    <select data-trigger="" name="choices-single-defaul">
+                                                        <option placeholder="" value="">SIZE</option>
+                                                        <option>SIZE</option>
+                                                        <option>SUBJECT B</option>
+                                                        <option>SUBJECT C</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row second">
+                                            <div class="input-field">
+                                                <div class="input-select">
+                                                    <select data-trigger="" name="choices-single-defaul">
+                                                        <option placeholder="" value="">SALE</option>
+                                                        <option>SALE</option>
+                                                        <option>SUBJECT B</option>
+                                                        <option>SUBJECT C</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="input-field">
+                                                <div class="input-select">
+                                                    <select data-trigger="" name="choices-single-defaul">
+                                                        <option placeholder="" value="">TIME</option>
+                                                        <option>THIS WEEK</option>
+                                                        <option>SUBJECT B</option>
+                                                        <option>SUBJECT C</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="input-field">
+                                                <div class="input-select">
+                                                    <select data-trigger="" name="choices-single-defaul">
+                                                        <option placeholder="" value="">TYPE</option>
+                                                        <option>TYPE</option>
+                                                        <option>SUBJECT B</option>
+                                                        <option>SUBJECT C</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row third">
+                                            <div class="input-field">
+                                                <button class="btn-search">Search</button>
+                                                <button class="btn-delete" id="delete">Delete</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <table class="table table-striped table-dark">
+                            <thead class="thead-dark">
+                            <tr>
+                                <th>Nom</th>
+                                <th scope="col">Prenom</th>
+                                <th scope="col">Fonction</th>
+                                <th scope="col"><span>Comp 1</span></th>
+                                <th scope="col"><span>Comp 2</span></th>
+                                <th scope="col"><span>Comp 3</span></th>
+                                <th scope="col"><span>Comp 4</span></th>
+                            </tr>
+                            </thead>
+                        </table>
+                        <!--<div id="tableDiv" class="table">
+
+                        </div>-->
                     </div>
                 </div>
             </div>
@@ -218,17 +233,44 @@
     </div>
 </div>
 
-
-<!-- jQuery CDN - Slim version (=without AJAX) -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
 <!-- Bootstrap JS -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/goldmine.js"></script>
-<!--  ***************************** Rating Stars **************************************-->
+<script src="js/choices.js"></script>
+
+<script>
+    const customSelects = document.querySelectorAll("select");
+    const deleteBtn = document.getElementById('delete')
+    const choices = new Choices('select',
+        {
+            searchEnabled: false,
+            removeItemButton: true,
+            itemSelectText: '',
+        });
+    for (let i = 0; i < customSelects.length; i++) {
+        customSelects[i].addEventListener('addItem', function (event) {
+            if (event.detail.value) {
+                let parent = this.parentNode.parentNode
+                parent.classList.add('valid')
+                parent.classList.remove('invalid')
+            } else {
+                let parent = this.parentNode.parentNode
+                parent.classList.add('invalid')
+                parent.classList.remove('valid')
+            }
+        }, false);
+    }
+    deleteBtn.addEventListener("click", function (e) {
+        e.preventDefault()
+        const deleteAll = document.querySelectorAll('.choices__button')
+        for (let i = 0; i < deleteAll.length; i++) {
+            deleteAll[i].click();
+        }
+    });
+
+</script>
 
 
 </body>
