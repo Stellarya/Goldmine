@@ -721,7 +721,11 @@ input[type=number]:focus {
 /* ---------------------------------------------------
     TABLE STYLE
 ----------------------------------------------------- */
+<<<<<<< HEAD
 .table-dark {
+=======
+.table-striped {
+>>>>>>> 65e8afd562685ef00861ac26c3d1058a453d416f
     margin-top: 20px;
 }
 
@@ -930,27 +934,51 @@ input:placeholder-shown + label {
     }
 
     table tbody tr td:nth-child(1):before {
-        content: "Date";
+        content: "Nom";
     }
 
     table tbody tr td:nth-child(2):before {
-        content: "Order ID";
+        content: "Prenom";
     }
 
     table tbody tr td:nth-child(3):before {
-        content: "Name";
+        content: "Fonction";
     }
 
     table tbody tr td:nth-child(4):before {
-        content: "Price";
+        content: "Compétence 1";
     }
 
     table tbody tr td:nth-child(5):before {
-        content: "Quantity";
+        content: "Compétence 2";
     }
 
     table tbody tr td:nth-child(6):before {
-        content: "Total";
+        content: "Compétence 3";
+    }
+
+    table.table_comp tbody tr td:nth-child(1):before {
+        content: "Compétence";
+    }
+
+    table.table_comp tbody tr td:nth-child(2):before {
+        content: "Note";
+    }
+
+    table.table_comp tbody tr td:nth-child(3):before {
+        content: "Compétence";
+    }
+
+    table.table_comp tbody tr td:nth-child(4):before {
+        content: "Note";
+    }
+
+    table.table_comp tbody tr td:nth-child(5):before {
+        content: "Compétence";
+    }
+
+    table.table_comp tbody tr td:nth-child(6):before {
+        content: "Note";
     }
 
     .column4,
