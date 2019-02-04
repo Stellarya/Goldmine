@@ -1,3 +1,22 @@
+var liste_competences = [
+    "Spring",
+    "J2EE",
+    "HTML/CSS",
+    "PL/SQL",
+    "Shell",
+    "Delphi",
+    "Javascript",
+    "AngularJS",
+    "Liferay",
+    "PHP",
+    "C#"
+];
+
+$('#recherche_autocomplet').autocomplete({
+    source: liste_competences,
+    minLength: 3,
+});
+
 $(document).ready(function () {
     var jsonContent;
 
@@ -7,7 +26,7 @@ $(document).ready(function () {
         genererTabDev(jsonContent["devs"]);
     });
 
-    function genererTabDev (devs) {
+    function genererTabDev(devs) {
 
         var table_comp = $("#table_comps");
 
@@ -31,14 +50,14 @@ $(document).ready(function () {
     $("#button-search").click(function () {
         var parsedAndFilteredJson = [];
 
-        var indexHeader=0;
+        var indexHeader = 0;
         //vider le header pour les compétences
         $(".competence_tag_search").text("");
         //Remplir le header pour les compétences
         $(".qtagselect__choice span").each(function (index_json) {
             indexHeader++;
             //on met à jour le header avec le nom des tags séléctionnés
-            $("#competence_tag_search_col"+indexHeader).text($(this)[0].innerText);
+            $("#competence_tag_search_col" + indexHeader).text($(this)[0].innerText);
         });
 
         //boucle sur les devs du json
