@@ -1,23 +1,5 @@
-var liste_competences = [
-    "Spring",
-    "J2EE",
-    "HTML/CSS",
-    "PL/SQL",
-    "Shell",
-    "Delphi",
-    "Javascript",
-    "AngularJS",
-    "Liferay",
-    "PHP",
-    "C#"
-];
-
-$('#recherche_autocomplet').autocomplete({
-    source: liste_competences,
-    minLength: 3,
-});
-
 $(document).ready(function () {
+
     var jsonContent;
 
     $.getJSON("goldmine.json", function (json) {

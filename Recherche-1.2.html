@@ -22,18 +22,21 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"/>
     <link href="css/search_plugin.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/easy-autocomplete.min.css">
 
     <link rel="stylesheet" href="tags-selector-tagselect/jquery.tagselect.css">
+
+
+    <script src="js/jquery.easy-autocomplete.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
             crossorigin="anonymous"></script>
     <script src="tags-selector-tagselect/jquery.tagselect.js"></script>
-
+    <script src="js/Autocomplete-jquery.js"></script>
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
             integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
             crossorigin="anonymous"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
             integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
             crossorigin="anonymous"></script>
@@ -118,15 +121,13 @@
                     </header>
                     <div class="col-3">
 
-                        <div class="input-group mb-3" style="padding: 3px">
+                        <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">Compétences</span>
                             </div>
-                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" id="recherche_autocomplet">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary btn-search" type="button">Button</button>
-                            </div>
+                            <input type="text" id="autocomplete"/>
                         </div>
+
                         <div id="accordion">
 
                             <div class="card">
