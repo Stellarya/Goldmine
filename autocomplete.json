@@ -9,5 +9,5 @@
   {"competence": "Shell", "categorie": "Langages"},
   {"competence": "PL/SQL", "categorie": "BDD"}, 
   {"competence": "Liferay", "categorie": "Produits"}, 
-  {"competence": "C#", "categorie": ".Net"},  
+  {"competence": "C#", "categorie": ".Net"}
  ]
