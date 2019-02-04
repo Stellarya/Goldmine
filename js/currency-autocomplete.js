@@ -18,7 +18,7 @@ $(function(){
   $('#autocomplete').autocomplete({
     lookup: currencies,
     onSelect: function (suggestion) {
-      var thehtml = '<strong>Competence:</strong> ' + suggestion.value + ' <br> <strong>Categorie:</strong> ' + suggestion.data;
+      var thehtml = '<strong>Competence:</strong> ' + suggestion.value;
       $('#outputcontent').html(thehtml);
     }
   });
