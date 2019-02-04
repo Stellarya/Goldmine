@@ -1,107 +1,366 @@
 {
 	"devs": [
 		{
-			"nom": "Bouvet",
-			"prenom": "Philippe",
-			"bu": "BU 1",
-			"fonction": "CDP Confirmé",
+			"Nom": "Bouvet",
+			"Prenom": "Philippe",
+			"BU":1,
+			"Prestataire":false,
+			"Collaborateur":true,
+			"Fonction": "CDP Confirme",
 			"Comps":[
-
-            {
-
-               "Comp 1": "Web",
-
-               "Comp 2": "PHP",
-
-               "Comp 3": ".Net"
-
-            }]
+				{"nomComp":"HTML/CSS",
+				"noteComp":3},
+				{"nomComp":"PHP",
+				"noteComp":2},
+				{"nomComp":"C#",
+				"noteComp":3},
+				{"nomComp":"Javascript",
+				"noteComp":2},
+				{"nomComp":"AngularJS",
+				"noteComp":2},
+				{"nomComp":"PL/SQL",
+				"noteComp":2},
+				{"nomComp":"Delphi",
+				"noteComp":0},
+				{"nomComp":"Spring",
+				"noteComp":0},
+				{"nomComp":"Liferay",
+				"noteComp":0},
+				{"nomComp":"J2EE",
+				"noteComp":3}
+				{"nomComp":"Shell",
+				"noteComp":2}
+			]
+		},
+		{
+			"Nom": "Aligant",
+			"Prenom": "Line",
+			"BU":1,
+			"Prestataire":false,
+			"Collaborateur":true,
+			"Fonction": "Dev Alternance",
+			"Comps":[
+				{"nomComp":"HTML/CSS",
+				"noteComp":3},
+				{"nomComp":"PHP",
+				"noteComp":2},
+				{"nomComp":"C#",
+				"noteComp":1},
+				{"nomComp":"Javascript",
+				"noteComp":1},
+				{"nomComp":"AngularJS",
+				"noteComp":0},
+				{"nomComp":"PL/SQL",
+				"noteComp":1},
+				{"nomComp":"Delphi",
+				"noteComp":0},
+				{"nomComp":"Spring",
+				"noteComp":0},
+				{"nomComp":"Liferay",
+				"noteComp":0},
+				{"nomComp":"J2EE",
+				"noteComp":2}
+				{"nomComp":"Shell",
+				"noteComp":0}
+			]
 
 		},
 		{
-			"nom": "Aligant",
-			"prenom": "Line",
-			"bu": "BU 1",
-			"fonction": "Dev Alternance",
+			"Nom": "Garnier",
+			"Prenom": "Gwendall",
+			"BU":4,
+			"Prestataire":false,
+			"Collaborateur":true,
+			"Fonction": "Architecte Senior",
 			"Comps":[
-
-            {
-
-               "Comp 1": "Web",
-
-               "Comp 2": "PHP"
-
-            }]
+				
+				{"nomComp":"HTML/CSS",
+				"noteComp":2},
+				{"nomComp":"PHP",
+				"noteComp":1},
+				{"nomComp":"C#",
+				"noteComp":4},
+				{"nomComp":"Javascript",
+				"noteComp":2},
+				{"nomComp":"AngularJS",
+				"noteComp":1},
+				{"nomComp":"PL/SQL",
+				"noteComp":3},
+				{"nomComp":"Delphi",
+				"noteComp":0},
+				{"nomComp":"Spring",
+				"noteComp":1},
+				{"nomComp":"Liferay",
+				"noteComp":0},
+				{"nomComp":"J2EE",
+				"noteComp":1}
+				{"nomComp":"Shell",
+				"noteComp":3}
+			]
 
 		},
 		{
-			"nom": "Garnier",
-			"prenom": "Gwendall",
-			"bu": "BU 4",
-			"fonction": "Architecte Senior",
+			"Nom": "Evanno",
+			"Prenom": "Marie",
+			"BU":2,
+			"Prestataire":false,
+			"Collaborateur":true,
+			"Fonction": "Dev Alternance",
 			"Comps":[
-
-            {
-
-               "Comp 1": "java",
-
-               "Comp 2": "web",
-
-               "Comp 3": "javascript",
-
-               "Comp 4": ".net"
-
-            }]
+				{"nomComp":"HTML/CSS",
+				"noteComp":3},
+				{"nomComp":"PHP",
+				"noteComp":0},
+				{"nomComp":"C#",
+				"noteComp":0},
+				{"nomComp":"Javascript",
+				"noteComp":1},
+				{"nomComp":"AngularJS",
+				"noteComp":0},
+				{"nomComp":"PL/SQL",
+				"noteComp":0},
+				{"nomComp":"Delphi",
+				"noteComp":0},
+				{"nomComp":"Spring",
+				"noteComp":0},
+				{"nomComp":"Liferay",
+				"noteComp":0},
+				{"nomComp":"J2EE",
+				"noteComp":2}
+				{"nomComp":"Shell",
+				"noteComp":0}
+			]
 
 		},
 		{
-			"nom": "Evanno",
-			"prenom": "Marie",
-			"bu": "BU 2",
-			"fonction": "Dév Alternance",
+			"Nom": "Flageul",
+			"Prenom": "Thierry",
+			"BU":1,
+			"Prestataire":false,
+			"Collaborateur":true,
+			"Fonction": "Architecte Confirme",
 			"Comps":[
-
-            {
-
-               "Comp 1": "web"
-
-            }]
+				{"nomComp":"HTML/CSS",
+				"noteComp":2},
+				{"nomComp":"PHP",
+				"noteComp":1},
+				{"nomComp":"C#",
+				"noteComp":2},
+				{"nomComp":"Javascript",
+				"noteComp":2},
+				{"nomComp":"AngularJS",
+				"noteComp":2},
+				{"nomComp":"PL/SQL",
+				"noteComp":4},
+				{"nomComp":"Delphi",
+				"noteComp":1},
+				{"nomComp":"Spring",
+				"noteComp":3},
+				{"nomComp":"Liferay",
+				"noteComp":1},
+				{"nomComp":"J2EE",
+				"noteComp":4}
+				{"nomComp":"Shell",
+				"noteComp":0}
+			]
 
 		},
 		{
-			"nom": "Flageul",
-			"prenom": "Thierry",
-			"bu": "BU 1",
-			"fonction": "Architecte Confirmé",
+			"Nom": "Dariel",
+			"Prenom": "Eric",
+			"BU":2,
+			"Prestataire":false,
+			"Collaborateur":true,
+			"Fonction": "Architecte junior",
 			"Comps":[
-
-            {
-
-               "Comp 1": "java",
-
-               "Comp 2": "web",
-
-               "Comp 3": "javascript"
-
-            }]
+				{"nomComp":"HTML/CSS",
+				"noteComp":4},
+				{"nomComp":"PHP",
+				"noteComp":1},
+				{"nomComp":"C#",
+				"noteComp":0},
+				{"nomComp":"Javascript",
+				"noteComp":4},
+				{"nomComp":"AngularJS",
+				"noteComp":3},
+				{"nomComp":"PL/SQL",
+				"noteComp":2},
+				{"nomComp":"Delphi",
+				"noteComp":0},
+				{"nomComp":"Spring",
+				"noteComp":2},
+				{"nomComp":"Liferay",
+				"noteComp":4},
+				{"nomComp":"J2EE",
+				"noteComp":4}
+				{"nomComp":"Shell",
+				"noteComp":3}
+			]
 
 		},
 		{
-			"nom": "Dariel",
-			"prenom": "Eric",
-			"bu": "BU 2",
-			"fonction": "Architecte junior",
+			"Nom": "Lefebvre",
+			"Prenom": "Damien",
+			"BU":1,
+			"Prestataire":true,
+			"Collaborateur":false,
+			"Fonction": "Dev Senior",
 			"Comps":[
+				{"nomComp":"HTML/CSS",
+				"noteComp":3},
+				{"nomComp":"PHP",
+				"noteComp":2},
+				{"nomComp":"C#",
+				"noteComp":4},
+				{"nomComp":"Javascript",
+				"noteComp":3},
+				{"nomComp":"AngularJS",
+				"noteComp":3},
+				{"nomComp":"PL/SQL",
+				"noteComp":2},
+				{"nomComp":"Delphi",
+				"noteComp":0},
+				{"nomComp":"Spring",
+				"noteComp":2},
+				{"nomComp":"Liferay",
+				"noteComp":1},
+				{"nomComp":"J2EE",
+				"noteComp":4}
+				{"nomComp":"Shell",
+				"noteComp":0}
+			]
 
-            {
+		},
+		{
+			"Nom": "Audeon",
+			"Prenom": "Nicolas",
+			"BU":2,
+			"Prestataire":false,
+			"Collaborateur":true,
+			"Fonction": "Dev Senior",
+			"Comps":[
+				{"nomComp":"HTML/CSS",
+				"noteComp":3},
+				{"nomComp":"PHP",
+				"noteComp":3},
+				{"nomComp":"C#",
+				"noteComp":2},
+				{"nomComp":"Javascript",
+				"noteComp":1},
+				{"nomComp":"AngularJS",
+				"noteComp":2},
+				{"nomComp":"PL/SQL",
+				"noteComp":1},
+				{"nomComp":"Delphi",
+				"noteComp":1},
+				{"nomComp":"Spring",
+				"noteComp":3},
+				{"nomComp":"Liferay",
+				"noteComp":0},
+				{"nomComp":"J2EE",
+				"noteComp":2}
+				{"nomComp":"Shell",
+				"noteComp":2}
+			]
 
-               "Comp 1": "java",
+		},
+		{
+			"Nom": "Vandenlinden",
+			"Prenom": "Julien",
+			"BU":4,
+			"Prestataire":false,
+			"Collaborateur":true,
+			"Fonction": "Dev Confirme",
+			"Comps":[
+				{"nomComp":"HTML/CSS",
+				"noteComp":3},
+				{"nomComp":"PHP",
+				"noteComp":2},
+				{"nomComp":"C#",
+				"noteComp":4},
+				{"nomComp":"Javascript",
+				"noteComp":3},
+				{"nomComp":"AngularJS",
+				"noteComp":2},
+				{"nomComp":"PL/SQL",
+				"noteComp":3},
+				{"nomComp":"Delphi",
+				"noteComp":0},
+				{"nomComp":"Spring",
+				"noteComp":1},
+				{"nomComp":"Liferay",
+				"noteComp":0},
+				{"nomComp":"J2EE",
+				"noteComp":2}
+				{"nomComp":"Shell",
+				"noteComp":3}
+			]
 
-               "Comp 2": "web",
+		},
+		{
+			"Nom": "German",
+			"Prenom": "Christian",
+			"BU":2,
+			"Prestataire":false,
+			"Collaborateur":true,
+			"Fonction": "Architecte Confirme",
+			"Comps":[
+				{"nomComp":"HTML/CSS",
+				"noteComp":3},
+				{"nomComp":"PHP",
+				"noteComp":3},
+				{"nomComp":"C#",
+				"noteComp":3},
+				{"nomComp":"Javascript",
+				"noteComp":3},
+				{"nomComp":"AngularJS",
+				"noteComp":3},
+				{"nomComp":"PL/SQL",
+				"noteComp":3},
+				{"nomComp":"Delphi",
+				"noteComp":0},
+				{"nomComp":"Spring",
+				"noteComp":4},
+				{"nomComp":"Liferay",
+				"noteComp":2},
+				{"nomComp":"J2EE",
+				"noteComp":3}
+				{"nomComp":"Shell",
+				"noteComp":3}
+			]
 
-               "Comp 3": "javascript"
-
-            }]
+		},
+		{
+			"Nom": "Reynaud",
+			"Prenom": "Antony",
+			"BU":1,
+			"Prestataire":false,
+			"Collaborateur":true,
+			"Fonction": "Dev Junior",
+			"Comps":[
+				{"nomComp":"HTML/CSS",
+				"noteComp":3},
+				{"nomComp":"PHP",
+				"noteComp":3},
+				{"nomComp":"C#",
+				"noteComp":3},
+				{"nomComp":"Javascript",
+				"noteComp":3},
+				{"nomComp":"AngularJS",
+				"noteComp":3},
+				{"nomComp":"PL/SQL",
+				"noteComp":3},
+				{"nomComp":"Delphi",
+				"noteComp":0},
+				{"nomComp":"Spring",
+				"noteComp":3},
+				{"nomComp":"Liferay",
+				"noteComp":0},
+				{"nomComp":"J2EE",
+				"noteComp":1}
+				{"nomComp":"Shell",
+				"noteComp":2}
+			]
 
 		}
 	]
