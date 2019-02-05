@@ -229,6 +229,33 @@ ul.CTAs a {
 
 }
 /* ---------------------------------------------------
+    Tags Search Page
+----------------------------------------------------- */
+#tag_csharp, #tag_angularjs, #tag_delphi, #tag_html-css, #tag_shell, #tag_plsql, #tag_js, #tag_j2ee, #tag_php-comp, #tag_liferay {
+    display: none;
+}
+
+.tag_competence_search {
+    color: #555455;
+    background-color: white;
+    text-align: center;
+    margin: 2px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 30px;
+    padding: 0px 10px 0px 18px;
+    position: relative;
+    text-transform: uppercase;
+    -webkit-transition: all .3s ease-in-out;
+    font-family: "Roboto";
+    border: 1px solid #CCC;
+}
+
+
+
+/* ---------------------------------------------------
     ACCORDION
 ----------------------------------------------------- */
 .card .btn-link {

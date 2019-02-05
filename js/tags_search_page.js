@@ -28,7 +28,7 @@ $(document).ready(function () {
     });
 
     $("#minus_comp-php").click(function () {
-        $("#tag_php").hide();
+        $("#tag_php-comp").hide();
     });
 
     $("#minus_comp-js").click(function () {
