@@ -240,6 +240,10 @@ ul.CTAs a {
 .form-check .form-check-input {
     margin-top: 0.25rem;
 }
+
+.card-header {
+    padding: 0px;
+}
 /* ---------------------------------------------------
     RATING STARS
 ----------------------------------------------------- */
@@ -578,8 +582,13 @@ li > a.tag_competence {
     -webkit-transition: all 1s ease;
 }
 
-.fa-minus-circle {
+tr th span .fa-minus-circle {
     margin-left: 10%;
+}
+
+ul li span .fa-minus-circle {
+    color: rgb(76, 10, 58);
+    font-size: 15px;
 }
 
 .popup {

@@ -17,7 +17,10 @@ $(function(){
   // setup autocomplete function pulling from currencies[] array
   $('#autocomplete').autocomplete({
     lookup: currencies,
-
+    onSelect: function (suggestion) {
+      var thehtml = '<strong>Competence:</strong> ' + suggestion.value;
+      $('#outputcontent').html(thehtml);
+    }
   });
   
 
