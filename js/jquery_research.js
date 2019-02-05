@@ -20,6 +20,7 @@ $(document).ready(function () {
             tr = $('<tr/>');
             tr.append("<td>" + devs[i]["Nom"] + "</td>");
             tr.append("<td>" + devs[i]["Prenom"] + "</td>");
+            tr.append("<td>" + devs[i]["BU"] + "</td>");
             tr.append("<td>" + devs[i]["Fonction"] + "</td>");
 
             for (var j = 0; j < devs[i]['Comps'].length; j++) {

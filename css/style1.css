@@ -721,11 +721,10 @@ input[type=number]:focus {
 /* ---------------------------------------------------
     TABLE STYLE
 ----------------------------------------------------- */
-<<<<<<< HEAD
-.table-dark {
-=======
+HEAD .table-dark {
+}
 .table-striped {
->>>>>>> 65e8afd562685ef00861ac26c3d1058a453d416f
+
     margin-top: 20px;
 }
 
