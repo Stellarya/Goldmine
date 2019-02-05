@@ -18,12 +18,11 @@
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/util.css">
 
-    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css"
+          href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/smoothness/jquery-ui.css"/>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"/>
     <link href="css/search_plugin.css" rel="stylesheet"/>
-
-    <link rel="stylesheet" href="tags-selector-tagselect/jquery.tagselect.css">
 
 
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
@@ -119,24 +118,28 @@
                     <div class="col-3">
 
                         <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">Compétences</span>
+                            <input type="text" class="form-control" id="autocomplete" aria-label="Recipient's username"
+                                   aria-describedby="basic-addon2"
+                                   style="padding-left: 5px; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2">Compétences</span>
                             </div>
-                            <input type="text" name="currency" class="biginput" id="autocomplete" style="padding-left: 5px">
-
                         </div>
 
                         <div id="accordion">
 
-                            <div class="card">
+                            <div class="card bg-light mb-3">
                                 <div class="card-header" id="heading-java">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-java" aria-expanded="true" aria-controls="collapse-java">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-java" aria-expanded="true"
+                                                aria-controls="collapse-java">
                                             Java
                                         </button>
                                     </h5>
                                 </div>
-                                <div id="collapse-java" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div id="collapse-java" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
                                     <div class="card-body">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" id="spring-check">
@@ -153,15 +156,18 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card bg-light mb-3">
                                 <div class="card-header" id="heading-Web">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-web" aria-expanded="false" aria-controls="collapse-web">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-web" aria-expanded="false"
+                                                aria-controls="collapse-web">
                                             Web
                                         </button>
                                     </h5>
                                 </div>
-                                <div id="collapse-web" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div id="collapse-web" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
                                     <div class="card-body">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" id="html-check">
@@ -173,15 +179,18 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card bg-light mb-3">
                                 <div class="card-header" id="heading-php">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-php" aria-expanded="false" aria-controls="collapse-php">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-php" aria-expanded="false"
+                                                aria-controls="collapse-php">
                                             PHP
                                         </button>
                                     </h5>
                                 </div>
-                                <div id="collapse-php" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div id="collapse-php" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
                                     <div class="card-body">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" id="php-check">
@@ -193,24 +202,29 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card bg-light mb-3">
                                 <div class="card-header" id="heading-javascript">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-javascript" aria-expanded="false" aria-controls="collapse-javascript">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-javascript" aria-expanded="false"
+                                                aria-controls="collapse-javascript">
                                             Javascript
                                         </button>
                                     </h5>
                                 </div>
-                                <div id="collapse-javascript" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div id="collapse-javascript" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
                                     <div class="card-body">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="javascript-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                   id="javascript-check">
                                             <label class="form-check-label" for="javascript-check">
                                                 Javascript
                                             </label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="angularjs-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                   id="angularjs-check">
                                             <label class="form-check-label" for="angularjs-check">
                                                 AngularJS
                                             </label>
@@ -219,15 +233,18 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card bg-light mb-3">
                                 <div class="card-header" id="heading-bdd">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-bdd" aria-expanded="false" aria-controls="collapse-bdd">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-bdd" aria-expanded="false"
+                                                aria-controls="collapse-bdd">
                                             BDD
                                         </button>
                                     </h5>
                                 </div>
-                                <div id="collapse-bdd" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div id="collapse-bdd" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
                                     <div class="card-body">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" id="plsql-check">
@@ -239,15 +256,18 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card bg-light mb-3">
                                 <div class="card-header" id="heading-framework">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-framework" aria-expanded="false" aria-controls="collapse-framework">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-framework" aria-expanded="false"
+                                                aria-controls="collapse-framework">
                                             Framework
                                         </button>
                                     </h5>
                                 </div>
-                                <div id="collapse-framework" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div id="collapse-framework" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
                                     <div class="card-body">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" id="delphi-check">
@@ -259,15 +279,18 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card bg-light mb-3">
                                 <div class="card-header" id="heading-langages">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-langages" aria-expanded="false" aria-controls="collapse-langages">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-langages" aria-expanded="false"
+                                                aria-controls="collapse-langages">
                                             Langages
                                         </button>
                                     </h5>
                                 </div>
-                                <div id="collapse-langages" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div id="collapse-langages" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
                                     <div class="card-body">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" id="shell-check">
@@ -279,15 +302,18 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card bg-light mb-3">
                                 <div class="card-header" id="heading-produits">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-produits" aria-expanded="false" aria-controls="collapse-produits">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-produits" aria-expanded="false"
+                                                aria-controls="collapse-produits">
                                             Produits
                                         </button>
                                     </h5>
                                 </div>
-                                <div id="collapse-produits" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div id="collapse-produits" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
                                     <div class="card-body">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" id="liferay-check">
@@ -299,15 +325,18 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card bg-light mb-3" style="color: rgb(76,10,58)">
                                 <div class="card-header" id="heading-dotnet">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-dotnet" aria-expanded="false" aria-controls="collapse-dotnet">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-dotnet" aria-expanded="false"
+                                                aria-controls="collapse-dotnet">
                                             .Net
                                         </button>
                                     </h5>
                                 </div>
-                                <div id="collapse-dotnet" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div id="collapse-dotnet" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
                                     <div class="card-body">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" id="csharp-check">
@@ -324,60 +353,171 @@
 
                     </div>
                     <div class="col-9" id="resultat-recherche">
-                        <div id="outputbox">
-                            <p id="outputcontent" style="color: black">Choose a currency and the results will display here.</p>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="tags">
+                                    <div class="container-fluid">
+                                        <nav>
+                                            <ul>
+                                                <li id="tag_spring" class="tag_competence">Spring <span id="minus_comp-spring"><i
+                                                        class="fas fa-plus-circle"></i></span>
+                                                </li>
+                                                <li id="tag_j2ee" class="tag_competence">J2EE <span id="minus_comp-j2ee"><i
+                                                        class="fas fa-plus-circle"></i></span>
+                                                </li>
+                                                <li id="tag_html-css" class="tag_competence">HTML/CSS <span id="minus_comp-html"><i
+                                                        class="fas fa-plus-circle"></i></span>
+                                                </li>
+                                                <li id="tag_liferay" class="tag_competence">Liferay <span id="minus_comp-liferay"><i
+                                                        class="fas fa-plus-circle"></i></span>
+                                                </li>
+                                                <li id="tag_shell" class="tag_competence">Shell <span id="minus_comp-shell"><i
+                                                        class="fas fa-plus-circle"></i></span>
+                                                </li>
+                                                <li id="tag_php" class="tag_competence">PHP <span id="minus_comp-php"><i
+                                                        class="fas fa-plus-circle"></i></span>
+                                                </li>
+                                                <li id="tag_js" class="tag_competence">Javascript <span id="minus_comp-js"><i
+                                                        class="fas fa-plus-circle"></i></span>
+                                                </li>
+                                                <li id="tag_angularjs" class="tag_competence">AngularJS <span id="minus_comp-angularjs"><i
+                                                        class="fas fa-plus-circle"></i></span>
+                                                </li>
+                                                <li id="tag_delphi" class="tag_competence">Delphi <span id="minus_delphi"><i
+                                                        class="fas fa-plus-circle"></i></span>
+                                                </li>
+                                                <li id="tag_c#" class="tag_competence">C# <span id="minus_comp-c#"><i
+                                                        class="fas fa-plus-circle"></i></span>
+                                                </li>
+                                                <li id="tag_plsql" class="tag_competence">PL/SQL <span id="minus_comp-plsql"><i
+                                                        class="fas fa-plus-circle"></i></span>
+                                                </li>
+
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="limiter">
-                            <div class="wrap-table100">
-                                <div class="table100">
-                                    <table class="table" id="table_comps">
-                                        <thead style="border: none">
-                                        <tr>
-                                            <th class="table100-head1" scope="col">Nom</th>
-                                            <th class="table100-head1" scope="col">Prenom</th>
-                                            <th class="table100-head1" scope="col">BU</th>
-                                            <th class="table100-head1" scope="col">Fonction</th>
+                        <div class="col-12">
+                            <div class="limiter">
+                                <div class="wrap-table100">
+                                    <div class="table100">
+                                        <table class="table" id="table_comps">
+                                            <thead style="border: none">
+                                            <tr>
+                                                <th class="table100-head1" scope="col">Nom</th>
+                                                <th class="table100-head1" scope="col">Prenom</th>
+                                                <th class="table100-head1" scope="col">BU</th>
+                                                <th class="table100-head1" scope="col">Fonction</th>
 
-                                            <th class="table100-head1" scope="col"><span id="competence_tag_search_col1"
-                                                                                         class="competence_tag_search">Competences</span>
-                                            </th>
-                                            <th class="table100-head1" scope="col"><span id="competence_tag_search_col2"
-                                                                                         class="competence_tag_search">Competences</span>
-                                            </th>
-                                            <th class="table100-head1" scope="col"><span id="competence_tag_search_col3"
-                                                                                         class="competence_tag_search">Competences</span>
-                                            </th>
-                                            <th class="table100-head1" scope="col"><span id="competence_tag_search_col4"
-                                                                                         class="competence_tag_search">Competences</span>
-                                            </th>
-                                            <th class="table100-head1" scope="col"><span id="competence_tag_search_col5"
-                                                                                         class="competence_tag_search">Competences</span>
-                                            </th>
+                                                <th class="table100-head1" scope="col"><span
+                                                        id="competence_tag_search_col1"
+                                                        class="competence_tag_search">Competences</span>
+                                                </th>
+                                                <th class="table100-head1" scope="col"><span
+                                                        id="competence_tag_search_col2"
+                                                        class="competence_tag_search">Competences</span>
+                                                </th>
+                                                <th class="table100-head1" scope="col"><span
+                                                        id="competence_tag_search_col3"
+                                                        class="competence_tag_search">Competences</span>
+                                                </th>
+                                                <th class="table100-head1" scope="col"><span
+                                                        id="competence_tag_search_col4"
+                                                        class="competence_tag_search">Competences</span>
+                                                </th>
+                                                <th class="table100-head1" scope="col"><span
+                                                        id="competence_tag_search_col5"
+                                                        class="competence_tag_search">Competences</span>
+                                                </th>
 
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td>NomTest</td>
-                                            <td>PrenomTest</td>
-                                            <td>BU</td>
-                                            <td>FonctionTest</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>NomTest</td>
+                                                <td>PrenomTest</td>
+                                                <td>BU</td>
+                                                <td>FonctionTest</td>
+                                                <td>
+                                                    <div class="rating">
+                                                    <span class="rating-star" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="rating">
+                                                    <span class="rating-star" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="rating">
+                                                    <span class="rating-star" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="rating">
+                                                    <span class="rating-star" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="rating">
+                                                    <span class="rating-star" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
     </div>
+    </main>
+</div>
 </div>
 
 <!-- Bootstrap JS -->
