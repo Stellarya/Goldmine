@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    $("#minus_comp-test").click(function () {
+        $("#tag_test").hide();
+    });
+
     $("#minus_comp-spring").click(function () {
         $("#tag_spring").hide();
     });

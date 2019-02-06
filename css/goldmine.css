@@ -231,7 +231,11 @@ ul.CTAs a {
 /* ---------------------------------------------------
     Tags Search Page
 ----------------------------------------------------- */
-#tag_csharp, #tag_angularjs, #tag_delphi, #tag_html-css, #tag_shell, #tag_plsql, #tag_js, #tag_j2ee, #tag_php-comp, #tag_liferay {
+#tag_spring, #tag_csharp, #tag_angularjs, #tag_delphi, #tag_html-css, #tag_shell, #tag_plsql, #tag_js, #tag_j2ee, #tag_php-comp, #tag_liferay {
+    display: none;
+}
+
+#tag_test {
     display: none;
 }
 
@@ -285,7 +289,9 @@ ul.CTAs a {
     font-size: 17px;
     color: grey;
 }
-
+#tag_test .rating .rating-star {
+    float: right;
+}
 .rating-star {
     padding: 0 2px;
     margin: 0;

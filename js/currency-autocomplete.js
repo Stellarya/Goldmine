@@ -1,6 +1,6 @@
 $(function(){
   var currencies = [
-    { value: 'Spring (Java)', data: 'Java' },
+    { value: 'Spring', data: 'Java' },
     { value: 'J2EE (Java)', data: 'Java' },
     { value: 'Delphi (Framework)', data: 'Framework' },
     { value: 'HTML/CSS (Web)', data: 'Web' },
@@ -19,7 +19,8 @@ $(function(){
     lookup: currencies,
     onSelect: function (suggestion) {
       var thehtml = suggestion.value;
-      $('.outputcontent').html(thehtml);
+      $('#tag_test').show();
+      $('#outputcontent').html(thehtml);
     }
   });
   
