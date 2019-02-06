@@ -19,10 +19,16 @@ $(function(){
     lookup: currencies,
     onSelect: function (suggestion) {
       var thehtml = suggestion.value;
-      $('#tag_test').show();
-      $('#outputcontent').html(thehtml);
+      var indexTag = 0;
+      $('#tag_test1').show();
+      $('#outputcontent1').html(thehtml);
+      //Remplir les tags par les compétences choisies
+      /*$("#autocomplete").each(function (index_tag) {
+        indexTag++;
+        //on met à jour le header avec le nom des tags séléctionnés
+        $('#tag_test'+index_tag).show();
+        $("#outputcontent" + indexTag).html(thehtml);
+      });*/
     }
   });
-  
-
 });

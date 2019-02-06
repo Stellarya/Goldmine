@@ -54,6 +54,7 @@ $(document).ready(function () {
                 //boucle sur les tags selectionnés
                 $(".qtagselect__choice span").each(function (index_json) {
                     //TODO console.log pour voir obj_comp qd json aura changé
+                    console.log(obj_comp);
                     //obj_comp.nomComp.toUpperCase
                     //comparaison entre le json et le tag
 
