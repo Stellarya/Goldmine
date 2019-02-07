@@ -6,6 +6,8 @@ $(document).ready(function () {
         jsonContent = json;
         console.log(json);
         genererTabDev(jsonContent["devs"]);
+    }).fail(function() {
+        console.log( "erreur json" );
     });
 
     function genererTabDev(devs) {
@@ -24,7 +26,7 @@ $(document).ready(function () {
             tr.append("<td>" + devs[i]["Fonction"] + "</td>");
 
             for (var j = 0; j < devs[i]['Comps'].length; j++) {
-                tr.append("<td>" + devs[i]['Comps'][j] + "</td>");
+                tr.append("<td>" + devs[i]['Comps'][j]['nomComp'] + "</td>");
             }
             table_comp.append(tr)
         }

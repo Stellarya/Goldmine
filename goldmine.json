@@ -27,7 +27,7 @@
 				{"nomComp":"Liferay",
 				"noteComp":0},
 				{"nomComp":"J2EE",
-				"noteComp":3}
+				"noteComp":3},
 				{"nomComp":"Shell",
 				"noteComp":2}
 			]
@@ -59,7 +59,7 @@
 				{"nomComp":"Liferay",
 				"noteComp":0},
 				{"nomComp":"J2EE",
-				"noteComp":2}
+				"noteComp":2},
 				{"nomComp":"Shell",
 				"noteComp":0}
 			]
@@ -93,7 +93,7 @@
 				{"nomComp":"Liferay",
 				"noteComp":0},
 				{"nomComp":"J2EE",
-				"noteComp":1}
+				"noteComp":1},
 				{"nomComp":"Shell",
 				"noteComp":3}
 			]
@@ -126,7 +126,7 @@
 				{"nomComp":"Liferay",
 				"noteComp":0},
 				{"nomComp":"J2EE",
-				"noteComp":2}
+				"noteComp":2},
 				{"nomComp":"Shell",
 				"noteComp":0}
 			]
@@ -159,7 +159,7 @@
 				{"nomComp":"Liferay",
 				"noteComp":1},
 				{"nomComp":"J2EE",
-				"noteComp":4}
+				"noteComp":4},
 				{"nomComp":"Shell",
 				"noteComp":0}
 			]
@@ -192,7 +192,7 @@
 				{"nomComp":"Liferay",
 				"noteComp":4},
 				{"nomComp":"J2EE",
-				"noteComp":4}
+				"noteComp":4},
 				{"nomComp":"Shell",
 				"noteComp":3}
 			]
@@ -225,7 +225,7 @@
 				{"nomComp":"Liferay",
 				"noteComp":1},
 				{"nomComp":"J2EE",
-				"noteComp":4}
+				"noteComp":4},
 				{"nomComp":"Shell",
 				"noteComp":0}
 			]
@@ -258,7 +258,7 @@
 				{"nomComp":"Liferay",
 				"noteComp":0},
 				{"nomComp":"J2EE",
-				"noteComp":2}
+				"noteComp":2},
 				{"nomComp":"Shell",
 				"noteComp":2}
 			]
@@ -291,7 +291,7 @@
 				{"nomComp":"Liferay",
 				"noteComp":0},
 				{"nomComp":"J2EE",
-				"noteComp":2}
+				"noteComp":2},
 				{"nomComp":"Shell",
 				"noteComp":3}
 			]
@@ -324,7 +324,7 @@
 				{"nomComp":"Liferay",
 				"noteComp":2},
 				{"nomComp":"J2EE",
-				"noteComp":3}
+				"noteComp":3},
 				{"nomComp":"Shell",
 				"noteComp":3}
 			]
@@ -357,7 +357,7 @@
 				{"nomComp":"Liferay",
 				"noteComp":0},
 				{"nomComp":"J2EE",
-				"noteComp":1}
+				"noteComp":1},
 				{"nomComp":"Shell",
 				"noteComp":2}
 			]

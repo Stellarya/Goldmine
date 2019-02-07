@@ -231,9 +231,7 @@ ul.CTAs a {
 /* ---------------------------------------------------
     Tags Search Page
 ----------------------------------------------------- */
-#tag_test1, #tag_test2, #tag_test3, #tag_test4, #tag_test5{
-    display: none;
-}
+
 
 .tag_competence_search {
     color: #555455;
@@ -251,6 +249,7 @@ ul.CTAs a {
     -webkit-transition: all .3s ease-in-out;
     font-family: "Roboto";
     border: 1px solid #CCC;
+    display: none;
 }
 
 
