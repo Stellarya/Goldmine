@@ -14,8 +14,18 @@ $(function () {
 
     ];
 
+    /*function trouverTag(){
+        for (var i = 0; i < currencies.length; i++) {
+            var auto = currencies[i].value + "-" + currencies[i].desc;
+            return auto;
+        }
+    }*/
+
+
+
     // setup autocomplete function pulling from currencies[] array
     $('#autocomplete').autocomplete({
+
         lookup: currencies,
         onSelect: function (suggestion) {
             var thehtml = suggestion.value;
