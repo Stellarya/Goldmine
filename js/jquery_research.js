@@ -2,13 +2,13 @@ $(document).ready(function () {
 
     var jsonContent;
 
-    $.getJSON("goldmine.json", function (json) {
+    /*$.getJSON("goldmine.json", function (json) {
         jsonContent = json;
         console.log(json);
         genererTabDev(jsonContent["devs"]);
     }).fail(function() {
         console.log( "erreur json" );
-    });
+    });*/
 
     function genererTabDev(devs) {
 

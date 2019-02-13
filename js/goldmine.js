@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    function disable() {
+        document.getElementById("collabCheck").disabled = true;
+    }
+
     $('#sidebarCollapse').on('click', function () {
         $('#sidebar').toggleClass('active');
     });
