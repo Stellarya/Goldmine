@@ -268,7 +268,6 @@ ul.CTAs a {
 
 }
 
-
 #checkboxes, #checkboxesService {
     display: none;
     position: absolute;
@@ -279,13 +278,21 @@ ul.CTAs a {
 
 #checkboxes label, #checkboxesService label{
     display: block;
-    font-size:15px;
+    font-size:12px;
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    color: black;
     text-align: left;
 }
 
 /* ---------------------------------------------------
     ACCORDION
 ----------------------------------------------------- */
+#autocomplete {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
 .card .btn-link {
     color: rgb(76,10,58);
     text-decoration: none;
