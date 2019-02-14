@@ -29,7 +29,6 @@
     <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
     <script type="text/javascript" src="js/currency-autocomplete.js"></script>
     <script src="tags-selector-tagselect/jquery.tagselect.js"></script>
-    <script src="js/tags_search_page.js"></script>
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
             integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
@@ -463,13 +462,13 @@
                                                     </div>
                                                 </th>
 
-                                                <th class="table100-head1" scope="col" width="11%"
-                                                    style="text-align: center">Spring <span id="minus_spring"
+                                                <th class="table100-head1 spring" scope="col" width="11%"
+                                                    style="text-align: center">Spring <span id="minus_spring-header"
                                                                                             class="block_col_2"> <i
                                                         class="fas fa-minus-circle"></i></span>
                                                 </th>
-                                                <th class="table100-head1" scope="col" width="11%"
-                                                    style="text-align: center">HTML/CSS <span id="minus_htmlcss"
+                                                <th class="table100-head1 htmlcss" scope="col" width="11%"
+                                                    style="text-align: center">HTML/CSS <span id="minus_htmlcss-header"
                                                                                               class="block_col_2"> <i
                                                         class="fas fa-minus-circle"></i></span>
                                                 </th>
@@ -478,15 +477,17 @@
                                                                                                class="block_col_2"> <i
                                                         class="fas fa-minus-circle"></i></span>
                                                 </th>
-                                                <th class="table100-head1 colEmplty" scope="col" width="11%"
-                                                    style="text-align: center">-</span>
-                                                </th>
+
+                                                <th class="table100-head1 colSpring" style="display: none" scope="col" width="11%"
+                                                    style="text-align: center">-</th>
+                                                <th class="table100-head1 colHtml" style="display: none" scope="col" width="11%"
+                                                    style="text-align: center">-</th>
+                                                <th class="table100-head1 colAngular" scope="col" width="11%"
+                                                    style="text-align: center">-</th>
                                                 <th class="table100-head1" scope="col" width="11%"
-                                                    style="text-align: center">-</span>
-                                                </th>
+                                                    style="text-align: center">-</th>
                                                 <th class="table100-head1" scope="col" width="11%"
-                                                    style="text-align: center">-</span>
-                                                </th>
+                                                    style="text-align: center">-</th>
 
                                             </tr>
                                             <tr>
@@ -499,7 +500,7 @@
 
                                                     </div>
                                                 </th>
-                                                <th style="text-align: center">
+                                                <th class=" spring" style="text-align: center">
                                                     <div class="rating">
                                                         <span class="rating-star darker" title="expert"
                                                               data-value="4"></span>
@@ -512,7 +513,7 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </th>
-                                                <th style="text-align: center">
+                                                <th class="htmlcss" style="text-align: center">
                                                     <div class="rating">
                                                     <span class="rating-star darker" title="expert"
                                                           data-value="4"></span>
@@ -538,9 +539,11 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </th>
-                                                <th class="colEmplty" style="text-align: center">-</th>
-                                                <th style="text-align: center">-</th>
-                                                <th style="text-align: center">-</th>
+                                                <th class="colSpring table100-head1" style="text-align: center; display: none" scope="col" width="11%">-</th>
+                                                <th class="colHtml table100-head1" style="text-align: center; display: none" scope="col" width="11%">-</th>
+                                                <th class="colAngular table100-head1" style="text-align: center">-</th>
+                                                <th class="table100-head1" style="text-align: center">-</th>
+                                                <th class="table100-head1" style="text-align: center">-</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -550,7 +553,7 @@
                                                 <td style="text-align: center">2</td>
                                                 <td>Architecte</td>
                                                 <td>Collaborateur</td>
-                                                <td style="text-align: center">
+                                                <td class="spring" style="text-align: center">
                                                     <div class="rating-style">
                                                     <span class="rating-star rating-fixed checked" title="expert"
                                                           data-value="4"></span>
@@ -563,7 +566,7 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td style="text-align: center">
+                                                <td class="htmlcss" style="text-align: center">
                                                     <div class="rating">
                                                     <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
@@ -589,7 +592,9 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td class="colEmplty" style="text-align: center">-</td>
+                                                <td class="colSpring" style="text-align: center; display: none">-</td>
+                                                <td class="colHtml" style="text-align: center; display: none">-</td>
+                                                <td class="colAngular" style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
@@ -599,7 +604,7 @@
                                                 <td style="text-align: center">2</td>
                                                 <td>Architecte</td>
                                                 <td>Collaborateur</td>
-                                                <td style="text-align: center">
+                                                <td class="spring" style="text-align: center">
                                                     <div class="rating">
                                                     <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
@@ -612,7 +617,7 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td style="text-align: center">
+                                                <td class="htmlcss" style="text-align: center">
                                                     <div class="rating">
                                                     <span class="rating-star rating-fixed checked" title="expert"
                                                           data-value="4"></span>
@@ -638,7 +643,9 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td class="colEmplty" style="text-align: center">-</td>
+                                                <td class="colSpring" style="text-align: center; display: none">-</td>
+                                                <td class="colHtml" style="text-align: center; display: none">-</td>
+                                                <td class="colAngular" style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
@@ -648,7 +655,7 @@
                                                 <td style="text-align: center">1</td>
                                                 <td>Developpeur</td>
                                                 <td>Collaborateur</td>
-                                                <td style="text-align: center">
+                                                <td class="spring" style="text-align: center">
                                                     <div class="rating">
                                                     <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
@@ -661,7 +668,7 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td style="text-align: center">
+                                                <td class="htmlcss" style="text-align: center">
                                                     <div class="rating">
                                                     <span class="rating-star rating-fixedr" title="expert"
                                                           data-value="4"></span>
@@ -687,7 +694,9 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td class="colEmplty" style="text-align: center">-</td>
+                                                <td class="colSpring" style="text-align: center; display: none">-</td>
+                                                <td class="colHtml" style="text-align: center; display: none">-</td>
+                                                <td class="colAngular" style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
@@ -697,7 +706,7 @@
                                                 <td style="text-align: center">2</td>
                                                 <td>Développeur</td>
                                                 <td>Collaborateur</td>
-                                                <td style="text-align: center">
+                                                <td class="spring" style="text-align: center">
                                                     <div class="rating">
                                                     <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
@@ -710,7 +719,7 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td style="text-align: center">
+                                                <td class="htmlcss" style="text-align: center">
                                                     <div class="rating">
                                                     <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
@@ -736,7 +745,9 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td class="colEmplty" style="text-align: center">-</td>
+                                                <td class="colSpring" style="text-align: center; display: none">-</td>
+                                                <td class="colHtml" style="text-align: center; display: none">-</td>
+                                                <td class="colAngular" style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
@@ -746,7 +757,7 @@
                                                 <td style="text-align: center">1</td>
                                                 <td>Développeur</td>
                                                 <td>Prestataire</td>
-                                                <td style="text-align: center">
+                                                <td class="spring" style="text-align: center">
                                                     <div class="rating">
                                                     <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
@@ -759,7 +770,7 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td style="text-align: center">
+                                                <td class="htmlcss" style="text-align: center">
                                                     <div class="rating">
                                                     <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
@@ -785,7 +796,9 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td class="colEmplty" style="text-align: center">-</td>
+                                                <td class="colSpring" style="text-align: center; display: none">-</td>
+                                                <td class="colHtml" style="text-align: center; display: none">-</td>
+                                                <td class="colAngular" style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
@@ -795,7 +808,7 @@
                                                 <td style="text-align: center">2</td>
                                                 <td>Architecte</td>
                                                 <td>Collaborateur</td>
-                                                <td style="text-align: center">
+                                                <td class="spring" style="text-align: center">
                                                     <div class="rating">
                                                     <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
@@ -808,7 +821,7 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td style="text-align: center">
+                                                <td class="htmlcss" style="text-align: center">
                                                     <div class="rating">
                                                     <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
@@ -834,7 +847,9 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td class="colEmplty" style="text-align: center">-</td>
+                                                <td class="colSpring" style="text-align: center; display: none">-</td>
+                                                <td class="colHtml" style="text-align: center; display: none">-</td>
+                                                <td class="colAngular" style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
@@ -844,7 +859,7 @@
                                                 <td style="text-align: center">1</td>
                                                 <td>Développeur</td>
                                                 <td>Collaborateur</td>
-                                                <td style="text-align: center">
+                                                <td class="spring" style="text-align: center">
                                                     <div class="rating">
                                                     <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
@@ -857,7 +872,7 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td style="text-align: center">
+                                                <td class="htmlcss" style="text-align: center">
                                                     <div class="rating">
                                                     <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
@@ -883,7 +898,9 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td class="colEmplty" style="text-align: center">-</td>
+                                                <td class="colSpring" style="text-align: center; display: none">-</td>
+                                                <td class="colHtml" style="text-align: center; display: none">-</td>
+                                                <td class="colAngular" style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
@@ -893,7 +910,7 @@
                                                 <td style="text-align: center">1</td>
                                                 <td>Chef de Projet</td>
                                                 <td>Collaborateur</td>
-                                                <td style="text-align: center">
+                                                <td class="spring" style="text-align: center">
                                                     <div class="rating">
                                                     <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
@@ -906,7 +923,7 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td style="text-align: center">
+                                                <td class="htmlcss" style="text-align: center">
                                                     <div class="rating">
                                                     <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
@@ -932,7 +949,9 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td class="colEmplty" style="text-align: center">-</td>
+                                                <td class="colSpring" style="text-align: center; display: none">-</td>
+                                                <td class="colHtml" style="text-align: center; display: none">-</td>
+                                                <td class="colAngular" style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
@@ -942,7 +961,7 @@
                                                 <td style="text-align: center">Studio</td>
                                                 <td>Développeur</td>
                                                 <td>Collaborateur</td>
-                                                <td style="text-align: center">
+                                                <td class="spring" style="text-align: center">
                                                     <div class="rating">
                                                     <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
@@ -955,7 +974,7 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td class="colEmplty" style="text-align: center">
+                                                <td class="htmlcss" class="colEmplty" style="text-align: center">
                                                     <div class="rating">
                                                     <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
@@ -981,7 +1000,9 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td class="colEmplty" style="text-align: center">-</td>
+                                                <td class="colSpring" style="text-align: center; display: none">-</td>
+                                                <td class="colHtml" style="text-align: center; display: none">-</td>
+                                                <td class="colAngular" style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
@@ -991,7 +1012,7 @@
                                                 <td style="text-align: center">Studio</td>
                                                 <td>Développeur</td>
                                                 <td>Collaborateur</td>
-                                                <td style="text-align: center">
+                                                <td class="spring" style="text-align: center">
                                                     <div class="rating">
                                                     <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
@@ -1004,7 +1025,7 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td style="text-align: center">
+                                                <td class="htmlcss" style="text-align: center">
                                                     <div class="rating">
                                                     <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
@@ -1030,7 +1051,9 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td class="colEmplty" style="text-align: center">-</td>
+                                                <td class="colSpring" style="text-align: center; display: none">-</td>
+                                                <td class="colHtml" style="text-align: center; display: none">-</td>
+                                                <td class="colAngular" style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
