@@ -145,9 +145,8 @@
                                     <div class="card-body">
                                         <div class="form-check" style="padding-left: 0px">
                                             <label class="container">Spring
-                                                <input type="checkbox">
-                                                <span class="checkmark checkedCheckmark">
-                                                                <span class="checks"></span>
+                                                <input type="checkbox" checked>
+                                                <span class="checkmark">
                                                 </span>
                                             </label>
 
@@ -177,10 +176,8 @@
                                     <div class="card-body">
                                         <div class="form-check" style="padding-left: 0px">
                                             <label class="container">HTML/CSS
-                                                <input type="checkbox">
-                                                <span class="checkmark checkedCheckmark">
-                                                                <span class="checks"></span>
-                                                            </span>
+                                                <input type="checkbox" checked>
+                                                <span class="checkmark"></span>
                                             </label>
 
                                         </div>
@@ -378,37 +375,120 @@
                                         <table class="table tableResults" id="table_comps">
                                             <thead style="border: none">
                                             <tr>
-                                                <th rowspan="2" class="table100-head1" scope="col" width="10%">Nom</th>
-                                                <th rowspan="2" class="table100-head1" scope="col" width="10%">Prenom</th>
-                                                <th rowspan="2" class="table100-head1" scope="col" width="5%">Service </th>
-                                                <th rowspan="2" class="table100-head1" scope="col" width="10%">Fonction</th>
-                                                <th class="table100-head1" scope="col" width="10%">
+                                                <th rowspan="2" class="table100-head1" scope="col" width="10%"
+                                                    style="vertical-align: middle; padding-top: 1px">Nom
+                                                </th>
+                                                <th rowspan="2" class="table100-head1" scope="col" width="9%"
+                                                    style="vertical-align: middle; padding-top: 1px">Prenom
+                                                </th>
+                                                <th rowspan="2" class="table100-head1" scope="col" width="8%"
+                                                    style="vertical-align: middle; padding-top: 1px; text-align: center">
+                                                    <div class="multiselect">
+                                                        <div class="selectBox" onclick="showCheckboxesService()">
+                                                            Service <span><i class="fas fa-chevron-down"></i></span>
+
+                                                        </div>
+                                                        <div id="checkboxesService">
+                                                            <div class="form-check" style="padding-left: 0px">
+                                                                <label class="container" style="font-size: 15px">1
+                                                                    <input type="checkbox" checked>
+                                                                    <span class="checkmark" id="Service-1">
+                                                            </span>
+                                                                </label>
+
+                                                            </div>
+                                                            <div class="form-check" style="padding-left: 0px">
+                                                                <label class="container" style="font-size: 15px">2
+                                                                    <input type="checkbox" checked>
+                                                                    <span class="checkmark" id="Service-2">
+                                                            </span>
+                                                                </label>
+
+                                                            </div>
+                                                            <div class="form-check" style="padding-left: 0px">
+                                                                <label class="container" style="font-size:15px ">Studio
+                                                                    <input type="checkbox" checked>
+                                                                    <span class="checkmark" id="Service-Studio">
+                                                            </span>
+                                                                </label>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <th rowspan="2" class="table100-head1" scope="col" width="10%"
+                                                    style="vertical-align: middle; padding-top: 1px">
+
+                                                    <div class="multiselect">
+                                                        <div class="selectBox" onclick="showCheckboxesFonction()">
+                                                            Fonction <span><i class="fas fa-chevron-down"></i></span>
+
+                                                        </div>
+                                                        <div id="checkboxes">
+                                                            <div class="form-check" style="padding-left: 0px">
+                                                                <label class="container" style="font-size: 15px">Architecture
+                                                                    <input type="checkbox" checked>
+                                                                    <span class="checkmark" id="Archi">
+                                                            </span>
+                                                                </label>
+
+                                                            </div>
+                                                            <div class="form-check" style="padding-left: 0px">
+                                                                <label class="container" style="font-size: 15px">Développeur
+                                                                    <input type="checkbox" checked>
+                                                                    <span class="checkmark" id="Dev">
+                                                            </span>
+                                                                </label>
+
+                                                            </div>
+                                                            <div class="form-check" style="padding-left: 0px">
+                                                                <label class="container" style="font-size:15px ">CDP
+                                                                    <input type="checkbox" checked>
+                                                                    <span class="checkmark" id="CDP">
+                                                            </span>
+                                                                </label>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <th class="table100-head1" scope="col" width="8%">
                                                     <div class="form-check" style="padding-left: 0px">
                                                         <label class="container">Collab.
-                                                            <input type="checkbox">
-                                                            <span class="checkmark checkedCheckmark">
-                                                                <span class="checks"></span>
+                                                            <input type="checkbox" checked>
+                                                            <span class="checkmark" id="Collab">
                                                             </span>
                                                         </label>
 
                                                     </div>
                                                 </th>
 
-                                                <th class="table100-head1" scope="col" width="11%" style="text-align: center">Spring <span id="minus_spring" class="block_col_2"> <i
+                                                <th class="table100-head1" scope="col" width="11%"
+                                                    style="text-align: center">Spring <span id="minus_spring"
+                                                                                            class="block_col_2"> <i
                                                         class="fas fa-minus-circle"></i></span>
                                                 </th>
-                                                <th class="table100-head1" scope="col" width="11%"  style="text-align: center">HTML/CSS <span id="minus_java" class="block_col_2"> <i
+                                                <th class="table100-head1" scope="col" width="11%"
+                                                    style="text-align: center">HTML/CSS <span id="minus_htmlcss"
+                                                                                              class="block_col_2"> <i
                                                         class="fas fa-minus-circle"></i></span>
                                                 </th>
-                                                <th class="table100-head1" scope="col" width="11%"  style="text-align: center">-</span>
+                                                <th class="table100-head1 angularJS" scope="col" width="11%"
+                                                    style="text-align: center">AngularJS <span id="minus_angular"
+                                                                                               class="block_col_2"> <i
+                                                        class="fas fa-minus-circle"></i></span>
                                                 </th>
-                                                <th class="table100-head1" scope="col" width="11%"  style="text-align: center">-</span>
+                                                <th class="table100-head1 colEmplty" scope="col" width="11%"
+                                                    style="text-align: center">-</span>
                                                 </th>
-                                                <th class="table100-head1" scope="col" width="11%" style="text-align: center">-</span>
+                                                <th class="table100-head1" scope="col" width="11%"
+                                                    style="text-align: center">-</span>
+                                                </th>
+                                                <th class="table100-head1" scope="col" width="11%"
+                                                    style="text-align: center">-</span>
                                                 </th>
 
                                             </tr>
-
                                             <tr>
                                                 <th>
                                                     <div class="form-check" style="padding-left: 0px">
@@ -422,7 +502,7 @@
                                                 <th style="text-align: center">
                                                     <div class="rating">
                                                         <span class="rating-star darker" title="expert"
-                                                          data-value="4"></span>
+                                                              data-value="4"></span>
                                                         <span class="rating-star darker" title="autonome"
                                                               data-value="3"></span>
                                                         <span class="rating-star checked"
@@ -445,7 +525,20 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </th>
-                                                <th style="text-align: center">-</th>
+                                                <th class="angularJS" style="text-align: center">
+                                                    <div class="rating">
+                                                        <span class="rating-star darker" title="expert"
+                                                              data-value="4"></span>
+                                                        <span class="rating-star darker" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star checked"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star checked" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </th>
+                                                <th class="colEmplty" style="text-align: center">-</th>
                                                 <th style="text-align: center">-</th>
                                                 <th style="text-align: center">-</th>
                                             </tr>
@@ -458,32 +551,45 @@
                                                 <td>Architecte</td>
                                                 <td>Collaborateur</td>
                                                 <td style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star checked" title="expert"
+                                                    <div class="rating-style">
+                                                    <span class="rating-star rating-fixed checked" title="expert"
                                                           data-value="4"></span>
-                                                        <span class="rating-star checked" title="autonome"
+                                                        <span class="rating-star rating-fixed checked" title="autonome"
                                                               data-value="3"></span>
-                                                        <span class="rating-star checked"
+                                                        <span class="rating-star rating-fixed checked"
                                                               title="peut intervenir avec de l'aide"
                                                               data-value="2"></span>
-                                                        <span class="rating-star checked" title="notions"
+                                                        <span class="rating-star rating-fixed checked" title="notions"
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
                                                 <td style="text-align: center">
                                                     <div class="rating">
-                                                    <span class="rating-star" title="expert"
+                                                    <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
-                                                        <span class="rating-star checked" title="autonome"
+                                                        <span class="rating-star rating-fixed checked" title="autonome"
                                                               data-value="3"></span>
-                                                        <span class="rating-star checked"
+                                                        <span class="rating-star rating-fixed checked"
                                                               title="peut intervenir avec de l'aide"
                                                               data-value="2"></span>
-                                                        <span class="rating-star checked" title="notions"
+                                                        <span class="rating-star rating-fixed checked" title="notions"
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td style="text-align: center">-</td>
+                                                <td class="angularJS" style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed checked" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed checked"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed checked" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="colEmplty" style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
@@ -495,31 +601,44 @@
                                                 <td>Collaborateur</td>
                                                 <td style="text-align: center">
                                                     <div class="rating">
-                                                    <span class="rating-star" title="expert"
+                                                    <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
-                                                        <span class="rating-star" title="autonome"
+                                                        <span class="rating-star rating-fixed" title="autonome"
                                                               data-value="3"></span>
-                                                        <span class="rating-star checked"
+                                                        <span class="rating-star rating-fixed checked"
                                                               title="peut intervenir avec de l'aide"
                                                               data-value="2"></span>
-                                                        <span class="rating-star checked" title="notions"
+                                                        <span class="rating-star rating-fixed checked" title="notions"
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
                                                 <td style="text-align: center">
                                                     <div class="rating">
-                                                    <span class="rating-star checked" title="expert"
+                                                    <span class="rating-star rating-fixed checked" title="expert"
                                                           data-value="4"></span>
-                                                        <span class="rating-star checked" title="autonome"
+                                                        <span class="rating-star rating-fixed checked" title="autonome"
                                                               data-value="3"></span>
-                                                        <span class="rating-star checked"
+                                                        <span class="rating-star rating-fixed checked"
                                                               title="peut intervenir avec de l'aide"
                                                               data-value="2"></span>
-                                                        <span class="rating-star checked" title="notions"
+                                                        <span class="rating-star rating-fixed checked" title="notions"
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td style="text-align: center">-</td>
+                                                <td class="angularJS" style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed checked" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed checked"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed checked" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="colEmplty" style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
@@ -531,31 +650,44 @@
                                                 <td>Collaborateur</td>
                                                 <td style="text-align: center">
                                                     <div class="rating">
-                                                    <span class="rating-star" title="expert"
+                                                    <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
-                                                        <span class="rating-star checked" title="autonome"
+                                                        <span class="rating-star rating-fixed checked" title="autonome"
                                                               data-value="3"></span>
-                                                        <span class="rating-star checked"
+                                                        <span class="rating-star rating-fixed checked"
                                                               title="peut intervenir avec de l'aide"
                                                               data-value="2"></span>
-                                                        <span class="rating-star checked" title="notions"
+                                                        <span class="rating-star rating-fixed checked" title="notions"
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
                                                 <td style="text-align: center">
                                                     <div class="rating">
-                                                    <span class="rating-star" title="expert"
+                                                    <span class="rating-star rating-fixedr" title="expert"
                                                           data-value="4"></span>
-                                                        <span class="rating-star checked" title="autonome"
+                                                        <span class="rating-star rating-fixed checked" title="autonome"
                                                               data-value="3"></span>
-                                                        <span class="rating-star checked"
+                                                        <span class="rating-star rating-fixed checked"
                                                               title="peut intervenir avec de l'aide"
                                                               data-value="2"></span>
-                                                        <span class="rating-star checked" title="notions"
+                                                        <span class="rating-star rating-fixed checked" title="notions"
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td style="text-align: center">-</td>
+                                                <td class="angularJS" style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed checked" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed checked"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed checked" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="colEmplty" style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
@@ -567,31 +699,93 @@
                                                 <td>Collaborateur</td>
                                                 <td style="text-align: center">
                                                     <div class="rating">
-                                                    <span class="rating-star" title="expert"
+                                                    <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
-                                                        <span class="rating-star checked" title="autonome"
+                                                        <span class="rating-star rating-fixed checked" title="autonome"
                                                               data-value="3"></span>
-                                                        <span class="rating-star checked"
+                                                        <span class="rating-star rating-fixed checked"
                                                               title="peut intervenir avec de l'aide"
                                                               data-value="2"></span>
-                                                        <span class="rating-star checked" title="notions"
+                                                        <span class="rating-star rating-fixed checked" title="notions"
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
                                                 <td style="text-align: center">
                                                     <div class="rating">
-                                                    <span class="rating-star" title="expert"
+                                                    <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
-                                                        <span class="rating-star checked" title="autonome"
+                                                        <span class="rating-star rating-fixed checked" title="autonome"
                                                               data-value="3"></span>
-                                                        <span class="rating-star checked"
+                                                        <span class="rating-star rating-fixed checked"
                                                               title="peut intervenir avec de l'aide"
                                                               data-value="2"></span>
-                                                        <span class="rating-star checked" title="notions"
+                                                        <span class="rating-star rating-fixed checked" title="notions"
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
+                                                <td class="angularJS" style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed checked"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed checked" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="colEmplty" style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
+                                                <td style="text-align: center">-</td>
+                                            </tr>
+                                            <tr id="Presta">
+                                                <td>Lefebvre</td>
+                                                <td>Damien</td>
+                                                <td style="text-align: center">2</td>
+                                                <td>Développeur</td>
+                                                <td>Prestataire</td>
+                                                <td style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed checked" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed checked"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed checked" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="angularJS" style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="colEmplty" style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
@@ -603,31 +797,44 @@
                                                 <td>Collaborateur</td>
                                                 <td style="text-align: center">
                                                     <div class="rating">
-                                                    <span class="rating-star" title="expert"
+                                                    <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
-                                                        <span class="rating-star checked" title="autonome"
+                                                        <span class="rating-star rating-fixed checked" title="autonome"
                                                               data-value="3"></span>
-                                                        <span class="rating-star checked"
+                                                        <span class="rating-star rating-fixed checked"
                                                               title="peut intervenir avec de l'aide"
                                                               data-value="2"></span>
-                                                        <span class="rating-star checked" title="notions"
+                                                        <span class="rating-star rating-fixed checked" title="notions"
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
                                                 <td style="text-align: center">
                                                     <div class="rating">
-                                                    <span class="rating-star" title="expert"
+                                                    <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
-                                                        <span class="rating-star" title="autonome"
+                                                        <span class="rating-star rating-fixed" title="autonome"
                                                               data-value="3"></span>
-                                                        <span class="rating-star checked"
+                                                        <span class="rating-star rating-fixed checked"
                                                               title="peut intervenir avec de l'aide"
                                                               data-value="2"></span>
-                                                        <span class="rating-star checked" title="notions"
+                                                        <span class="rating-star rating-fixed checked" title="notions"
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td style="text-align: center">-</td>
+                                                <td class="angularJS" style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed checked"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed checked" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="colEmplty" style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
@@ -639,31 +846,44 @@
                                                 <td>Collaborateur</td>
                                                 <td style="text-align: center">
                                                     <div class="rating">
-                                                    <span class="rating-star" title="expert"
+                                                    <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
-                                                        <span class="rating-star" title="autonome"
+                                                        <span class="rating-star rating-fixed" title="autonome"
                                                               data-value="3"></span>
-                                                        <span class="rating-star"
+                                                        <span class="rating-star rating-fixed"
                                                               title="peut intervenir avec de l'aide"
                                                               data-value="2"></span>
-                                                        <span class="rating-star checked" title="notions"
+                                                        <span class="rating-star rating-fixed checked" title="notions"
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
                                                 <td style="text-align: center">
                                                     <div class="rating">
-                                                    <span class="rating-star" title="expert"
+                                                    <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
-                                                        <span class="rating-star checked" title="autonome"
+                                                        <span class="rating-star rating-fixed checked" title="autonome"
                                                               data-value="3"></span>
-                                                        <span class="rating-star checked"
+                                                        <span class="rating-star rating-fixed checked"
                                                               title="peut intervenir avec de l'aide"
                                                               data-value="2"></span>
-                                                        <span class="rating-star checked" title="notions"
+                                                        <span class="rating-star rating-fixed checked" title="notions"
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td style="text-align: center">-</td>
+                                                <td class="angularJS" style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed checked"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed checked" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="colEmplty" style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
@@ -675,31 +895,44 @@
                                                 <td>Collaborateur</td>
                                                 <td style="text-align: center">
                                                     <div class="rating">
-                                                    <span class="rating-star" title="expert"
+                                                    <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
-                                                        <span class="rating-star" title="autonome"
+                                                        <span class="rating-star rating-fixed" title="autonome"
                                                               data-value="3"></span>
-                                                        <span class="rating-star"
+                                                        <span class="rating-star rating-fixed"
                                                               title="peut intervenir avec de l'aide"
                                                               data-value="2"></span>
-                                                        <span class="rating-star" title="notions"
+                                                        <span class="rating-star rating-fixed" title="notions"
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
                                                 <td style="text-align: center">
                                                     <div class="rating">
-                                                    <span class="rating-star" title="expert"
+                                                    <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
-                                                        <span class="rating-star checked" title="autonome"
+                                                        <span class="rating-star rating-fixed checked" title="autonome"
                                                               data-value="3"></span>
-                                                        <span class="rating-star checked"
+                                                        <span class="rating-star rating-fixed checked"
                                                               title="peut intervenir avec de l'aide"
                                                               data-value="2"></span>
-                                                        <span class="rating-star checked" title="notions"
+                                                        <span class="rating-star rating-fixed checked" title="notions"
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td style="text-align: center">-</td>
+                                                <td class="angularJS" style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed checked"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed checked" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="colEmplty" style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
@@ -711,31 +944,44 @@
                                                 <td>Collaborateur</td>
                                                 <td style="text-align: center">
                                                     <div class="rating">
-                                                    <span class="rating-star" title="expert"
+                                                    <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
-                                                        <span class="rating-star" title="autonome"
+                                                        <span class="rating-star rating-fixed" title="autonome"
                                                               data-value="3"></span>
-                                                        <span class="rating-star"
+                                                        <span class="rating-star rating-fixed"
                                                               title="peut intervenir avec de l'aide"
                                                               data-value="2"></span>
-                                                        <span class="rating-star" title="notions"
+                                                        <span class="rating-star rating-fixed" title="notions"
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td style="text-align: center">
+                                                <td class="colEmplty" style="text-align: center">
                                                     <div class="rating">
-                                                    <span class="rating-star" title="expert"
+                                                    <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
-                                                        <span class="rating-star checked" title="autonome"
+                                                        <span class="rating-star rating-fixed checked" title="autonome"
                                                               data-value="3"></span>
-                                                        <span class="rating-star checked"
+                                                        <span class="rating-star rating-fixed checked"
                                                               title="peut intervenir avec de l'aide"
                                                               data-value="2"></span>
-                                                        <span class="rating-star checked" title="notions"
+                                                        <span class="rating-star rating-fixed checked" title="notions"
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td style="text-align: center">-</td>
+                                                <td class="angularJS" style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="colEmplty" style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
@@ -747,31 +993,44 @@
                                                 <td>Collaborateur</td>
                                                 <td style="text-align: center">
                                                     <div class="rating">
-                                                    <span class="rating-star" title="expert"
+                                                    <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
-                                                        <span class="rating-star" title="autonome"
+                                                        <span class="rating-star rating-fixed" title="autonome"
                                                               data-value="3"></span>
-                                                        <span class="rating-star"
+                                                        <span class="rating-star rating-fixed"
                                                               title="peut intervenir avec de l'aide"
                                                               data-value="2"></span>
-                                                        <span class="rating-star" title="notions"
+                                                        <span class="rating-star rating-fixed" title="notions"
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
                                                 <td style="text-align: center">
                                                     <div class="rating">
-                                                    <span class="rating-star" title="expert"
+                                                    <span class="rating-star rating-fixed" title="expert"
                                                           data-value="4"></span>
-                                                        <span class="rating-star checked" title="autonome"
+                                                        <span class="rating-star rating-fixed checked" title="autonome"
                                                               data-value="3"></span>
-                                                        <span class="rating-star checked"
+                                                        <span class="rating-star rating-fixed checked"
                                                               title="peut intervenir avec de l'aide"
                                                               data-value="2"></span>
-                                                        <span class="rating-star checked" title="notions"
+                                                        <span class="rating-star rating-fixed checked" title="notions"
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td style="text-align: center">-</td>
+                                                <td class="angularJS" style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="colEmplty" style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
@@ -816,6 +1075,29 @@
 
 </script>
 <script type="text/javascript">
+    var expanded = false;
+
+    function showCheckboxesService() {
+        var checkboxes = document.getElementById("checkboxesService");
+        if (!expanded) {
+            checkboxes.style.display = "block";
+            expanded = true;
+        } else {
+            checkboxes.style.display = "none";
+            expanded = false;
+        }
+    }
+
+    function showCheckboxesFonction() {
+        var checkboxes = document.getElementById("checkboxes");
+        if (!expanded) {
+            checkboxes.style.display = "block";
+            expanded = true;
+        } else {
+            checkboxes.style.display = "none";
+            expanded = false;
+        }
+    }
 
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-36251023-1']);

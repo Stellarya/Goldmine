@@ -251,8 +251,37 @@ ul.CTAs a {
     border: 1px solid #CCC;
     display: none;
 }
+/* ---------------------------------------------------
+    Dropdown select
+----------------------------------------------------- */
 
 
+.selectBox {
+    position: relative;
+}
+
+.selectBox select {
+    width: 100%;
+    font-weight: bold;
+    border:none;
+    overflow: visible;
+
+}
+
+
+#checkboxes, #checkboxesService {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    background: white;
+    padding: 5px;
+}
+
+#checkboxes label, #checkboxesService label{
+    display: block;
+    font-size:15px;
+    text-align: left;
+}
 
 /* ---------------------------------------------------
     ACCORDION
@@ -321,6 +350,13 @@ label.container {
     background-color: rgb(76, 10, 58);
 
 }
+.angularJS {
+    display: none;
+}
+
+#Presta {
+    display: none;
+}
 
 .checks {
     content: "";
@@ -366,7 +402,7 @@ label.container {
     margin-right: 10px;
 }
 
-.rating, .reset-star {
+.rating, .reset-star, .rating-style {
     overflow: hidden;
     display: inline-block;
     position: relative;
@@ -376,6 +412,7 @@ label.container {
 #tag_test .rating .rating-star {
     float: right;
 }
+
 .rating-star {
     padding: 0 2px;
     margin: 0;
@@ -426,14 +463,16 @@ label.container {
     color: red;
 }
 
-.rating-star:hover ~ .rating-star:after,
-.rating-star:hover:after {
+
+
+.rating-star:not(.rating-fixed):hover ~ .rating-star:after,
+.rating-star:not(.rating-fixed):hover:after {
     content: '\f005' !important;
     color: #ffc107;
 }
 
-.rating-star.checked:hover ~ .rating-star.checked:after,
-.rating-star.checked:hover:after {
+.rating-star.checked:not(.rating-fixed):hover ~ .rating-star.checked:after,
+.rating-star.checked:not(.rating-fixed):hover:after {
     content: '\f005';
     color: rgb(200,200,200);
 }
@@ -500,7 +539,6 @@ main th a {
 }
 
 #conteneur table {
-
     align-items: stretch;
 
 
