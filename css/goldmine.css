@@ -547,8 +547,6 @@ main th a {
 
 #conteneur table {
     align-items: stretch;
-
-
 }
 
 
@@ -681,12 +679,6 @@ main th a {
     font-weight: bold;
 }
 
-/* ---------------------------------------------------
-    button style
------------------------------------------------------ */
-.button-search {
-
-}
 /* ---------------------------------------------------
     TAG STYLE
 ----------------------------------------------------- */
@@ -919,6 +911,13 @@ HEAD .table-dark {
     border-bottom: none;
 }
 
+.grey {
+    color: rgb(150,150,150);
+}
+
+.black {
+    color: black;
+}
 
 .table.tableResults td, .table.tableResults th {
     padding-left: .75rem;

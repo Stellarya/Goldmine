@@ -21,8 +21,6 @@ $(function () {
         }
     }*/
 
-
-
     // setup autocomplete function pulling from currencies[] array
     $('#autocomplete').autocomplete({
 
