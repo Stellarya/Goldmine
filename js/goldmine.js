@@ -328,9 +328,13 @@ $(document).ready(function () {
 
     <!-- ************* Rating stars ******************* -->
 
+
     $('.rating-star').click(function () {
-        $(this).parents('.rating').find('.rating-star').removeClass('checked');
-        $(this).addClass('checked');
+        if ($(this).is(":checked")) {
+            $(".architecte").show();
+        } else {
+            $(this).addClass('checked');
+        }
     });
 
     $('.reset-star').click(function () {

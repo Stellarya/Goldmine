@@ -405,17 +405,6 @@ label.container {
 /* ---------------------------------------------------
     RATING STARS
 ----------------------------------------------------- */
-.reset-star {
-    margin-right: 10px;
-}
-
-.rating, .reset-star, .rating-style {
-    overflow: hidden;
-    display: inline-block;
-    position: relative;
-    font-size: 17px;
-    color: rgb(200,200,200);
-}
 #tag_test .rating .rating-star {
     float: right;
 }
@@ -428,21 +417,9 @@ label.container {
     float: right;
 }
 
-.reset-star:after {
-    font-family: FontAwesome;
-    content: '\f056';
-    color: rgb(200,200,200);
-}
-
 .rating-star:after {
     font-family: FontAwesome;
     content: '\f005';
-}
-
-.reset-star.checked ~ .reset-star:after,
-.reset-star.checked:after {
-    content: '\f005';
-    color: red;
 }
 
 .rating-star.checked ~ .rating-star:after,
@@ -456,21 +433,9 @@ label.container {
     color: rgb(100,100,100);
 }
 
-.reset-star:hover .reset-star:after {
-    content: '\f00d';
-}
-
 .rating:hover .rating-star:after {
     content: '\f005';
 }
-
-.reset-star:hover ~ .reset-star:after,
-.reset-star:hover:after {
-    content: '\f056' !important;
-    color: red;
-}
-
-
 
 .rating-star:not(.rating-fixed):hover ~ .rating-star:after,
 .rating-star:not(.rating-fixed):hover:after {
@@ -478,12 +443,94 @@ label.container {
     color: #ffc107;
 }
 
+
 .rating-star.checked:not(.rating-fixed):hover ~ .rating-star.checked:after,
 .rating-star.checked:not(.rating-fixed):hover:after {
     content: '\f005';
     color: rgb(200,200,200);
 }
 
+/* ---------------------------------------------------
+    RESET STARS
+----------------------------------------------------- */
+.rating, .reset-star, .rating-style {
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    font-size: 17px;
+    color: rgb(200,200,200);
+}
+
+.reset-star {
+    margin-right: 10px;
+}
+
+.reset-star:after {
+    font-family: FontAwesome;
+    content: '\f056';
+    color: rgb(200,200,200);
+}
+
+.reset-star.checked ~ .reset-star:after,
+.reset-star.checked:after {
+    content: '\f005';
+    color: red;
+}
+
+
+.reset-star:hover .reset-star:after {
+    content: '\f00d';
+}
+
+.reset-star:hover ~ .reset-star:after,
+.reset-star:hover:after {
+    content: '\f056' !important;
+    color: red;
+}
+/* ---------------------------------------------------
+    REFERENT
+----------------------------------------------------- */
+
+.referent-flot{
+    padding: 0 2px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+}
+
+.referent-flot:after {
+    font-family: "untitled-font-1" !important;
+    content: '\61';
+}
+
+.referent-flot.checked ~ .referent-flot:after,
+.referent-flot.checked:after{
+    font-family: "untitled-font-1" !important;
+    content: '\61';
+    color: rgb(76,10,58);
+}
+
+.referent-flot:hover .referent-flot:after {
+    font-family: "untitled-font-1" !important;
+    content: '\61';
+    color: rgb(76,10,58);
+}
+
+
+.referent-flot:hover ~ .referent-flot:after,
+.referent-flot:hover:after {
+    font-family: "untitled-font-1" !important;
+    content: '\61';
+    color: rgb(76,10,58);
+}
+
+.referent-flot.checked:hover ~ .referent-flot.checked:after,
+.referent-flot.checked:hover:after {
+    font-family: "untitled-font-1" !important;
+    content: '\61';
+    color: rgb(200,200,200);
+}
 
 /* ---------------------------------------------------
     CONTENT STYLE

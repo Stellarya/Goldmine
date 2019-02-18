@@ -323,6 +323,9 @@ $(document).ready(function () {
     });
 
     <!-- ************* Rating stars ******************* -->
+    $('.referent-flot').click(function () {
+        $(this).addClass('checked');
+    });
 
     <!-- ************* modal box ******************* -->
     $('#commentaire-btn_java').on('click', function () {
