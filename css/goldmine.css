@@ -24,7 +24,7 @@ p {
 a,
 a:hover,
 a:focus {
-    color: rgb(76, 10, 58);
+    color: rgb(76, 10, 89);
     text-decoration: none;
     transition: all 0.3s;
 }
@@ -74,7 +74,7 @@ a:focus {
 }
 
 .chiller-theme {
-    background: rgb(76, 10, 58);
+    background: rgb(76, 10, 89);
 }
 
 .chiller-theme .sidebar-wrapper .sidebar-menu ul li a i,
@@ -97,7 +97,7 @@ a:focus {
 #sidebar {
     min-width: 195px;
     max-width: 195px;
-    background: #531055;
+    background: rgb(76, 10, 89);
     color: #fff;
     transition: all 0.3s;
 }
@@ -108,12 +108,12 @@ a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px 10px;
-    background: #531055;
+    background: rgb(76, 10, 89);
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    background: #531055;
+    background: rgb(76, 10, 89);
 }
 
 #sidebar ul p {
@@ -129,13 +129,13 @@ a:focus {
 }
 
 #sidebar ul li a:hover {
-    color: rgb(76, 10, 58);
+    color: rgb(76, 10, 89);
     background: white;
 }
 
 #sidebar ul li.active > a,
 a[aria-expanded="true"] {
-    color: rgb(76, 10, 58);
+    color: rgb(76, 10, 89);
     background: #fff;
 }
 
@@ -188,7 +188,7 @@ ul.CTAs a {
     position: absolute;
     min-width: 100px;
     max-width: 200px;
-    color: rgb(76, 10, 58);
+    color: rgb(76, 10, 89);
     margin-top: 25px;
     margin-left: -40px;
     line-height: 20px;
@@ -219,7 +219,7 @@ ul.CTAs a {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent rgb(76, 10, 58) transparent;
+    border-color: transparent transparent rgb(76, 10, 89) transparent;
 }
 
 
@@ -294,7 +294,7 @@ ul.CTAs a {
 }
 
 .card .btn-link {
-    color: rgb(76,10,58);
+    color: rgb(76, 10, 89);
     text-decoration: none;
     font-weight: bold;
 }
@@ -351,10 +351,10 @@ label.container {
 
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
-    background-color: rgb(76, 10, 58);
+    background-color: rgb(76, 10, 89);
 }
 .checkedCheckmark, .container:hover input ~ .checkedCheckmark{
-    background-color: rgb(76, 10, 58);
+    background-color: rgb(76, 10, 89);
 
 }
 .angularJS {
@@ -411,7 +411,7 @@ label.container {
 
 .rating-star {
     padding: 0 2px;
-    margin: 0;
+    margin-top: 2px;
     cursor: pointer;
     display: inline-block;
     float: right;
@@ -494,6 +494,7 @@ label.container {
 .referent-flot{
     padding: 0 2px;
     margin-left: 10px;
+    margin-top: 2px;
     cursor: pointer;
     display: inline-block;
     float: right;
@@ -508,13 +509,13 @@ label.container {
 .referent-flot.checked:after{
     font-family: "untitled-font-1" !important;
     content: '\61';
-    color: rgb(76,10,58);
+    color: rgb(76,10,89);
 }
 
 .referent-flot:hover .referent-flot:after {
     font-family: "untitled-font-1" !important;
     content: '\61';
-    color: rgb(76,10,58);
+    color: rgb(76,10,89);
 }
 
 
@@ -522,15 +523,25 @@ label.container {
 .referent-flot:hover:after {
     font-family: "untitled-font-1" !important;
     content: '\61';
-    color: rgb(76,10,58);
+    color: rgb(76,10,89);
 }
 
-.referent-flot.checked:hover ~ .referent-flot.checked:after,
-.referent-flot.checked:hover:after {
+
+.referent-flot:not(.referent-fixed):hover ~ .referent-flot:after,
+.referent-flot:not(.referent-fixed):hover:after {
+    font-family: "untitled-font-1" !important;
+    content: '\61';
+    color: rgb(76,10,89);
+}
+
+
+.referent-flot.checked:not(.referent-fixed):hover ~ .referent-flot.checked:after,
+.referent-flot.checked:not(.referent-fixed):hover:after {
     font-family: "untitled-font-1" !important;
     content: '\61';
     color: rgb(200,200,200);
 }
+
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -551,7 +562,7 @@ label.container {
 }
 
 main .header {
-    color: rgb(76, 10, 58);
+    color: rgb(76, 10, 89);
     background-size: cover;
     margin-bottom: 8px;
     padding: 0px;
@@ -629,7 +640,7 @@ main th a {
 
 #cssmenu {
     width: auto;
-    border-bottom: 2px solid rgb(76, 10, 58);
+    border-bottom: 2px solid rgb(76, 10, 89);
     margin-bottom: 10px;
     font-family: Raleway, sans-serif;
     line-height: 1;
@@ -665,7 +676,7 @@ main th a {
     font-size: 15px;
     font-weight: 400;
     text-decoration: none;
-    color: rgb(76, 10, 58);
+    color: rgb(76, 10, 89);
     -webkit-transition: all .2s ease;
     -moz-transition: all .2s ease;
     -o-transition: all .2s ease;
@@ -676,13 +687,13 @@ main th a {
 
 #cssmenu > ul > li.active > a {
     color: #ffffff;
-    background: #531055
+    background: rgb(76, 10, 89);
 }
 
 #cssmenu > ul > li:hover > a,
 #cssmenu > ul > li > a:hover {
     color: #FFF;
-    background: #531055
+    background: rgb(76, 10, 89);
 }
 
 
@@ -693,13 +704,13 @@ main th a {
 }
 
 #cssmenu > ul > li.active > a:after {
-    background: rgb(76, 10, 58);
+    background:rgb(76, 10, 89);
 }
 
 #cssmenu > ul > li:hover > a:after,
 #cssmenu > ul > li > a:hover:after {
     background: rgba(255, 255, 255, 0.5);
-    border: rgba(76, 10, 58, 0.5) 2px solid;
+    border: rgba(76, 10, 89, 0.5) 2px solid;
     border-bottom: none;
     padding-right: 5px;
     padding-left: 5px;
@@ -765,7 +776,7 @@ li.tag_competence:hover .fa-plus-circle, .fa-comment-alt {
 }
 
 li.tag_competence:hover {
-    background-color: rgb(76, 10, 58);
+    background-color: rgb(76, 10, 89);
     color: white;
 
 }
@@ -794,7 +805,7 @@ tr th span .fa-minus-circle {
 }
 
 ul li span .fa-minus-circle {
-    color: rgb(76, 10, 58);
+    color: rgb(76, 10, 89);
     font-size: 15px;
 }
 
@@ -812,7 +823,7 @@ ul li span .fa-minus-circle {
 }
 
 .fa-plus-circle {
-    color: rgb(76, 10, 58);
+    color: rgb(76, 10, 89);
     font-size: 17px;
 }
 
@@ -877,7 +888,7 @@ textarea.textarea-commentaire:focus, textarea.textarea-commentaire:active, texta
 
 .btn-sbmt-comment {
 
-    background-color: rgb(76, 10, 58);
+    background-color: rgb(76, 10, 89);
     color: white;
     padding: 16px 20px;
     border: none;
@@ -930,17 +941,17 @@ input[type=number] {
     -moz-border-radius: 3px;
     padding: 1px;
     outline: none;
-    border-bottom: 2px solid rgba(76, 10, 58, 0.5);
+    border-bottom: 2px solid rgba(76, 10, 89, 0.5);
     -webkit-transition: border .3s ease;
 }
 
 input[type=number]:focus {
-    border: 2px solid rgba(76, 10, 58, 0.5);
+    border: 2px solid rgba(76, 10, 89, 0.5);
 }
 
 .activeinput {
     border: 3px solid red;
-    background: rgba(76, 10, 58, 0.2);
+    background: rgba(76, 10, 89, 0.2);
 }
 
 
@@ -1000,7 +1011,7 @@ table td, table th {
 
 table thead tr {
     height: 35px;
-    color: #531055;
+    color: rgb(76, 10, 89);
     background: #FFF
 }
 
@@ -1035,14 +1046,14 @@ table td.r, table th.r {
 
 .table100-head th {
     font-size: 18px;
-    color: #531055;
+    color: rgb(76, 10, 89);
     line-height: 1.2;
     font-weight: unset;
 }
 
 .table100-head1 {
     font-size: 17px;
-    color: #531055;
+    color: rgb(76, 10, 89);
     line-height: 1.2;
     font-weight: bold;
     text-align: left;
