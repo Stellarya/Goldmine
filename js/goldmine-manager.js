@@ -323,9 +323,6 @@ $(document).ready(function () {
     });
 
     <!-- ************* Rating stars ******************* -->
-    $('.referent-flot').click(function () {
-        $(this).addClass('checked');
-    });
 
     $('.referent-R').click(function () {
         $(this).addClass('checked');
