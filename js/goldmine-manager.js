@@ -327,6 +327,10 @@ $(document).ready(function () {
         $(this).addClass('checked');
     });
 
+    $('.referent-R').click(function () {
+        $(this).addClass('checked');
+    });
+
     <!-- ************* modal box ******************* -->
     $('#commentaire-btn_java').on('click', function () {
         $('#myPopup').toggleClass('show');

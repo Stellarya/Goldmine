@@ -491,57 +491,70 @@ label.container {
     REFERENT
 ----------------------------------------------------- */
 
-.referent-flot{
-    padding: 0 2px;
+.referent-R{
+    padding: 0;
     margin-left: 10px;
-    margin-top: 2px;
+    margin-top: -2px;
+    margin-bottom: -7px;
     cursor: pointer;
     display: inline-block;
     float: right;
+    font-size: 22px;
 }
 
-.referent-flot:after {
-    font-family: "untitled-font-1" !important;
-    content: '\61';
+.referent-R:after {
+    font-family: Roboto, sans-serif;
+    content: 'R';
+    font-weight: bolder;
+    font-size: 25px;
 }
 
-.referent-flot.checked ~ .referent-flot:after,
-.referent-flot.checked:after{
-    font-family: "untitled-font-1" !important;
-    content: '\61';
+.referent-R.checked ~ .referent-R:after,
+.referent-R.checked:after{
+    font-family: Roboto, sans-serif;
+    content: 'R';
+    font-weight: bolder;
+    font-size: 25px;
     color: rgb(76,10,89);
 }
 
-.referent-flot:hover .referent-flot:after {
-    font-family: "untitled-font-1" !important;
-    content: '\61';
-    color: rgb(76,10,89);
-}
-
-
-.referent-flot:hover ~ .referent-flot:after,
-.referent-flot:hover:after {
-    font-family: "untitled-font-1" !important;
-    content: '\61';
-    color: rgb(76,10,89);
-}
-
-
-.referent-flot:not(.referent-fixed):hover ~ .referent-flot:after,
-.referent-flot:not(.referent-fixed):hover:after {
-    font-family: "untitled-font-1" !important;
-    content: '\61';
+.referent-R:hover .referent-R:after {
+    font-family: Roboto, sans-serif;
+    content: 'R';
+    font-weight: bolder;
+    font-size: 25px;
     color: rgb(76,10,89);
 }
 
 
-.referent-flot.checked:not(.referent-fixed):hover ~ .referent-flot.checked:after,
-.referent-flot.checked:not(.referent-fixed):hover:after {
-    font-family: "untitled-font-1" !important;
-    content: '\61';
+.referent-R:hover ~ .referent-R:after,
+.referent-R:hover:after {
+    font-family: Roboto, sans-serif;
+    content: 'R';
+    font-weight: bolder;
+    font-size: 25px;
+    color: rgb(76,10,89);
+}
+
+
+.referent-R:not(.referent-fixed):hover ~ .referent-R:after,
+.referent-R:not(.referent-fixed):hover:after {
+    font-family: Roboto, sans-serif;
+    content: 'R';
+    font-weight: bolder;
+    font-size: 25px;
+    color: rgb(76,10,89);
+}
+
+
+.referent-R.checked:not(.referent-fixed):hover ~ .referent-R.checked:after,
+.referent-R.checked:not(.referent-fixed):hover:after {
+    font-family: Roboto, sans-serif;
+    content: 'R';
+    font-weight: bolder;
+    font-size: 25px;
     color: rgb(200,200,200);
 }
-
 
 /* ---------------------------------------------------
     CONTENT STYLE
