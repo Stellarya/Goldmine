@@ -324,8 +324,8 @@ $(document).ready(function () {
 
     <!-- ************* Rating stars ******************* -->
 
-    $('.referent-R').click(function () {
-        $(this).addClass('checked');
+    $('.referent-R').click(function() {
+        $(this).toggleClass('checked unchecked');
     });
 
     <!-- ************* modal box ******************* -->

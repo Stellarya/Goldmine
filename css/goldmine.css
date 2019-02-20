@@ -518,6 +518,15 @@ label.container {
     color: rgb(76,10,89);
 }
 
+.referent-R.unchecked ~ .referent-R:after,
+.referent-R.unchecked:after{
+    font-family: Roboto, sans-serif;
+    content: 'R';
+    font-weight: bolder;
+    font-size: 25px;
+    color: rgb(200,200,200);
+}
+
 .referent-R:hover .referent-R:after {
     font-family: Roboto, sans-serif;
     content: 'R';
