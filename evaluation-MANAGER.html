@@ -29,7 +29,10 @@
             integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
             crossorigin="anonymous"></script>
     <script src="https://use.typekit.net/hoy3lrg.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>try {
+        Typekit.load({async: true});
+    } catch (e) {
+    }</script>
 
 </head>
 
@@ -342,9 +345,28 @@
                                                         <td class="column1">Android</td>
                                                         <td class="column2">
                                                             <div class="rating">
-                                                                <span class="referent-R unchecked" title="référent"
-                                                                      data-value="5"><span
-                                                                        class="notif_plus-ref">+</span></span>
+                                                                <span class="referent-R unchecked android-ref" title="référent" data-toggle="modal" data-target="#AndroidSuccessModal"
+                                                                      data-value="5">
+                                                                    <!--<span class="notif_minus-ref notif_hover">-</span>
+                                                                    <span class="notif_plus-ref notif_hover">+</span>--></span>
+                                                                <div class="modal fade" id="AndroidSuccessModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                                                        <div class="modal-content android-Success">
+                                                                            <div class="modal-header"
+                                                                                 style="display: block">
+                                                                                <h5 class="modal-title"
+                                                                                    style="font-size: 20px; font-weight: bold; text-align: center">
+                                                                                    Androïd - Java</h5>
+                                                                                <div class="modal-body"
+                                                                                     style="font-size: 15px; text-align: center">
+                                                                                    Vous venez d'ajouter Marie Evanno à
+                                                                                    la liste des référents en Android (JAVA).
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                                 <span class="rating-star rating-fixed checked"
                                                                       title="expert"
                                                                       data-value="4"></span>
@@ -467,9 +489,12 @@
                                                         <td class="column1">HTML 5</td>
                                                         <td class="column2">
                                                             <div class="rating">
-                                                                <span class="referent-R checked" title="référent"
-                                                                      data-value="5"><span
-                                                                        class="notif_minus-ref">-</span></span>
+                                                                <span class="referent-R html-ref checked"
+                                                                      title="référent" data-toggle="modal"
+                                                                      data-target="#HtmlDangerModal"
+                                                                      data-value="5">
+                                                                    <!--<span class="notif_minus-ref notif_hover">-</span>
+                                                                    <span class="notif_plus-ref notif_hover">+</span>--></span>
                                                                 <span class="rating-star rating-fixed checked"
                                                                       title="expert"
                                                                       data-value="4"></span>
@@ -483,7 +508,27 @@
                                                                       title="notions"
                                                                       data-value="1"></span>
                                                             </div>
+
+                                                            <div class="modal fade" id="HtmlDangerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                                                    <div class="modal-content html-Danger">
+                                                                        <div class="modal-header"
+                                                                             style="display: block">
+                                                                            <h5 class="modal-title"
+                                                                                style="font-size: 20px; font-weight: bold; text-align: center">
+                                                                                HTML 5 - Web</h5>
+                                                                            <div class="modal-body"
+                                                                                 style="font-size: 15px; text-align: center">
+                                                                                Vous venez de supprimer Marie Evanno de
+                                                                                la liste des référents en HTML 5 (WEB).
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </td>
+
                                                         <td class="column5">
                                                             <input type="text" class="note_manager" id="web-1" min="0"
                                                                    max="4" step="1">
@@ -568,55 +613,71 @@
                                                             commentaire
 
 
-                                                                <div class="panel-collapse collapse" id="collapseOne">
-                                                                    <div class="panel-body">
+                                                            <div class="panel-collapse collapse" id="collapseOne">
+                                                                <div class="panel-body">
 
-                                                                        <div class="content">
-                                                                            <div class="messages" id="chat">
-                                                                                <ul>
-                                                                                    <li class="sent">
-                                                                                        <img src="img/marie-avatar.png"
-                                                                                             alt=""/>
-                                                                                        <p>Delete d'une étoile en CSS 3 (pas
-                                                                                            utilisé depuis trop
-                                                                                            longtemps)</p>
-                                                                                    </li>
-                                                                                    <li class="replies">
-                                                                                        <img src="img/mickael-avatar.png"
-                                                                                             alt=""/>
-                                                                                        <p class="dessus">Rajout d'une étoile en HTML 5 -
-                                                                                            Passage Expert</p>
+                                                                    <div class="content">
+                                                                        <div class="messages" id="chat">
+                                                                            <ul>
+                                                                                <li class="sent">
+                                                                                    <img src="img/marie-avatar.png"
+                                                                                         alt=""/>
+                                                                                    <p>Delete d'une étoile en CSS 3 (pas
+                                                                                        utilisé depuis trop
+                                                                                        longtemps)</p>
+                                                                                    <p class="date-envoi"><i
+                                                                                            class="far fa-clock"></i> Il
+                                                                                        y a 2 ans</p>
+                                                                                </li>
+                                                                                <li class="replies">
+                                                                                    <img src="img/mickael-avatar.png"
+                                                                                         alt=""/>
+                                                                                    <p class="dessus">Rajout d'une
+                                                                                        étoile en HTML 5 -
+                                                                                        Passage Expert</p>
 
-                                                                                        <p class="dessous">Rajout d'une étoile en CSS3 -
-                                                                                            Passage Maitrise</p>
-                                                                                    </li>
-                                                                                    <li class="sent">
-                                                                                        <img src="img/marie-avatar.png"
-                                                                                             alt=""/>
-                                                                                        <p>Rajout d'une étoile suite à une
-                                                                                            formation WS REST</p>
-                                                                                    </li>
-                                                                                    <li class="replies">
-                                                                                        <img src="img/mickael-avatar.png"
-                                                                                             alt=""/>
-                                                                                        <p>Marie, je te nomme référente en
-                                                                                            HTML 5. Nous en parlerons lors
-                                                                                            du rendez-vous manager.</p>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </div>
-                                                                            <div class="message-input">
-                                                                                <div class="wrap">
-                                                                                    <input type="text"
-                                                                                           placeholder="Ecrivez votre message"/>
-                                                                                    <button class="submit"><i
-                                                                                            class="fa fa-paper-plane"
-                                                                                            aria-hidden="true"></i></button>
-                                                                                </div>
+                                                                                    <p class="dessous dessus">Rajout
+                                                                                        d'une étoile en CSS3 -
+                                                                                        Passage Maitrise</p>
+                                                                                    <p class="dessous">Formation WS SOAP
+                                                                                        ? A voir en entretien.</p>
+                                                                                    <p class="date-envoi"><i
+                                                                                            class="far fa-clock"></i> Il
+                                                                                        y a 6 mois</p>
+                                                                                </li>
+                                                                                <li class="sent">
+                                                                                    <img src="img/marie-avatar.png"
+                                                                                         alt=""/>
+                                                                                    <p>Rajout d'une étoile suite à une
+                                                                                        formation WS REST</p>
+                                                                                    <p class="date-envoi"><i
+                                                                                            class="far fa-clock"></i> Il
+                                                                                        y a 3 jours</p>
+                                                                                </li>
+                                                                                <li class="replies">
+                                                                                    <img src="img/mickael-avatar.png"
+                                                                                         alt=""/>
+                                                                                    <p>Marie, je te nomme référente en
+                                                                                        HTML 5. Nous en parlerons lors
+                                                                                        du rendez-vous manager.</p>
+                                                                                    <p class="date-envoi"><i
+                                                                                            class="far fa-clock"></i> Il
+                                                                                        y a quelques minutes</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="message-input">
+                                                                            <div class="wrap">
+                                                                                <input type="text"
+                                                                                       placeholder="Ecrivez votre message"/>
+                                                                                <button class="submit"><i
+                                                                                        class="fa fa-paper-plane"
+                                                                                        aria-hidden="true"></i></button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
+                                                            </div>
 
 
                                                         </td>
@@ -2623,8 +2684,9 @@
                                                         <td class="column2">
                                                             <div class="rating">
                                                                 <span class="referent-R checked" title="référent"
-                                                                      data-value="5"><span
-                                                                        class="notif_minus-ref">-</span></span>
+                                                                      data-value="5">
+                                                                    <!--<span class="notif_minus-ref notif_hover">-</span>
+                                                                    <span class="notif_plus-ref notif_hover">+</span>--></span>
                                                                 <span class="rating-star rating-fixed checked"
                                                                       title="expert"
                                                                       data-value="4"></span>
@@ -5219,7 +5281,6 @@
 <script type="text/javascript">
 
     $(".referent-R").hover(function () {
-        $(this).find('.notif_plus-ref').toggleClass('visible');
         $(this).find('.notif_minus-ref').toggleClass('visible');
     });
 
@@ -5228,6 +5289,24 @@
             $(".tags").toggle("slow");
         });
     });
+
+    $(document).ready(function () {
+        $(".referent-R.html-ref").click(function showAlert() {
+            setTimeout(function () {
+                $('#HtmlDangerModal').modal('hide');
+            }, 3000);
+        });
+    });
+
+    AndroidSuccessModal
+    $(document).ready(function () {
+        $(".referent-R.android-ref").click(function showAlert() {
+            setTimeout(function () {
+                $('#AndroidSuccessModal').modal('hide');
+            }, 3000);
+        });
+    });
+
 
 </script>
 

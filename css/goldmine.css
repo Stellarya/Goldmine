@@ -563,6 +563,16 @@ label.container {
     font-size: 25px;
     color: rgb(200,200,200);
 }
+.android-Success {
+    background: rgb(200,255,200);
+    border: 2px rgb(0,100,0);
+    color: rgb(0,100,0);
+}
+.html-Danger {
+    background: rgb(255,200,200);
+    border: 2px rgb(100,0,0);
+    color: rgb(100,0,0);
+}
 /* ---------------------------------------------------
     CHAT BOX
 ----------------------------------------------------- */
@@ -638,13 +648,32 @@ label.container {
     display: inline-block;
     clear: both;
     float: left;
-    margin: 15px 15px 5px 15px;
+    margin: 0 15px;
     width: calc(100% - 25px);
     font-size: 0.9em;
 }
 
 .content .messages ul {
     width: 100%;
+}
+
+.content .messages ul li.sent p.date-envoi {
+    font-size: 9px;
+    color: darkgrey;
+    text-align: left;
+    background: transparent;
+    top: -20px;
+    margin-bottom: -15px;
+}
+
+.content .messages ul li.replies p.date-envoi {
+    font-size: 9px;
+    color: darkgrey;
+    text-align: right;
+    background: transparent;
+    margin-right: 30px;
+    top: -20px;
+    margin-bottom: -15px;
 }
 
 .content .messages ul li .dessous {

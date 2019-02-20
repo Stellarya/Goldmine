@@ -328,6 +328,7 @@ $(document).ready(function () {
         $(this).toggleClass('checked unchecked');
     });
 
+
     <!-- ************* modal box ******************* -->
     $('#commentaire-btn_java').on('click', function () {
         $('#myPopup').toggleClass('show');
