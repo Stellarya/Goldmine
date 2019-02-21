@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/goldmine.css">
-    <link rel="stylesheet" href="css/silvermine.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/util.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -100,7 +99,6 @@
         <main class="page-content">
             <div class="container-fluid">
                 <div class="row">
-
                     <div class="competences_eval">
 
                         <header class="header">
@@ -123,24 +121,29 @@
                                 </nav>
                             </div>
                         </header>
-                        <div class="tags">
+                        <div style="text-align: center">
+                            <span href="#" id="pluscomp"><div
+                                    style="color:#531055;padding:15px 10px;display:inline-block">Ajouter une nouvelle compétence  <i
+                                    class="fa fa-plus"></i></div></span>
+                        </div>
+                        <div class="tags" style="display:none">
                             <div class="container-fluid">
                                 <nav>
                                     <ul>
-                                        <li id="tag_java" class="tag_competence">JAVA <span id="plus_java"><i
-                                                class="fas fa-plus-circle"></i></span>
+                                        <li id="tag_java" class="tag_competence" style="display:none">JAVA <span
+                                                id="plus_java"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Spring boot, Spring batch, J2EE, Android, JSF, JSP/Struts, Swing </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_web">Web <span id="plus_web"><i
-                                                class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_web" style="display:none">Web <span
+                                                id="plus_web"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> HTML5, CSS3, WS REST, WS SOAP </span>
                                         </li>
                                         <li class="tag_competence" id="tag_javascript">Javascript <span
                                                 id="plus_javascript"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Javascript, Typescript, AngularJS, Angular2, NodeJS </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_php">PHP <span id="plus_php"><i
-                                                class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_php" style="display:none">PHP <span
+                                                id="plus_php"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> PHP, Symfony </span>
                                         </li>
                                         <li class="tag_competence" id="tag_dotnet">.Net <span id="plus_dotnet"><i
@@ -151,8 +154,8 @@
                                                 id="plus_langages"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> C++, Python, Shell, Powershell, Perl, Groovy, R </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_framework">Framework <span
-                                                id="plus_framework"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_framework" style="display:none">Framework
+                                            <span id="plus_framework"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Cordova, Electron,<br> Windev, Delphi 10</span>
                                         </li>
                                         <li class="tag_competence" id="tag_reporting">BI/Reporting <span
@@ -171,8 +174,9 @@
                                                 id="plus_bus-messages"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip">RapidMQ, ActivMQ, <br> Kafka, MSQueue</span>
                                         </li>
-                                        <li class="tag_competence" id="tag_serveur-appli">Serveurs d'appli <span
-                                                id="plus_serveur-appli"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_serveur-appli" style="display:none">Serveurs
+                                            d'appli <span id="plus_serveur-appli"><i
+                                                    class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip">IIS, Apache Tomcat, Wildfly, Glassfish, Node Webkit, Cassini, Nginx </span>
                                         </li>
                                         <li class="tag_competence" id="tag_virtualisation">Virtualisation <span
@@ -184,16 +188,16 @@
                                             <span class="tooltiptext"
                                                   data-toggle="tooltip">OpCon, Centreon/Nagios </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_os">OS <span id="plus_os"><i
-                                                class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_os" style="display:none">OS <span
+                                                id="plus_os"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Unix, Linux, Windows, MacOS, iOS </span>
                                         </li>
                                         <li class="tag_competence" id="tag_produits">Produits <span
                                                 id="plus_produits"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Talend ETL, Talend ESB, MS SSIS, Elastic Stack, Media Transfer, Liferay6, Liferay 7, SharePoint, Drupal, Joomla!, Alfresco</span>
                                         </li>
-                                        <li class="tag_competence" id="tag_outils">Outils <span id="plus_outils"><i
-                                                class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_outils" style="display:none">Outils <span
+                                                id="plus_outils"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip">PowerAMC, Entreprise Architect, Excel, IWS</span>
                                         </li>
                                         <li class="tag_competence" id="tag_tests">Tests <span id="plus_tests"><i
@@ -303,7 +307,7 @@
                                                         <td class="column2">
                                                             <div class="rating">
                                                                 <span class="rating-star" title="expert"
-                                                                          data-value="4"></span>
+                                                                      data-value="4"></span>
                                                                 <span class="rating-star" title="autonome"
                                                                       data-value="3"></span>
                                                                 <span class="rating-star"
@@ -441,7 +445,8 @@
                                                         <td class="column1">HTML 5</td>
                                                         <td class="column2">
                                                             <div class="rating">
-                                                                <span class="referent-R checked" title="référent"
+                                                                <span class="referent-R checked referent-fixed"
+                                                                      title="référent"
                                                                       data-value="5"></span>
                                                                 <span class="rating-star checked" title="expert"
                                                                       data-value="4"></span>
@@ -515,11 +520,101 @@
                                                     <tr></tr>
                                                     <tr></tr>
                                                     <tr>
-                                                        <td colspan="3" style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
-                                                            <div style="display:inline;margin:3px;color:rgb(128, 128, 128);position:relative"><span class="notif"> 1</span> <i class="far fa-comment" style="font-size:17px;margin-right:10px" > </i></div>
+                                                        <td colspan="3"
+                                                            style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF" id="message-scroll"
+                                                            data-toggle="modal" data-target="#WebChatModal">
+                                                            <div style="display:inline;margin:3px;color:rgb(128, 128, 128);position:relative">
+                                                                <span class="notif"> 1</span> <i class="far fa-comment"
+                                                                                                 style="font-size:17px;margin-right:10px"> </i>
+                                                            </div>
 
                                                             commentaire
                                                         </td>
+                                                        <div class="modal fade" id="WebChatModal" tabindex="-1"
+                                                             role="dialog" aria-labelledby="exampleModalCenterTitle"
+                                                             aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered"
+                                                                 role="document">
+                                                                <div class="modal-content">
+
+                                                                    <div class="panel-body collab">
+
+                                                                        <div class="content-collab">
+                                                                            <div class="messages" id="scroll">
+                                                                                <ul>
+                                                                                    <li class="replies">
+                                                                                        <img src="img/marie-avatar.png"
+                                                                                             alt=""/>
+                                                                                        <p>Delete d'une étoile en CSS 3
+                                                                                            (pas
+                                                                                            utilisé depuis trop
+                                                                                            longtemps)</p>
+                                                                                        <p class="date-envoi"><i
+                                                                                                class="far fa-clock"></i>
+                                                                                            Il
+                                                                                            y a 2 ans</p>
+                                                                                    </li>
+                                                                                    <li class="sent">
+                                                                                        <img src="img/mickael-avatar.png"
+                                                                                             alt=""/>
+                                                                                        <p class="dessus">Rajout d'une
+                                                                                            étoile en HTML 5 -
+                                                                                            Passage Expert</p>
+
+                                                                                        <p class="dessous dessus">Rajout
+                                                                                            d'une étoile en CSS3 -
+                                                                                            Passage Maitrise</p>
+                                                                                        <p class="dessous">Formation WS
+                                                                                            SOAP
+                                                                                            ? A voir en entretien.</p>
+                                                                                        <p class="date-envoi"><i
+                                                                                                class="far fa-clock"></i>
+                                                                                            Il
+                                                                                            y a 6 mois</p>
+                                                                                    </li>
+                                                                                    <li class="replies">
+                                                                                        <img src="img/marie-avatar.png"
+                                                                                             alt=""/>
+                                                                                        <p>Rajout d'une étoile suite à
+                                                                                            une
+                                                                                            formation WS REST</p>
+                                                                                        <p class="date-envoi"><i
+                                                                                                class="far fa-clock"></i>
+                                                                                            Il
+                                                                                            y a 3 jours</p>
+                                                                                    </li>
+                                                                                    <li class="sent">
+                                                                                        <img src="img/mickael-avatar.png"
+                                                                                             alt=""/>
+                                                                                        <p>Marie, je te nomme référente
+                                                                                            en
+                                                                                            HTML 5. Nous en parlerons
+                                                                                            lors
+                                                                                            du rendez-vous manager.</p>
+                                                                                        <p class="date-envoi"><i
+                                                                                                class="far fa-clock"></i>
+                                                                                            Il
+                                                                                            y a quelques minutes</p>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <div class="message-input">
+                                                                                <div class="wrap">
+                                                                                    <input type="text" id="input-rep"
+                                                                                           placeholder="Ecrivez votre message"/>
+                                                                                    <button class="submit" id="submit-rep"><i
+                                                                                            class="fa fa-paper-plane"
+                                                                                            aria-hidden="true"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -2284,7 +2379,8 @@
                                                         <td class="column1">Windows</td>
                                                         <td class="column2">
                                                             <div class="rating">
-                                                                <span class="referent-R" title="référent"
+                                                                <span class="referent-R checked referent-fixed"
+                                                                      title="référent"
                                                                       data-value="5"></span>
                                                                 <span class="rating-star  checked" title="expert"
                                                                       data-value="4"></span>
@@ -4592,6 +4688,35 @@
 <script type="text/javascript" src="js/goldmine.js"></script>
 
 <script>
+
+    function newMessage() {
+        message = $("#input-rep").val();
+        if($.trim(message) == '') {
+            return false;
+        }
+        $('<li class="replies"><img src="img/marie-avatar.png" alt="" /><p>' + message + '</p><p class="date-envoi"><i class="far fa-clock"></i> Il y a quelques secondes</p></li>').appendTo($('.messages ul'));
+        $('#input-rep').val(null);
+        $('#scroll').scrollTop(1E10);
+
+    };
+
+    $('#submit-rep').click(function() {
+        newMessage();
+    });
+
+    $(document).ready(function () {
+        $("#pluscomp").click(function () {
+            $(".tags").toggle("slow");
+        });
+    });
+
+    $(window).on('keydown', function(e) {
+        if (e.which == 13) {
+            newMessage();
+            return false;
+        }
+    });
+
     // When the user clicks on div, open the popup
     function myFunction() {
         var popup = document.getElementById("myPopup");

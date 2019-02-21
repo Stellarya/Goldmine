@@ -330,11 +330,8 @@ $(document).ready(function () {
 
 
     $('.rating-star').click(function () {
-        if ($(this).is(":checked")) {
-            $(".architecte").show();
-        } else {
-            $(this).addClass('checked');
-        }
+        $(this).parents('.rating').find('.rating-star').removeClass('checked');
+        $(this).addClass('checked');
     });
 
     $('.reset-star').click(function () {

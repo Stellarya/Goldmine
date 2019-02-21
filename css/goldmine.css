@@ -433,6 +433,7 @@ label.container {
     color: rgb(100,100,100);
 }
 
+
 .rating:hover .rating-star:after {
     content: '\f005';
 }
@@ -443,6 +444,11 @@ label.container {
     color: #ffc107;
 }
 
+.rating-star.checked.darker:not(.rating-fixed):hover ~ .rating-star.checked.darker:after,
+.rating-star.checked.darker:not(.rating-fixed):hover:after {
+    content: '\f005';
+    color: rgb(100,100,100);
+}
 
 .rating-star.checked:not(.rating-fixed):hover ~ .rating-star.checked:after,
 .rating-star.checked:not(.rating-fixed):hover:after {
@@ -574,7 +580,7 @@ label.container {
     color: rgb(100,0,0);
 }
 /* ---------------------------------------------------
-    CHAT BOX
+    CHAT BOX Manager
 ----------------------------------------------------- */
 
 .chat
@@ -768,6 +774,211 @@ label.container {
     color: rgb(76,10,89);
 }
 .content .message-input .wrap button:focus {
+    outline: none;
+}
+
+/* ---------------------------------------------------
+    CHAT BOX Collab
+----------------------------------------------------- */
+
+.chat
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 50000;
+    position: relative;
+}
+
+.chat li
+{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+
+.chat li.left .chat-body
+{
+    margin-left: 60px;
+}
+
+.chat li.right .chat-body
+{
+    margin-right: 60px;
+}
+
+
+.chat li .chat-body p
+{
+    margin: 0;
+    color: #777777;
+}
+
+.panel .slidedown .glyphicon, .chat .glyphicon
+{
+    margin-right: 5px;
+}
+
+.panel-body.collab
+{
+    height: 350px;
+    padding-top: 10px;
+}
+
+.content-collab {
+    float: right;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.content-collab .messages {
+    height: auto;
+    width: 100%;
+    min-height: calc(100% - 93px);
+    max-height: 84%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.content-collab .messages::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+}
+.content-collab .messages::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.content-collab .messages ul li {
+    display: inline-block;
+    clear: both;
+    float: left;
+    margin: 0 15px;
+    width: calc(100% - 25px);
+    font-size: 0.9em;
+}
+
+.content-collab .messages ul {
+    width: 100%;
+}
+
+.content-collab .messages ul li.sent p.date-envoi {
+    font-size: 9px;
+    color: darkgrey;
+    text-align: left;
+    background: transparent;
+    top: -20px;
+    margin-bottom: 0px;
+    padding-top: 3px;
+    margin-left:30px;
+}
+
+.content-collab .messages ul li.replies p.date-envoi {
+    font-size: 9px;
+    color: darkgrey;
+    text-align: right;
+    background: transparent;
+    margin-right: 30px;
+    top: -20px;
+    margin-bottom: 0px;
+    padding-top:2px
+}
+
+.content-collab .messages ul li .dessous {
+    margin-left: 30px;
+    border-top-left-radius: 5px;
+}
+
+.content-collab .messages ul li .dessus {
+    margin-bottom: 3px;
+    border-bottom-left-radius: 5px;
+}
+.content-collab .messages ul li:nth-last-child(1) {
+    margin-bottom: 20px;
+}
+.content-collab .messages ul li.sent img {
+    margin: 6px 8px 0 0;
+}
+.content-collab .messages ul li.sent p {
+    color: rgb(76,10,89);
+    background: rgb(240,240,240);
+    margin-bottom: 5px;
+}
+.content-collab .messages ul li.replies img {
+    float: right;
+    margin: 6px 0 0 8px;
+}
+.content-collab .messages ul li.replies p {
+    background: rgb(76,10,89);
+    color: white;
+    float: right;
+    margin-bottom: 5px;
+}
+.content-collab .messages ul li img {
+    width: 22px;
+    border-radius: 50%;
+    float: left;
+}
+.content-collab .messages ul li p {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 20px;
+    width: 90%;
+    line-height: 130%;
+}
+
+.content-collab .message-input {
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+    z-index: 99;
+    margin-left: 10px;
+}
+.content-collab .message-input .wrap {
+    position: relative;
+}
+.content-collab .message-input .wrap input {
+    font-family: Roboto, sans-serif;
+    float: left;
+    border: none;
+    width: calc(100% - 90px);
+    padding: 11px 32px 10px 8px;
+    font-size: 15px;
+    color: #32465a;
+}
+
+.content-collab .message-input .wrap input:focus {
+    outline: none;
+}
+.content-collab .message-input .wrap .attachment {
+    position: absolute;
+    right: 60px;
+    z-index: 4;
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #435f7a;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.content-collab .message-input .wrap .attachment:hover {
+    opacity: 1;
+}
+.content-collab .message-input .wrap button {
+    float: right;
+    border: none;
+    width: 50px;
+    padding: 12px 0;
+    cursor: pointer;
+    background: rgb(76,10,89);
+    color: #f5f5f5;
+}
+
+.content-collab .message-input .wrap button:hover {
+    background: rgb(240,240,240);
+    color: rgb(76,10,89);
+}
+.content-collab .message-input .wrap button:focus {
     outline: none;
 }
 

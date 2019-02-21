@@ -345,12 +345,18 @@
                                                         <td class="column1">Android</td>
                                                         <td class="column2">
                                                             <div class="rating">
-                                                                <span class="referent-R unchecked android-ref" title="référent" data-toggle="modal" data-target="#AndroidSuccessModal"
+                                                                <span class="referent-R unchecked android-ref"
+                                                                      title="référent" data-toggle="modal"
+                                                                      data-target="#AndroidSuccessModal"
                                                                       data-value="5">
                                                                     <!--<span class="notif_minus-ref notif_hover">-</span>
                                                                     <span class="notif_plus-ref notif_hover">+</span>--></span>
-                                                                <div class="modal fade" id="AndroidSuccessModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                                                <div class="modal fade" id="AndroidSuccessModal"
+                                                                     tabindex="-1" role="dialog"
+                                                                     aria-labelledby="exampleModalCenterTitle"
+                                                                     aria-hidden="true">
+                                                                    <div class="modal-dialog modal-dialog-centered"
+                                                                         role="document">
                                                                         <div class="modal-content android-Success">
                                                                             <div class="modal-header"
                                                                                  style="display: block">
@@ -360,7 +366,8 @@
                                                                                 <div class="modal-body"
                                                                                      style="font-size: 15px; text-align: center">
                                                                                     Vous venez d'ajouter Marie Evanno à
-                                                                                    la liste des référents en Android (JAVA).
+                                                                                    la liste des référents en Android
+                                                                                    (JAVA).
                                                                                 </div>
                                                                             </div>
 
@@ -509,8 +516,11 @@
                                                                       data-value="1"></span>
                                                             </div>
 
-                                                            <div class="modal fade" id="HtmlDangerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                                            <div class="modal fade" id="HtmlDangerModal" tabindex="-1"
+                                                                 role="dialog" aria-labelledby="exampleModalCenterTitle"
+                                                                 aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered"
+                                                                     role="document">
                                                                     <div class="modal-content html-Danger">
                                                                         <div class="modal-header"
                                                                              style="display: block">
@@ -617,7 +627,7 @@
                                                                 <div class="panel-body">
 
                                                                     <div class="content">
-                                                                        <div class="messages" id="chat">
+                                                                        <div class="messages" id="scroll">
                                                                             <ul>
                                                                                 <li class="sent">
                                                                                     <img src="img/marie-avatar.png"
@@ -668,9 +678,9 @@
                                                                         </div>
                                                                         <div class="message-input">
                                                                             <div class="wrap">
-                                                                                <input type="text"
+                                                                                <input type="text" id="input-ref"
                                                                                        placeholder="Ecrivez votre message"/>
-                                                                                <button class="submit"><i
+                                                                                <button class="submit" id="submit-rep"><i
                                                                                         class="fa fa-paper-plane"
                                                                                         aria-hidden="true"></i></button>
                                                                             </div>
@@ -5311,64 +5321,27 @@
 </script>
 
 <script>
-    $(document).ready(function () {
-        $(".messages").animate({scrollTop: $(document).height()}, "fast");
+    function newMessage() {
+        message = $("#input-rep").val();
+        if($.trim(message) == '') {
+            return false;
+        }
+        $('<li class="replies"><img src="img/marie-avatar.png" alt="" /><p>' + message + '</p><p class="date-envoi"><i class="far fa-clock"></i> Il y a quelques secondes</p></li>').appendTo($('.messages ul'));
+        $('#input-rep').val(null);
+        $('#scroll').scrollTop(1E10);
 
-        $("#profile-img").click(function () {
-            $("#status-options").toggleClass("active");
-        });
+    };
 
-        $(".expand-button").click(function () {
-            $("#profile").toggleClass("expanded");
-            $("#contacts").toggleClass("expanded");
-        });
-
-        $("#status-options ul li").click(function () {
-            $("#profile-img").removeClass();
-            $("#status-online").removeClass("active");
-            $("#status-away").removeClass("active");
-            $("#status-busy").removeClass("active");
-            $("#status-offline").removeClass("active");
-            $(this).addClass("active");
-
-            if ($("#status-online").hasClass("active")) {
-                $("#profile-img").addClass("online");
-            } else if ($("#status-away").hasClass("active")) {
-                $("#profile-img").addClass("away");
-            } else if ($("#status-busy").hasClass("active")) {
-                $("#profile-img").addClass("busy");
-            } else if ($("#status-offline").hasClass("active")) {
-                $("#profile-img").addClass("offline");
-            } else {
-                $("#profile-img").removeClass();
-            }
-            ;
-
-            $("#status-options").removeClass("active");
-        });
-
-        function newMessage() {
-            message = $(".message-input input").val();
-            if ($.trim(message) == '') {
-                return false;
-            }
-            $('<li class="sent"><img src="http://emilcarlsson.se/assets/mikeross.png" alt="" /><p>' + message + '</p></li>').appendTo($('.messages ul'));
-            $('.message-input input').val(null);
-            $('.contact.active .preview').html('<span>You: </span>' + message);
-            $(".messages").animate({scrollTop: $(document).height()}, "fast");
-        };
-
-        $('.submit').click(function () {
-            newMessage();
-        });
-
-        $(window).on('keydown', function (e) {
-            if (e.which == 13) {
-                newMessage();
-                return false;
-            }
-        });
+    $('#submit-rep').click(function() {
+        newMessage();
     });
+
+    $(window).on('keydown', function(e) {
+        if (e.which == 13) {
+            newMessage();
+            return false;
+        }
+    })
 </script>
 
 </body>
