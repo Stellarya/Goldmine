@@ -911,6 +911,45 @@ $(document).ready(function () {
     $('input#divers-12').on('input', function() {
         $("#divers-12").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
     });
+    $('input#divers-13').on('input', function() {
+        $("#divers-13").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#divers-14').on('input', function() {
+        $("#divers-14").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#divers-15').on('input', function() {
+        $("#divers-15").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#divers-16').on('input', function() {
+        $("#divers-16").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#divers-17').on('input', function() {
+        $("#divers-17").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#divers-18').on('input', function() {
+        $("#divers-18").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#divers-19').on('input', function() {
+        $("#divers-19").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#divers-20').on('input', function() {
+        $("#divers-20").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#divers-21').on('input', function() {
+        $("#divers-21").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#divers-22').on('input', function() {
+        $("#divers-22").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#divers-23').on('input', function() {
+        $("#divers-23").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#divers-24').on('input', function() {
+        $("#divers-24").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
+    $('input#divers-25').on('input', function() {
+        $("#divers-25").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
+    });
 
     $('input#securite-1').on('input', function() {
         $("#securite-1").css({'background':'rgba(76, 10, 58, 0.2)', 'border':'rgba(76, 10, 58, 0.5) 2px solid', 'padding':'1px', 'padding-left':'3px'});
