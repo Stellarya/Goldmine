@@ -582,7 +582,6 @@ label.container {
 /* ---------------------------------------------------
     CHAT BOX Manager
 ----------------------------------------------------- */
-
 .chat
 {
     list-style: none;
@@ -621,12 +620,22 @@ label.container {
     margin-right: 5px;
 }
 
-.panel-body
-{
-    height: 250px;
+.panel-header {
+    background: rgb(76,10,89);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
 }
 
-.content {
+.panel-body.collab {
+    height: 350px;
+    padding-top: 10px;
+}
+
+.content-manager {
     float: right;
     width: 100%;
     height: 100%;
@@ -634,23 +643,23 @@ label.container {
     position: relative;
 }
 
-.content .messages {
+.content-manager .messages {
     height: auto;
     width: 100%;
     min-height: calc(100% - 93px);
-    max-height: 80%;
+    max-height: 84%;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
-.content .messages::-webkit-scrollbar {
+.content-manager .messages::-webkit-scrollbar {
     width: 8px;
     background: transparent;
 }
-.content .messages::-webkit-scrollbar-thumb {
+.content-manager .messages::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.3);
 }
-.content .messages ul li {
+.content-manager .messages ul li {
     display: inline-block;
     clear: both;
     float: left;
@@ -659,63 +668,68 @@ label.container {
     font-size: 0.9em;
 }
 
-.content .messages ul {
+.content-manager .messages ul {
     width: 100%;
 }
 
-.content .messages ul li.sent p.date-envoi {
+.content-manager .messages ul li.sent p.date-envoi {
     font-size: 9px;
     color: darkgrey;
     text-align: left;
     background: transparent;
     top: -20px;
-    margin-bottom: -15px;
+    margin-bottom: 0px;
+    padding-top: 3px;
+    margin-left:30px;
 }
 
-.content .messages ul li.replies p.date-envoi {
+.content-manager .messages ul li.replies p.date-envoi {
     font-size: 9px;
     color: darkgrey;
     text-align: right;
     background: transparent;
     margin-right: 30px;
     top: -20px;
-    margin-bottom: -15px;
+    margin-bottom: 0px;
+    padding-top:2px
 }
 
-.content .messages ul li .dessous {
+.content-manager .messages ul li .dessous {
     margin-right: 30px;
     border-top-right-radius: 5px;
 }
 
-.content .messages ul li .dessus {
+.content-manager .messages ul li .dessus {
     margin-bottom: 3px;
     border-bottom-right-radius: 5px;
 }
-.content .messages ul li:nth-last-child(1) {
+.content-manager .messages ul li:nth-last-child(1) {
     margin-bottom: 20px;
 }
-.content .messages ul li.sent img {
+.content-manager .messages ul li.sent img {
     margin: 6px 8px 0 0;
 }
-.content .messages ul li.sent p {
+.content-manager .messages ul li.sent p {
     color: rgb(76,10,89);
     background: rgb(240,240,240);
+    margin-bottom: 5px;
 }
-.content .messages ul li.replies img {
+.content-manager .messages ul li.replies img {
     float: right;
     margin: 6px 0 0 8px;
 }
-.content .messages ul li.replies p {
+.content-manager .messages ul li.replies p {
     background: rgb(76,10,89);
     color: white;
     float: right;
+    margin-bottom: 5px;
 }
-.content .messages ul li img {
+.content-manager .messages ul li img {
     width: 22px;
     border-radius: 50%;
     float: left;
 }
-.content .messages ul li p {
+.content-manager .messages ul li p {
     display: inline-block;
     padding: 10px 15px;
     border-radius: 20px;
@@ -723,16 +737,17 @@ label.container {
     line-height: 130%;
 }
 
-.content .message-input {
+.content-manager .message-input {
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 98%;
     z-index: 99;
+    margin-left: 10px;
 }
-.content .message-input .wrap {
+.content-manager .message-input .wrap {
     position: relative;
 }
-.content .message-input .wrap input {
+.content-manager .message-input .wrap input {
     font-family: Roboto, sans-serif;
     float: left;
     border: none;
@@ -742,10 +757,10 @@ label.container {
     color: #32465a;
 }
 
-.content .message-input .wrap input:focus {
+.content-manager .message-input .wrap input:focus {
     outline: none;
 }
-.content .message-input .wrap .attachment {
+.content-manager .message-input .wrap .attachment {
     position: absolute;
     right: 60px;
     z-index: 4;
@@ -756,24 +771,25 @@ label.container {
     cursor: pointer;
 }
 
-.content .message-input .wrap .attachment:hover {
+.content-manager .message-input .wrap .attachment:hover {
     opacity: 1;
 }
-.content .message-input .wrap button {
+.content-manager .message-input .wrap button {
     float: right;
     border: none;
-    width: 50px;
+    border-radius: 25px;
+    width: 42px;
     padding: 12px 0;
     cursor: pointer;
     background: rgb(76,10,89);
     color: #f5f5f5;
 }
 
-.content .message-input .wrap button:hover {
+.content-manager .message-input .wrap button:hover {
     background: rgb(240,240,240);
     color: rgb(76,10,89);
 }
-.content .message-input .wrap button:focus {
+.content-manager .message-input .wrap button:focus {
     outline: none;
 }
 
@@ -967,7 +983,8 @@ label.container {
 .content-collab .message-input .wrap button {
     float: right;
     border: none;
-    width: 50px;
+    border-radius: 25px;
+    width: 42px;
     padding: 12px 0;
     cursor: pointer;
     background: rgb(76,10,89);

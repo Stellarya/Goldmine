@@ -622,85 +622,99 @@
                                                     <tr></tr>
                                                     <tr>
                                                         <td colspan="3"
-                                                            style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF">
-                                                            <div style="display:inline;margin:3px;color:rgb(128, 128, 128);position:relative"
-                                                                 data-toggle="collapse"
-                                                                 data-parent="#accordion" href="#collapseOne"
-                                                                 class="panel-heading" id="accordion">
+                                                            style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF" id="message-scroll"
+                                                            data-toggle="modal" data-target="#WebChatModal">
+                                                            <div style="display:inline;margin:3px;color:rgb(128, 128, 128);position:relative">
                                                                 <span class="notif"> 1</span> <i class="far fa-comment"
                                                                                                  style="font-size:17px;margin-right:10px"> </i>
                                                             </div>
+
                                                             commentaire
+                                                        </td>
+                                                        <div class="modal fade" id="WebChatModal" tabindex="-1"
+                                                             role="dialog" aria-labelledby="exampleModalCenterTitle"
+                                                             aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered"
+                                                                 role="document">
+                                                                <div class="modal-content">
+                                                                    <div class="panel-header">
+                                                                        WEB
+                                                                    </div>
 
+                                                                    <div class="panel-body collab">
 
-                                                            <div class="panel-collapse collapse" id="collapseOne">
-                                                                <div class="panel-body">
+                                                                        <div class="content-manager">
+                                                                            <div class="messages" id="scroll">
+                                                                                <ul>
+                                                                                    <li class="sent">
+                                                                                        <img src="img/marie-avatar.png"
+                                                                                             alt=""/>
+                                                                                        <p>Delete d'une étoile en CSS 3
+                                                                                            (pas
+                                                                                            utilisé depuis trop
+                                                                                            longtemps)</p>
+                                                                                        <p class="date-envoi"><i
+                                                                                                class="far fa-clock"></i>
+                                                                                            Le 24/02/2017 à 11:51</p>
+                                                                                    </li>
+                                                                                    <li class="replies">
+                                                                                        <img src="img/mickael-avatar.png"
+                                                                                             alt=""/>
+                                                                                        <p class="dessus">Rajout d'une
+                                                                                            étoile en HTML 5 -
+                                                                                            Passage Expert</p>
 
-                                                                    <div class="content">
-                                                                        <div class="messages" id="scroll">
-                                                                            <ul>
-                                                                                <li class="sent">
-                                                                                    <img src="img/marie-avatar.png"
-                                                                                         alt=""/>
-                                                                                    <p>Delete d'une étoile en CSS 3 (pas
-                                                                                        utilisé depuis trop
-                                                                                        longtemps)</p>
-                                                                                    <p class="date-envoi"><i
-                                                                                            class="far fa-clock"></i> Il
-                                                                                        y a 2 ans</p>
-                                                                                </li>
-                                                                                <li class="replies">
-                                                                                    <img src="img/mickael-avatar.png"
-                                                                                         alt=""/>
-                                                                                    <p class="dessus">Rajout d'une
-                                                                                        étoile en HTML 5 -
-                                                                                        Passage Expert</p>
-
-                                                                                    <p class="dessous dessus">Rajout
-                                                                                        d'une étoile en CSS3 -
-                                                                                        Passage Maitrise</p>
-                                                                                    <p class="dessous">Formation WS SOAP
-                                                                                        ? A voir en entretien.</p>
-                                                                                    <p class="date-envoi"><i
-                                                                                            class="far fa-clock"></i> Il
-                                                                                        y a 6 mois</p>
-                                                                                </li>
-                                                                                <li class="sent">
-                                                                                    <img src="img/marie-avatar.png"
-                                                                                         alt=""/>
-                                                                                    <p>Rajout d'une étoile suite à une
-                                                                                        formation WS REST</p>
-                                                                                    <p class="date-envoi"><i
-                                                                                            class="far fa-clock"></i> Il
-                                                                                        y a 3 jours</p>
-                                                                                </li>
-                                                                                <li class="replies">
-                                                                                    <img src="img/mickael-avatar.png"
-                                                                                         alt=""/>
-                                                                                    <p>Marie, je te nomme référente en
-                                                                                        HTML 5. Nous en parlerons lors
-                                                                                        du rendez-vous manager.</p>
-                                                                                    <p class="date-envoi"><i
-                                                                                            class="far fa-clock"></i> Il
-                                                                                        y a quelques minutes</p>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                        <div class="message-input">
-                                                                            <div class="wrap">
-                                                                                <input type="text" id="input-ref"
-                                                                                       placeholder="Ecrivez votre message"/>
-                                                                                <button class="submit" id="submit-rep"><i
-                                                                                        class="fa fa-paper-plane"
-                                                                                        aria-hidden="true"></i></button>
+                                                                                        <p class="dessous dessus">Rajout
+                                                                                            d'une étoile en CSS3 -
+                                                                                            Passage Maitrise</p>
+                                                                                        <p class="dessous">Formation WS
+                                                                                            SOAP
+                                                                                            ? A voir en entretien.</p>
+                                                                                        <p class="date-envoi"><i
+                                                                                                class="far fa-clock"></i>
+                                                                                            Le 19/04/2018 à 11:16</p>
+                                                                                    </li>
+                                                                                    <li class="sent">
+                                                                                        <img src="img/marie-avatar.png"
+                                                                                             alt=""/>
+                                                                                        <p>Rajout d'une étoile suite à
+                                                                                            une
+                                                                                            formation WS REST</p>
+                                                                                        <p class="date-envoi"><i
+                                                                                                class="far fa-clock"></i>
+                                                                                            Le 20/02/2019 à 9:58</p>
+                                                                                    </li>
+                                                                                    <li class="replies">
+                                                                                        <img src="img/mickael-avatar.png"
+                                                                                             alt=""/>
+                                                                                        <p>Marie, je te nomme référente
+                                                                                            en
+                                                                                            HTML 5. Nous en parlerons
+                                                                                            lors
+                                                                                            du rendez-vous manager.</p>
+                                                                                        <p class="date-envoi"><i
+                                                                                                class="far fa-clock"></i>
+                                                                                            Hier à 17:54</p>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <div class="message-input">
+                                                                                <div class="wrap">
+                                                                                    <input type="text" id="input-rep"
+                                                                                           placeholder="Ecrivez votre message"/>
+                                                                                    <button class="submit" id="submit-rep"><i
+                                                                                            class="fa fa-paper-plane"
+                                                                                            aria-hidden="true"></i>
+                                                                                    </button>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
+
                                                                 </div>
                                                             </div>
+                                                        </div>
 
-
-                                                        </td>
                                                     </tr>
 
                                                     </tbody>
@@ -5336,7 +5350,7 @@
         if($.trim(message) == '') {
             return false;
         }
-        $('<li class="replies"><img src="img/marie-avatar.png" alt="" /><p>' + message + '</p><p class="date-envoi"><i class="far fa-clock"></i> Il y a quelques secondes</p></li>').appendTo($('.messages ul'));
+        $('<li class="replies"><img src="img/mickael-avatar.png" alt="" /><p>' + message + '</p><p class="date-envoi"><i class="far fa-clock"></i> Il y a quelques secondes</p></li>').appendTo($('.messages ul'));
         $('#input-rep').val(null);
         $('#scroll').scrollTop(1E10);
 
