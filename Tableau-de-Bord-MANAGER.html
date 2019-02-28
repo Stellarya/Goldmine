@@ -349,686 +349,173 @@
                                         <table class="table tableResults" id="table_comps">
                                             <thead style="border: none">
                                             <tr>
-                                                <th rowspan="2" class="table100-head1" scope="col" width="10%"
-                                                    style="vertical-align: middle; padding-top: 1px">Nom
-                                                </th>
-                                                <th rowspan="2" class="table100-head1" scope="col" width="9%"
-                                                    style="vertical-align: middle; padding-top: 1px">Prenom
-                                                </th>
-                                                <th rowspan="2" class="table100-head1" scope="col" width="8%"
-                                                    style="vertical-align: middle; padding-top: 1px; text-align: center">
-                                                    <div class="multiselect">
-                                                        <div class="selectBox" onclick="showCheckboxesService()">
-                                                            Service <span><i class="fas fa-chevron-down"></i></span>
-
-                                                        </div>
-                                                        <div id="checkboxesService">
-                                                            <div class="form-check" style="padding-left: 0px">
-                                                                <label class="container" style="font-size: 15px">1
-                                                                    <input type="checkbox" checked id="Service-1">
-                                                                    <span class="checkmark">
-                                                            </span>
-                                                                </label>
-
-                                                            </div>
-                                                            <div class="form-check" style="padding-left: 0px">
-                                                                <label class="container" style="font-size: 15px">2
-                                                                    <input type="checkbox" checked id="Service-2">
-                                                                    <span class="checkmark">
-                                                            </span>
-                                                                </label>
-
-                                                            </div>
-                                                            <div class="form-check" style="padding-left: 0px">
-                                                                <label class="container" style="font-size:15px ">Studio
-                                                                    <input type="checkbox" checked id="Service-Studio">
-                                                                    <span class="checkmark">
-                                                            </span>
-                                                                </label>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </th>
-                                                <th rowspan="2" class="table100-head1" scope="col" width="10%"
+                                                <th rowspan="2" class="table100-head1" scope="col" width="2.5%"
                                                     style="vertical-align: middle; padding-top: 1px">
+                                                </th>
+                                                <th rowspan="2" class="table100-head1" scope="col" width="15%"
+                                                    style="vertical-align: middle; padding-top: 1px">Catégorie
+                                                </th>
+                                                <th rowspan="2" class="table100-head1" scope="col" width="15%"
+                                                    style="vertical-align: middle; padding-top: 1px">Compétence
+                                                </th>
 
-                                                    <div class="multiselect">
-                                                        <div class="selectBox" onclick="showCheckboxesFonction()">
-                                                            Fonction <span><i class="fas fa-chevron-down"></i></span>
-
-                                                        </div>
-                                                        <div id="checkboxes">
-                                                            <div class="form-check" style="padding-left: 0px">
-                                                                <label class="container" style="font-size: 15px">Architecture
-                                                                    <input type="checkbox" checked id="Archi">
-                                                                    <span class="checkmark" >
-                                                            </span>
-                                                                </label>
-
-                                                            </div>
-                                                            <div class="form-check" style="padding-left: 0px">
-                                                                <label class="container" style="font-size: 15px">Développeur
-                                                                    <input type="checkbox" checked id="Dev">
-                                                                    <span class="checkmark" >
-                                                            </span>
-                                                                </label>
-
-                                                            </div>
-                                                            <div class="form-check" style="padding-left: 0px">
-                                                                <label class="container" style="font-size:15px ">CDP
-                                                                    <input type="checkbox" checked id="CDP">
-                                                                    <span class="checkmark" >
-                                                            </span>
-                                                                </label>
-
-                                                            </div>
-                                                        </div>
+                                                <th colspan="3" class="3stars" width="15%" style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">
+                                                    <div class="rating">
+                                                        <span class="rating-star darker" title="expert"
+                                                              data-value="4" style="margin-right: 5px;margin-left: 5px"></span>
+                                                        <span class="rating-star checked rating-fixed darker" title="autonome"
+                                                              data-value="3" style="margin-right: 5px;margin-left: 5px"></span>
+                                                        <span class="rating-star checked rating-fixed darker"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2" style="margin-right: 5px;margin-left: 5px"></span>
+                                                        <span class="rating-star checked darker" title="notions"
+                                                              data-value="1" style="margin-right: 5px;margin-left: 5px"></span>
                                                     </div>
                                                 </th>
-                                                <th class="table100-head1" scope="col" width="8%">
-                                                    <div class="form-check" style="padding-left: 0px">
-                                                        <label class="container">Collab.
-                                                            <input type="checkbox" id="chkCollab" checked>
-                                                            <span class="checkmark" id="Collab">
-                                                            </span>
-                                                        </label>
-
+                                                <th colspan="3" class="4stars" width="15%" style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">
+                                                    <div class="rating">
+                                                        <span class="rating-star checked darker" title="expert"
+                                                              data-value="4" style="margin-right: 5px;margin-left: 5px"></span>
+                                                        <span class="rating-star checked rating-fixed darker" title="autonome"
+                                                              data-value="3" style="margin-right: 5px;margin-left: 5px"></span>
+                                                        <span class="rating-star checked rating-fixed darker"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2" style="margin-right: 5px;margin-left: 5px"></span>
+                                                        <span class="rating-star checked darker" title="notions"
+                                                              data-value="1" style="margin-right: 5px;margin-left: 5px"></span>
                                                     </div>
                                                 </th>
-
-                                                <th class="table100-head1 spring" scope="col" width="11%"
-                                                    style="text-align: center">Spring <span id="minus_spring-header"
-                                                                                            class="block_col_2"> <i
-                                                        class="fas fa-minus-circle"></i></span>
+                                                <th rowspan="2" class="table100-head1" scope="col" width="37.5%"
+                                                    style="vertical-align: middle; padding-top: 1px">Référents
                                                 </th>
-                                                <th class="table100-head1 htmlcss" scope="col" width="11%"
-                                                    style="text-align: center">HTML/CSS <span id="minus_htmlcss-header"
-                                                                                              class="block_col_2"> <i
-                                                        class="fas fa-minus-circle"></i></span>
-                                                </th>
-                                                <th class="table100-head1 angularJS" scope="col" width="11%"
-                                                    style="text-align: center">AngularJS <span id="minus_angular"
-                                                                                               class="block_col_2"> <i
-                                                        class="fas fa-minus-circle"></i></span>
-                                                </th>
-
-                                                <th class="table100-head1 colSpring" style="display: none; text-align: center" scope="col" width="11%">-</th>
-                                                <th class="table100-head1 colHtml" style="display: none; text-align: center" scope="col" width="11%">-</th>
-                                                <th class="table100-head1 colAngular" scope="col" width="11%"
-                                                    style="text-align: center">-</th>
-                                                <th class="table100-head1" scope="col" width="11%"
-                                                    style="text-align: center">-</th>
-                                                <th class="table100-head1" scope="col" width="11%"
-                                                    style="text-align: center">-</th>
 
                                             </tr>
-                                            <tr style="height: 0px">
-                                                <th  style="padding-top: 0px !important; padding-bottom: 0px">
-                                                    <div class="form-check" style="padding-left: 0px">
-                                                        <label class="container">Presta.
-                                                            <input type="checkbox" id="chkPresta">
-                                                            <span class="checkmark"></span>
-                                                        </label>
+                                            <tr style="height: 0px; top: -10px">
+                                                <th scope="col" style="vertical-align: middle; padding-top: 1px; text-align: center" width="5%"></th>
+                                                <th scope="col" style="vertical-align: middle; padding-top: 1px; text-align: center" width="5%">Cible</th>
+                                                <th scope="col" style="vertical-align: middle; padding-top: 1px; text-align: center" width="5%"></th>
 
-                                                    </div>
-                                                </th>
-                                                <th class="spring" style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">
-                                                    <div class="rating">
-                                                        <span class="rating-star darker" title="expert"
-                                                              data-value="4"></span>
-                                                        <span class="rating-star checked darker" id="star3Spring" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star checked darker" id="star2Spring"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star checked darker" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </th>
-                                                <th class="htmlcss" style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">
-                                                    <div class="rating">
-                                                    <span class="rating-star darker" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star checked darker" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star checked darker"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star checked darker" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </th>
-                                                <th class="angularJS" style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">
-                                                    <div class="rating">
-                                                        <span class="rating-star darker" title="expert"
-                                                              data-value="4"></span>
-                                                        <span class="rating-star darker" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star checked darker"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star checked darker" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </th>
-                                                <th class="colSpring table100-head1" style="text-align: center; display: none; padding-top: 0px !important; padding-bottom: 0px !important;" scope="col" width="11%">-</th>
-                                                <th class="colHtml table100-head1" style="text-align: center; display: none; padding-top: 0px !important; padding-bottom: 0px !important;" scope="col" width="11%">-</th>
-                                                <th class="colAngular table100-head1" style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">-</th>
-                                                <th class="table100-head1" style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">-</th>
-                                                <th class="table100-head1" style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">-</th>
+                                                <th scope="col" style="vertical-align: middle; padding-top: 1px; text-align: center" width="5%"></th>
+                                                <th scope="col" style="vertical-align: middle; padding-top: 1px; text-align: center" width="5%">Cible</th>
+                                                <th scope="col" style="vertical-align: middle; padding-top: 1px; text-align: center" width="5%"></th>
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            <tr class="collabs service-2 architecte black" id="german">
-                                                <td>German</td>
-                                                <td>Christian</td>
-                                                <td style="text-align: center">2</td>
-                                                <td>Architecte</td>
-                                                <td>Collaborateur</td>
-                                                <td class="spring" style="text-align: center">
-                                                    <div class="rating-style">
-                                                    <span class="rating-star rating-fixed checked" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed checked" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed checked"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed checked" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="htmlcss" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed checked" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed checked"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed checked" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="angularJS" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed checked" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed checked"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed checked" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="colSpring" style="text-align: center; display: none">-</td>
-                                                <td class="colHtml" style="text-align: center; display: none">-</td>
-                                                <td class="colAngular" style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
+                                            <tr class="collabs service-2 architecte" id="german">
+                                                <td><i class="fas fa-minus-circle"></i></td>
+                                                <td>Java</td>
+                                                <td>Spring</td>
+                                                <td>-</td>
+                                                <td><input type="number" class="input-cible" ></td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>Prénom NOM, Prénom NOM</td>
+
                                             </tr>
-                                            <tr class="collabs service-2 architecte black" id="dariel">
-                                                <td>Dariel</td>
-                                                <td>Eric</td>
-                                                <td style="text-align: center">2</td>
-                                                <td>Architecte</td>
-                                                <td>Collaborateur</td>
-                                                <td class="spring" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed checked"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed checked" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="htmlcss" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed checked" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed checked" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed checked"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed checked" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="angularJS" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed checked" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed checked"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed checked" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="colSpring" style="text-align: center; display: none">-</td>
-                                                <td class="colHtml" style="text-align: center; display: none">-</td>
-                                                <td class="colAngular" style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
+                                            <tr class="collabs service-2 architecte" id="dariel">
+                                                <td><i class="fas fa-minus-circle"></i></td>
+                                                <td>Java</td>
+                                                <td>J2EE</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>Prénom Nom, Prénom NOM, Prénom NOM</td>
+
                                             </tr>
-                                            <tr class="collabs service-1 developpeur black" id="reynaud">
-                                                <td>Reynaud</td>
-                                                <td>Antony</td>
-                                                <td style="text-align: center">1</td>
-                                                <td>Developpeur</td>
-                                                <td>Collaborateur</td>
-                                                <td class="spring" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed checked" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed checked"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed checked" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="htmlcss" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixedr" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed checked" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed checked"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed checked" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="angularJS" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed checked" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed checked"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed checked" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="colSpring" style="text-align: center; display: none">-</td>
-                                                <td class="colHtml" style="text-align: center; display: none">-</td>
-                                                <td class="colAngular" style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
+                                            <tr class="collabs service-1 developpeur" id="reynaud">
+                                                <td><i class="fas fa-minus-circle"></i></td>
+                                                <td>Web</td>
+                                                <td>HTML 5</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>Prénom Nom</td>
+
                                             </tr>
-                                            <tr class="collabs service-2 developpeur black" id="audeon">
-                                                <td>Audeon</td>
-                                                <td>Nicolas</td>
-                                                <td style="text-align: center">2</td>
-                                                <td>Développeur</td>
-                                                <td>Collaborateur</td>
-                                                <td class="spring" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed checked" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed checked"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed checked" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="htmlcss" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed checked" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed checked"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed checked" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="angularJS" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed checked"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed checked" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="colSpring" style="text-align: center; display: none">-</td>
-                                                <td class="colHtml" style="text-align: center; display: none">-</td>
-                                                <td class="colAngular" style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
+                                            <tr class="collabs service-2 developpeur" id="audeon">
+                                                <td><i class="fas fa-minus-circle"></i></td>
+                                                <td>Web</td>
+                                                <td>CSS 3</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td style="font-weight: bold; color: red">Pas de réferent</td>
                                             </tr>
-                                            <tr id="lefebvre" class="service-1 developpeur Presta black" style="display: none">
-                                                <td>Lefebvre</td>
-                                                <td>Damien</td>
-                                                <td style="text-align: center">1</td>
-                                                <td>Développeur</td>
-                                                <td>Prestataire</td>
-                                                <td class="spring" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="htmlcss" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed checked" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed checked"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed checked" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="angularJS" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="colSpring" style="text-align: center; display: none">-</td>
-                                                <td class="colHtml" style="text-align: center; display: none">-</td>
-                                                <td class="colAngular" style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
+                                            <tr id="lefebvre" class="service-1 developpeur">
+                                                <td><i class="fas fa-minus-circle"></i></td>
+                                                <td>Javascript</td>
+                                                <td>AngularJS</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>Prénom Nom</td>
+
                                             </tr>
-                                            <tr class="collabs service-2 architecte grey" id="flageul">
-                                                <td>Flageul</td>
-                                                <td>Thierry</td>
-                                                <td style="text-align: center">2</td>
-                                                <td>Architecte</td>
-                                                <td>Collaborateur</td>
-                                                <td class="spring" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed checked" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed checked"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed checked" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="htmlcss" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed checked"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed checked" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="angularJS" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed checked"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed checked" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="colSpring" style="text-align: center; display: none">-</td>
-                                                <td class="colHtml" style="text-align: center; display: none">-</td>
-                                                <td class="colAngular" style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
+                                            <tr class="collabs service-2 architecte" id="flageul">
+                                                <td><i class="fas fa-minus-circle"></i></td>
+                                                <td>Javascript</td>
+                                                <td>Javascript</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>Prénom Nom, Prénom NOM</td>
+
                                             </tr>
-                                            <tr class="collabs service-1 developpeur grey" id="vanderlinden">
-                                                <td>Van Der Linden</td>
-                                                <td>Julien</td>
-                                                <td style="text-align: center">1</td>
-                                                <td>Développeur</td>
-                                                <td>Collaborateur</td>
-                                                <td class="spring" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed checked" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="htmlcss" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed checked" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed checked"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed checked" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="angularJS" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed checked"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed checked" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="colSpring" style="text-align: center; display: none">-</td>
-                                                <td class="colHtml" style="text-align: center; display: none">-</td>
-                                                <td class="colAngular" style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
+                                            <tr class="collabs service-1 developpeur" id="vanderlinden">
+                                                <td><i class="fas fa-minus-circle"></i></td>
+                                                <td>BDD</td>
+                                                <td>PL/SQL</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>Prénom Nom</td>
+
                                             </tr>
-                                            <tr class="collabs service-1 chef-de-projet grey" id="bouvet">
-                                                <td>Bouvet</td>
-                                                <td>Philippe</td>
-                                                <td style="text-align: center">1</td>
-                                                <td>Chef de Projet</td>
-                                                <td>Collaborateur</td>
-                                                <td class="spring" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="htmlcss" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed checked" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed checked"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed checked" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="angularJS" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed checked"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed checked" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="colSpring" style="text-align: center; display: none">-</td>
-                                                <td class="colHtml" style="text-align: center; display: none">-</td>
-                                                <td class="colAngular" style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
+                                            <tr class="collabs service-1 chef-de-projet" id="bouvet">
+                                                <td><i class="fas fa-minus-circle"></i></td>
+                                                <td>.Net</td>
+                                                <td>C#</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>Prénom Nom</td>
+
                                             </tr>
-                                            <tr class="collabs service-studio developpeur grey" id="aligand">
-                                                <td>Aligand</td>
-                                                <td>Line</td>
-                                                <td style="text-align: center">Studio</td>
-                                                <td>Développeur</td>
-                                                <td>Collaborateur</td>
-                                                <td class="spring" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="htmlcss" class="colEmplty" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed checked" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed checked"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed checked" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="angularJS" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="colSpring" style="text-align: center; display: none">-</td>
-                                                <td class="colHtml" style="text-align: center; display: none">-</td>
-                                                <td class="colAngular" style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
-                                            </tr>
-                                            <tr class="collabs service-studio developpeur grey" id="evanno">
-                                                <td>Evanno</td>
-                                                <td>Marie</td>
-                                                <td style="text-align: center">Studio</td>
-                                                <td>Développeur</td>
-                                                <td>Collaborateur</td>
-                                                <td class="spring" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="htmlcss" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed checked" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed checked"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed checked" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="angularJS" style="text-align: center">
-                                                    <div class="rating">
-                                                    <span class="rating-star rating-fixed" title="expert"
-                                                          data-value="4"></span>
-                                                        <span class="rating-star rating-fixed" title="autonome"
-                                                              data-value="3"></span>
-                                                        <span class="rating-star rating-fixed"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2"></span>
-                                                        <span class="rating-star rating-fixed" title="notions"
-                                                              data-value="1"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="colSpring" style="text-align: center; display: none">-</td>
-                                                <td class="colHtml" style="text-align: center; display: none">-</td>
-                                                <td class="colAngular" style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
+                                            <tr class="collabs service-studio developpeur" id="aligand">
+                                                <td><i class="fas fa-minus-circle"></i></td>
+                                                <td>OS</td>
+                                                <td>Windows</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td style="font-weight: bold; color: red">Pas de réferent</td>
+
                                             </tr>
                                             </tbody>
                                         </table>
