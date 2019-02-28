@@ -142,7 +142,7 @@
                                     <div class="card-body">
                                         <div class="form-check" style="padding-left: 0px">
                                             <label class="container">Spring
-                                                <input type="checkbox" checked id="checkSpring">
+                                                <input type="checkbox" checked id="checkspring">
                                                 <span class="checkmark">
                                                 </span>
                                             </label>
@@ -172,8 +172,14 @@
                                      data-parent="#accordion">
                                     <div class="card-body">
                                         <div class="form-check" style="padding-left: 0px">
-                                            <label class="container">HTML/CSS
-                                                <input type="checkbox" checked id="checkHtml">
+                                            <label class="container">HTML 5
+                                                <input type="checkbox" checked id="checkhtml">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">CSS 3
+                                                <input type="checkbox" checked id="checkcss">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
@@ -219,14 +225,14 @@
                                     <div class="card-body">
                                         <div class="form-check" style="padding-left: 0px">
                                             <label class="container">Javascript
-                                                <input type="checkbox">
+                                                <input type="checkbox" checked id="checkjs">
                                                 <span class="checkmark"></span>
                                             </label>
 
                                         </div>
                                         <div class="form-check" style="padding-left: 0px">
                                             <label class="container">AngularJS
-                                                <input type="checkbox" id="chkAngular">
+                                                <input type="checkbox" checked id="checkangularjs">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
@@ -249,7 +255,7 @@
                                     <div class="card-body">
                                         <div class="form-check" style="padding-left: 0px">
                                             <label class="container">PL/SQL
-                                                <input type="checkbox">
+                                                <input type="checkbox" checked id="checkplsql">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
@@ -341,7 +347,30 @@
                                     <div class="card-body">
                                         <div class="form-check" style="padding-left: 0px">
                                             <label class="container">C#
-                                                <input type="checkbox">
+                                                <input type="checkbox" checked id="checkc#">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3" style="color: rgb(76,10,58)">
+                                <div class="card-header" id="heading-os">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-os" aria-expanded="false"
+                                                aria-controls="collapse-ost">
+                                            OS <span style="margin-left: 175px"><i
+                                                class="fas fa-chevron-down"></i></span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-os" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">Windows
+                                                <input type="checkbox" checked id="checkwindows">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
@@ -495,7 +524,11 @@
 
                                             </tr>
                                             <tr class="rawhtml">
-                                                <td class="grey"><span id="minus_html"><i class="fas fa-minus-circle"></i></span></td>
+                                                <td class="grey">
+                                                    <span id="minus_html">
+                                                        <i class="fas fa-minus-circle"></i>
+                                                    </span>
+                                                </td>
                                                 <td>Web</td>
                                                 <td>HTML 5</td>
                                                 <td class="effectif-reel" style="padding-right: 0">
@@ -520,7 +553,11 @@
 
                                             </tr>
                                             <tr class="rawcss">
-                                                <td class="grey"><i class="fas fa-minus-circle"></i></td>
+                                                <td class="grey">
+                                                    <span id="minus_css">
+                                                        <i class="fas fa-minus-circle"></i>
+                                                    </span>
+                                                </td>
                                                 <td>Web</td>
                                                 <td>CSS 3</td>
                                                 <td class="effectif-reel" style="padding-right: 0">7
@@ -544,7 +581,11 @@
                                                 <td style="font-weight: bold; color: red">Pas de réferent</td>
                                             </tr>
                                             <tr class="rawangularjs">
-                                                <td class="grey"><i class="fas fa-minus-circle"></i></td>
+                                                <td class="grey">
+                                                    <span id="minus_angularjs">
+                                                        <i class="fas fa-minus-circle"></i>
+                                                    </span>
+                                                </td>
                                                 <td>Javascript</td>
                                                 <td>AngularJS</td>
                                                 <td class="effectif-reel" style="padding-right: 0">3
@@ -569,7 +610,11 @@
 
                                             </tr>
                                             <tr class="rawjs">
-                                                <td class="grey"><i class="fas fa-minus-circle"></i></td>
+                                                <td class="grey">
+                                                    <span id="minus_js">
+                                                        <i class="fas fa-minus-circle"></i>
+                                                    </span>
+                                                </td>
                                                 <td>Javascript</td>
                                                 <td>Javascript</td>
                                                 <td class="effectif-reel" style="padding-right: 0">2
@@ -595,7 +640,9 @@
                                             </tr>
                                             <tr class="rawplsql">
                                                 <td class="grey">
-                                                    <i class="fas fa-minus-circle"></i>
+                                                    <span id="minus_plsql">
+                                                        <i class="fas fa-minus-circle"></i>
+                                                    </span>
                                                 </td>
                                                 <td>BDD</td>
                                                 <td>PL/SQL</td>
@@ -620,9 +667,11 @@
                                                 <td class="grey">Prénom Nom</td>
 
                                             </tr>
-                                            <tr class="rawc#">
+                                            <tr class="rawcsharp">
                                                 <td class="grey">
-                                                    <i class="fas fa-minus-circle"></i>
+                                                    <span id="minus_csharp">
+                                                        <i class="fas fa-minus-circle"></i>
+                                                    </span>
                                                 </td>
                                                 <td>.Net</td>
                                                 <td>C#</td>
@@ -649,7 +698,9 @@
                                             </tr>
                                             <tr class="rawwindows">
                                                 <td class="grey">
-                                                    <i class="fas fa-minus-circle"></i>
+                                                    <span id="minus_windows">
+                                                        <i class="fas fa-minus-circle"></i>
+                                                    </span>
                                                 </td>
                                                 <td>OS</td>
                                                 <td>Windows</td>
@@ -718,11 +769,66 @@
         });
     })
 
+    $(function () {
+        $("#minus_spring").click(function () {
+            $(".rawSpring").hide();
+            $("#checkSpring").prop('checked', false);
+        });
+    });
 
     $(function () {
         $("#minus_j2ee").click(function () {
             $(".rawj2ee").hide();
             $("#checkj2ee").prop('checked', false);
+        });
+    });
+
+    $(function () {
+        $("#minus_css").click(function () {
+            $(".rawcss").hide();
+            $("#checkcss").prop('checked', false);
+        });
+    });
+
+    $(function () {
+        $("#minus_angularjs").click(function () {
+            $(".rawangularjs").hide();
+            $("#checkangularjs").prop('checked', false);
+        });
+    });
+
+    $(function () {
+        $("#minus_js").click(function () {
+            $(".rawjs").hide();
+            $("#checkjs").prop('checked', false);
+        });
+    });
+
+    $(function () {
+        $("#minus_plsql").click(function () {
+            $(".rawplsql").hide();
+            $("#checkplsql").prop('checked', false);
+        });
+    });
+
+    $(function () {
+        $("#minus_csharp").click(function () {
+            $(".rawcsharp").hide();
+            $("#checkc#").prop('checked', false);
+        });
+    });
+
+    $(function () {
+        $("#minus_windows").click(function () {
+            $(".rawwindows").hide();
+            $("#checkwindows").prop('checked', false);
+        });
+    });
+
+    $(function () {
+        $("#minus_html").click(function () {
+            $(".rawhtml").hide();
+            $("#checkhtml").prop('checked', false);
         });
     });
 
