@@ -1414,12 +1414,42 @@ textarea.textarea-commentaire:focus, textarea.textarea-commentaire:active, texta
 tbody tr td .input-cible {
     vertical-align: middle;
     background: white;
-    height: 25px;
+    font-size: 15px;
+    text-align: center;
     border: 1px solid grey;
     border-radius: 5px;
     padding-left: 3px;
     width: 40px;
     margin-bottom: 7px;
+}
+
+tbody tr td.effectif-reel {
+    text-align: right;
+}
+
+tbody tr td span {
+    text-align: left;
+}
+
+tbody tr td.diff-effect-plus span{
+    color: rgb(44,179,74);
+}
+
+tbody tr td.diff-effect-moins span{
+    color: red;
+
+    padding-left: 0;
+}
+
+tbody tr td .plus-cible {
+    border: rgb(44,179,74) 1px solid;
+    color:rgb(44,179,74);
+}
+
+tbody tr td .moins-cible {
+    border: white 1px solid;
+    color:white ;
+    background: red;
 }
 /* ---------------------------------------------------
     TABLE STYLE
