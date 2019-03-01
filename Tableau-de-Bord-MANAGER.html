@@ -142,7 +142,7 @@
                                     <div class="card-body">
                                         <div class="form-check" style="padding-left: 0px">
                                             <label class="container">Spring
-                                                <input type="checkbox" checked id="checkspring">
+                                                <input type="checkbox" checked id="checkSpring">
                                                 <span class="checkmark">
                                                 </span>
                                             </label>
@@ -347,7 +347,7 @@
                                     <div class="card-body">
                                         <div class="form-check" style="padding-left: 0px">
                                             <label class="container">C#
-                                                <input type="checkbox" checked id="checkc#">
+                                                <input type="checkbox" checked id="checkcsharp">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
@@ -814,7 +814,7 @@
     $(function () {
         $("#minus_csharp").click(function () {
             $(".rawcsharp").hide();
-            $("#checkc#").prop('checked', false);
+            $("#checkcsharp").prop('checked', false);
         });
     });
 
@@ -833,11 +833,91 @@
     });
 
     $(function () {
+        $("#checkSpring").click(function () {
+            if ($(this).is(":checked")) {
+                $(".rawSpring").show();
+            } else {
+                $(".rawSpring").hide();
+            }
+        });
+    });
+
+    $(function () {
         $("#checkj2ee").click(function () {
             if ($(this).is(":checked")) {
                 $(".rawj2ee").show();
             } else {
                 $(".rawj2ee").hide();
+            }
+        });
+    });
+
+    $(function () {
+        $("#checkhtml").click(function () {
+            if ($(this).is(":checked")) {
+                $(".rawhtml").show();
+            } else {
+                $(".rawhtml").hide();
+            }
+        });
+    });
+
+    $(function () {
+        $("#checkcss").click(function () {
+            if ($(this).is(":checked")) {
+                $(".rawcss").show();
+            } else {
+                $(".rawcss").hide();
+            }
+        });
+    });
+
+    $(function () {
+        $("#checkangularjs").click(function () {
+            if ($(this).is(":checked")) {
+                $(".rawangularjs").show();
+            } else {
+                $(".rawangularjs").hide();
+            }
+        });
+    });
+
+    $(function () {
+        $("#checkjs").click(function () {
+            if ($(this).is(":checked")) {
+                $(".rawjs").show();
+            } else {
+                $(".rawjs").hide();
+            }
+        });
+    });
+
+    $(function () {
+        $("#checkplsql").click(function () {
+            if ($(this).is(":checked")) {
+                $(".rawplsql").show();
+            } else {
+                $(".rawplsql").hide();
+            }
+        });
+    });
+
+    $(function () {
+        $("#checkcsharp").click(function () {
+            if ($(this).is(":checked")) {
+                $(".rawcsharp").show();
+            } else {
+                $(".rawcsharp").hide();
+            }
+        });
+    });
+
+    $(function () {
+        $("#checkwindows").click(function () {
+            if ($(this).is(":checked")) {
+                $(".rawwindows").show();
+            } else {
+                $(".rawwindows").hide();
             }
         });
     });
