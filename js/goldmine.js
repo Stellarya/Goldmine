@@ -1,5 +1,41 @@
 $(document).ready(function () {
 
+    $("#table_TDB #minus_spring").click(function(){
+        $(this).closest("tr").remove();
+    });
+
+    $("#table_TDB #minus_j2ee").click(function(){
+        $(this).closest("tr").remove();
+    });
+
+    $("#table_TDB #minus_html").click(function(){
+        $(this).closest("tr").remove();
+    });
+
+    $("#table_TDB #minus_css").click(function(){
+        $(this).closest("tr").remove();
+    });
+
+    $("#table_TDB #minus_angularjs").click(function(){
+        $(this).closest("tr").remove();
+    });
+
+    $("#table_TDB #minus_js").click(function(){
+        $(this).closest("tr").remove();
+    });
+
+    $("#table_TDB #minus_plsql").click(function(){
+        $(this).closest("tr").remove();
+    });
+
+    $("#table_TDB #minus_csharp").click(function(){
+        $(this).closest("tr").remove();
+    });
+
+    $("#table_TDB #minus_windows").click(function(){
+        $(this).closest("tr").remove();
+    });
+
     $('#java-accordion').click(function () {
         if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
             $(this).find('svg').attr('data-icon', 'chevron-up');
