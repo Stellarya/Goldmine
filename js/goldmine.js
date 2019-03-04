@@ -1,4 +1,85 @@
 $(document).ready(function () {
+
+    $('#java-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
+    });
+
+    $('#web-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
+    });
+
+    $('#php-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
+    });
+
+    $('#js-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
+    });
+
+    $('#bdd-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
+    });
+
+    $('#framework-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
+    });
+
+    $('#langages-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
+    });
+
+    $('#produits-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
+    });
+
+    $('#dotnet-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
+    });
+
+    $('#os-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
+    });
+
     function disable() {
         document.getElementById("collabCheck").disabled = true;
     }

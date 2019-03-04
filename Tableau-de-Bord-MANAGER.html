@@ -29,13 +29,7 @@
     <script type="text/javascript" src="js/currency-autocomplete.js"></script>
     <script src="tags-selector-tagselect/jquery.tagselect.js"></script>
     <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-            integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
-            crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-            integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
-            crossorigin="anonymous"></script>
-    <script src="js/jquery_research.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
     <!--<script src="js/json_test.js"></script>-->
 </head>
 
@@ -132,7 +126,7 @@
                                         <button class="btn btn-link collapsed faq-links" data-toggle="collapse"
                                                 data-target="#collapse-java" id="java-accordion" aria-expanded="true"
                                                 aria-controls="collapse-java">
-                                            Java <span style="margin-left: 170px"><i class="fas fa-chevron-down"></i></span>
+                                            Java <span style="margin-left: 170px"><i class="javachevron fas fa-chevron-down"></i></span>
                                         </button>
                                     </h5>
                                 </div>
@@ -159,7 +153,7 @@
                             <div class="card bg-light mb-3">
                                 <div class="card-header" id="heading-Web">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        <button id="web-accordion" class="btn btn-link collapsed" data-toggle="collapse"
                                                 data-target="#collapse-web" aria-expanded="false"
                                                 aria-controls="collapse-web">
                                             Web <span style="margin-left: 172px"><i
@@ -188,7 +182,7 @@
                             <div class="card bg-light mb-3">
                                 <div class="card-header" id="heading-php">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        <button id="php-accordion" class="btn btn-link collapsed" data-toggle="collapse"
                                                 data-target="#collapse-php" aria-expanded="false"
                                                 aria-controls="collapse-php">
                                             PHP <span style="margin-left: 173px"><i
@@ -211,7 +205,7 @@
                             <div class="card bg-light mb-3">
                                 <div class="card-header" id="heading-javascript">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        <button id="js-accordion" class="btn btn-link collapsed" data-toggle="collapse"
                                                 data-target="#collapse-javascript" aria-expanded="false"
                                                 aria-controls="collapse-javascript">
                                             Javascript <span style="margin-left: 126px"><i
@@ -241,7 +235,7 @@
                             <div class="card bg-light mb-3">
                                 <div class="card-header" id="heading-bdd">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        <button id="bdd-accordion" class="btn btn-link collapsed" data-toggle="collapse"
                                                 data-target="#collapse-bdd" aria-expanded="false"
                                                 aria-controls="collapse-bdd">
                                             BDD <span style="margin-left: 171px"><i
@@ -264,7 +258,7 @@
                             <div class="card bg-light mb-3">
                                 <div class="card-header" id="heading-framework">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        <button id="framework-accordion" class="btn btn-link collapsed" data-toggle="collapse"
                                                 data-target="#collapse-framework" aria-expanded="false"
                                                 aria-controls="collapse-framework">
                                             Framework <span style="margin-left: 120px"><i
@@ -287,7 +281,7 @@
                             <div class="card bg-light mb-3">
                                 <div class="card-header" id="heading-langages">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        <button id="langages-accordion" class="btn btn-link collapsed" data-toggle="collapse"
                                                 data-target="#collapse-langages" aria-expanded="false"
                                                 aria-controls="collapse-langages">
                                             Langages <span style="margin-left: 131px"><i
@@ -310,7 +304,7 @@
                             <div class="card bg-light mb-3">
                                 <div class="card-header" id="heading-produits">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        <button id="produits-accordion" class="btn btn-link collapsed" data-toggle="collapse"
                                                 data-target="#collapse-produits" aria-expanded="false"
                                                 aria-controls="collapse-produits">
                                             Produits <span style="margin-left: 141px"><i
@@ -333,7 +327,7 @@
                             <div class="card bg-light mb-3" style="color: rgb(76,10,58)">
                                 <div class="card-header" id="heading-dotnet">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        <button id="dotnet-accordion" class="btn btn-link collapsed" data-toggle="collapse"
                                                 data-target="#collapse-dotnet" aria-expanded="false"
                                                 aria-controls="collapse-dotnet">
                                             .Net <span style="margin-left: 175px"><i
@@ -356,7 +350,7 @@
                             <div class="card bg-light mb-3" style="color: rgb(76,10,58)">
                                 <div class="card-header" id="heading-os">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        <button id="os-accordion" class="btn btn-link collapsed" data-toggle="collapse"
                                                 data-target="#collapse-os" aria-expanded="false"
                                                 aria-controls="collapse-ost">
                                             OS <span style="margin-left: 175px"><i
@@ -782,11 +776,6 @@
 <script src="js/choices.js"></script>
 
 <script>
-
-    $('#java-accordion span').click(function(){
-        $(this).find('i').toggleClass('fas fa-chevron-down')
-        $(this).find('i').toggleClass('fas fa-chevron-up')
-    });
 
     $(function () {
         $("#minus_spring").click(function () {
