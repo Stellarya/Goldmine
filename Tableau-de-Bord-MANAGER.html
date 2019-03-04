@@ -129,11 +129,10 @@
                             <div class="card bg-light mb-3">
                                 <div class="card-header" id="heading-java">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
-                                                data-target="#collapse-java" aria-expanded="true"
+                                        <button class="btn btn-link collapsed faq-links" data-toggle="collapse"
+                                                data-target="#collapse-java" id="java-accordion" aria-expanded="true"
                                                 aria-controls="collapse-java">
-                                            Java <span style="margin-left: 170px"><i
-                                                class="fas fa-chevron-down"></i></span>
+                                            Java <span style="margin-left: 170px"><i class="fas fa-chevron-down"></i></span>
                                         </button>
                                     </h5>
                                 </div>
@@ -400,7 +399,7 @@
                                                 <th colspan="3" class="3stars" width="15%"
                                                     style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">
                                                     <div class="rating">
-                                                        <span class="rating-star darker" title="expert"
+                                                        <span class="rating-star rating-fixed darker" title="expert"
                                                               data-value="4"
                                                               style="margin-right: 5px;margin-left: 5px"></span>
                                                         <span class="rating-star checked rating-fixed darker"
@@ -478,11 +477,11 @@
                                                     <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
                                                 </td>
                                                 <td>
-                                                    <input type="number" id="input-eff-3-spring" class="input-cible plus-cible" min="0" value="2">
+                                                    <input type="number" id="input-eff-3-spring" class="input-cible plus-cible" style="border: 1px solid grey" min="0">
                                                 </td>
                                                 <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-3-spring">
-                                                    <span id="signe-operateur-3-spring">+</span>
-                                                    <span id="chiffre-difference-3-spring">3</span>
+                                                    <span id="signe-operateur-3-spring"></span>
+                                                    <span id="chiffre-difference-3-spring"></span>
                                                 </td>
                                                 <td class="effectif-reel" style="padding-right: 0">
                                                     <span id="eff-reel-4-spring">3 </span>
@@ -783,27 +782,11 @@
 <script src="js/choices.js"></script>
 
 <script>
-    $(function () {
-        $("button.btn-link span").click(function (event) {
 
-            if ($(this).find($(".fas")).hasClass('fa-chevron-down')) {
-                $(this).find($(".fas")).removeClass('fa-chevron-down').addClass('fa-chevron-up');
-            } else if ($(this).find($(".fas")).hasClass('fa-chevron-up')) {
-
-                $(this).find($(".fas")).removeClass('fa-chevron-up').addClass('fa-chevron-down');
-            }
-
-        });
-
-        $(document).click(function (e) {
-            if (!$("button.btn-link span").is(e.target) && !$("button.btn-link span i").is(e.target)) {
-
-                if ($(this).find($(".fas")).hasClass('fa-chevron-up')) {
-                    $(this).find($(".fas")).removeClass('fa-chevron-up').addClass('fa-chevron-down');
-                }
-            }
-        });
-    })
+    $('#java-accordion span').click(function(){
+        $(this).find('i').toggleClass('fas fa-chevron-down')
+        $(this).find('i').toggleClass('fas fa-chevron-up')
+    });
 
     $(function () {
         $("#minus_spring").click(function () {
@@ -995,9 +978,14 @@
             $('#signe-operateur-3-spring').text('-');
             $('#chiffre-difference-3-spring').text($(this).val()-valueReel3Spring);
         } else if ($(this).val() < valueReel3Spring) {
+            $(this).css({'background':'white','border':'rgb(44,179,74) 1px solid', 'color':'rgb(44,179,74)'});
             $('#diff-effect-3-spring').css({'color':'rgb(44,179,74)'});
             $('#signe-operateur-3-spring').text('+');
             $('#chiffre-difference-3-spring').text(valueReel3Spring - $(this).val());
+        } else  if ($.trim($('#myMessage').val()) == '') {
+            $(this).css({'background':'white','border':'grey 1px solid', 'color':'grey'});
+            $('#signe-operateur-3-spring').trim();
+            $('#chiffre-difference-3-spring').text(' ');
         }
     });
 

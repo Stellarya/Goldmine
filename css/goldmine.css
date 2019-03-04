@@ -288,6 +288,20 @@ ul.CTAs a {
 /* ---------------------------------------------------
     ACCORDION
 ----------------------------------------------------- */
+.chevron-down {
+
+}
+
+.chevron-down:after {
+    font-family: FontAwesome;
+    content: '\f078';
+}
+
+.chevron-up {
+    font-family: FontAwesome;
+    content: '\f005';
+}
+
 #autocomplete {
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
