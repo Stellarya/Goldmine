@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Tableau de bord</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/goldmine.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/util.css">
+
+    <link rel="stylesheet" type="text/css"
+          href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/smoothness/jquery-ui.css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"/>
+    <link href="css/search_plugin.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+    <script type="text/javascript" src="js/currency-autocomplete.js"></script>
+    <script src="tags-selector-tagselect/jquery.tagselect.js"></script>
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <!--<script src="js/json_test.js"></script>-->
+</head>
+
+<body>
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar" class="sidebar-wrapper " data-toggle="collapse" aria-expanded="false">
+        <div class="sidebar-header">
+            <img src="img/logo.png" height="150px" style="margin-top: -10px"/>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="Tableau-de-Bord-Technos-MANAGER.html">
+                        <i class="fa fa-tachometer-alt"></i><span style="margin-left: 10px">
+                        Tableau de bord</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="evaluation-COLLABORATEUR.html">
+                        <i class="fas fa-star"></i><span style="margin-left: 7px;">
+                        Mes compétences</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="evaluation-MANAGER.html">
+                        <i class="fas fa-star"></i><span style="margin-left: 7px;">
+                        Evaluation</span><span style="margin-left: 27px;"> Collaborateurs</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Recherche-MANAGER.html">
+                        <i class="fas fa-search"></i><span style="margin-left: 10px;">
+                        Recherche</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content container">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div style="float:right;font-size:16px;color:#531055;">
+                    <i class="fa fa-user" style="margin-right:10px"></i> Mickaël Hebert
+                    <a href="evaluation-COLLABORATEUR.html"><i class="fa fa-sign-out-alt"
+                                                               style="font-weight:300;margin-left:20px"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="page-content violet">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <header class="header col-12">
+
+                        <nav id="cssmenu">
+                            <h3 style="padding-left: 40px">Tableau de bord</h3>
+                            <ul>
+                                <li class="active" style="margin-left: 285px"><a
+                                        href="Tableau-de-Bord-Technos-MANAGER.html">TECHNIQUE</a></li>
+                                <li style="margin-left: 20px"><a href="Tableau-de-Bord-Applis-MANAGER.html">APPLICATIONS</a>
+                                </li>
+                            </ul>
+
+                        </nav>
+
+                    </header>
+                    <div class="col-2">
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"
+                                      style="border-right: none; background: white"><i class="fas fa-search"></i></span>
+                            </div>
+                            <input type="text" class="form-control" id="autocomplete" aria-label="Recipient's username"
+                                   aria-describedby="basic-addon2"
+                                   style="padding-left: 5px; border-left: none">
+                        </div>
+
+                        <div id="accordion">
+
+                            <div class="card bg-light mb-3">
+                                <div class="card-header" id="heading-java">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed faq-links" data-toggle="collapse"
+                                                data-target="#collapse-java" id="java-accordion" aria-expanded="true"
+                                                aria-controls="collapse-java">
+                                            Java <span style="margin-left: 170px"><i class="javachevron fas fa-chevron-down"></i></span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-java" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">Spring
+                                                <input type="checkbox" checked id="checkSpring">
+                                                <span class="checkmark">
+                                                </span>
+                                            </label>
+
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">J2EE
+                                                <input type="checkbox" checked id="checkj2ee">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3">
+                                <div class="card-header" id="heading-Web">
+                                    <h5 class="mb-0">
+                                        <button id="web-accordion" class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-web" aria-expanded="false"
+                                                aria-controls="collapse-web">
+                                            Web <span style="margin-left: 172px"><i
+                                                class="fas fa-chevron-down"></i></span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-web" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">HTML 5
+                                                <input type="checkbox" checked id="checkhtml">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">CSS 3
+                                                <input type="checkbox" checked id="checkcss">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3">
+                                <div class="card-header" id="heading-php">
+                                    <h5 class="mb-0">
+                                        <button id="php-accordion" class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-php" aria-expanded="false"
+                                                aria-controls="collapse-php">
+                                            PHP <span style="margin-left: 173px"><i
+                                                class="fas fa-chevron-down"></i></span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-php" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">PHP
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3">
+                                <div class="card-header" id="heading-javascript">
+                                    <h5 class="mb-0">
+                                        <button id="js-accordion" class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-javascript" aria-expanded="false"
+                                                aria-controls="collapse-javascript">
+                                            Javascript <span style="margin-left: 126px"><i
+                                                class="fas fa-chevron-down"></i></span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-javascript" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">Javascript
+                                                <input type="checkbox" checked id="checkjs">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">AngularJS
+                                                <input type="checkbox" checked id="checkangularjs">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3">
+                                <div class="card-header" id="heading-bdd">
+                                    <h5 class="mb-0">
+                                        <button id="bdd-accordion" class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-bdd" aria-expanded="false"
+                                                aria-controls="collapse-bdd">
+                                            BDD <span style="margin-left: 171px"><i
+                                                class="fas fa-chevron-down"></i></span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-bdd" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">PL/SQL
+                                                <input type="checkbox" checked id="checkplsql">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3">
+                                <div class="card-header" id="heading-framework">
+                                    <h5 class="mb-0">
+                                        <button id="framework-accordion" class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-framework" aria-expanded="false"
+                                                aria-controls="collapse-framework">
+                                            Framework <span style="margin-left: 120px"><i
+                                                class="fas fa-chevron-down"></i></span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-framework" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">Delphi
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3">
+                                <div class="card-header" id="heading-langages">
+                                    <h5 class="mb-0">
+                                        <button id="langages-accordion" class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-langages" aria-expanded="false"
+                                                aria-controls="collapse-langages">
+                                            Langages <span style="margin-left: 131px"><i
+                                                class="fas fa-chevron-down"></i></span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-langages" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">Shell
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3">
+                                <div class="card-header" id="heading-produits">
+                                    <h5 class="mb-0">
+                                        <button id="produits-accordion" class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-produits" aria-expanded="false"
+                                                aria-controls="collapse-produits">
+                                            Produits <span style="margin-left: 141px"><i
+                                                class="fas fa-chevron-down"></i></span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-produits" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">Liferay
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3" style="color: rgb(76,10,58)">
+                                <div class="card-header" id="heading-dotnet">
+                                    <h5 class="mb-0">
+                                        <button id="dotnet-accordion" class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-dotnet" aria-expanded="false"
+                                                aria-controls="collapse-dotnet">
+                                            .Net <span style="margin-left: 175px"><i
+                                                class="fas fa-chevron-down"></i></span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-dotnet" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">C#
+                                                <input type="checkbox" checked id="checkcsharp">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3" style="color: rgb(76,10,58)">
+                                <div class="card-header" id="heading-os">
+                                    <h5 class="mb-0">
+                                        <button id="os-accordion" class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-os" aria-expanded="false"
+                                                aria-controls="collapse-ost">
+                                            OS <span style="margin-left: 175px"><i
+                                                class="fas fa-chevron-down"></i></span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-os" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">Windows
+                                                <input type="checkbox" checked id="checkwindows">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10" id="resultat-recherche">
+                        <div class="col-12">
+                            <div class="limiter">
+                                <div class="wrap-table100">
+                                    <div class="table100">
+                                        <table class="table tableResults" id="table_TDB" style="margin-bottom: 0">
+                                            <thead style="border: none">
+                                            <tr>
+                                                <th rowspan="2" class="table100-head1" scope="col" width="2.5%"
+                                                    style="vertical-align: middle; padding-top: 1px">
+                                                </th>
+                                                <th rowspan="2" class="table100-head1" scope="col" width="15%"
+                                                    style="vertical-align: middle; padding-top: 1px">Catégorie
+                                                </th>
+                                                <th rowspan="2" class="table100-head1" scope="col" width="15%"
+                                                    style="vertical-align: middle; padding-top: 1px">Compétence
+                                                </th>
+
+                                                <th colspan="3" class="3stars" width="15%"
+                                                    style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">
+                                                    <div class="rating">
+                                                        <span class="rating-star rating-fixed darker" title="expert"
+                                                              data-value="4"
+                                                              style="margin-right: 5px;margin-left: 5px"></span>
+                                                        <span class="rating-star checked rating-fixed darker"
+                                                              title="autonome"
+                                                              data-value="3"
+                                                              style="margin-right: 5px;margin-left: 5px"></span>
+                                                        <span class="rating-star checked rating-fixed darker"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"
+                                                              style="margin-right: 5px;margin-left: 5px"></span>
+                                                        <span class="rating-star checked darker" title="notions"
+                                                              data-value="1"
+                                                              style="margin-right: 5px;margin-left: 5px"></span>
+                                                    </div>
+                                                </th>
+                                                <th colspan="3" class="4stars" width="15%"
+                                                    style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">
+                                                    <div class="rating">
+                                                        <span class="rating-star checked darker" title="expert"
+                                                              data-value="4"
+                                                              style="margin-right: 5px;margin-left: 5px"></span>
+                                                        <span class="rating-star checked rating-fixed darker"
+                                                              title="autonome"
+                                                              data-value="3"
+                                                              style="margin-right: 5px;margin-left: 5px"></span>
+                                                        <span class="rating-star checked rating-fixed darker"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"
+                                                              style="margin-right: 5px;margin-left: 5px"></span>
+                                                        <span class="rating-star checked darker" title="notions"
+                                                              data-value="1"
+                                                              style="margin-right: 5px;margin-left: 5px"></span>
+                                                    </div>
+                                                </th>
+                                                <th rowspan="2" class="table100-head1" scope="col" width="37.5%"
+                                                    style="vertical-align: middle; padding-top: 1px">Référents
+                                                </th>
+
+                                            </tr>
+                                            <tr style="height: 0px; top: -10px">
+                                                <th scope="col"
+                                                    style="vertical-align: middle; padding-top: 1px; text-align: center"
+                                                    width="5%"></th>
+                                                <th scope="col"
+                                                    style="vertical-align: middle; padding-top: 1px; text-align: center"
+                                                    width="5%">Cible
+                                                </th>
+                                                <th scope="col"
+                                                    style="vertical-align: middle; padding-top: 1px; text-align: center"
+                                                    width="5%"></th>
+
+                                                <th scope="col"
+                                                    style="vertical-align: middle; padding-top: 1px; text-align: center"
+                                                    width="5%"></th>
+                                                <th scope="col"
+                                                    style="vertical-align: middle; padding-top: 1px; text-align: center"
+                                                    width="5%">Cible
+                                                </th>
+                                                <th scope="col"
+                                                    style="vertical-align: middle; padding-top: 1px; text-align: center"
+                                                    width="5%"></th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr class="rawSpring">
+                                                <td class="grey">
+                                                    <span id="minus_spring">
+                                                        <i class="fas fa-minus-circle"></i>
+                                                    </span>
+                                                </td>
+                                                <td>Java</td>
+                                                <td>Spring</td>
+                                                <td class="effectif-reel" style="padding-right: 0">
+                                                    <span id="eff-reel-3-spring">5 </span>
+                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                </td>
+                                                <td>
+                                                    <input type="number" id="input-eff-3-spring" class="input-cible plus-cible" style="border: 1px solid grey" min="0">
+                                                </td>
+                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-3-spring">
+                                                    <span id="signe-operateur-3-spring"></span>
+                                                    <span id="chiffre-difference-3-spring"></span>
+                                                </td>
+                                                <td class="effectif-reel" style="padding-right: 0">
+                                                    <span id="eff-reel-4-spring">3 </span>
+                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                </td>
+                                                <td>
+                                                    <input type="number" id="input-eff-4-spring" class="input-cible moins-cible" min="0" value="7">
+                                                </td>
+                                                <td style="padding-left: 0; color: red" id="diff-effect-4-spring">
+                                                    <span id="signe-operateur-4-spring">-</span>
+                                                    <span id="chiffre-difference-4-spring">4</span>
+                                                </td>
+                                                <td class="grey">Prénom NOM, Prénom NOM</td>
+
+                                            </tr>
+                                            <tr class="rawj2ee">
+                                                <td class="grey">
+                                                    <span id="minus_j2ee">
+                                                        <i class="fas fa-minus-circle"></i>
+                                                    </span>
+                                                </td>
+                                                <td>Java</td>
+                                                <td>J2EE</td>
+                                                <td class="effectif-reel" style="padding-right: 0">
+                                                    <span id="eff-reel-3-j2ee">6 </span>
+                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                </td>
+                                                <td>
+                                                    <input type="number" id="input-eff-3-j2ee" class="input-cible plus-cible" min="0" value="4">
+                                                </td>
+                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-3-j2ee">
+                                                    <span id="signe-operateur-3-j2ee">+</span>
+                                                    <span id="chiffre-difference-3-j2ee">2</span>
+                                                </td>
+                                                <td class="effectif-reel" style="padding-right: 0">
+                                                    <span id="eff-reel-4-j2ee">7 </span>
+                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                </td>
+                                                <td>
+                                                    <input type="number" id="input-eff-4-j2ee" class="input-cible plus-cible" min="0" value="5">
+                                                </td>
+                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-4-j2ee">
+                                                    <span id="signe-operateur-4-j2ee">+</span>
+                                                    <span id="chiffre-difference-4-j2ee"2></span>
+                                                </td>
+                                                <td class="grey">Prénom Nom, Prénom NOM, Prénom NOM</td>
+
+                                            </tr>
+                                            <tr class="rawhtml">
+                                                <td class="grey">
+                                                    <span id="minus_html">
+                                                        <i class="fas fa-minus-circle"></i>
+                                                    </span>
+                                                </td>
+                                                <td>Web</td>
+                                                <td>HTML 5</td>
+                                                <td class="effectif-reel" style="padding-right: 0">
+                                                    <span id="eff-reel-3-html">9 </span>
+                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                </td>
+                                                <td>
+                                                    <input type="number" id="input-eff-3-html" class="input-cible plus-cible" min="0" value="9">
+                                                </td>
+                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-3-html">
+                                                    <span id="signe-operateur-3-html">=</span>
+                                                    <span id="chiffre-difference-3-html"></span>
+                                                </td>
+                                                <td class="effectif-reel" style="padding-right: 0">
+                                                    <span id="eff-reel-4-html">9 </span>
+                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                </td>
+                                                <td>
+                                                    <input type="number" id="input-eff-4-html" class="input-cible plus-cible" min="0" value="5">
+                                                </td>
+                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-4-html">
+                                                    <span id="signe-operateur-4-html">+</span>
+                                                    <span id="chiffre-difference-4-html">4</span>
+                                                </td>
+                                                <td class="grey">Prénom Nom</td>
+
+                                            </tr>
+                                            <tr class="rawcss">
+                                                <td class="grey">
+                                                    <span id="minus_css">
+                                                        <i class="fas fa-minus-circle"></i>
+                                                    </span>
+                                                </td>
+                                                <td>Web</td>
+                                                <td>CSS 3</td>
+                                                <td class="effectif-reel" style="padding-right: 0">
+                                                    <span id="eff-reel-3-css">7 </span>
+                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                </td>
+                                                <td>
+                                                    <input type="number" id="input-eff-3-css" class="input-cible plus-cible" min="0" value="7">
+                                                </td>
+                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-3-css">
+                                                    <span id="signe-operateur-3-css">=</span>
+                                                    <span id="chiffre-difference-3-css"></span>
+                                                </td>
+                                                <td class="effectif-reel" style="padding-right: 0">
+                                                    <span id="eff-reel-4-css">7 </span>
+                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                </td>
+                                                <td>
+                                                    <input type="number" id="input-eff-4-css" class="input-cible plus-cible" min="0" value="7">
+                                                </td>
+                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-4-css">
+                                                    <span id="signe-operateur-4-css">=</span>
+                                                    <span id="chiffre-difference-4-css"></span>
+                                                </td>
+                                                <td style="font-weight: bold; color: red">Pas de réferent</td>
+                                            </tr>
+                                            <tr class="rawangularjs">
+                                                <td class="grey">
+                                                    <span id="minus_angularjs">
+                                                        <i class="fas fa-minus-circle"></i>
+                                                    </span>
+                                                </td>
+                                                <td>Javascript</td>
+                                                <td>AngularJS</td>
+                                                <td class="effectif-reel" style="padding-right: 0">
+                                                    <span id="eff-reel-3-angularjs">3 </span>
+                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                </td>
+                                                <td>
+                                                    <input type="number" id="input-eff-3-angularjs" class="input-cible plus-cible" min="0" value="2">
+                                                </td>
+                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-3-angularjs">
+                                                    <span id="signe-operateur-3-angularjs">+</span>
+                                                    <span id="chiffre-difference-3-angularjs">1</span>
+                                                </td>
+                                                <td class="effectif-reel" style="padding-right: 0">
+                                                    <span id="eff-reel-4-angularjs">2 </span>
+                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                </td>
+                                                <td>
+                                                    <input type="number" id="input-eff-4-angularjs" class="input-cible plus-cible" min="0" value="2">
+                                                </td>
+                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-4-angularjs">
+                                                    <span id="signe-operateur-4-angularjs">=</span>
+                                                    <span id="chiffre-difference-4-angularjs"></span>
+                                                </td>
+                                                <td class="grey">Prénom Nom</td>
+
+                                            </tr>
+                                            <tr class="rawjs">
+                                                <td class="grey">
+                                                    <span id="minus_js">
+                                                        <i class="fas fa-minus-circle"></i>
+                                                    </span>
+                                                </td>
+                                                <td>Javascript</td>
+                                                <td>Javascript</td>
+                                                <td class="effectif-reel" style="padding-right: 0">
+                                                    <span id="eff-reel-3-js">2 </span>
+                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                </td>
+                                                <td>
+                                                    <input type="number" id="input-eff-3-js" class="input-cible moins-cible" min="0" value="5">
+                                                </td>
+                                                <td style="padding-left: 0; color: red" id="diff-effect-3-js">
+                                                    <span id="signe-operateur-3-js">-</span>
+                                                    <span id="chiffre-difference-3-js">3</span>
+                                                </td>
+                                                <td class="effectif-reel" style="padding-right: 0">
+                                                    <span id="eff-reel-4-js">2 </span>
+                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                </td>
+                                                <td>
+                                                    <input type="number" id="input-eff-4-js" class="input-cible plus-cible" min="0" value="1">
+                                                </td>
+                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-4-js">
+                                                    <span id="signe-operateur-4-js">+</span>
+                                                    <span id="chiffre-difference-4-js">1</span>
+                                                </td>
+                                                <td class="grey">Prénom Nom, Prénom NOM</td>
+
+                                            </tr>
+                                            <tr class="rawplsql">
+                                                <td class="grey">
+                                                    <span id="minus_plsql">
+                                                        <i class="fas fa-minus-circle"></i>
+                                                    </span>
+                                                </td>
+                                                <td>BDD</td>
+                                                <td>PL/SQL</td>
+                                                <td class="effectif-reel" style="padding-right: 0">
+                                                    <span id="eff-reel-3-plsql">11 </span>
+                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                </td>
+                                                <td>
+                                                    <input type="number" id="input-eff-3-plsql" class="input-cible plus-cible" min="0" value="3">
+                                                </td>
+                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-3-plsql">
+                                                    <span id="signe-operateur-3-plsql">+</span>
+                                                    <span id="chiffre-difference-3-plsql">8</span>
+                                                </td>
+                                                <td class="effectif-reel" style="padding-right: 0">
+                                                    <span id="eff-reel-4-plsql">1 </span>
+                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                </td>
+                                                <td>
+                                                    <input type="number" id="input-eff-4-plsql" class="input-cible plus-cible" min="0" value="1">
+                                                </td>
+                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-4-plsql">
+                                                    <span id="signe-operateur-4-plsql">=</span>
+                                                    <span id="chiffre-difference-4-plsql"></span>
+                                                </td>
+                                                <td class="grey">Prénom Nom</td>
+
+                                            </tr>
+                                            <tr class="rawcsharp">
+                                                <td class="grey">
+                                                    <span id="minus_csharp">
+                                                        <i class="fas fa-minus-circle"></i>
+                                                    </span>
+                                                </td>
+                                                <td>.Net</td>
+                                                <td>C#</td>
+                                                <td class="effectif-reel" style="padding-right: 0">
+                                                    <span id="eff-reel-3-csharp">13 </span>
+                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                </td>
+                                                <td>
+                                                    <input type="number" id="input-eff-3-csharp" class="input-cible plus-cible" min="0" value="7">
+                                                </td>
+                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-3-csharp">
+                                                    <span id="signe-operateur-3-csharp">+</span>
+                                                    <span id="chiffre-difference-3-csharp">6</span>
+                                                </td>
+                                                <td class="effectif-reel" style="padding-right: 0">
+                                                    <span id="eff-reel-4-cshparp">6 </span>
+                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                </td>
+                                                <td>
+                                                    <input type="number" id="input-eff-4-csharp" class="input-cible plus-cible" min="0" value="5">
+                                                </td>
+                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-4-csharp">
+                                                    <span id="signe-operateur-4-csharp">+</span>
+                                                    <span id="chiffre-difference-4-csharp">1</span>
+                                                </td>
+                                                <td class="grey">Prénom Nom</td>
+
+                                            </tr>
+                                            <tr class="rawwindows">
+                                                <td class="grey">
+                                                    <span id="minus_windows">
+                                                        <i class="fas fa-minus-circle"></i>
+                                                    </span>
+                                                </td>
+                                                <td>OS</td>
+                                                <td>Windows</td>
+                                                <td class="effectif-reel" style="padding-right: 0">
+                                                    <span id="eff-reel-3-windows">5 </span>
+                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                </td>
+                                                <td>
+                                                    <input type="number" id="input-eff-3-windows" class="input-cible plus-cible" min="0" value="5">
+                                                </td>
+                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-3-windows">
+                                                    <span id="signe-operateur-3-windows">=</span>
+                                                    <span id="chiffre-difference-3-windows"></span>
+                                                </td>
+                                                <td class="effectif-reel" style="padding-right: 0">
+                                                    <span id="eff-reel-4-windows">1 </span>
+                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                </td>
+                                                <td>
+                                                    <input type="number" id="input-eff-4-windows" class="input-cible moins-cible" min="0" value="5">
+                                                </td>
+                                                <td style="padding-left: 0; color: red" id="diff-effect-4-windows">
+                                                    <span id="signe-operateur-4-windows">-</span>
+                                                    <span id="chiffre-difference-4-windows">4</span>
+                                                </td>
+                                                <td style="font-weight: bold; color: red">Pas de réferent</td>
+
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/goldmine.js"></script>
+<script src="js/choices.js"></script>
+
+<script>
+
+    $(function () {
+        $("#minus_spring").click(function () {
+            $(".rawSpring").hide();
+            $("#checkSpring").prop('checked', false);
+        });
+    });
+
+    $(function () {
+        $("#minus_j2ee").click(function () {
+            $(".rawj2ee").hide();
+            $("#checkj2ee").prop('checked', false);
+        });
+    });
+
+    $(function () {
+        $("#minus_css").click(function () {
+            $(".rawcss").hide();
+            $("#checkcss").prop('checked', false);
+        });
+    });
+
+    $(function () {
+        $("#minus_angularjs").click(function () {
+            $(".rawangularjs").hide();
+            $("#checkangularjs").prop('checked', false);
+        });
+    });
+
+    $(function () {
+        $("#minus_js").click(function () {
+            $(".rawjs").hide();
+            $("#checkjs").prop('checked', false);
+        });
+    });
+
+    $(function () {
+        $("#minus_plsql").click(function () {
+            $(".rawplsql").hide();
+            $("#checkplsql").prop('checked', false);
+        });
+    });
+
+    $(function () {
+        $("#minus_csharp").click(function () {
+            $(".rawcsharp").hide();
+            $("#checkcsharp").prop('checked', false);
+        });
+    });
+
+    $(function () {
+        $("#minus_windows").click(function () {
+            $(".rawwindows").hide();
+            $("#checkwindows").prop('checked', false);
+        });
+    });
+
+    $(function () {
+        $("#minus_html").click(function () {
+            $(".rawhtml").hide();
+            $("#checkhtml").prop('checked', false);
+        });
+    });
+
+    $(function () {
+        $("#checkSpring").click(function () {
+            if ($(this).is(":checked")) {
+                $(".rawSpring").show();
+            } else {
+                $(".rawSpring").hide();
+            }
+        });
+    });
+
+    $(function () {
+        $("#checkj2ee").click(function () {
+            if ($(this).is(":checked")) {
+                $(".rawj2ee").show();
+            } else {
+                $(".rawj2ee").hide();
+            }
+        });
+    });
+
+    $(function () {
+        $("#checkhtml").click(function () {
+            if ($(this).is(":checked")) {
+                $(".rawhtml").show();
+            } else {
+                $(".rawhtml").hide();
+            }
+        });
+    });
+
+    $(function () {
+        $("#checkcss").click(function () {
+            if ($(this).is(":checked")) {
+                $(".rawcss").show();
+            } else {
+                $(".rawcss").hide();
+            }
+        });
+    });
+
+    $(function () {
+        $("#checkangularjs").click(function () {
+            if ($(this).is(":checked")) {
+                $(".rawangularjs").show();
+            } else {
+                $(".rawangularjs").hide();
+            }
+        });
+    });
+
+    $(function () {
+        $("#checkjs").click(function () {
+            if ($(this).is(":checked")) {
+                $(".rawjs").show();
+            } else {
+                $(".rawjs").hide();
+            }
+        });
+    });
+
+    $(function () {
+        $("#checkplsql").click(function () {
+            if ($(this).is(":checked")) {
+                $(".rawplsql").show();
+            } else {
+                $(".rawplsql").hide();
+            }
+        });
+    });
+
+    $(function () {
+        $("#checkcsharp").click(function () {
+            if ($(this).is(":checked")) {
+                $(".rawcsharp").show();
+            } else {
+                $(".rawcsharp").hide();
+            }
+        });
+    });
+
+    $(function () {
+        $("#checkwindows").click(function () {
+            if ($(this).is(":checked")) {
+                $(".rawwindows").show();
+            } else {
+                $(".rawwindows").hide();
+            }
+        });
+    });
+
+    const customSelects = document.querySelectorAll("select");
+    const deleteBtn = document.getElementById('delete');
+    for (let i = 0; i < customSelects.length; i++) {
+        customSelects[i].addEventListener('addItem', function (event) {
+            if (event.detail.value) {
+                let parent = this.parentNode.parentNode
+                parent.classList.add('valid')
+                parent.classList.remove('invalid')
+            } else {
+                let parent = this.parentNode.parentNode
+                parent.classList.add('invalid')
+                parent.classList.remove('valid')
+            }
+        }, false);
+    }
+
+
+</script>
+<script type="text/javascript">
+    var effReel3Spring = $('#eff-reel-3-spring').text();
+    var valueReel3Spring = parseInt(effReel3Spring);
+
+    var effReel4Spring = $('#eff-reel-4-spring').text();
+    var valueReel4Spring = parseInt(effReel4Spring);
+
+    $('#input-eff-3-spring').on('change', function() {
+        if ($(this).val() == valueReel3Spring) {
+            $(this).css({'background':'white','border':'rgb(44,179,74) 1px solid', 'color':'rgb(44,179,74)'});
+            $('#diff-effect-3-spring').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-3-spring').text('=');
+            $('#chiffre-difference-3-spring').text('');
+        } else if ($(this).val() > valueReel3Spring) {
+            $(this).css({'background':'red','border':'white', 'color':'white'});
+            $('#diff-effect-3-spring').css({'color':'red'});
+            $('#signe-operateur-3-spring').text('-');
+            $('#chiffre-difference-3-spring').text($(this).val()-valueReel3Spring);
+        } else if ($(this).val() < valueReel3Spring) {
+            $(this).css({'background':'white','border':'rgb(44,179,74) 1px solid', 'color':'rgb(44,179,74)'});
+            $('#diff-effect-3-spring').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-3-spring').text('+');
+            $('#chiffre-difference-3-spring').text(valueReel3Spring - $(this).val());
+        } else  if ($.trim($('#myMessage').val()) == '') {
+            $(this).css({'background':'white','border':'grey 1px solid', 'color':'grey'});
+            $('#signe-operateur-3-spring').trim();
+            $('#chiffre-difference-3-spring').text(' ');
+        }
+    });
+
+    $('#input-eff-4-spring').on('change', function() {
+        if ($(this).val() == valueReel4Spring) {
+            $(this).css({'background':'white','border':'rgb(44,179,74) 1px solid', 'color':'rgb(44,179,74)'});
+            $('#diff-effect-4-spring').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-4-spring').text('=');
+            $('#chiffre-difference-4-spring').text('');
+        } else if ($(this).val() > valueReel4Spring) {
+            $(this).css({'background':'red','border':'white', 'color':'white'});
+            $('#diff-effect-4-spring').css({'color':'red'});
+            $('#signe-operateur-4-spring').text('-');
+            $('#chiffre-difference-4-spring').text($(this).val()-valueReel4Spring);
+        } else if ($(this).val() < valueReel4Spring) {
+            $('#diff-effect-4-spring').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-4-spring').text('+');
+            $('#chiffre-difference-4-spring').text(valueReel4Spring - $(this).val());
+        }
+    });
+
+    var effReel3J2ee = $('#eff-reel-3-j2ee').text();
+    var valueReel3J2ee = parseInt(effReel3J2ee);
+
+    var effReel4J2ee = $('#eff-reel-4-j2ee').text();
+    var valueReel4J2ee = parseInt(effReel4J2ee);
+
+    $('#input-eff-3-j2ee').on('change', function() {
+        if ($(this).val() == valueReel3J2ee) {
+            $(this).css({'background':'white','border':'rgb(44,179,74) 1px solid', 'color':'rgb(44,179,74)'});
+            $('#diff-effect-3-j2ee').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-3-j2ee').text('=');
+            $('#chiffre-difference-3-j2ee').text('');
+        } else if ($(this).val() > valueReel3J2ee) {
+            $(this).css({'background':'red','border':'white', 'color':'white'});
+            $('#diff-effect-3-j2ee').css({'color':'red'});
+            $('#signe-operateur-3-j2ee').text('-');
+            $('#chiffre-difference-3-j2ee').text($(this).val()-valueReel3J2ee);
+        } else if ($(this).val() < valueReel3J2ee) {
+            $('#diff-effect-3-j2ee').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-3-j2ee').text('+');
+            $('#chiffre-difference-3-j2ee').text(valueReel3J2ee - $(this).val());
+        }
+    });
+
+    $('#input-eff-4-j2ee').on('change', function() {
+        if ($(this).val() == valueReel4J2ee) {
+            $(this).css({'background':'white','border':'rgb(44,179,74) 1px solid', 'color':'rgb(44,179,74)'});
+            $('#diff-effect-4-j2ee').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-4-j2ee').text('=');
+            $('#chiffre-difference-4-j2ee').text('');
+        } else if ($(this).val() > valueReel4J2ee) {
+            $(this).css({'background':'red','border':'white', 'color':'white'});
+            $('#diff-effect-4-j2ee').css({'color':'red'});
+            $('#signe-operateur-4-j2ee').text('-');
+            $('#chiffre-difference-4-j2ee').text($(this).val()-valueReel4J2ee);
+        } else if ($(this).val() < valueReel4J2ee) {
+            $('#diff-effect-4-j2ee').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-4-j2ee').text('+');
+            $('#chiffre-difference-4-j2ee').text(valueReel4J2ee - $(this).val());
+        }
+    });
+
+    var effReel3Html = $('#eff-reel-3-html').text();
+    var valueReel3Html = parseInt(effReel3Html);
+
+    var effReel4Html = $('#eff-reel-4-html').text();
+    var valueReel4Html = parseInt(effReel4Html);
+
+    $('#input-eff-3-html').on('change', function() {
+        if ($(this).val() == valueReel3Html) {
+            $(this).css({'background':'white','border':'rgb(44,179,74) 1px solid', 'color':'rgb(44,179,74)'});
+            $('#diff-effect-3-html').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-3-html').text('=');
+            $('#chiffre-difference-3-html').text('');
+        } else if ($(this).val() > valueReel3Html) {
+            $(this).css({'background':'red','border':'white', 'color':'white'});
+            $('#diff-effect-3-html').css({'color':'red'});
+            $('#signe-operateur-3-html').text('-');
+            $('#chiffre-difference-3-html').text($(this).val()-valueReel3Html);
+        } else if ($(this).val() < valueReel3Html) {
+            $('#diff-effect-3-html').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-3-html').text('+');
+            $('#chiffre-difference-3-html').text(valueReel3Html - $(this).val());
+        }
+    });
+
+    $('#input-eff-4-html').on('change', function() {
+        if ($(this).val() == valueReel4Html) {
+            $(this).css({'background':'white','border':'rgb(44,179,74) 1px solid', 'color':'rgb(44,179,74)'});
+            $('#diff-effect-4-html').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-4-html').text('=');
+            $('#chiffre-difference-4-html').text('');
+        } else if ($(this).val() > valueReel4Html) {
+            $(this).css({'background':'red','border':'white', 'color':'white'});
+            $('#diff-effect-4-html').css({'color':'red'});
+            $('#signe-operateur-4-html').text('-');
+            $('#chiffre-difference-4-html').text($(this).val()-valueReel4Html);
+        } else if ($(this).val() < valueReel4Html) {
+            $('#diff-effect-4-html').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-4-html').text('+');
+            $('#chiffre-difference-4-html').text(valueReel4Html - $(this).val());
+        }
+    });
+
+    var effReel3Css = $('#eff-reel-3-css').text();
+    var valueReel3Css = parseInt(effReel3Css);
+
+    var effReel4Css = $('#eff-reel-4-css').text();
+    var valueReel4Css = parseInt(effReel4Css);
+
+    $('#input-eff-3-css').on('change', function() {
+        if ($(this).val() == valueReel3Css) {
+            $(this).css({'background':'white','border':'rgb(44,179,74) 1px solid', 'color':'rgb(44,179,74)'});
+            $('#diff-effect-3-css').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-3-css').text('=');
+            $('#chiffre-difference-3-css').text('');
+        } else if ($(this).val() > valueReel3Css) {
+            $(this).css({'background':'red','border':'white', 'color':'white'});
+            $('#diff-effect-3-css').css({'color':'red'});
+            $('#signe-operateur-3-css').text('-');
+            $('#chiffre-difference-3-css').text($(this).val()- valueReel3Css);
+        } else if ($(this).val() < valueReel3Css) {
+            $('#diff-effect-3-css').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-3-css').text('+');
+            $('#chiffre-difference-3-css').text(valueReel3Css - $(this).val());
+        }
+    });
+
+    $('#input-eff-4-css').on('change', function() {
+        if ($(this).val() == valueReel4Css) {
+            $(this).css({'background':'white','border':'rgb(44,179,74) 1px solid', 'color':'rgb(44,179,74)'});
+            $('#diff-effect-4-css').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-4-css').text('=');
+            $('#chiffre-difference-4-css').text('');
+        } else if ($(this).val() > valueReel4Css) {
+            $(this).css({'background':'red','border':'white', 'color':'white'});
+            $('#diff-effect-4-css').css({'color':'red'});
+            $('#signe-operateur-4-css').text('-');
+            $('#chiffre-difference-4-css').text($(this).val()- valueReel4Css);
+        } else if ($(this).val() < valueReel4Css) {
+            $('#diff-effect-4-css').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-4-css').text('+');
+            $('#chiffre-difference-4-css').text(valueReel4Css - $(this).val());
+        }
+    });
+
+    var effReel3AngularJs = $('#eff-reel-3-angularjs').text();
+    var valueReel3AngularJS = parseInt(effReel3AngularJs);
+
+    var effReel4AngularJs = $('#eff-reel-4-angularjs').text();
+    var valueReel4AngularJs = parseInt(effReel4AngularJs);
+
+    $('#input-eff-3-angularjs').on('change', function() {
+        if ($(this).val() == valueReel3AngularJS) {
+            $(this).css({'background':'white','border':'rgb(44,179,74) 1px solid', 'color':'rgb(44,179,74)'});
+            $('#diff-effect-3-angularjs').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-3-angularjs').text('=');
+            $('#chiffre-difference-3-angularjs').text('');
+        } else if ($(this).val() > valueReel3AngularJS) {
+            $(this).css({'background':'red','border':'white', 'color':'white'});
+            $('#diff-effect-3-angularjs').css({'color':'red'});
+            $('#signe-operateur-3-angularjs').text('-');
+            $('#chiffre-difference-3-angularjs').text($(this).val()- valueReel3AngularJS);
+        } else if ($(this).val() < valueReel3AngularJS) {
+            $('#diff-effect-3-angularjs').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-3-angularjs').text('+');
+            $('#chiffre-difference-3-angularjs').text(valueReel3AngularJS - $(this).val());
+        }
+    });
+
+    $('#input-eff-4-angularjs').on('change', function() {
+        if ($(this).val() == valueReel4AngularJs) {
+            $(this).css({'background':'white','border':'rgb(44,179,74) 1px solid', 'color':'rgb(44,179,74)'});
+            $('#diff-effect-4-angularjs').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-4-angularjs').text('=');
+            $('#chiffre-difference-4-angularjs').text('');
+        } else if ($(this).val() > valueReel4AngularJs) {
+            $(this).css({'background':'red','border':'white', 'color':'white'});
+            $('#diff-effect-4-angularjs').css({'color':'red'});
+            $('#signe-operateur-4-angularjs').text('-');
+            $('#chiffre-difference-4-angularjs').text($(this).val()- valueReel4AngularJs);
+        } else if ($(this).val() < valueReel4AngularJs) {
+            $('#diff-effect-4-angularjs').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-4-angularjs').text('+');
+            $('#chiffre-difference-4-angularjs').text(valueReel4AngularJs - $(this).val());
+        }
+    });
+
+    var effReel3Js = $('#eff-reel-3-js').text();
+    var valueReel3Js = parseInt(effReel3Js);
+
+    var effReel4Js = $('#eff-reel-4-js').text();
+    var valueReel4Js = parseInt(effReel4Js);
+
+    $('#input-eff-3-js').on('change', function() {
+        if ($(this).val() == valueReel3Js) {
+            $(this).css({'background':'white','border':'rgb(44,179,74) 1px solid', 'color':'rgb(44,179,74)'});
+            $('#diff-effect-3-js').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-3-js').text('=');
+            $('#chiffre-difference-3-js').text('');
+        } else if ($(this).val() > valueReel3Js) {
+            $(this).css({'background':'red','border':'white', 'color':'white'});
+            $('#diff-effect-3-js').css({'color':'red'});
+            $('#signe-operateur-3-js').text('-');
+            $('#chiffre-difference-3-js').text($(this).val()- valueReel3Js);
+        } else if ($(this).val() < valueReel3Js) {
+            $('#diff-effect-3-js').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-3-js').text('+');
+            $('#chiffre-difference-3-js').text(valueReel3Js - $(this).val());
+        }
+    });
+
+    $('#input-eff-4-js').on('change', function() {
+        if ($(this).val() == valueReel4Js) {
+            $(this).css({'background':'white','border':'rgb(44,179,74) 1px solid', 'color':'rgb(44,179,74)'});
+            $('#diff-effect-4-js').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-4-js').text('=');
+            $('#chiffre-difference-4-js').text('');
+        } else if ($(this).val() > valueReel4Js) {
+            $(this).css({'background':'red','border':'white', 'color':'white'});
+            $('#diff-effect-4-js').css({'color':'red'});
+            $('#signe-operateur-4-js').text('-');
+            $('#chiffre-difference-4-js').text($(this).val()- valueReel4Js);
+        } else if ($(this).val() < valueReel4Js) {
+            $('#diff-effect-4-js').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-4-js').text('+');
+            $('#chiffre-difference-4-js').text(valueReel4Js - $(this).val());
+        }
+    });
+
+    var effReel3Plsql = $('#eff-reel-3-plsql').text();
+    var valueReel3Plsql = parseInt(effReel3Plsql);
+
+    var effReel4Plsql = $('#eff-reel-4-plsql').text();
+    var valueReel4Plsql = parseInt(effReel4Plsql);
+
+    $('#input-eff-3-plsql').on('change', function() {
+        if ($(this).val() == valueReel3Plsql) {
+            $(this).css({'background':'white','border':'rgb(44,179,74) 1px solid', 'color':'rgb(44,179,74)'});
+            $('#diff-effect-3-plsql').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-3-plsql').text('=');
+            $('#chiffre-difference-3-plsql').text('');
+        } else if ($(this).val() > valueReel3Plsql) {
+            $(this).css({'background':'red','border':'white', 'color':'white'});
+            $('#diff-effect-3-plsql').css({'color':'red'});
+            $('#signe-operateur-3-plsql').text('-');
+            $('#chiffre-difference-3-plsql').text($(this).val()- valueReel3Plsql);
+        } else if ($(this).val() < valueReel3Plsql) {
+            $('#diff-effect-3-plsql').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-3-plsql').text('+');
+            $('#chiffre-difference-3-plsql').text(valueReel3Plsql - $(this).val());
+        }
+    });
+
+    $('#input-eff-4-plsql').on('change', function() {
+        if ($(this).val() == valueReel4Plsql) {
+            $(this).css({'background':'white','border':'rgb(44,179,74) 1px solid', 'color':'rgb(44,179,74)'});
+            $('#diff-effect-4-plsql').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-4-plsql').text('=');
+            $('#chiffre-difference-4-plsql').text('');
+        } else if ($(this).val() > valueReel4Plsql) {
+            $(this).css({'background':'red','border':'white', 'color':'white'});
+            $('#diff-effect-4-plsql').css({'color':'red'});
+            $('#signe-operateur-4-plsql').text('-');
+            $('#chiffre-difference-4-plsql').text($(this).val()- valueReel4Plsql);
+        } else if ($(this).val() < valueReel4Plsql) {
+            $('#diff-effect-4-plsql').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-4-plsql').text('+');
+            $('#chiffre-difference-4-plsql').text(valueReel4Plsql - $(this).val());
+        }
+    });
+
+    var effReel3Csharp = $('#eff-reel-3-csharp').text();
+    var valueReel3Csharp = parseInt(effReel3Csharp);
+
+    var effReel4Csharp = $('#eff-reel-4-cshparp').text();
+    var valueReel4Csharp = parseInt(effReel4Csharp);
+
+    $('#input-eff-3-csharp').on('change', function() {
+        if ($(this).val() == valueReel3Csharp) {
+            $(this).css({'background':'white','border':'rgb(44,179,74) 1px solid', 'color':'rgb(44,179,74)'});
+            $('#diff-effect-3-csharp').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-3-csharp').text('=');
+            $('#chiffre-difference-3-csharp').text('');
+        } else if ($(this).val() > valueReel3Csharp) {
+            $(this).css({'background':'red','border':'white', 'color':'white'});
+            $('#diff-effect-3-csharp').css({'color':'red'});
+            $('#signe-operateur-3-csharp').text('-');
+            $('#chiffre-difference-3-csharp').text($(this).val()- valueReel3Csharp);
+        } else if ($(this).val() < valueReel3Csharp) {
+            $('#diff-effect-3-csharp').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-3-csharp').text('+');
+            $('#chiffre-difference-3-csharp').text(valueReel3Csharp - $(this).val());
+        }
+    });
+
+    $('#input-eff-4-csharp').on('change', function() {
+        if ($(this).val() == valueReel4Csharp) {
+            $(this).css({'background':'white','border':'rgb(44,179,74) 1px solid', 'color':'rgb(44,179,74)'});
+            $('#diff-effect-4-csharp').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-4-csharp').text('=');
+            $('#chiffre-difference-4-csharp').text('');
+        } else if ($(this).val() > valueReel4Csharp) {
+            $(this).css({'background':'red','border':'white', 'color':'white'});
+            $('#diff-effect-4-csharp').css({'color':'red'});
+            $('#signe-operateur-4-csharp').text('-');
+            $('#chiffre-difference-4-csharp').text($(this).val()- valueReel4Csharp);
+        } else if ($(this).val() < valueReel4Csharp) {
+            $('#diff-effect-4-csharp').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-4-csharp').text('+');
+            $('#chiffre-difference-4-csharp').text(valueReel4Csharp - $(this).val());
+        }
+    });
+
+    var effReel3Windows = $('#eff-reel-3-windows').text();
+    var valueReel3Windows = parseInt(effReel3Windows);
+
+    var effReel4Windows = $('#eff-reel-4-windows').text();
+    var valueReel4Windows = parseInt(effReel4Windows);
+
+    $('#input-eff-3-windows').on('change', function() {
+        if ($(this).val() == valueReel3Windows) {
+            $(this).css({'background':'white','border':'rgb(44,179,74) 1px solid', 'color':'rgb(44,179,74)'});
+            $('#diff-effect-3-windows').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-3-windows').text('=');
+            $('#chiffre-difference-3-windows').text('');
+        } else if ($(this).val() > valueReel3Windows) {
+            $(this).css({'background':'red','border':'white', 'color':'white'});
+            $('#diff-effect-3-windows').css({'color':'red'});
+            $('#signe-operateur-3-windows').text('-');
+            $('#chiffre-difference-3-windows').text($(this).val()- valueReel3Windows);
+        } else if ($(this).val() < valueReel3Windows) {
+            $('#diff-effect-3-windows').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-3-windows').text('+');
+            $('#chiffre-difference-3-windows').text(valueReel3Windows - $(this).val());
+        }
+    });
+
+    $('#input-eff-4-windows').on('change', function() {
+        if ($(this).val() == valueReel4Windows) {
+            $(this).css({'background':'white','border':'rgb(44,179,74) 1px solid', 'color':'rgb(44,179,74)'});
+            $('#diff-effect-4-windows').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-4-windows').text('=');
+            $('#chiffre-difference-4-windows').text('');
+        } else if ($(this).val() > valueReel4Windows) {
+            $(this).css({'background':'red','border':'white', 'color':'white'});
+            $('#diff-effect-4-windows').css({'color':'red'});
+            $('#signe-operateur-4-windows').text('-');
+            $('#chiffre-difference-4-windows').text($(this).val()- valueReel4Windows);
+        } else if ($(this).val() < valueReel4Windows) {
+            $('#diff-effect-4-windows').css({'color':'rgb(44,179,74)'});
+            $('#signe-operateur-4-windows').text('+');
+            $('#chiffre-difference-4-windows').text(valueReel4Windows - $(this).val());
+        }
+    });
+
+</script>
+<script type="text/javascript">
+    var expanded = false;
+
+    function showCheckboxesService() {
+        var checkboxes = document.getElementById("checkboxesService");
+        if (!expanded) {
+            checkboxes.style.display = "block";
+            expanded = true;
+        } else {
+            checkboxes.style.display = "none";
+            expanded = false;
+        }
+    }
+
+    function showCheckboxesFonction() {
+        var checkboxes = document.getElementById("#eff-ree");
+        if (!expanded) {
+            checkboxes.style.display = "block";
+            expanded = true;
+        } else {
+            checkboxes.style.display = "none";
+            expanded = false;
+        }
+    }
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+</body>
+
+</html>
