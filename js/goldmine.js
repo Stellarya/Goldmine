@@ -1,4 +1,39 @@
 $(document).ready(function () {
+    $("#checkSpring").click(function(){
+        $("#table_TDB #minus_spring").closest("tr").remove();
+    });
+
+    $("#checkj2ee").click(function(){
+        $("#table_TDB #minus_j2ee").closest("tr").remove();
+    });
+
+    $("#checkhtml").click(function(){
+        $("#table_TDB #minus_html").closest("tr").remove();
+    });
+
+    $("#checkcss").click(function(){
+        $("#table_TDB #minus_css").closest("tr").remove();
+    });
+
+    $("#checkangularjs").click(function(){
+        $("#table_TDB #minus_angularjs").closest("tr").remove();
+    });
+
+    $("#checkjs").click(function(){
+        $("#table_TDB #minus_js").closest("tr").remove();
+    });
+
+    $("#checkplsql").click(function(){
+        $("#table_TDB #minus_plsql").closest("tr").remove();
+    });
+
+    $("#checkcsharp").click(function(){
+        $("#table_TDB #minus_csharp").closest("tr").remove();
+    });
+
+    $("#checkwindows").click(function(){
+        $("#table_TDB #minus_windows").closest("tr").remove();
+    });
 
     $("#table_TDB #minus_spring").click(function(){
         $(this).closest("tr").remove();
