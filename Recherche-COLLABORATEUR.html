@@ -81,7 +81,8 @@
 
                 <div style="float:right;font-size:16px;color:#531055;">
                     <i class="fa fa-user" style="margin-right:10px"></i> Marie Evanno
-                    <a href="evaluation-MANAGER.html"><i class="fa fa-sign-out-alt" style="font-weight:300;margin-left:20px"></i></a>
+                    <a href="evaluation-MANAGER.html"><i class="fa fa-sign-out-alt"
+                                                         style="font-weight:300;margin-left:20px"></i></a>
                 </div>
             </div>
         </nav>
@@ -99,233 +100,649 @@
 
                     </header>
                     <div class="col-2">
-
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
+                        <div id="accordion-techno">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1"
                                       style="border-right: none; background: white"><i class="fas fa-search"></i></span>
+                                </div>
+                                <input type="text" class="form-control" id="autocomplete"
+                                       aria-label="Recipient's username"
+                                       aria-describedby="basic-addon2"
+                                       style="padding-left: 5px; border-left: none">
                             </div>
-                            <input type="text" class="form-control" id="autocomplete" aria-label="Recipient's username"
-                                   aria-describedby="basic-addon2"
-                                   style="padding-left: 5px; border-left: none">
+                            <div class="card bg-light mb-3">
+                                <div class="card-header" id="heading-technos">
+                                    <h5 class="mb-0">
+                                        <button id="techno-accordion" class="btn btn-link collapsed"
+                                                data-toggle="collapse"
+                                                data-target="#collapse-techno" aria-expanded="true"
+                                                aria-controls="collapse-techno">
+                                            <span class="cog" style="font-size: 19px; margin-right: 5px"></span> Technos <span style="margin-left: 115px"><i
+                                                class="fas fa-chevron-down"></i></span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-techno" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion-techno">
+                                    <div class="card-body" style="padding:0">
+                                        <div id="accordion">
+
+                                            <div class="card bg-light mb-3 btn-style">
+                                                <div class="" id="heading-java">
+                                                    <h5 class="mb-0">
+                                                        <button id="java-accordion" class="btn btn-link btn-height collapsed"
+                                                                data-toggle="collapse"
+                                                                data-target="#collapse-java" aria-expanded="true"
+                                                                aria-controls="collapse-java">
+                                                            Java <span style="margin-left: 170px"><i
+                                                                class="fas fa-chevron-down"></i></span>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse-java" class="collapse" aria-labelledby="headingTwo"
+                                                     data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">Spring
+                                                                <input type="checkbox" checked id="checkSpring">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+
+                                                        </div>
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">J2EE
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card bg-light mb-3 btn-style">
+                                                <div class="" id="heading-Web">
+                                                    <h5 class="mb-0">
+                                                        <button id="web-accordion" class="btn btn-link btn-height collapsed" data-toggle="collapse"
+                                                                data-target="#collapse-web" aria-expanded="false"
+                                                                aria-controls="collapse-web">
+                                                            Web <span style="margin-left: 172px"><i
+                                                                class="fas fa-chevron-down"></i></span>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse-web" class="collapse" aria-labelledby="headingTwo"
+                                                     data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">HTML/CSS
+                                                                <input type="checkbox" checked id="checkHtml">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card bg-light mb-3 btn-style">
+                                                <div class="" id="heading-php">
+                                                    <h5 class="mb-0">
+                                                        <button id="php-accordion" class="btn btn-link btn-height collapsed" data-toggle="collapse"
+                                                                data-target="#collapse-php" aria-expanded="false"
+                                                                aria-controls="collapse-php">
+                                                            PHP <span style="margin-left: 173px"><i
+                                                                class="fas fa-chevron-down"></i></span>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse-php" class="collapse" aria-labelledby="headingTwo"
+                                                     data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">PHP
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card bg-light mb-3 btn-style">
+                                                <div class="" id="heading-javascript">
+                                                    <h5 class="mb-0">
+                                                        <button id="js-accordion" class="btn btn-link btn-height collapsed" data-toggle="collapse"
+                                                                data-target="#collapse-javascript" aria-expanded="false"
+                                                                aria-controls="collapse-javascript">
+                                                            Javascript <span style="margin-left: 126px"><i
+                                                                class="fas fa-chevron-down"></i></span>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse-javascript" class="collapse" aria-labelledby="headingTwo"
+                                                     data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">Javascript
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+
+                                                        </div>
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">AngularJS
+                                                                <input type="checkbox" id="chkAngular">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card bg-light mb-3 btn-style">
+                                                <div class="" id="heading-bdd">
+                                                    <h5 class="mb-0">
+                                                        <button id="bdd-accordion" class="btn btn-link btn-height collapsed" data-toggle="collapse"
+                                                                data-target="#collapse-bdd" aria-expanded="false"
+                                                                aria-controls="collapse-bdd">
+                                                            BDD <span style="margin-left: 171px"><i
+                                                                class="fas fa-chevron-down"></i></span>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse-bdd" class="collapse" aria-labelledby="headingTwo"
+                                                     data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">PL/SQL
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card bg-light mb-3 btn-style">
+                                                <div class="" id="heading-framework">
+                                                    <h5 class="mb-0">
+                                                        <button id="framework-accordion" class="btn btn-link btn-height collapsed"
+                                                                data-toggle="collapse"
+                                                                data-target="#collapse-framework" aria-expanded="false"
+                                                                aria-controls="collapse-framework">
+                                                            Framework <span style="margin-left: 120px"><i
+                                                                class="fas fa-chevron-down"></i></span>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse-framework" class="collapse" aria-labelledby="headingTwo"
+                                                     data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">Delphi
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card bg-light mb-3 btn-style">
+                                                <div class="" id="heading-langages">
+                                                    <h5 class="mb-0">
+                                                        <button id="langages-accordion" class="btn btn-link btn-height collapsed"
+                                                                data-toggle="collapse"
+                                                                data-target="#collapse-langages" aria-expanded="false"
+                                                                aria-controls="collapse-langages">
+                                                            Langages <span style="margin-left: 131px"><i
+                                                                class="fas fa-chevron-down"></i></span>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse-langages" class="collapse" aria-labelledby="headingTwo"
+                                                     data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">Shell
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card bg-light mb-3 btn-style">
+                                                <div class="" id="heading-produits">
+                                                    <h5 class="mb-0">
+                                                        <button id="produits-accordion" class="btn btn-link btn-height collapsed"
+                                                                data-toggle="collapse"
+                                                                data-target="#collapse-produits" aria-expanded="false"
+                                                                aria-controls="collapse-produits">
+                                                            Produits <span style="margin-left: 141px"><i
+                                                                class="fas fa-chevron-down"></i></span>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse-produits" class="collapse" aria-labelledby="headingTwo"
+                                                     data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">Liferay
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card bg-light mb-3 btn-style" style="color: rgb(76,10,58)">
+                                                <div class="" id="heading-dotnet">
+                                                    <h5 class="mb-0">
+                                                        <button id="dotnet-accordion" class="btn btn-link btn-height collapsed"
+                                                                data-toggle="collapse"
+                                                                data-target="#collapse-dotnet" aria-expanded="false"
+                                                                aria-controls="collapse-dotnet">
+                                                            .Net <span style="margin-left: 175px"><i
+                                                                class="fas fa-chevron-down"></i></span>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse-dotnet" class="collapse" aria-labelledby="headingTwo"
+                                                     data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">C#
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="accordion-appli">
+                            <div class="card bg-light mb-3">
+                                <div class="card-header" id="heading-appli">
+                                    <h5 class="mb-0">
+                                        <button id="appli-accordion" style="padding-bottom: 3px;padding-top: 3px" class="btn btn-link collapsed"
+                                                data-toggle="collapse"
+                                                data-target="#collapse-appli" aria-expanded="true"
+                                                aria-controls="collapse-appli">
+                                            <span class="mobile" style="font-size: 22px; margin-right: 5px"> </span> Applis <span style="margin-left: 137px"><i
+                                                class="fas fa-chevron-down"></i></span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-appli" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion-appli">
+                                    <div class="card-body" style="padding:0">
+                                        <div id="accordion-applis">
+
+                                            <div class="card bg-light mb-3 btn-style">
+                                                <div class="" id="heading-limagrain">
+                                                    <h5 class="mb-0">
+                                                        <button id="limagrain-accordion" class="btn btn-link btn-height collapsed"
+                                                                data-toggle="collapse"
+                                                                data-target="#collapse-limagrain" aria-expanded="true"
+                                                                aria-controls="collapse-limagrain">
+                                                            Limagrain <span style="margin-left: 128px"><i
+                                                                class="fas fa-chevron-down"></i></span>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse-limagrain" class="collapse" aria-labelledby="headingTwo"
+                                                     data-parent="#accordion-applis">
+                                                    <div class="card-body">
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">Spring
+                                                                <input type="checkbox" checked id="checkSpring2">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+
+                                                        </div>
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">J2EE
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card bg-light mb-3 btn-style">
+                                                <div class="" id="heading-Agranet">
+                                                    <h5 class="mb-0">
+                                                        <button id="Agranet-accordion" class="btn btn-link btn-height collapsed" data-toggle="collapse"
+                                                                data-target="#collapse-Agranet" aria-expanded="false"
+                                                                aria-controls="collapse-Agranet">
+                                                            Agranet <span style="margin-left: 144px"><i
+                                                                class="fas fa-chevron-down"></i></span>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse-Agranet" class="collapse" aria-labelledby="headingTwo"
+                                                     data-parent="#accordion-applis">
+                                                    <div class="card-body">
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">HTML/CSS
+                                                                <input type="checkbox" checked id="checkHtml2">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card bg-light mb-3 btn-style">
+                                                <div class="" id="heading-equipement">
+                                                    <h5 class="mb-0">
+                                                        <button id="equipement-accordion" class="btn btn-link btn-height collapsed" data-toggle="collapse"
+                                                                data-target="#collapse-equipement" aria-expanded="false"
+                                                                aria-controls="collapse-equipement">
+                                                            Equipementier <span style="margin-left: 92px"><i
+                                                                class="fas fa-chevron-down"></i></span>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse-equipement" class="collapse" aria-labelledby="headingTwo"
+                                                     data-parent="#accordion-applis">
+                                                    <div class="card-body">
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">PHP
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card bg-light mb-3 btn-style">
+                                                <div class="" id="heading-vegetal">
+                                                    <h5 class="mb-0">
+                                                        <button id="vegetal-accordion" class="btn btn-link btn-height collapsed" data-toggle="collapse"
+                                                                data-target="#collapse-vegetal" aria-expanded="false"
+                                                                aria-controls="collapse-vegetal">
+                                                            Végétal <span style="margin-left: 148px"><i
+                                                                class="fas fa-chevron-down"></i></span>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse-vegetal" class="collapse" aria-labelledby="headingTwo"
+                                                     data-parent="#accordion-applis">
+                                                    <div class="card-body">
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">Javascript
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+
+                                                        </div>
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">AngularJS
+                                                                <input type="checkbox" id="chkAngular2">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card bg-light mb-3 btn-style">
+                                                <div class="" id="heading-laitBzh">
+                                                    <h5 class="mb-0">
+                                                        <button id="laitBzh-accordion" class="btn btn-link btn-height collapsed" data-toggle="collapse"
+                                                                data-target="#collapse-laitBzh" aria-expanded="false"
+                                                                aria-controls="collapse-laitBzh">
+                                                            Lait BZH, SGPI <span style="margin-left: 92px"><i
+                                                                class="fas fa-chevron-down"></i></span>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse-laitBzh" class="collapse" aria-labelledby="headingTwo"
+                                                     data-parent="#accordion-applis">
+                                                    <div class="card-body">
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">BCELO - ActivParage
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">BCELO - ActivSanté
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">BCELO - Bilan Santé Mamelle
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">BCELO - Chaine Assemblage
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">BCELO - GTW
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">BCELO - Infocentre
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">BCELO - OditLait
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">BCELO - Portlait
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">BCELO - Rationneur
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">BCELO - SIEL/ValoSIEL
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">BCELO - SoclePDA/PC
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="card bg-light mb-3 btn-style">
+                                                <div class="" id="heading-petfood">
+                                                    <h5 class="mb-0">
+                                                        <button id="petfood-accordion" class="btn btn-link btn-height collapsed"
+                                                                data-toggle="collapse"
+                                                                data-target="#collapse-petfood" aria-expanded="false"
+                                                                aria-controls="collapse-petfood">
+                                                            Petfood & New Bizz <span style="margin-left: 56px"><i
+                                                                class="fas fa-chevron-down"></i></span>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse-petfood" class="collapse" aria-labelledby="headingTwo"
+                                                     data-parent="#accordion-applis">
+                                                    <div class="card-body">
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">Delphi
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card bg-light mb-3 btn-style">
+                                                <div class="" id="heading-sante">
+                                                    <h5 class="mb-0">
+                                                        <button id="sante-accordion" class="btn btn-link btn-height collapsed"
+                                                                data-toggle="collapse"
+                                                                data-target="#collapse-sante" aria-expanded="false"
+                                                                aria-controls="collapse-sante">
+                                                            Santé <span style="margin-left: 161px"><i
+                                                                class="fas fa-chevron-down"></i></span>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse-sante" class="collapse" aria-labelledby="headingTwo"
+                                                     data-parent="#accordion-applis">
+                                                    <div class="card-body">
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">Shell
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card bg-light mb-3 btn-style">
+                                                <div class="" id="heading-equarissage">
+                                                    <h5 class="mb-0">
+                                                        <button id="equarissage-accordion" class="btn btn-link btn-height collapsed"
+                                                                data-toggle="collapse"
+                                                                data-target="#collapse-equarissage" aria-expanded="false"
+                                                                aria-controls="collapse-equarissage">
+                                                            Equarissage <span style="margin-left: 110px"><i
+                                                                class="fas fa-chevron-down"></i></span>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse-equarissage" class="collapse" aria-labelledby="headingTwo"
+                                                     data-parent="#accordion-applis">
+                                                    <div class="card-body">
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">Liferay
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card bg-light mb-3 btn-style" style="color: rgb(76,10,58)">
+                                                <div class="" id="heading-interpro">
+                                                    <h5 class="mb-0">
+                                                        <button id="interpro-accordion" class="btn btn-link btn-height collapsed"
+                                                                data-toggle="collapse"
+                                                                data-target="#collapse-interpro" aria-expanded="false"
+                                                                aria-controls="collapse-interpro">
+                                                            Interprofession <span style="margin-left: 89px"><i
+                                                                class="fas fa-chevron-down"></i></span>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse-interpro" class="collapse" aria-labelledby="headingTwo"
+                                                     data-parent="#accordion-applis">
+                                                    <div class="card-body">
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">C#
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card bg-light mb-3 btn-style" style="color: rgb(76,10,58)">
+                                                <div class="" id="heading-nutriAn">
+                                                    <h5 class="mb-0">
+                                                        <button id="nutriAn-accordion" class="btn btn-link btn-height collapsed"
+                                                                data-toggle="collapse"
+                                                                data-target="#collapse-nutriAn" aria-expanded="false"
+                                                                aria-controls="collapse-nutriAn">
+                                                            Nutri. Animale, Porc/Vola... <span style="margin-left: 1px"><i
+                                                                class="fas fa-chevron-down"></i></span>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse-nutriAn" class="collapse" aria-labelledby="headingTwo"
+                                                     data-parent="#accordion-applis">
+                                                    <div class="card-body">
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">C#
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card bg-light mb-3 btn-style" style="color: rgb(76,10,58)">
+                                                <div class="" id="heading-genetique">
+                                                    <h5 class="mb-0">
+                                                        <button id="genetique-accordion" class="btn btn-link btn-height collapsed"
+                                                                data-toggle="collapse"
+                                                                data-target="#collapse-genetique" aria-expanded="false"
+                                                                aria-controls="collapse-genetique">
+                                                            Génétique <span style="margin-left: 126px"><i
+                                                                class="fas fa-chevron-down"></i></span>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse-genetique" class="collapse" aria-labelledby="headingTwo"
+                                                     data-parent="#accordion-applis">
+                                                    <div class="card-body">
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">C#
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card bg-light mb-3 btn-style" style="color: rgb(76,10,58)">
+                                                <div class="" id="heading-equade">
+                                                    <h5 class="mb-0">
+                                                        <button id="equade-accordion" class="btn btn-link btn-height collapsed"
+                                                                data-toggle="collapse"
+                                                                data-target="#collapse-equade" aria-expanded="false"
+                                                                aria-controls="collapse-equade">
+                                                            EQUADE, EDEL <span style="margin-left: 85px"><i
+                                                                class="fas fa-chevron-down"></i></span>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse-equade" class="collapse" aria-labelledby="headingTwo"
+                                                     data-parent="#accordion-applis">
+                                                    <div class="card-body">
+                                                        <div class="form-check" style="padding-left: 0px">
+                                                            <label class="container">C#
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div id="accordion">
 
-                            <div class="card bg-light mb-3">
-                                <div class="card-header" id="heading-java">
-                                    <h5 class="mb-0">
-                                        <button id="java-accordion" class="btn btn-link collapsed" data-toggle="collapse"
-                                                data-target="#collapse-java" aria-expanded="true"
-                                                aria-controls="collapse-java">
-                                            Java <span style="margin-left: 170px"><i class="fas fa-chevron-down"></i></span>
-                                        </button>
-                                    </h5>
-                                </div>
-                                <div id="collapse-java" class="collapse" aria-labelledby="headingTwo"
-                                     data-parent="#accordion">
-                                    <div class="card-body">
-                                        <div class="form-check" style="padding-left: 0px">
-                                            <label class="container">Spring
-                                                <input type="checkbox" checked id="checkSpring">
-                                                <span class="checkmark">
-                                                </span>
-                                            </label>
-
-                                        </div>
-                                        <div class="form-check" style="padding-left: 0px">
-                                            <label class="container">J2EE
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card bg-light mb-3">
-                                <div class="card-header" id="heading-Web">
-                                    <h5 class="mb-0">
-                                        <button id="web-accordion" class="btn btn-link collapsed" data-toggle="collapse"
-                                                data-target="#collapse-web" aria-expanded="false"
-                                                aria-controls="collapse-web">
-                                            Web <span style="margin-left: 172px"><i class="fas fa-chevron-down"></i></span>
-                                        </button>
-                                    </h5>
-                                </div>
-                                <div id="collapse-web" class="collapse" aria-labelledby="headingTwo"
-                                     data-parent="#accordion">
-                                    <div class="card-body">
-                                        <div class="form-check" style="padding-left: 0px">
-                                            <label class="container">HTML/CSS
-                                                <input type="checkbox" checked id="checkHtml">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card bg-light mb-3">
-                                <div class="card-header" id="heading-php">
-                                    <h5 class="mb-0">
-                                        <button id="php-accordion" class="btn btn-link collapsed" data-toggle="collapse"
-                                                data-target="#collapse-php" aria-expanded="false"
-                                                aria-controls="collapse-php">
-                                            PHP <span style="margin-left: 173px"><i class="fas fa-chevron-down"></i></span>
-                                        </button>
-                                    </h5>
-                                </div>
-                                <div id="collapse-php" class="collapse" aria-labelledby="headingTwo"
-                                     data-parent="#accordion">
-                                    <div class="card-body">
-                                        <div class="form-check" style="padding-left: 0px">
-                                            <label class="container">PHP
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card bg-light mb-3">
-                                <div class="card-header" id="heading-javascript">
-                                    <h5 class="mb-0">
-                                        <button id="js-accordion" class="btn btn-link collapsed" data-toggle="collapse"
-                                                data-target="#collapse-javascript" aria-expanded="false"
-                                                aria-controls="collapse-javascript">
-                                            Javascript <span style="margin-left: 126px"><i class="fas fa-chevron-down"></i></span>
-                                        </button>
-                                    </h5>
-                                </div>
-                                <div id="collapse-javascript" class="collapse" aria-labelledby="headingTwo"
-                                     data-parent="#accordion">
-                                    <div class="card-body">
-                                        <div class="form-check" style="padding-left: 0px">
-                                            <label class="container">Javascript
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-
-                                        </div>
-                                        <div class="form-check" style="padding-left: 0px">
-                                            <label class="container">AngularJS
-                                                <input type="checkbox" id="chkAngular">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card bg-light mb-3">
-                                <div class="card-header" id="heading-bdd">
-                                    <h5 class="mb-0">
-                                        <button id="bdd-accordion" class="btn btn-link collapsed" data-toggle="collapse"
-                                                data-target="#collapse-bdd" aria-expanded="false"
-                                                aria-controls="collapse-bdd">
-                                            BDD <span style="margin-left: 171px"><i class="fas fa-chevron-down"></i></span>
-                                        </button>
-                                    </h5>
-                                </div>
-                                <div id="collapse-bdd" class="collapse" aria-labelledby="headingTwo"
-                                     data-parent="#accordion">
-                                    <div class="card-body">
-                                        <div class="form-check" style="padding-left: 0px">
-                                            <label class="container">PL/SQL
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card bg-light mb-3">
-                                <div class="card-header" id="heading-framework">
-                                    <h5 class="mb-0">
-                                        <button id="framework-accordion" class="btn btn-link collapsed" data-toggle="collapse"
-                                                data-target="#collapse-framework" aria-expanded="false"
-                                                aria-controls="collapse-framework">
-                                            Framework <span style="margin-left: 120px"><i class="fas fa-chevron-down"></i></span>
-                                        </button>
-                                    </h5>
-                                </div>
-                                <div id="collapse-framework" class="collapse" aria-labelledby="headingTwo"
-                                     data-parent="#accordion">
-                                    <div class="card-body">
-                                        <div class="form-check" style="padding-left: 0px">
-                                            <label class="container">Delphi
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card bg-light mb-3">
-                                <div class="card-header" id="heading-langages">
-                                    <h5 class="mb-0">
-                                        <button id="langages-accordion" class="btn btn-link collapsed" data-toggle="collapse"
-                                                data-target="#collapse-langages" aria-expanded="false"
-                                                aria-controls="collapse-langages">
-                                            Langages <span style="margin-left: 131px"><i class="fas fa-chevron-down"></i></span>
-                                        </button>
-                                    </h5>
-                                </div>
-                                <div id="collapse-langages" class="collapse" aria-labelledby="headingTwo"
-                                     data-parent="#accordion">
-                                    <div class="card-body">
-                                        <div class="form-check" style="padding-left: 0px">
-                                            <label class="container">Shell
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card bg-light mb-3">
-                                <div class="card-header" id="heading-produits">
-                                    <h5 class="mb-0">
-                                        <button id="produits-accordion" class="btn btn-link collapsed" data-toggle="collapse"
-                                                data-target="#collapse-produits" aria-expanded="false"
-                                                aria-controls="collapse-produits">
-                                            Produits <span style="margin-left: 141px"><i class="fas fa-chevron-down"></i></span>
-                                        </button>
-                                    </h5>
-                                </div>
-                                <div id="collapse-produits" class="collapse" aria-labelledby="headingTwo"
-                                     data-parent="#accordion">
-                                    <div class="card-body">
-                                        <div class="form-check" style="padding-left: 0px">
-                                            <label class="container">Liferay
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card bg-light mb-3" style="color: rgb(76,10,58)">
-                                <div class="card-header" id="heading-dotnet">
-                                    <h5 class="mb-0">
-                                        <button id="dotnet-accordion" class="btn btn-link collapsed" data-toggle="collapse"
-                                                data-target="#collapse-dotnet" aria-expanded="false"
-                                                aria-controls="collapse-dotnet">
-                                            .Net <span style="margin-left: 175px"><i class="fas fa-chevron-down"></i></span>
-                                        </button>
-                                    </h5>
-                                </div>
-                                <div id="collapse-dotnet" class="collapse" aria-labelledby="headingTwo"
-                                     data-parent="#accordion">
-                                    <div class="card-body">
-                                        <div class="form-check" style="padding-left: 0px">
-                                            <label class="container">C#
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <div class="col-10" id="resultat-recherche">
                         <div class="col-12">
@@ -388,7 +805,7 @@
                                                             <div class="form-check" style="padding-left: 0px">
                                                                 <label class="container" style="font-size: 15px">Architecture
                                                                     <input type="checkbox" checked id="Archi">
-                                                                    <span class="checkmark" >
+                                                                    <span class="checkmark">
                                                             </span>
                                                                 </label>
 
@@ -396,7 +813,7 @@
                                                             <div class="form-check" style="padding-left: 0px">
                                                                 <label class="container" style="font-size: 15px">Développeur
                                                                     <input type="checkbox" checked id="Dev">
-                                                                    <span class="checkmark" >
+                                                                    <span class="checkmark">
                                                             </span>
                                                                 </label>
 
@@ -404,7 +821,7 @@
                                                             <div class="form-check" style="padding-left: 0px">
                                                                 <label class="container" style="font-size:15px ">CDP
                                                                     <input type="checkbox" checked id="CDP">
-                                                                    <span class="checkmark" >
+                                                                    <span class="checkmark">
                                                             </span>
                                                                 </label>
 
@@ -439,18 +856,25 @@
                                                         class="fas fa-minus-circle"></i></span>
                                                 </th>
 
-                                                <th class="table100-head1 colSpring" style="display: none; text-align: center" scope="col" width="11%">-</th>
-                                                <th class="table100-head1 colHtml" style="display: none; text-align: center" scope="col" width="11%">-</th>
+                                                <th class="table100-head1 colSpring"
+                                                    style="display: none; text-align: center" scope="col" width="11%">-
+                                                </th>
+                                                <th class="table100-head1 colHtml"
+                                                    style="display: none; text-align: center" scope="col" width="11%">-
+                                                </th>
                                                 <th class="table100-head1 colAngular" scope="col" width="11%"
-                                                    style="text-align: center">-</th>
+                                                    style="text-align: center">-
+                                                </th>
                                                 <th class="table100-head1" scope="col" width="11%"
-                                                    style="text-align: center">-</th>
+                                                    style="text-align: center">-
+                                                </th>
                                                 <th class="table100-head1" scope="col" width="11%"
-                                                    style="text-align: center">-</th>
+                                                    style="text-align: center">-
+                                                </th>
 
                                             </tr>
                                             <tr style="height: 0px">
-                                                <th  style="padding-top: 0px !important; padding-bottom: 0px">
+                                                <th style="padding-top: 0px !important; padding-bottom: 0px">
                                                     <div class="form-check" style="padding-left: 0px">
                                                         <label class="container">Presta.
                                                             <input type="checkbox" id="chkPresta">
@@ -459,11 +883,13 @@
 
                                                     </div>
                                                 </th>
-                                                <th class="spring" style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">
+                                                <th class="spring"
+                                                    style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">
                                                     <div class="rating">
                                                         <span class="rating-star darker" title="expert"
                                                               data-value="4"></span>
-                                                        <span class="rating-star checked darker" id="star3Spring" title="autonome"
+                                                        <span class="rating-star checked darker" id="star3Spring"
+                                                              title="autonome"
                                                               data-value="3"></span>
                                                         <span class="rating-star checked darker" id="star2Spring"
                                                               title="peut intervenir avec de l'aide"
@@ -472,7 +898,8 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </th>
-                                                <th class="htmlcss" style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">
+                                                <th class="htmlcss"
+                                                    style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">
                                                     <div class="rating">
                                                     <span class="rating-star darker" title="expert"
                                                           data-value="4"></span>
@@ -485,7 +912,8 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </th>
-                                                <th class="angularJS" style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">
+                                                <th class="angularJS"
+                                                    style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">
                                                     <div class="rating">
                                                         <span class="rating-star darker" title="expert"
                                                               data-value="4"></span>
@@ -498,11 +926,26 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </th>
-                                                <th class="colSpring table100-head1" style="text-align: center; display: none; padding-top: 0px !important; padding-bottom: 0px !important;" scope="col" width="11%">-</th>
-                                                <th class="colHtml table100-head1" style="text-align: center; display: none; padding-top: 0px !important; padding-bottom: 0px !important;" scope="col" width="11%">-</th>
-                                                <th class="colAngular table100-head1" style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">-</th>
-                                                <th class="table100-head1" style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">-</th>
-                                                <th class="table100-head1" style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">-</th>
+                                                <th class="colSpring table100-head1"
+                                                    style="text-align: center; display: none; padding-top: 0px !important; padding-bottom: 0px !important;"
+                                                    scope="col" width="11%">-
+                                                </th>
+                                                <th class="colHtml table100-head1"
+                                                    style="text-align: center; display: none; padding-top: 0px !important; padding-bottom: 0px !important;"
+                                                    scope="col" width="11%">-
+                                                </th>
+                                                <th class="colAngular table100-head1"
+                                                    style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">
+                                                    -
+                                                </th>
+                                                <th class="table100-head1"
+                                                    style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">
+                                                    -
+                                                </th>
+                                                <th class="table100-head1"
+                                                    style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">
+                                                    -
+                                                </th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -710,7 +1153,8 @@
                                                 <td style="text-align: center">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
-                                            <tr id="lefebvre" class="service-1 developpeur Presta black" style="display: none">
+                                            <tr id="lefebvre" class="service-1 developpeur Presta black"
+                                                style="display: none">
                                                 <td>Lefebvre</td>
                                                 <td>Damien</td>
                                                 <td style="text-align: center">1</td>
@@ -1038,31 +1482,6 @@
 <script src="js/choices.js"></script>
 
 <script>
-    $(function () {
-        $("button.btn-link span").click(function (event) {
-
-            if($(this).find($(".fas")).hasClass('fa-chevron-down'))
-            {
-                $(this).find($(".fas")).removeClass('fa-chevron-down').addClass('fa-chevron-up');
-            }
-            else if($(this).find($(".fas")).hasClass('fa-chevron-up')) {
-
-                $(this).find($(".fas")).removeClass('fa-chevron-up').addClass('fa-chevron-down');
-            }
-
-        });
-
-        $(document).click(function (e) {
-            if (!$("button.btn-link span").is(e.target) && !$("button.btn-link span i").is(e.target) ) {
-
-                if($(this).find($(".fas")).hasClass('fa-chevron-up'))
-                {
-                    $(this).find($(".fas")).removeClass('fa-chevron-up').addClass('fa-chevron-down');
-                }
-            }
-        });
-    })
-
 
     $(function () {
         $("#minus_spring-header").click(function () {
@@ -1196,7 +1615,6 @@
             }
         });
     });
-
 
 
     const customSelects = document.querySelectorAll("select");

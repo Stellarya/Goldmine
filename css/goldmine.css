@@ -288,19 +288,6 @@ ul.CTAs a {
 /* ---------------------------------------------------
     ACCORDION
 ----------------------------------------------------- */
-.chevron-down {
-
-}
-
-.chevron-down:after {
-    font-family: FontAwesome;
-    content: '\f078';
-}
-
-.chevron-up {
-    font-family: FontAwesome;
-    content: '\f005';
-}
 
 #autocomplete {
     border-bottom-right-radius: 5px;
@@ -337,6 +324,16 @@ label.container {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+div.btn-style {
+    border: none;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+.btn-height {
+    height: 20px;
 }
 
 /* Hide the browser's default checkbox */
@@ -434,6 +431,16 @@ label.container {
 .rating-star:after {
     font-family: FontAwesome;
     content: '\f005';
+}
+
+.cog:after {
+    font-family: FontAwesome;
+    content: '\f013';
+}
+
+.mobile:after {
+    font-family: FontAwesome;
+    content: '\f10b';
 }
 
 .rating-star.checked ~ .rating-star:after,

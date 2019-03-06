@@ -71,6 +71,16 @@ $(document).ready(function () {
         $(this).closest("tr").remove();
     });
 
+    $('#techno-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else if ($(this).find('svg').attr('data-icon') === 'cog') {
+            $(this).find('svg').attr('data-icon', 'cog');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
+    });
+
     $('#java-accordion').click(function () {
         if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
             $(this).find('svg').attr('data-icon', 'chevron-up');
