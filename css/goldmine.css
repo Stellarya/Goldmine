@@ -175,6 +175,11 @@ ul.CTAs a {
     display: none;
 }
 
+#block_limagrain, #block_agranet, #block_equipementier, #block_vegetal, #block_laitbzh, #block_petfood, #block_sante,
+#block_equarissage, #block_equarissage, #block_interpro, #block_nutriani, #block_genetique, #block_equade {
+    display: none;
+}
+
 
 /* ---------------------------------------------------
     INFOBULLES
