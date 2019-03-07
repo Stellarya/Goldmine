@@ -477,6 +477,71 @@ div.btn-style {
     color: rgb(200,200,200);
 }
 
+
+
+    /* ---------------------------------------------------
+        RATING STARS DARKER
+    ----------------------------------------------------- */
+#tag_test .rating .rating-star-darker {
+    float: right;
+}
+
+.rating-star-darker {
+    padding: 0 2px;
+    margin-top: 2px;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+}
+
+.rating-star-darker:after {
+    font-family: FontAwesome;
+    content: '\f005';
+}
+
+.cog:after {
+    font-family: FontAwesome;
+    content: '\f013';
+}
+
+.mobile:after {
+    font-family: FontAwesome;
+    content: '\f10b';
+}
+
+.rating-star-darker.checked ~ .rating-star-darker:after,
+.rating-star-darker.checked:after {
+    content: '\f005';
+    color: #e1a100;
+}
+
+.rating-star-darker.darker {
+    content: '\f005';
+    color: rgb(100,100,100);
+}
+
+
+.rating:hover .rating-star-darker:after {
+    content: '\f005';
+}
+
+.rating-star-darker:hover ~ .rating-star-darker:after,
+.rating-star-darker:hover:after {
+    content: '\f005' !important;
+    color: #e1a100;
+}
+
+.rating-star-darker.checked:hover ~ .rating-star.checked:after,
+.rating-star-darker.checked:hover:after {
+    content: '\f005';
+    color: rgb(100,100,100);
+}
+
+.rating-star-darker.checked:hover ~ .rating-star-darker.checked:after,
+.rating-star-darker.checked:hover:after {
+    content: '\f005';
+    color: rgb(100,100,100);
+}
 /* ---------------------------------------------------
     RESET STARS
 ----------------------------------------------------- */

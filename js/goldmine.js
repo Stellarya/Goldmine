@@ -489,7 +489,10 @@ $(document).ready(function () {
     });
 
     <!-- ************* Rating stars ******************* -->
-
+    $('.rating-star-darker').click(function () {
+        $(this).parents('.rating').find('.rating-star-darker').removeClass('checked');
+        $(this).addClass('checked');
+    });
 
     $('.rating-star').click(function () {
         $(this).parents('.rating').find('.rating-star').removeClass('checked');
