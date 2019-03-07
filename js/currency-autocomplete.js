@@ -1,27 +1,19 @@
 $(function () {
     var currencies = [
-        {value: 'Spring', desc: 'Java'},
-        {value: 'J2EE', desc: 'Java'},
-        {value: 'Delphi', desc: 'Framework'},
-        {value: 'HTML/CSS', desc: 'Web'},
-        {value: 'PL/SQL', desc: 'BDD'},
-        {value: 'PHP', desc: 'PHP'},
-        {value: 'C#', desc: '.Net'},
-        {value: 'Javascript', desc: 'Javascript'},
-        {value: 'AngularJS', desc: 'Javascript'},
-        {value: 'Liferay', desc: 'Produits'},
+        {value: 'Spring', desc: 'Techno'},
+        {value: 'J2EE', desc: 'Techno'},
+        {value: 'Delphi', desc: 'Techno'},
+        {value: 'HTML/CSS', desc: 'Techno'},
+        {value: 'PL/SQL', desc: 'Techno'},
+        {value: 'PHP', desc: 'Techno'},
+        {value: 'C#', desc: 'Techno'},
+        {value: 'Javascript', desc: 'Techno'},
+        {value: 'AngularJS', desc: 'Techno'},
+        {value: 'Liferay ', desc: 'Produits'},
         {value: 'Shell', desc: 'Langages'},
 
     ];
 
-    /*function trouverTag(){
-        for (var i = 0; i < currencies.length; i++) {
-            var auto = currencies[i].value + "-" + currencies[i].desc;
-            return auto;
-        }
-    }*/
-
-    // setup autocomplete function pulling from currencies[] array
     $('#autocomplete').autocomplete({
 
         lookup: currencies,
@@ -35,3 +27,4 @@ $(function () {
         }
     });
 });
+
