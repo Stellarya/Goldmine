@@ -23,6 +23,7 @@
             $("#chkEsi").prop('checked', false);
             $("#garnier").hide();
             $("#Service-4").prop('checked', false)
+            $("#audeon").css('color','black');
         });
     });
 
@@ -55,10 +56,12 @@
                 $(".esi").show();
                 $(".colEsi").hide();
                 $("#garnier").show();
+                $("#audeon").css('color','rgb(150,150,150)');
             } else {
                 $(".esi").hide();
                 $(".colEsi").show();
                 $("#garnier").hide();
+                $("#audeon").css('color','black');
             }
         });
     });
@@ -81,7 +84,14 @@
                 $("#Presta").show();
             } else {
                 $("#Presta").hide();
+
             }
+        });
+    });
+    $(function () {
+        $("#chkPresta").click(function () {
+            $(".odd").toggleClass('pair');
+            $(".even").toggleClass('impair');
         });
     });
 
