@@ -27,6 +27,7 @@
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
     <script type="text/javascript" src="js/currency-autocomplete.js"></script>
+    <script type="text/javascript" src="js/goldmine-research-page.js"></script>
     <script src="tags-selector-tagselect/jquery.tagselect.js"></script>
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
@@ -619,7 +620,7 @@
                                                         </div>
                                                         <div class="form-check" style="padding-left: 0px">
                                                             <label class="container">EILYPS - ESI
-                                                                <input type="checkbox">
+                                                                <input type="checkbox" checked id="chkEsi">
                                                                 <span class="checkmark"></span>
                                                             </label>
                                                         </div>
@@ -1033,6 +1034,14 @@
                                                                 </label>
 
                                                             </div>
+                                                            <div class="form-check" style="padding-left: 0px">
+                                                                <label class="container" style="font-size:15px ">4
+                                                                    <input type="checkbox" checked id="Service-4">
+                                                                    <span class="checkmark">
+                                                            </span>
+                                                                </label>
+
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </th>
@@ -1084,17 +1093,22 @@
                                                 </th>
 
                                                 <th class="table100-head1 spring" scope="col" width="11%"
-                                                    style="text-align: center">Spring <span id="minus_spring-header"
+                                                    style="text-align: center; font-size: 15px"><i class="fas fa-cog"></i> Spring <span id="minus_spring-header"
                                                                                             class="block_col_2"> <i
                                                         class="fas fa-minus-circle"></i></span>
                                                 </th>
                                                 <th class="table100-head1 htmlcss" scope="col" width="11%"
-                                                    style="text-align: center">HTML/CSS <span id="minus_htmlcss-header"
+                                                    style="text-align: center; font-size: 15px"><i class="fas fa-cog" style="font-size: 15px"></i> HTML/CSS <span id="minus_htmlcss-header" style="font-size: 15px"
                                                                                               class="block_col_2"> <i
                                                         class="fas fa-minus-circle"></i></span>
                                                 </th>
                                                 <th class="table100-head1 angularJS" scope="col" width="11%"
-                                                    style="text-align: center">AngularJS <span id="minus_angular"
+                                                    style="text-align: center; font-size: 15px"><i class="fas fa-cog" style="font-size: 15px"></i> AngularJS <span id="minus_angular"
+                                                                                               class="block_col_2"> <i
+                                                        class="fas fa-minus-circle"></i></span>
+                                                </th>
+                                                <th class="table100-head1 esi" scope="col" width="11%"
+                                                    style="text-align: center; font-size: 15px"><i class="fas fa-mobile-alt" style="font-size: 15px"></i> Eilyps - ESI <span id="minus_esi"
                                                                                                class="block_col_2"> <i
                                                         class="fas fa-minus-circle"></i></span>
                                                 </th>
@@ -1103,8 +1117,8 @@
                                                 <th class="table100-head1 colHtml" style="display: none; text-align: center" scope="col" width="11%">-</th>
                                                 <th class="table100-head1 colAngular" scope="col" width="11%"
                                                     style="text-align: center">-</th>
-                                                <th class="table100-head1" scope="col" width="11%"
-                                                    style="text-align: center">-</th>
+                                                <th class="table100-head1 colEsi" scope="col" width="11%"
+                                                    style="text-align: center; display: none">-</th>
                                                 <th class="table100-head1" scope="col" width="11%"
                                                     style="text-align: center">-</th>
 
@@ -1113,7 +1127,7 @@
                                                 <th  style="padding-top: 0px !important; padding-bottom: 0px">
                                                     <div class="form-check" style="padding-left: 0px">
                                                         <label class="container">Presta.
-                                                            <input type="checkbox" id="chkPresta">
+                                                            <input type="checkbox" checked id="chkPresta">
                                                             <span class="checkmark"></span>
                                                         </label>
 
@@ -1123,7 +1137,7 @@
                                                     <div class="rating">
                                                         <span class="rating-star-darker darker" title="expert"
                                                               data-value="4"></span>
-                                                        <span class="rating-star-darker checked darker" id="star3Spring" title="autonome"
+                                                        <span class="rating-star-darker darker" id="star3Spring" title="autonome"
                                                               data-value="3"></span>
                                                         <span class="rating-star-darker checked darker" id="star2Spring"
                                                               title="peut intervenir avec de l'aide"
@@ -1158,10 +1172,24 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </th>
+                                                <th class="esi" style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">
+                                                    <div class="rating">
+                                                        <span class="rating-star-darker darker" title="expert"
+                                                              data-value="4"></span>
+                                                        <span class="rating-star-darker darker" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star-darker checked darker"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star-darker checked darker" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </th>
+
                                                 <th class="colSpring table100-head1" style="text-align: center; display: none; padding-top: 0px !important; padding-bottom: 0px !important;" scope="col" width="11%">-</th>
                                                 <th class="colHtml table100-head1" style="text-align: center; display: none; padding-top: 0px !important; padding-bottom: 0px !important;" scope="col" width="11%">-</th>
                                                 <th class="colAngular table100-head1" style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">-</th>
-                                                <th class="table100-head1" style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">-</th>
+                                                <th class="colEsi table100-head1" style="text-align: center; display: none; padding-top: 0px !important; padding-bottom: 0px !important;">-</th>
                                                 <th class="table100-head1" style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">-</th>
                                             </tr>
                                             </thead>
@@ -1211,10 +1239,23 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
+                                                <td class="esi" style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed checked" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed checked" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed checked"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed checked" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
                                                 <td class="colSpring" style="text-align: center; display: none">-</td>
                                                 <td class="colHtml" style="text-align: center; display: none">-</td>
                                                 <td class="colAngular" style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
+                                                <td class="colEsi" style="text-align: center; display: none">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
                                             <tr class="collabs service-2 architecte black" id="dariel">
@@ -1262,10 +1303,23 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
+                                                <td class="esi" style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed checked"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed checked" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
                                                 <td class="colSpring" style="text-align: center; display: none">-</td>
                                                 <td class="colHtml" style="text-align: center; display: none">-</td>
                                                 <td class="colAngular" style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
+                                                <td class="colEsi" style="text-align: center; display: none">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
                                             <tr class="collabs service-1 developpeur black" id="reynaud">
@@ -1313,10 +1367,23 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
+                                                <td class="esi" style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed checked"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed checked" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
                                                 <td class="colSpring" style="text-align: center; display: none">-</td>
                                                 <td class="colHtml" style="text-align: center; display: none">-</td>
                                                 <td class="colAngular" style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
+                                                <td class="colEsi" style="text-align: center; display: none">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
                                             <tr class="collabs service-2 developpeur black" id="audeon">
@@ -1364,13 +1431,26 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
+                                                <td class="esi" style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
                                                 <td class="colSpring" style="text-align: center; display: none">-</td>
                                                 <td class="colHtml" style="text-align: center; display: none">-</td>
                                                 <td class="colAngular" style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
+                                                <td class="colEsi" style="text-align: center; display: none">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
-                                            <tr id="lefebvre" class="service-1 developpeur Presta black" style="display: none">
+                                            <tr id="lefebvre" class="service-1 developpeur Presta black">
                                                 <td>Lefebvre</td>
                                                 <td>Damien</td>
                                                 <td style="text-align: center">1</td>
@@ -1415,10 +1495,23 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
+                                                <td class="esi" style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
                                                 <td class="colSpring" style="text-align: center; display: none">-</td>
                                                 <td class="colHtml" style="text-align: center; display: none">-</td>
                                                 <td class="colAngular" style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
+                                                <td class="colEsi" style="text-align: center; display: none">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
                                             <tr class="collabs service-2 architecte grey" id="flageul">
@@ -1466,10 +1559,23 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
+                                                <td class="esi" style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
                                                 <td class="colSpring" style="text-align: center; display: none">-</td>
                                                 <td class="colHtml" style="text-align: center; display: none">-</td>
                                                 <td class="colAngular" style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
+                                                <td class="colEsi" style="text-align: center; display: none">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
                                             <tr class="collabs service-1 developpeur grey" id="vanderlinden">
@@ -1517,10 +1623,23 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
+                                                <td class="esi" style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
                                                 <td class="colSpring" style="text-align: center; display: none">-</td>
                                                 <td class="colHtml" style="text-align: center; display: none">-</td>
                                                 <td class="colAngular" style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
+                                                <td class="colEsi" style="text-align: center; display: none">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
                                             <tr class="collabs service-1 chef-de-projet grey" id="bouvet">
@@ -1568,10 +1687,23 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
+                                                <td class="esi" style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
                                                 <td class="colSpring" style="text-align: center; display: none">-</td>
                                                 <td class="colHtml" style="text-align: center; display: none">-</td>
                                                 <td class="colAngular" style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
+                                                <td class="colEsi" style="text-align: center; display: none">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
                                             <tr class="collabs service-studio developpeur grey" id="aligand">
@@ -1619,10 +1751,23 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
+                                                <td class="esi" style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
                                                 <td class="colSpring" style="text-align: center; display: none">-</td>
                                                 <td class="colHtml" style="text-align: center; display: none">-</td>
                                                 <td class="colAngular" style="text-align: center">-</td>
-                                                <td style="text-align: center">-</td>
+                                                <td class="colEsi" style="text-align: center; display: none">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
                                             <tr class="collabs service-studio developpeur grey" id="evanno">
@@ -1670,10 +1815,87 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
+                                                <td class="esi" style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
                                                 <td class="colSpring" style="text-align: center; display: none">-</td>
                                                 <td class="colHtml" style="text-align: center; display: none">-</td>
                                                 <td class="colAngular" style="text-align: center">-</td>
+                                                <td class="colEsi" style="text-align: center; display: none">-</td>
                                                 <td style="text-align: center">-</td>
+                                            </tr>
+                                            <tr class="collabs service-4 architecte grey" id="garnier">
+                                                <td>Garnier</td>
+                                                <td>Gwendall</td>
+                                                <td style="text-align: center">4</td>
+                                                <td>Architecte</td>
+                                                <td>Collaborateur</td>
+                                                <td class="spring" style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed checked" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="htmlcss" style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed checked"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed checked" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="angularJS" style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed checked" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="esi" style="text-align: center">
+                                                    <div class="rating">
+                                                    <span class="rating-star rating-fixed" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed checked"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed checked" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="colSpring" style="text-align: center; display: none">-</td>
+                                                <td class="colHtml" style="text-align: center; display: none">-</td>
+                                                <td class="colAngular" style="text-align: center">-</td>
+                                                <td class="colEsi" style="text-align: center; display: none">-</td>
                                                 <td style="text-align: center">-</td>
                                             </tr>
                                             </tbody>

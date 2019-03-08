@@ -17,6 +17,16 @@
     });
 
     $(function () {
+        $("#minus_esi").click(function () {
+            $(".esi").hide();
+            $(".colEsi").show();
+            $("#chkEsi").prop('checked', false);
+            $("#garnier").hide();
+            $("#Service-4").prop('checked', false)
+        });
+    });
+
+    $(function () {
         $("#checkSpring").click(function () {
             if ($(this).is(":checked")) {
                 $(".spring").show();
@@ -36,6 +46,19 @@
             } else {
                 $(".angularJS").hide();
                 $(".colAngular").show();
+            }
+        });
+    });
+    $(function () {
+        $("#chkEsi").click(function () {
+            if ($(this).is(":checked")) {
+                $(".esi").show();
+                $(".colEsi").hide();
+                $("#garnier").show();
+            } else {
+                $(".esi").hide();
+                $(".colEsi").show();
+                $("#garnier").hide();
             }
         });
     });
@@ -81,6 +104,16 @@
             }
         });
     });
+    $(function () {
+        $("#Service-4").click(function () {
+            if ($(this).is(":checked")) {
+                $(".service-4").show();
+            } else {
+                $(".service-4").hide();
+            }
+        });
+    });
+
 
     $(function () {
         $("#Service-2").click(function () {
