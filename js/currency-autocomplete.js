@@ -9,8 +9,10 @@ $(function () {
         {value: 'C#', desc: 'Techno'},
         {value: 'Javascript', desc: 'Techno'},
         {value: 'AngularJS', desc: 'Techno'},
-        {value: 'Liferay ', desc: 'Produits'},
-        {value: 'Shell', desc: 'Langages'},
+        {value: 'Liferay ', desc: 'Techno'},
+        {value: 'Shell', desc: 'Techno'},
+        {value: 'Agranet', desc: 'Appli'},
+        {value: 'Etoile', desc: 'Appli'},
 
     ];
 
