@@ -433,6 +433,11 @@ div.btn-style {
     float: right;
 }
 
+
+table.tableTDB .borderleft {
+    border-left: 1px solid rgba(170,170,170,0.5);
+}
+
 table.tableTDB .rating-star {
     padding: 0 2px;
     top:-4px;
@@ -609,14 +614,8 @@ table.tableTDB .rating-star {
 
 table.tableTDB .referent-R {
     padding: 0 10px;
-    margin-left: 10px;
-    margin-top: -2px;
-    margin-bottom: -7px;
     top: -4px;
-    cursor: pointer;
-    display: inline-block;
-    float: right;
-    font-size: 22px;
+    font-size: 5px;
 }
 
 .referent-R:after {
