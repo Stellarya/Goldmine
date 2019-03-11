@@ -171,7 +171,7 @@
                                     <div class="card-body">
                                         <div class="form-check" style="padding-left: 0px">
                                             <label class="container">Appli 1
-                                                <input type="checkbox" checked id="checkSpring">
+                                                <input type="checkbox">
                                                 <span class="checkmark">
                                                 </span>
                                             </label>
@@ -179,7 +179,7 @@
                                         </div>
                                         <div class="form-check" style="padding-left: 0px">
                                             <label class="container">Appli 2
-                                                <input type="checkbox" checked id="checkj2ee">
+                                                <input type="checkbox">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
@@ -202,7 +202,7 @@
                                     <div class="card-body">
                                         <div class="form-check" style="padding-left: 0px">
                                             <label class="container">Agranet
-                                                <input type="checkbox" checked id="checkhtml">
+                                                <input type="checkbox" id="checkAgranet">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
@@ -248,14 +248,14 @@
                                     <div class="card-body">
                                         <div class="form-check" style="padding-left: 0px">
                                             <label class="container">CRAB - Hectare/MesParcelles
-                                                <input type="checkbox" checked id="checkjs">
+                                                <input type="checkbox">
                                                 <span class="checkmark"></span>
                                             </label>
 
                                         </div>
                                         <div class="form-check" style="padding-left: 0px">
                                             <label class="container">PALMERIT - Phenopalm
-                                                <input type="checkbox" checked id="checkangularjs">
+                                                <input type="checkbox">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
@@ -302,7 +302,7 @@
                                     <div class="card-body">
                                         <div class="form-check" style="padding-left: 0px">
                                             <label class="container">BCELO - ActivParage
-                                                <input type="checkbox" checked id="checkplsql">
+                                                <input type="checkbox">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
@@ -314,7 +314,7 @@
                                         </div>
                                         <div class="form-check" style="padding-left: 0px">
                                             <label class="container">BCELO - Bilan Santé Mamelle
-                                                <input type="checkbox">
+                                                <input type="checkbox" checked id="checkbsm">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
@@ -386,7 +386,7 @@
                                         </div>
                                         <div class="form-check" style="padding-left: 0px">
                                             <label class="container">EILYPS - ESI
-                                                <input type="checkbox">
+                                                <input type="checkbox"  checked id="checkesi">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
@@ -548,13 +548,13 @@
                                     <div class="card-body">
                                         <div class="form-check" style="padding-left: 0px">
                                             <label class="container">SPIE - PointFocal
-                                                <input type="checkbox" checked id="checkcsharp">
+                                                <input type="checkbox">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
                                         <div class="form-check" style="padding-left: 0px">
                                             <label class="container">SPIE - Inventaire
-                                                <input type="checkbox">
+                                                <input type="checkbox" checked id="checkspie">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
@@ -619,7 +619,7 @@
                                     <div class="card-body">
                                         <div class="form-check" style="padding-left: 0px">
                                             <label class="container">GROUPE MICHEL - Certiferme
-                                                <input type="checkbox" checked id="checkwindows">
+                                                <input type="checkbox">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
@@ -661,7 +661,7 @@
                                 <div class="card-header" id="heading-genetique">
                                     <h5 class="mb-0">
                                         <button id="genetique-accordion" class="btn btn-link collapsed" data-toggle="collapse"
-                                                data-target="#collapse-os" aria-expanded="false"
+                                                data-target="#collapse-genetique" aria-expanded="false"
                                                 aria-controls="collapse-ost">
                                             Génétique <span style="margin-left: 126px"><i
                                                 class="fas fa-chevron-down"></i></span>
@@ -702,7 +702,7 @@
                                 <div class="card-header" id="heading-equade">
                                     <h5 class="mb-0">
                                         <button id="equade-accordion" class="btn btn-link collapsed" data-toggle="collapse"
-                                                data-target="#collapse-os" aria-expanded="false"
+                                                data-target="#collapse-equade" aria-expanded="false"
                                                 aria-controls="collapse-ost">
                                             EQUADE, EDEL <span style="margin-left: 85px"><i
                                                 class="fas fa-chevron-down"></i></span>
@@ -726,7 +726,7 @@
                                         </div>
                                         <div class="form-check" style="padding-left: 0px">
                                             <label class="container">ETOILE
-                                                <input type="checkbox">
+                                                <input type="checkbox" checked id="checketoile">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
@@ -752,7 +752,7 @@
                             <div class="limiter">
                                 <div class="wrap-table100">
                                     <div class="table100">
-                                        <table class="table tableResults" id="table_TDB" style="margin-bottom: 0">
+                                        <table class="table tableResults tableTDB" id="table_TDB" style="margin-bottom: 0">
                                             <thead style="border: none">
                                             <tr>
                                                 <th class="table100-head1" scope="col" width="2.5%"
@@ -777,15 +777,15 @@
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            <tr class="rawSPIE">
+                                            <tr class="rawSPIE odd">
                                                 <td rowspan="2" class="grey">
                                                     <span id="minus_spie">
                                                         <i class="fas fa-minus-circle"></i>
                                                     </span>
                                                 </td>
                                                 <td  rowspan="2">SPIE - Inventaire</td>
-                                                <td  rowspan="2">Philippe B.</td>
-                                                <td  rowspan="2">
+                                                <td  rowspan="2" width="9.44%">Philippe B.</td>
+                                                <td  rowspan="2" width="12,06%">
                                                     <div class="rating">
                                                         <span class="rating-star rating-fixed" title="expert"
                                                                       data-value="4"></span>
@@ -798,10 +798,10 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td  rowspan="2"><i class="fas fa-exclamation-triangle"></i></td>
-                                                <td  rowspan="2">Pas d'Analyse Fonctionnel !</td>
-                                                <td  rowspan="2">Samuel G</td>
-                                                <td rowspan="2">
+                                                <td  rowspan="2" width="9.44%" style="text-align: center; font-size: 25px"><i class="fas fa-exclamation-triangle" style="color: red"></i></td>
+                                                <td  rowspan="2" width="12,56%" style="color: red; font-weight: bold">Pas d'Analyse Fonctionnel !</td>
+                                                <td  rowspan="2" width="9.44%">Samuel G</td>
+                                                <td rowspan="2" width="12,56%">
                                                     <div class="rating">
                                                         <span class="rating-star rating-fixed" title="expert"
                                                               data-value="4"></span>
@@ -814,8 +814,8 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td>Yohann G.</td>
-                                                <td>
+                                                <td  width="9.44%">Yohann G.</td>
+                                                <td width="12,56%">
                                                     <div class="rating">
                                                         <span class="rating-star rating-fixed" title="expert"
                                                               data-value="4"></span>
@@ -829,7 +829,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr class="rawSPIE odd">
                                                 <td>Florent M.</td>
                                                 <td>
                                                     <div class="rating">
@@ -845,7 +845,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="rawEtoile">
+                                            <tr class="rawEtoile even">
                                                 <td rowspan="2" class="grey">
                                                     <span id="minus_etoile">
                                                         <i class="fas fa-minus-circle"></i>
@@ -911,7 +911,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr class="rawEtoile even">
                                                 <td>Cyrille P.</td>
                                                 <td>
                                                     <div class="rating">
@@ -927,7 +927,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="rawBSM">
+                                            <tr class="rawBSM odd">
                                                 <td rowspan="2" class="grey">
                                                     <span id="minus_bsm">
                                                         <i class="fas fa-minus-circle"></i>
@@ -937,8 +937,6 @@
                                                 <td  rowspan="2">Sylvain B.</td>
                                                 <td  rowspan="2">
                                                     <div class="rating">
-                                                        <span class="referent-R checked referent-fixed"
-                                                              title="référent" data-value="5"></span>
                                                         <span class="rating-star rating-fixed" title="expert"
                                                               data-value="4"></span>
                                                         <span class="rating-star rating-fixed" title="autonome"
@@ -993,7 +991,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr class="rawBSM odd">
                                                 <td>Frédéric B.</td>
                                                 <td>
                                                     <div class="rating">
@@ -1009,7 +1007,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="rawEsi">
+                                            <tr class="rawEsi even">
                                                 <td rowspan="2" class="grey">
                                                     <span id="minus_esi">
                                                         <i class="fas fa-minus-circle"></i>
@@ -1019,8 +1017,6 @@
                                                 <td  rowspan="2">Véronique V.</td>
                                                 <td  rowspan="2">
                                                     <div class="rating">
-                                                        <span class="referent-R checked referent-fixed"
-                                                              title="référent" data-value="5"></span>
                                                         <span class="rating-star rating-fixed" title="expert"
                                                               data-value="4"></span>
                                                         <span class="rating-star rating-fixed" title="autonome"
@@ -1032,8 +1028,6 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
-                                                <td  rowspan="2"><i class="fas fa-exclamation-triangle"></i></td>
-                                                <td  rowspan="2">Pas d'Analyse Fonctionnel !</td>
                                                 <td  rowspan="2">Eric D.</td>
                                                 <td rowspan="2">
                                                     <div class="rating">
@@ -1048,6 +1042,8 @@
                                                               data-value="1"></span>
                                                     </div>
                                                 </td>
+                                                <td  rowspan="2" width="9.44%" style="text-align: center; font-size: 25px"><i class="fas fa-exclamation-triangle" style="color: red"></i></td>
+                                                <td  rowspan="2" width="12,56%" style="color: red; font-weight: bold">Pas d'Architecte !</td>
                                                 <td>Sébastien F.</td>
                                                 <td>
                                                     <div class="rating">
@@ -1063,10 +1059,12 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr class="rawEsi even">
                                                 <td>Yohann G.</td>
                                                 <td>
                                                     <div class="rating">
+                                                        <span class="referent-R checked referent-fixed"
+                                                              title="référent" data-value="5"></span>
                                                         <span class="rating-star rating-fixed checked" title="expert"
                                                               data-value="4"></span>
                                                         <span class="rating-star rating-fixed checked" title="autonome"
@@ -1079,7 +1077,86 @@
                                                     </div>
                                                 </td>
                                             </tr>
-
+                                            <tr class="rawAgranet" style="display: none">
+                                                <td rowspan="2" class="grey">
+                                                    <span id="minus_agranet">
+                                                        <i class="fas fa-minus-circle"></i>
+                                                    </span>
+                                                </td>
+                                                <td  rowspan="2">Agranet</td>
+                                                <td  rowspan="2">Nicolas B.</td>
+                                                <td  rowspan="2">
+                                                    <div class="rating">
+                                                        <span class="rating-star rating-fixed" title="expert"
+                                                              data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed checked"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed checked" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                                <td  rowspan="2">Marie-Anne B.</td>
+                                                <td rowspan="2">
+                                                    <div class="rating">
+                                                        <span class="rating-star rating-fixed" title="expert"
+                                                              data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed checked"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed checked" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                                <td rowspan="2">Donatien L.</td>
+                                                <td rowspan="2">
+                                                    <div class="rating">
+                                                        <span class="rating-star rating-fixed" title="expert"
+                                                              data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed checked"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed checked" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                                <td>Sébastien V.</td>
+                                                <td>
+                                                    <div class="rating">
+                                                        <span class="rating-star rating-fixed" title="expert"
+                                                              data-value="4"></span>
+                                                        <span class="rating-star rating-fixed" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed checked"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed checked" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="rawAgranet" style="display: none">
+                                                <td>Yohann G.</td>
+                                                <td>
+                                                    <div class="rating">
+                                                        <span class="rating-star rating-fixed" title="expert"
+                                                              data-value="4"></span>
+                                                        <span class="rating-star rating-fixed checked" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star rating-fixed checked"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star rating-fixed checked" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </td>
+                                            </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -1104,147 +1181,99 @@
 <script>
 
     $(function () {
-        $("#minus_spring").click(function () {
-            $(".rawSpring").hide();
-            $("#checkSpring").prop('checked', false);
+        $("#minus_spie").click(function () {
+            $(".rawSPIE").hide();
+            $("#checkspie").prop('checked', false);
         });
     });
 
     $(function () {
-        $("#minus_j2ee").click(function () {
-            $(".rawj2ee").hide();
-            $("#checkj2ee").prop('checked', false);
+        $("#minus_etoile").click(function () {
+            $(".rawEtoile").hide();
+            $("#checketoile").prop('checked', false);
         });
     });
 
     $(function () {
-        $("#minus_css").click(function () {
-            $(".rawcss").hide();
-            $("#checkcss").prop('checked', false);
+        $("#minus_bsm").click(function () {
+            $(".rawBSM").hide();
+            $("#checkbsm").prop('checked', false);
+            $(".rawEsi").toggleClass('impair');
         });
     });
 
     $(function () {
-        $("#minus_angularjs").click(function () {
-            $(".rawangularjs").hide();
-            $("#checkangularjs").prop('checked', false);
+        $("#minus_esi").click(function () {
+            $(".rawEsi").hide();
+            $("#checkesi").prop('checked', false);
         });
     });
 
     $(function () {
-        $("#minus_js").click(function () {
-            $(".rawjs").hide();
-            $("#checkjs").prop('checked', false);
-        });
-    });
-
-    $(function () {
-        $("#minus_plsql").click(function () {
-            $(".rawplsql").hide();
-            $("#checkplsql").prop('checked', false);
-        });
-    });
-
-    $(function () {
-        $("#minus_csharp").click(function () {
-            $(".rawcsharp").hide();
-            $("#checkcsharp").prop('checked', false);
-        });
-    });
-
-    $(function () {
-        $("#minus_windows").click(function () {
-            $(".rawwindows").hide();
-            $("#checkwindows").prop('checked', false);
-        });
-    });
-
-    $(function () {
-        $("#minus_html").click(function () {
-            $(".rawhtml").hide();
-            $("#checkhtml").prop('checked', false);
-        });
-    });
-
-    $(function () {
-        $("#checkSpring").click(function () {
+        $("#checkspie").click(function () {
             if ($(this).is(":checked")) {
-                $(".rawSpring").show();
+                $(".rawSPIE").show();
             } else {
-                $(".rawSpring").hide();
+                $(".rawSPIE").hide();
             }
         });
     });
 
     $(function () {
-        $("#checkj2ee").click(function () {
+        $("#checkbsm").click(function () {
             if ($(this).is(":checked")) {
-                $(".rawj2ee").show();
+                $(".rawBSM").show();
+                $(".rawEsi").css('background-color','white');
+                $(".rawAgranet").css('background-color','#f5f5f5');
             } else {
-                $(".rawj2ee").hide();
+                $(".rawBSM").hide();
+                $(".rawEsi").css('background-color','#f5f5f5');
+                $(".rawAgranet").css('background-color','white');
             }
         });
     });
 
     $(function () {
-        $("#checkhtml").click(function () {
+        $("#checketoile").click(function () {
             if ($(this).is(":checked")) {
-                $(".rawhtml").show();
+                $(".rawEtoile").show();
+                $(".rawBSM").css('background-color','#f5f5f5');
+                $(".rawEsi").css('background-color','white');
+                $(".rawAgranet").css('background-color','#f5f5f5');
             } else {
-                $(".rawhtml").hide();
+                $(".rawEtoile").hide();
+                $(".rawBSM").css('background-color','white');
+                $(".rawEsi").css('background-color','#f5f5f5');
+                $(".rawAgranet").css('background-color','white');
             }
         });
     });
 
     $(function () {
-        $("#checkcss").click(function () {
+        $("#checkAgranet").click(function () {
             if ($(this).is(":checked")) {
-                $(".rawcss").show();
+                $(".rawAgranet").show();
             } else {
-                $(".rawcss").hide();
+                $(".rawAgranet").hide();
+                if ($(".rawBSM").is(":visible")) {
+                    $(".rawAgranet").css('background-color','#f5f5f5');
+                } else {
+                    $(".rawAgranet").css('background-color','white');
+                }
             }
         });
     });
 
     $(function () {
-        $("#checkangularjs").click(function () {
+        $("#checkesi").click(function () {
             if ($(this).is(":checked")) {
-                $(".rawangularjs").show();
+                $(".rawEsi").show();
             } else {
-                $(".rawangularjs").hide();
+                $(".rawEsi").hide();
             }
         });
     });
 
-    $(function () {
-        $("#checkjs").click(function () {
-            if ($(this).is(":checked")) {
-                $(".rawjs").show();
-            } else {
-                $(".rawjs").hide();
-            }
-        });
-    });
-
-    $(function () {
-        $("#checkplsql").click(function () {
-            if ($(this).is(":checked")) {
-                $(".rawplsql").show();
-            } else {
-                $(".rawplsql").hide();
-            }
-        });
-    });
-
-    $(function () {
-        $("#checkcsharp").click(function () {
-            if ($(this).is(":checked")) {
-                $(".rawcsharp").show();
-            } else {
-                $(".rawcsharp").hide();
-            }
-        });
-    });
 
     $(function () {
         $("#checkwindows").click(function () {
@@ -1272,391 +1301,6 @@
         }, false);
     }
 
-
-</script>
-<script type="text/javascript">
-    var effReel3Spring = $('#eff-reel-3-spring').text();
-    var valueReel3Spring = parseInt(effReel3Spring);
-
-    var effReel4Spring = $('#eff-reel-4-spring').text();
-    var valueReel4Spring = parseInt(effReel4Spring);
-
-    $('#input-eff-3-spring').on('change', function () {
-        if ($(this).val() == valueReel3Spring) {
-            $(this).css({'background': 'white', 'border': 'rgb(44,179,74) 1px solid', 'color': 'rgb(44,179,74)'});
-            $('#diff-effect-3-spring').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-3-spring').text('=');
-            $('#chiffre-difference-3-spring').text('');
-        } else if ($(this).val() > valueReel3Spring) {
-            $(this).css({'background': 'red', 'border': 'white', 'color': 'white'});
-            $('#diff-effect-3-spring').css({'color': 'red'});
-            $('#signe-operateur-3-spring').text('-');
-            $('#chiffre-difference-3-spring').text($(this).val() - valueReel3Spring);
-        } else if ($(this).val() < valueReel3Spring) {
-            $(this).css({'background': 'white', 'border': 'rgb(44,179,74) 1px solid', 'color': 'rgb(44,179,74)'});
-            $('#diff-effect-3-spring').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-3-spring').text('+');
-            $('#chiffre-difference-3-spring').text(valueReel3Spring - $(this).val());
-        } else if ($.trim($('#myMessage').val()) == '') {
-            $(this).css({'background': 'white', 'border': 'grey 1px solid', 'color': 'grey'});
-            $('#signe-operateur-3-spring').trim();
-            $('#chiffre-difference-3-spring').text(' ');
-        }
-    });
-
-    $('#input-eff-4-spring').on('change', function () {
-        if ($(this).val() == valueReel4Spring) {
-            $(this).css({'background': 'white', 'border': 'rgb(44,179,74) 1px solid', 'color': 'rgb(44,179,74)'});
-            $('#diff-effect-4-spring').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-4-spring').text('=');
-            $('#chiffre-difference-4-spring').text('');
-        } else if ($(this).val() > valueReel4Spring) {
-            $(this).css({'background': 'red', 'border': 'white', 'color': 'white'});
-            $('#diff-effect-4-spring').css({'color': 'red'});
-            $('#signe-operateur-4-spring').text('-');
-            $('#chiffre-difference-4-spring').text($(this).val() - valueReel4Spring);
-        } else if ($(this).val() < valueReel4Spring) {
-            $('#diff-effect-4-spring').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-4-spring').text('+');
-            $('#chiffre-difference-4-spring').text(valueReel4Spring - $(this).val());
-        }
-    });
-
-    var effReel3J2ee = $('#eff-reel-3-j2ee').text();
-    var valueReel3J2ee = parseInt(effReel3J2ee);
-
-    var effReel4J2ee = $('#eff-reel-4-j2ee').text();
-    var valueReel4J2ee = parseInt(effReel4J2ee);
-
-    $('#input-eff-3-j2ee').on('change', function () {
-        if ($(this).val() == valueReel3J2ee) {
-            $(this).css({'background': 'white', 'border': 'rgb(44,179,74) 1px solid', 'color': 'rgb(44,179,74)'});
-            $('#diff-effect-3-j2ee').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-3-j2ee').text('=');
-            $('#chiffre-difference-3-j2ee').text('');
-        } else if ($(this).val() > valueReel3J2ee) {
-            $(this).css({'background': 'red', 'border': 'white', 'color': 'white'});
-            $('#diff-effect-3-j2ee').css({'color': 'red'});
-            $('#signe-operateur-3-j2ee').text('-');
-            $('#chiffre-difference-3-j2ee').text($(this).val() - valueReel3J2ee);
-        } else if ($(this).val() < valueReel3J2ee) {
-            $('#diff-effect-3-j2ee').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-3-j2ee').text('+');
-            $('#chiffre-difference-3-j2ee').text(valueReel3J2ee - $(this).val());
-        }
-    });
-
-    $('#input-eff-4-j2ee').on('change', function () {
-        if ($(this).val() == valueReel4J2ee) {
-            $(this).css({'background': 'white', 'border': 'rgb(44,179,74) 1px solid', 'color': 'rgb(44,179,74)'});
-            $('#diff-effect-4-j2ee').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-4-j2ee').text('=');
-            $('#chiffre-difference-4-j2ee').text('');
-        } else if ($(this).val() > valueReel4J2ee) {
-            $(this).css({'background': 'red', 'border': 'white', 'color': 'white'});
-            $('#diff-effect-4-j2ee').css({'color': 'red'});
-            $('#signe-operateur-4-j2ee').text('-');
-            $('#chiffre-difference-4-j2ee').text($(this).val() - valueReel4J2ee);
-        } else if ($(this).val() < valueReel4J2ee) {
-            $('#diff-effect-4-j2ee').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-4-j2ee').text('+');
-            $('#chiffre-difference-4-j2ee').text(valueReel4J2ee - $(this).val());
-        }
-    });
-
-    var effReel3Html = $('#eff-reel-3-html').text();
-    var valueReel3Html = parseInt(effReel3Html);
-
-    var effReel4Html = $('#eff-reel-4-html').text();
-    var valueReel4Html = parseInt(effReel4Html);
-
-    $('#input-eff-3-html').on('change', function () {
-        if ($(this).val() == valueReel3Html) {
-            $(this).css({'background': 'white', 'border': 'rgb(44,179,74) 1px solid', 'color': 'rgb(44,179,74)'});
-            $('#diff-effect-3-html').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-3-html').text('=');
-            $('#chiffre-difference-3-html').text('');
-        } else if ($(this).val() > valueReel3Html) {
-            $(this).css({'background': 'red', 'border': 'white', 'color': 'white'});
-            $('#diff-effect-3-html').css({'color': 'red'});
-            $('#signe-operateur-3-html').text('-');
-            $('#chiffre-difference-3-html').text($(this).val() - valueReel3Html);
-        } else if ($(this).val() < valueReel3Html) {
-            $('#diff-effect-3-html').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-3-html').text('+');
-            $('#chiffre-difference-3-html').text(valueReel3Html - $(this).val());
-        }
-    });
-
-    $('#input-eff-4-html').on('change', function () {
-        if ($(this).val() == valueReel4Html) {
-            $(this).css({'background': 'white', 'border': 'rgb(44,179,74) 1px solid', 'color': 'rgb(44,179,74)'});
-            $('#diff-effect-4-html').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-4-html').text('=');
-            $('#chiffre-difference-4-html').text('');
-        } else if ($(this).val() > valueReel4Html) {
-            $(this).css({'background': 'red', 'border': 'white', 'color': 'white'});
-            $('#diff-effect-4-html').css({'color': 'red'});
-            $('#signe-operateur-4-html').text('-');
-            $('#chiffre-difference-4-html').text($(this).val() - valueReel4Html);
-        } else if ($(this).val() < valueReel4Html) {
-            $('#diff-effect-4-html').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-4-html').text('+');
-            $('#chiffre-difference-4-html').text(valueReel4Html - $(this).val());
-        }
-    });
-
-    var effReel3Css = $('#eff-reel-3-css').text();
-    var valueReel3Css = parseInt(effReel3Css);
-
-    var effReel4Css = $('#eff-reel-4-css').text();
-    var valueReel4Css = parseInt(effReel4Css);
-
-    $('#input-eff-3-css').on('change', function () {
-        if ($(this).val() == valueReel3Css) {
-            $(this).css({'background': 'white', 'border': 'rgb(44,179,74) 1px solid', 'color': 'rgb(44,179,74)'});
-            $('#diff-effect-3-css').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-3-css').text('=');
-            $('#chiffre-difference-3-css').text('');
-        } else if ($(this).val() > valueReel3Css) {
-            $(this).css({'background': 'red', 'border': 'white', 'color': 'white'});
-            $('#diff-effect-3-css').css({'color': 'red'});
-            $('#signe-operateur-3-css').text('-');
-            $('#chiffre-difference-3-css').text($(this).val() - valueReel3Css);
-        } else if ($(this).val() < valueReel3Css) {
-            $('#diff-effect-3-css').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-3-css').text('+');
-            $('#chiffre-difference-3-css').text(valueReel3Css - $(this).val());
-        }
-    });
-
-    $('#input-eff-4-css').on('change', function () {
-        if ($(this).val() == valueReel4Css) {
-            $(this).css({'background': 'white', 'border': 'rgb(44,179,74) 1px solid', 'color': 'rgb(44,179,74)'});
-            $('#diff-effect-4-css').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-4-css').text('=');
-            $('#chiffre-difference-4-css').text('');
-        } else if ($(this).val() > valueReel4Css) {
-            $(this).css({'background': 'red', 'border': 'white', 'color': 'white'});
-            $('#diff-effect-4-css').css({'color': 'red'});
-            $('#signe-operateur-4-css').text('-');
-            $('#chiffre-difference-4-css').text($(this).val() - valueReel4Css);
-        } else if ($(this).val() < valueReel4Css) {
-            $('#diff-effect-4-css').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-4-css').text('+');
-            $('#chiffre-difference-4-css').text(valueReel4Css - $(this).val());
-        }
-    });
-
-    var effReel3AngularJs = $('#eff-reel-3-angularjs').text();
-    var valueReel3AngularJS = parseInt(effReel3AngularJs);
-
-    var effReel4AngularJs = $('#eff-reel-4-angularjs').text();
-    var valueReel4AngularJs = parseInt(effReel4AngularJs);
-
-    $('#input-eff-3-angularjs').on('change', function () {
-        if ($(this).val() == valueReel3AngularJS) {
-            $(this).css({'background': 'white', 'border': 'rgb(44,179,74) 1px solid', 'color': 'rgb(44,179,74)'});
-            $('#diff-effect-3-angularjs').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-3-angularjs').text('=');
-            $('#chiffre-difference-3-angularjs').text('');
-        } else if ($(this).val() > valueReel3AngularJS) {
-            $(this).css({'background': 'red', 'border': 'white', 'color': 'white'});
-            $('#diff-effect-3-angularjs').css({'color': 'red'});
-            $('#signe-operateur-3-angularjs').text('-');
-            $('#chiffre-difference-3-angularjs').text($(this).val() - valueReel3AngularJS);
-        } else if ($(this).val() < valueReel3AngularJS) {
-            $('#diff-effect-3-angularjs').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-3-angularjs').text('+');
-            $('#chiffre-difference-3-angularjs').text(valueReel3AngularJS - $(this).val());
-        }
-    });
-
-    $('#input-eff-4-angularjs').on('change', function () {
-        if ($(this).val() == valueReel4AngularJs) {
-            $(this).css({'background': 'white', 'border': 'rgb(44,179,74) 1px solid', 'color': 'rgb(44,179,74)'});
-            $('#diff-effect-4-angularjs').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-4-angularjs').text('=');
-            $('#chiffre-difference-4-angularjs').text('');
-        } else if ($(this).val() > valueReel4AngularJs) {
-            $(this).css({'background': 'red', 'border': 'white', 'color': 'white'});
-            $('#diff-effect-4-angularjs').css({'color': 'red'});
-            $('#signe-operateur-4-angularjs').text('-');
-            $('#chiffre-difference-4-angularjs').text($(this).val() - valueReel4AngularJs);
-        } else if ($(this).val() < valueReel4AngularJs) {
-            $('#diff-effect-4-angularjs').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-4-angularjs').text('+');
-            $('#chiffre-difference-4-angularjs').text(valueReel4AngularJs - $(this).val());
-        }
-    });
-
-    var effReel3Js = $('#eff-reel-3-js').text();
-    var valueReel3Js = parseInt(effReel3Js);
-
-    var effReel4Js = $('#eff-reel-4-js').text();
-    var valueReel4Js = parseInt(effReel4Js);
-
-    $('#input-eff-3-js').on('change', function () {
-        if ($(this).val() == valueReel3Js) {
-            $(this).css({'background': 'white', 'border': 'rgb(44,179,74) 1px solid', 'color': 'rgb(44,179,74)'});
-            $('#diff-effect-3-js').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-3-js').text('=');
-            $('#chiffre-difference-3-js').text('');
-        } else if ($(this).val() > valueReel3Js) {
-            $(this).css({'background': 'red', 'border': 'white', 'color': 'white'});
-            $('#diff-effect-3-js').css({'color': 'red'});
-            $('#signe-operateur-3-js').text('-');
-            $('#chiffre-difference-3-js').text($(this).val() - valueReel3Js);
-        } else if ($(this).val() < valueReel3Js) {
-            $('#diff-effect-3-js').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-3-js').text('+');
-            $('#chiffre-difference-3-js').text(valueReel3Js - $(this).val());
-        }
-    });
-
-    $('#input-eff-4-js').on('change', function () {
-        if ($(this).val() == valueReel4Js) {
-            $(this).css({'background': 'white', 'border': 'rgb(44,179,74) 1px solid', 'color': 'rgb(44,179,74)'});
-            $('#diff-effect-4-js').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-4-js').text('=');
-            $('#chiffre-difference-4-js').text('');
-        } else if ($(this).val() > valueReel4Js) {
-            $(this).css({'background': 'red', 'border': 'white', 'color': 'white'});
-            $('#diff-effect-4-js').css({'color': 'red'});
-            $('#signe-operateur-4-js').text('-');
-            $('#chiffre-difference-4-js').text($(this).val() - valueReel4Js);
-        } else if ($(this).val() < valueReel4Js) {
-            $('#diff-effect-4-js').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-4-js').text('+');
-            $('#chiffre-difference-4-js').text(valueReel4Js - $(this).val());
-        }
-    });
-
-    var effReel3Plsql = $('#eff-reel-3-plsql').text();
-    var valueReel3Plsql = parseInt(effReel3Plsql);
-
-    var effReel4Plsql = $('#eff-reel-4-plsql').text();
-    var valueReel4Plsql = parseInt(effReel4Plsql);
-
-    $('#input-eff-3-plsql').on('change', function () {
-        if ($(this).val() == valueReel3Plsql) {
-            $(this).css({'background': 'white', 'border': 'rgb(44,179,74) 1px solid', 'color': 'rgb(44,179,74)'});
-            $('#diff-effect-3-plsql').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-3-plsql').text('=');
-            $('#chiffre-difference-3-plsql').text('');
-        } else if ($(this).val() > valueReel3Plsql) {
-            $(this).css({'background': 'red', 'border': 'white', 'color': 'white'});
-            $('#diff-effect-3-plsql').css({'color': 'red'});
-            $('#signe-operateur-3-plsql').text('-');
-            $('#chiffre-difference-3-plsql').text($(this).val() - valueReel3Plsql);
-        } else if ($(this).val() < valueReel3Plsql) {
-            $('#diff-effect-3-plsql').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-3-plsql').text('+');
-            $('#chiffre-difference-3-plsql').text(valueReel3Plsql - $(this).val());
-        }
-    });
-
-    $('#input-eff-4-plsql').on('change', function () {
-        if ($(this).val() == valueReel4Plsql) {
-            $(this).css({'background': 'white', 'border': 'rgb(44,179,74) 1px solid', 'color': 'rgb(44,179,74)'});
-            $('#diff-effect-4-plsql').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-4-plsql').text('=');
-            $('#chiffre-difference-4-plsql').text('');
-        } else if ($(this).val() > valueReel4Plsql) {
-            $(this).css({'background': 'red', 'border': 'white', 'color': 'white'});
-            $('#diff-effect-4-plsql').css({'color': 'red'});
-            $('#signe-operateur-4-plsql').text('-');
-            $('#chiffre-difference-4-plsql').text($(this).val() - valueReel4Plsql);
-        } else if ($(this).val() < valueReel4Plsql) {
-            $('#diff-effect-4-plsql').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-4-plsql').text('+');
-            $('#chiffre-difference-4-plsql').text(valueReel4Plsql - $(this).val());
-        }
-    });
-
-    var effReel3Csharp = $('#eff-reel-3-csharp').text();
-    var valueReel3Csharp = parseInt(effReel3Csharp);
-
-    var effReel4Csharp = $('#eff-reel-4-cshparp').text();
-    var valueReel4Csharp = parseInt(effReel4Csharp);
-
-    $('#input-eff-3-csharp').on('change', function () {
-        if ($(this).val() == valueReel3Csharp) {
-            $(this).css({'background': 'white', 'border': 'rgb(44,179,74) 1px solid', 'color': 'rgb(44,179,74)'});
-            $('#diff-effect-3-csharp').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-3-csharp').text('=');
-            $('#chiffre-difference-3-csharp').text('');
-        } else if ($(this).val() > valueReel3Csharp) {
-            $(this).css({'background': 'red', 'border': 'white', 'color': 'white'});
-            $('#diff-effect-3-csharp').css({'color': 'red'});
-            $('#signe-operateur-3-csharp').text('-');
-            $('#chiffre-difference-3-csharp').text($(this).val() - valueReel3Csharp);
-        } else if ($(this).val() < valueReel3Csharp) {
-            $('#diff-effect-3-csharp').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-3-csharp').text('+');
-            $('#chiffre-difference-3-csharp').text(valueReel3Csharp - $(this).val());
-        }
-    });
-
-    $('#input-eff-4-csharp').on('change', function () {
-        if ($(this).val() == valueReel4Csharp) {
-            $(this).css({'background': 'white', 'border': 'rgb(44,179,74) 1px solid', 'color': 'rgb(44,179,74)'});
-            $('#diff-effect-4-csharp').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-4-csharp').text('=');
-            $('#chiffre-difference-4-csharp').text('');
-        } else if ($(this).val() > valueReel4Csharp) {
-            $(this).css({'background': 'red', 'border': 'white', 'color': 'white'});
-            $('#diff-effect-4-csharp').css({'color': 'red'});
-            $('#signe-operateur-4-csharp').text('-');
-            $('#chiffre-difference-4-csharp').text($(this).val() - valueReel4Csharp);
-        } else if ($(this).val() < valueReel4Csharp) {
-            $('#diff-effect-4-csharp').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-4-csharp').text('+');
-            $('#chiffre-difference-4-csharp').text(valueReel4Csharp - $(this).val());
-        }
-    });
-
-    var effReel3Windows = $('#eff-reel-3-windows').text();
-    var valueReel3Windows = parseInt(effReel3Windows);
-
-    var effReel4Windows = $('#eff-reel-4-windows').text();
-    var valueReel4Windows = parseInt(effReel4Windows);
-
-    $('#input-eff-3-windows').on('change', function () {
-        if ($(this).val() == valueReel3Windows) {
-            $(this).css({'background': 'white', 'border': 'rgb(44,179,74) 1px solid', 'color': 'rgb(44,179,74)'});
-            $('#diff-effect-3-windows').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-3-windows').text('=');
-            $('#chiffre-difference-3-windows').text('');
-        } else if ($(this).val() > valueReel3Windows) {
-            $(this).css({'background': 'red', 'border': 'white', 'color': 'white'});
-            $('#diff-effect-3-windows').css({'color': 'red'});
-            $('#signe-operateur-3-windows').text('-');
-            $('#chiffre-difference-3-windows').text($(this).val() - valueReel3Windows);
-        } else if ($(this).val() < valueReel3Windows) {
-            $('#diff-effect-3-windows').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-3-windows').text('+');
-            $('#chiffre-difference-3-windows').text(valueReel3Windows - $(this).val());
-        }
-    });
-
-    $('#input-eff-4-windows').on('change', function () {
-        if ($(this).val() == valueReel4Windows) {
-            $(this).css({'background': 'white', 'border': 'rgb(44,179,74) 1px solid', 'color': 'rgb(44,179,74)'});
-            $('#diff-effect-4-windows').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-4-windows').text('=');
-            $('#chiffre-difference-4-windows').text('');
-        } else if ($(this).val() > valueReel4Windows) {
-            $(this).css({'background': 'red', 'border': 'white', 'color': 'white'});
-            $('#diff-effect-4-windows').css({'color': 'red'});
-            $('#signe-operateur-4-windows').text('-');
-            $('#chiffre-difference-4-windows').text($(this).val() - valueReel4Windows);
-        } else if ($(this).val() < valueReel4Windows) {
-            $('#diff-effect-4-windows').css({'color': 'rgb(44,179,74)'});
-            $('#signe-operateur-4-windows').text('+');
-            $('#chiffre-difference-4-windows').text(valueReel4Windows - $(this).val());
-        }
-    });
 
 </script>
 <script type="text/javascript">

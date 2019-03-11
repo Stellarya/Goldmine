@@ -161,6 +161,22 @@ $(document).ready(function () {
         };
     });
 
+    $('#genetique-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
+    });
+
+    $('#equade-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
+    });
+
     function disable() {
         document.getElementById("collabCheck").disabled = true;
     }
