@@ -9,6 +9,7 @@ $(document).ready(function () {
         $(".cellcdp3").hide();
         $(".raw4").hide();
         $("#absenceCDPAuto").show();
+        $("#absenceCDPEilAuto").show();
         $(".raw5").hide();
         $(".raw6").hide();
         $(".raw7").hide();
@@ -27,6 +28,7 @@ $(document).ready(function () {
         $(".raw5").hide();
         $(".raw6").hide();
         $("#absenceCDPAuto").show();
+        $("#absenceCDPEilAuto").show();
         $(".raw7").hide();
         $(".raw8").hide();
         $(".raw9").hide();
@@ -42,6 +44,7 @@ $(document).ready(function () {
         $(".raw5").hide();
         $(".raw6").hide();
         $("#absenceCDPAuto").show();
+        $("#absenceCDPEilAuto").show();
         $(".raw7").hide();
         $(".raw8").hide();
         $(".raw9").hide();
@@ -56,6 +59,7 @@ $(document).ready(function () {
         $(".raw4").show();
         $(".raw5").show();
         $("#absenceCDPAuto").hide();
+        $("#absenceCDPEilAuto").hide();
         $(".raw6").show();
         $(".raw7").show();
         $(".raw8").show();
