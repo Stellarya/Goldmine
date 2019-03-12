@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+
+
     $("#starCDP2").click(function(){
         $(".cdp1").hide();
         $(".cellcdp1").show();
@@ -88,6 +91,85 @@ $(document).ready(function () {
         $(".analy3").hide();
         $(".cellanaly3").show();
     });
+    $("#starA1").click(function(){
+        $(".archi1").show();
+        $(".cellarchi1").hide();
+        $(".archi2").show();
+        $(".cellarchi2").hide();
+        $(".archi3").show();
+        $(".cellarchi3").hide();
+        $(".raw4").show();
+    });
+    $("#starA2").click(function(){
+        $(".archi1").hide();
+        $(".cellarchi1").show();
+        $(".archi2").show();
+        $(".cellarchi2").hide();
+        $(".archi3").show();
+        $(".cellarchi3").hide();
+        $("#jerome").hide();
+    });
+    $("#starA3").click(function(){
+        $(".archi1").hide();
+        $(".cellarchi1").show();
+        $(".archi2").hide();
+        $(".cellarchi2").show();
+        $(".archi3").show();
+        $(".cellarchi3").hide();
+        $("#jerome").hide();
+    });
+    $("#starA4").click(function(){
+        $(".archi1").hide();
+        $(".cellarchi1").show();
+        $(".archi2").hide();
+        $(".cellarchi2").show();
+        $(".archi3").hide();
+        $(".cellarchi3").show();
+        $("#jerome").hide();
+    });
+    $("#starDev1").click(function(){
+        $(".dev1").show();
+        $(".celldev1").hide();
+        $(".dev2").show();
+        $(".celldev2").hide();
+        $(".dev3").show();
+        $(".celldev3").hide();
+        $(".raw4").show();
+        $(".raw5").show();
+        $(".raw6").show();
+        $(".raw7").show();
+        $(".raw8").show();
+        $(".raw9").show();
+    });
+    $("#starDev2").click(function(){
+        $(".dev1").hide();
+        $(".celldev1").show();
+        $(".dev2").show();
+        $(".celldev2").hide();
+        $(".dev3").show();
+        $(".celldev3").hide();
+        $(".raw4").show();
+        $(".raw5").show();
+        $(".raw6").show();
+        $(".raw7").show();
+        $(".raw8").show();
+        $(".raw9").show();
+    });
+    $("#starDev3").click(function(){
+        $(".dev1").hide();
+        $(".celldev1").show();
+        $(".dev2").hide();
+        $(".celldev2").show();
+        $(".dev3").show();
+        $(".celldev3").hide();
+        $(".raw4").hide();
+        $(".raw5").hide();
+        $(".raw6").hide();
+        $(".raw7").hide();
+        $(".raw8").hide();
+        $(".raw9").hide();
+    });
+
 
 
     $("#checkSpring").click(function(){
