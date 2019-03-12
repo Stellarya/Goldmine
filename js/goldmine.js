@@ -1,7 +1,5 @@
 $(document).ready(function () {
 
-
-
     $("#starCDP2").click(function(){
         $(".cdp1").hide();
         $(".cellcdp1").show();
@@ -10,6 +8,7 @@ $(document).ready(function () {
         $(".cdp3").show();
         $(".cellcdp3").hide();
         $(".raw4").hide();
+        $("#absenceCDPAuto").show();
         $(".raw5").hide();
         $(".raw6").hide();
         $(".raw7").hide();
@@ -27,6 +26,7 @@ $(document).ready(function () {
         $(".raw4").hide();
         $(".raw5").hide();
         $(".raw6").hide();
+        $("#absenceCDPAuto").show();
         $(".raw7").hide();
         $(".raw8").hide();
         $(".raw9").hide();
@@ -41,6 +41,7 @@ $(document).ready(function () {
         $(".raw4").hide();
         $(".raw5").hide();
         $(".raw6").hide();
+        $("#absenceCDPAuto").show();
         $(".raw7").hide();
         $(".raw8").hide();
         $(".raw9").hide();
@@ -54,6 +55,7 @@ $(document).ready(function () {
         $(".cellcdp3").hide();
         $(".raw4").show();
         $(".raw5").show();
+        $("#absenceCDPAuto").hide();
         $(".raw6").show();
         $(".raw7").show();
         $(".raw8").show();
@@ -66,6 +68,7 @@ $(document).ready(function () {
         $(".cellanaly2").hide();
         $(".analy3").show();
         $(".cellanaly3").hide();
+        $(".raw4bcelo").show();
     });
     $("#starAF2").click(function(){
         $(".analy1").hide();
@@ -138,6 +141,7 @@ $(document).ready(function () {
         $(".raw5").show();
         $(".raw6").show();
         $(".raw7").show();
+        $("#absenceDevAuto").hide();
         $(".raw8").show();
         $(".raw9").show();
     });
@@ -149,6 +153,7 @@ $(document).ready(function () {
         $(".dev3").show();
         $(".celldev3").hide();
         $(".raw4").show();
+        $("#absenceDevAuto").hide();
         $(".raw5").show();
         $(".raw6").show();
         $(".raw7").show();
@@ -162,6 +167,7 @@ $(document).ready(function () {
         $(".celldev2").show();
         $(".dev3").show();
         $(".celldev3").hide();
+        $("#absenceDevAuto").show();
         $(".raw4").hide();
         $(".raw5").hide();
         $(".raw6").hide();
