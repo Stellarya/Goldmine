@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+
     $("#checkSpring").click(function(){
         $("#table_TDB #minus_spring").closest("tr").remove();
     });
