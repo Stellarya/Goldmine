@@ -9,12 +9,15 @@ $(document).ready(function () {
         $(".cellcdp3").hide();
         $(".raw4").hide();
         $("#absenceCDPAuto").show();
+        $("#absenceCDPAgraAuto").hide();
         $("#absenceCDPEilAuto").show();
         $(".raw5").hide();
         $(".raw6").hide();
         $(".raw7").hide();
         $(".raw8").hide();
         $(".raw9").hide();
+        $(".rawAgra4").hide();
+        $(".rawAgra5").hide();
 
     });
     $("#starCDP3").click(function(){
@@ -27,11 +30,14 @@ $(document).ready(function () {
         $(".raw4").hide();
         $(".raw5").hide();
         $(".raw6").hide();
+        $("#absenceCDPAgraAuto").show();
         $("#absenceCDPAuto").show();
         $("#absenceCDPEilAuto").show();
         $(".raw7").hide();
         $(".raw8").hide();
         $(".raw9").hide();
+        $(".rawAgra4").hide();
+        $(".rawAgra5").hide();
     });
     $("#starCDP4").click(function(){
         $(".cdp1").hide();
@@ -43,11 +49,14 @@ $(document).ready(function () {
         $(".raw4").hide();
         $(".raw5").hide();
         $(".raw6").hide();
+        $("#absenceCDPAgraAuto").show();
         $("#absenceCDPAuto").show();
         $("#absenceCDPEilAuto").show();
         $(".raw7").hide();
         $(".raw8").hide();
         $(".raw9").hide();
+        $(".rawAgra4").hide();
+        $(".rawAgra5").hide();
     });
     $("#starCDP1").click(function(){
         $(".cdp1").show();
@@ -58,12 +67,15 @@ $(document).ready(function () {
         $(".cellcdp3").hide();
         $(".raw4").show();
         $(".raw5").show();
+        $("#absenceCDPAgraAuto").hide();
         $("#absenceCDPAuto").hide();
         $("#absenceCDPEilAuto").hide();
         $(".raw6").show();
         $(".raw7").show();
         $(".raw8").show();
         $(".raw9").show();
+        $(".rawAgra4").show();
+        $(".rawAgra5").show();
     });
     $("#starAF1").click(function(){
         $(".analy1").show();
@@ -71,8 +83,11 @@ $(document).ready(function () {
         $(".analy2").show();
         $(".cellanaly2").hide();
         $(".analy3").show();
+        $("#absenceAnaAgraAuto").hide();
         $(".cellanaly3").hide();
         $(".raw4bcelo").show();
+        $(".rawAgra4").show();
+        $(".rawAgra5").show();
     });
     $("#starAF2").click(function(){
         $(".analy1").hide();
@@ -80,7 +95,11 @@ $(document).ready(function () {
         $(".analy2").show();
         $(".cellanaly2").hide();
         $(".analy3").show();
+        $("#absenceAnaAgraAuto").hide();
         $(".cellanaly3").hide();
+        $(".raw4bcelo").hide();
+        $(".rawAgra4").show();
+        $(".rawAgra5").hide();
     });
     $("#starAF3").click(function(){
         $(".analy1").hide();
@@ -89,6 +108,10 @@ $(document).ready(function () {
         $(".cellanaly2").show();
         $(".analy3").show();
         $(".cellanaly3").hide();
+        $("#absenceAnaAgraAuto").show();
+        $(".raw4bcelo").hide();
+        $(".rawAgra4").hide();
+        $(".rawAgra5").hide();
     });
     $("#starAF4").click(function(){
         $(".analy1").hide();
@@ -97,6 +120,10 @@ $(document).ready(function () {
         $(".cellanaly2").show();
         $(".analy3").hide();
         $(".cellanaly3").show();
+        $("#absenceAnaAgraAuto").show();
+        $(".raw4bcelo").hide();
+        $(".rawAgra4").hide();
+        $(".rawAgra5").hide();
     });
     $("#starA1").click(function(){
         $(".archi1").show();
@@ -106,6 +133,9 @@ $(document).ready(function () {
         $(".archi3").show();
         $(".cellarchi3").hide();
         $(".raw4").show();
+        $("#absenceArchiAgraAuto").hide();
+        $(".rawAgra4").hide();
+        $(".rawAgra5").hide();
     });
     $("#starA2").click(function(){
         $(".archi1").hide();
@@ -115,6 +145,9 @@ $(document).ready(function () {
         $(".archi3").show();
         $(".cellarchi3").hide();
         $("#jerome").hide();
+        $("#absenceArchiAgraAuto").show();
+        $(".rawAgra4").hide();
+        $(".rawAgra5").hide();
     });
     $("#starA3").click(function(){
         $(".archi1").hide();
@@ -124,6 +157,9 @@ $(document).ready(function () {
         $(".archi3").show();
         $(".cellarchi3").hide();
         $("#jerome").hide();
+        $("#absenceArchiAgraAuto").show();
+        $(".rawAgra4").hide();
+        $(".rawAgra5").hide();
     });
     $("#starA4").click(function(){
         $(".archi1").hide();
@@ -133,6 +169,9 @@ $(document).ready(function () {
         $(".archi3").hide();
         $(".cellarchi3").show();
         $("#jerome").hide();
+        $("#absenceArchiAgraAuto").show();
+        $(".rawAgra4").hide();
+        $(".rawAgra5").hide();
     });
     $("#starDev1").click(function(){
         $(".dev1").show();
@@ -148,6 +187,8 @@ $(document).ready(function () {
         $("#absenceDevAuto").hide();
         $(".raw8").show();
         $(".raw9").show();
+        $(".rawAgra4").show();
+        $(".rawAgra5").show();
     });
     $("#starDev2").click(function(){
         $(".dev1").hide();
@@ -163,6 +204,8 @@ $(document).ready(function () {
         $(".raw7").show();
         $(".raw8").show();
         $(".raw9").show();
+        $(".rawAgra4").show();
+        $(".rawAgra5").hide();
     });
     $("#starDev3").click(function(){
         $(".dev1").hide();
@@ -178,6 +221,8 @@ $(document).ready(function () {
         $(".raw7").hide();
         $(".raw8").hide();
         $(".raw9").hide();
+        $(".rawAgra4").hide();
+        $(".rawAgra5").hide();
     });
 
 
