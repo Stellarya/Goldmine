@@ -195,8 +195,6 @@ $(document).ready(function () {
         $(".raw9").hide();
     });
 
-
-
     $("#checkSpring").click(function(){
         $("#table_TDB #minus_spring").closest("tr").remove();
     });
