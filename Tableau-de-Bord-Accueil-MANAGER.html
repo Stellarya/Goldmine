@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Tableau de bord - Accueil</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/goldmine.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/util.css">
+
+    <link rel="stylesheet" type="text/css"
+          href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/smoothness/jquery-ui.css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"/>
+    <link href="css/search_plugin.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+    <script type="text/javascript" src="js/currency-autocomplete.js"></script>
+    <script src="tags-selector-tagselect/jquery.tagselect.js"></script>
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <!--<script src="js/json_test.js"></script>-->
+</head>
+
+<body>
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar" class="sidebar-wrapper " data-toggle="collapse" aria-expanded="false">
+        <div class="sidebar-header">
+            <img src="img/logo.png" height="150px" style="margin-top: -10px"/>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="Tableau-de-Bord-Accueil-MANAGER.html">
+                        <i class="fa fa-tachometer-alt"></i><span style="margin-left: 10px">
+                        Tableau de bord</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="evaluation-COLLABORATEUR.html">
+                        <i class="fas fa-star"></i><span style="margin-left: 7px;">
+                        Mes compétences</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="evaluation-MANAGER.html">
+                        <i class="fas fa-users"></i><span style="margin-left: 7px;">
+                        Effectifs</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Recherche-MANAGER.html">
+                        <i class="fas fa-search"></i><span style="margin-left: 10px;">
+                        Recherche</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content container">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div style="float:right;font-size:16px;color:#531055;">
+                    <i class="fa fa-user" style="margin-right:10px"></i> Mickaël Hebert
+                    <a href="evaluation-COLLABORATEUR.html"><i class="fa fa-sign-out-alt"
+                                                               style="font-weight:300;margin-left:20px"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="page-content violet">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <header class="header col-12">
+
+                        <nav id="cssmenu">
+                            <h3 style="padding-left: 40px">Tableau de bord</h3>
+                            <ul>
+                                <li class="active" style="margin-left: 285px"><a
+                                        href="Tableau-de-Bord-Accueil-MANAGER.html"><i class="fas fa-chart-pie" style="margin-right: 10px"></i> SYNTHESE</a></li>
+                                <li style="margin-left: 20px"><a href="Tableau-de-Bord-Technos-MANAGER.html"><i class="fas fa-cog" style="margin-right: 10px"></i> TECHNIQUE</a></li>
+                                <li style="margin-left: 20px"><a href="Tableau-de-Bord-Applis-MANAGER.html"><i class="fas fa-mobile-alt" style="margin-right: 10px"></i> APPLICATIONS</a>
+                                </li>
+                            </ul>
+
+                        </nav>
+
+                    </header>
+
+                </div>
+            </div>
+
+        </main>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+</body>
+
+</html>
