@@ -52,6 +52,59 @@ a:focus {
 }
 
 /* ---------------------------------------------------
+   TOGGLE SWITCH
+----------------------------------------------------- */
+.btn-default.btn-on.active {
+    background-color: #5BB75B;
+    color: white;
+}
+
+.btn-default.btn-off.active {
+    background-color: #DA4F49;
+    color: white;
+}
+
+.btn-default.btn-on-1.active {
+    background-color: #006FFC;
+    color: white;
+}
+
+.btn-default.btn-off-1.active {
+    background-color: #DA4F49;
+    color: white;
+}
+
+.btn-default.btn-on-2.active {
+    background-color: #00D590;
+    color: white;
+}
+
+.btn-default.btn-off-2.active {
+    background-color: #A7A7A7;
+    color: white;
+}
+
+.btn-default.btn-on-3.active {
+    color: #5BB75B;
+    font-weight: bolder;
+}
+
+.btn-default.btn-off-3.active {
+    color: #DA4F49;
+    font-weight: bolder;
+}
+
+.btn-default.btn-on-4.active {
+    background-color: #006FFC;
+    color: #5BB75B;
+}
+
+.btn-default.btn-off-4.active {
+    background-color: #DA4F49;
+    color: #DA4F49;
+}
+
+/* ---------------------------------------------------
    TBD ACCUEIL
 ----------------------------------------------------- */
 .camembert {
@@ -59,11 +112,11 @@ a:focus {
 }
 
 #divAlerte {
-    padding : 10px;
+    padding: 10px;
     background-color: white;
 }
 
-#divAlerte h2{
+#divAlerte h2 {
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 0;
@@ -78,16 +131,17 @@ a:focus {
     border-radius: 5px;
 
 }
+
 .alertes p {
     height: 35px;
     width: 100%;
-    padding-top:5px;
+    padding-top: 5px;
     border-radius: 5px;
 }
 
 table.alertes a {
-    display:block;
-    text-decoration:none;
+    display: block;
+    text-decoration: none;
 }
 
 table.alertes a:hover {
@@ -95,23 +149,25 @@ table.alertes a:hover {
 }
 
 .alerteLigne {
-     background-color: #f5f5f5;
- }
+    background-color: #f5f5f5;
+}
 
-.entretien{
+.entretien {
     background-color: #f2d6fc;
 }
 
 .competenceTDB {
     background-color: #fce9c7;
 }
+
 .technos {
     background-color: #d5eaf2;
 }
 
 .appli {
-background-color: #d9f9e0;
+    background-color: #d9f9e0;
 }
+
 .importance-red {
     background-color: #EA212D;
 }
@@ -120,9 +176,10 @@ background-color: #d9f9e0;
     background-color: #ffc60c;
 }
 
-.alerteLigne span{
+.alerteLigne span {
     padding-left: 7px;
 }
+
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -305,6 +362,7 @@ ul.CTAs a {
     opacity: 1;
 
 }
+
 /* ---------------------------------------------------
     Tags Search Page
 ----------------------------------------------------- */
@@ -328,6 +386,7 @@ ul.CTAs a {
     border: 1px solid #CCC;
     display: none;
 }
+
 /* ---------------------------------------------------
     Dropdown select
 ----------------------------------------------------- */
@@ -340,7 +399,7 @@ ul.CTAs a {
 .selectBox select {
     width: 100%;
     font-weight: bold;
-    border:none;
+    border: none;
     overflow: visible;
 
 }
@@ -353,9 +412,9 @@ ul.CTAs a {
     padding: 5px;
 }
 
-#checkboxes label, #checkboxesService label{
+#checkboxes label, #checkboxesService label {
     display: block;
-    font-size:12px;
+    font-size: 12px;
     font-family: Roboto, sans-serif;
     font-weight: normal;
     color: black;
@@ -402,6 +461,7 @@ label.container {
     -ms-user-select: none;
     user-select: none;
 }
+
 div.btn-style {
     border: none;
     background: none;
@@ -441,10 +501,12 @@ div.btn-style {
 .container input:checked ~ .checkmark {
     background-color: rgb(76, 10, 89);
 }
-.checkedCheckmark, .container:hover input ~ .checkedCheckmark{
+
+.checkedCheckmark, .container:hover input ~ .checkedCheckmark {
     background-color: rgb(76, 10, 89);
 
 }
+
 .angularJS {
     display: none;
 }
@@ -466,6 +528,7 @@ div.btn-style {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
     content: "";
@@ -490,6 +553,7 @@ div.btn-style {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
 /* ---------------------------------------------------
     RATING STARS
 ----------------------------------------------------- */
@@ -507,12 +571,12 @@ div.btn-style {
 
 
 table.tableTDB .borderleft {
-    border-left: 1px solid rgba(170,170,170,0.5);
+    border-left: 1px solid rgba(170, 170, 170, 0.5);
 }
 
 table.tableTDB .rating-star {
     padding: 0 2px;
-    top:-4px;
+    top: -4px;
     cursor: pointer;
     display: inline-block;
     float: right;
@@ -541,7 +605,7 @@ table.tableTDB .rating-star {
 
 .rating-star.darker {
     content: '\f005';
-    color: rgb(100,100,100);
+    color: rgb(100, 100, 100);
 }
 
 
@@ -558,20 +622,19 @@ table.tableTDB .rating-star {
 .rating-star.checked.darker:not(.rating-fixed):hover ~ .rating-star.checked.darker:after,
 .rating-star.checked.darker:not(.rating-fixed):hover:after {
     content: '\f005';
-    color: rgb(100,100,100);
+    color: rgb(100, 100, 100);
 }
 
 .rating-star.checked:not(.rating-fixed):hover ~ .rating-star.checked:after,
 .rating-star.checked:not(.rating-fixed):hover:after {
     content: '\f005';
-    color: rgb(200,200,200);
+    color: rgb(200, 200, 200);
 }
 
 
-
-    /* ---------------------------------------------------
-        RATING STARS DARKER
-    ----------------------------------------------------- */
+/* ---------------------------------------------------
+    RATING STARS DARKER
+----------------------------------------------------- */
 #tag_test .rating .rating-star-darker {
     float: right;
 }
@@ -607,7 +670,7 @@ table.tableTDB .rating-star {
 
 .rating-star-darker.darker {
     content: '\f005';
-    color: rgb(100,100,100);
+    color: rgb(100, 100, 100);
 }
 
 
@@ -624,14 +687,15 @@ table.tableTDB .rating-star {
 .rating-star-darker.checked:hover ~ .rating-star.checked:after,
 .rating-star-darker.checked:hover:after {
     content: '\f005';
-    color: rgb(100,100,100);
+    color: rgb(100, 100, 100);
 }
 
 .rating-star-darker.checked:hover ~ .rating-star-darker.checked:after,
 .rating-star-darker.checked:hover:after {
     content: '\f005';
-    color: rgb(100,100,100);
+    color: rgb(100, 100, 100);
 }
+
 /* ---------------------------------------------------
     RESET STARS
 ----------------------------------------------------- */
@@ -640,7 +704,7 @@ table.tableTDB .rating-star {
     display: inline-block;
     position: relative;
     font-size: 17px;
-    color: rgb(200,200,200);
+    color: rgb(200, 200, 200);
 }
 
 .reset-star {
@@ -650,7 +714,7 @@ table.tableTDB .rating-star {
 .reset-star:after {
     font-family: FontAwesome;
     content: '\f056';
-    color: rgb(200,200,200);
+    color: rgb(200, 200, 200);
 }
 
 .reset-star.checked ~ .reset-star:after,
@@ -669,11 +733,12 @@ table.tableTDB .rating-star {
     content: '\f056' !important;
     color: red;
 }
+
 /* ---------------------------------------------------
     REFERENT
 ----------------------------------------------------- */
 
-.referent-R{
+.referent-R {
     padding: 0 10px;
     margin-left: 10px;
     margin-top: -2px;
@@ -698,21 +763,21 @@ table.tableTDB .referent-R {
 }
 
 .referent-R.checked ~ .referent-R:after,
-.referent-R.checked:after{
+.referent-R.checked:after {
     font-family: Roboto, sans-serif;
     content: 'R';
     font-weight: bolder;
     font-size: 25px;
-    color: rgb(76,10,89);
+    color: rgb(76, 10, 89);
 }
 
 .referent-R.unchecked ~ .referent-R:after,
-.referent-R.unchecked:after{
+.referent-R.unchecked:after {
     font-family: Roboto, sans-serif;
     content: 'R';
     font-weight: bolder;
     font-size: 25px;
-    color: rgb(200,200,200);
+    color: rgb(200, 200, 200);
 }
 
 .referent-R:hover .referent-R:after {
@@ -720,7 +785,7 @@ table.tableTDB .referent-R {
     content: 'R';
     font-weight: bolder;
     font-size: 25px;
-    color: rgb(76,10,89);
+    color: rgb(76, 10, 89);
 }
 
 
@@ -730,7 +795,7 @@ table.tableTDB .referent-R {
     content: 'R';
     font-weight: bolder;
     font-size: 25px;
-    color: rgb(76,10,89);
+    color: rgb(76, 10, 89);
 }
 
 
@@ -740,7 +805,7 @@ table.tableTDB .referent-R {
     content: 'R';
     font-weight: bolder;
     font-size: 25px;
-    color: rgb(76,10,89);
+    color: rgb(76, 10, 89);
 }
 
 .referent-R.checked:not(.referent-fixed):hover ~ .referent-R.checked:after,
@@ -749,23 +814,25 @@ table.tableTDB .referent-R {
     content: 'R';
     font-weight: bolder;
     font-size: 25px;
-    color: rgb(200,200,200);
+    color: rgb(200, 200, 200);
 }
+
 .android-Success {
-    background: rgb(200,255,200);
-    border: 2px rgb(0,100,0);
-    color: rgb(0,100,0);
+    background: rgb(200, 255, 200);
+    border: 2px rgb(0, 100, 0);
+    color: rgb(0, 100, 0);
 }
+
 .html-Danger {
-    background: rgb(255,200,200);
-    border: 2px rgb(100,0,0);
-    color: rgb(100,0,0);
+    background: rgb(255, 200, 200);
+    border: 2px rgb(100, 0, 0);
+    color: rgb(100, 0, 0);
 }
+
 /* ---------------------------------------------------
     CHAT BOX Manager
 ----------------------------------------------------- */
-.chat
-{
+.chat {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -773,37 +840,32 @@ table.tableTDB .referent-R {
     position: relative;
 }
 
-.chat li
-{
+.chat li {
     margin-bottom: 10px;
     padding-bottom: 5px;
     border-bottom: 1px dotted #B3A9A9;
 }
 
-.chat li.left .chat-body
-{
+.chat li.left .chat-body {
     margin-left: 60px;
 }
 
-.chat li.right .chat-body
-{
+.chat li.right .chat-body {
     margin-right: 60px;
 }
 
 
-.chat li .chat-body p
-{
+.chat li .chat-body p {
     margin: 0;
     color: #777777;
 }
 
-.panel .slidedown .glyphicon, .chat .glyphicon
-{
+.panel .slidedown .glyphicon, .chat .glyphicon {
     margin-right: 5px;
 }
 
 .panel-header {
-    background: rgb(76,10,89);
+    background: rgb(76, 10, 89);
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -838,9 +900,11 @@ table.tableTDB .referent-R {
     width: 8px;
     background: transparent;
 }
+
 .content-manager .messages::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.3);
 }
+
 .content-manager .messages ul li {
     display: inline-block;
     clear: both;
@@ -862,7 +926,7 @@ table.tableTDB .referent-R {
     top: -20px;
     margin-bottom: 0px;
     padding-top: 3px;
-    margin-left:30px;
+    margin-left: 30px;
 }
 
 .content-manager .messages ul li.replies p.date-envoi {
@@ -873,7 +937,7 @@ table.tableTDB .referent-R {
     margin-right: 30px;
     top: -20px;
     margin-bottom: 0px;
-    padding-top:2px
+    padding-top: 2px
 }
 
 .content-manager .messages ul li .dessous {
@@ -885,32 +949,39 @@ table.tableTDB .referent-R {
     margin-bottom: 3px;
     border-bottom-right-radius: 5px;
 }
+
 .content-manager .messages ul li:nth-last-child(1) {
     margin-bottom: 20px;
 }
+
 .content-manager .messages ul li.sent img {
     margin: 6px 8px 0 0;
 }
+
 .content-manager .messages ul li.sent p {
-    color: rgb(76,10,89);
-    background: rgb(240,240,240);
+    color: rgb(76, 10, 89);
+    background: rgb(240, 240, 240);
     margin-bottom: 5px;
 }
+
 .content-manager .messages ul li.replies img {
     float: right;
     margin: 6px 0 0 8px;
 }
+
 .content-manager .messages ul li.replies p {
-    background: rgb(76,10,89);
+    background: rgb(76, 10, 89);
     color: white;
     float: right;
     margin-bottom: 5px;
 }
+
 .content-manager .messages ul li img {
     width: 22px;
     border-radius: 50%;
     float: left;
 }
+
 .content-manager .messages ul li p {
     display: inline-block;
     padding: 10px 15px;
@@ -926,9 +997,11 @@ table.tableTDB .referent-R {
     z-index: 99;
     margin-left: 10px;
 }
+
 .content-manager .message-input .wrap {
     position: relative;
 }
+
 .content-manager .message-input .wrap input {
     font-family: Roboto, sans-serif;
     float: left;
@@ -942,6 +1015,7 @@ table.tableTDB .referent-R {
 .content-manager .message-input .wrap input:focus {
     outline: none;
 }
+
 .content-manager .message-input .wrap .attachment {
     position: absolute;
     right: 60px;
@@ -956,6 +1030,7 @@ table.tableTDB .referent-R {
 .content-manager .message-input .wrap .attachment:hover {
     opacity: 1;
 }
+
 .content-manager .message-input .wrap button {
     float: right;
     border: none;
@@ -963,14 +1038,15 @@ table.tableTDB .referent-R {
     width: 42px;
     padding: 12px 0;
     cursor: pointer;
-    background: rgb(76,10,89);
+    background: rgb(76, 10, 89);
     color: #f5f5f5;
 }
 
 .content-manager .message-input .wrap button:hover {
-    background: rgb(240,240,240);
-    color: rgb(76,10,89);
+    background: rgb(240, 240, 240);
+    color: rgb(76, 10, 89);
 }
+
 .content-manager .message-input .wrap button:focus {
     outline: none;
 }
@@ -979,8 +1055,7 @@ table.tableTDB .referent-R {
     CHAT BOX Collab
 ----------------------------------------------------- */
 
-.chat
-{
+.chat {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -988,37 +1063,31 @@ table.tableTDB .referent-R {
     position: relative;
 }
 
-.chat li
-{
+.chat li {
     margin-bottom: 10px;
     padding-bottom: 5px;
     border-bottom: 1px dotted #B3A9A9;
 }
 
-.chat li.left .chat-body
-{
+.chat li.left .chat-body {
     margin-left: 60px;
 }
 
-.chat li.right .chat-body
-{
+.chat li.right .chat-body {
     margin-right: 60px;
 }
 
 
-.chat li .chat-body p
-{
+.chat li .chat-body p {
     margin: 0;
     color: #777777;
 }
 
-.panel .slidedown .glyphicon, .chat .glyphicon
-{
+.panel .slidedown .glyphicon, .chat .glyphicon {
     margin-right: 5px;
 }
 
-.panel-body.collab
-{
+.panel-body.collab {
     height: 350px;
     padding-top: 10px;
 }
@@ -1044,9 +1113,11 @@ table.tableTDB .referent-R {
     width: 8px;
     background: transparent;
 }
+
 .content-collab .messages::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.3);
 }
+
 .content-collab .messages ul li {
     display: inline-block;
     clear: both;
@@ -1068,7 +1139,7 @@ table.tableTDB .referent-R {
     top: -20px;
     margin-bottom: 0px;
     padding-top: 3px;
-    margin-left:30px;
+    margin-left: 30px;
 }
 
 .content-collab .messages ul li.replies p.date-envoi {
@@ -1079,7 +1150,7 @@ table.tableTDB .referent-R {
     margin-right: 30px;
     top: -20px;
     margin-bottom: 0px;
-    padding-top:2px
+    padding-top: 2px
 }
 
 .content-collab .messages ul li .dessous {
@@ -1091,32 +1162,39 @@ table.tableTDB .referent-R {
     margin-bottom: 3px;
     border-bottom-left-radius: 5px;
 }
+
 .content-collab .messages ul li:nth-last-child(1) {
     margin-bottom: 20px;
 }
+
 .content-collab .messages ul li.sent img {
     margin: 6px 8px 0 0;
 }
+
 .content-collab .messages ul li.sent p {
-    color: rgb(76,10,89);
-    background: rgb(240,240,240);
+    color: rgb(76, 10, 89);
+    background: rgb(240, 240, 240);
     margin-bottom: 5px;
 }
+
 .content-collab .messages ul li.replies img {
     float: right;
     margin: 6px 0 0 8px;
 }
+
 .content-collab .messages ul li.replies p {
-    background: rgb(76,10,89);
+    background: rgb(76, 10, 89);
     color: white;
     float: right;
     margin-bottom: 5px;
 }
+
 .content-collab .messages ul li img {
     width: 22px;
     border-radius: 50%;
     float: left;
 }
+
 .content-collab .messages ul li p {
     display: inline-block;
     padding: 10px 15px;
@@ -1132,9 +1210,11 @@ table.tableTDB .referent-R {
     z-index: 99;
     margin-left: 10px;
 }
+
 .content-collab .message-input .wrap {
     position: relative;
 }
+
 .content-collab .message-input .wrap input {
     font-family: Roboto, sans-serif;
     float: left;
@@ -1148,6 +1228,7 @@ table.tableTDB .referent-R {
 .content-collab .message-input .wrap input:focus {
     outline: none;
 }
+
 .content-collab .message-input .wrap .attachment {
     position: absolute;
     right: 60px;
@@ -1162,6 +1243,7 @@ table.tableTDB .referent-R {
 .content-collab .message-input .wrap .attachment:hover {
     opacity: 1;
 }
+
 .content-collab .message-input .wrap button {
     float: right;
     border: none;
@@ -1169,14 +1251,15 @@ table.tableTDB .referent-R {
     width: 42px;
     padding: 12px 0;
     cursor: pointer;
-    background: rgb(76,10,89);
+    background: rgb(76, 10, 89);
     color: #f5f5f5;
 }
 
 .content-collab .message-input .wrap button:hover {
-    background: rgb(240,240,240);
-    color: rgb(76,10,89);
+    background: rgb(240, 240, 240);
+    color: rgb(76, 10, 89);
 }
+
 .content-collab .message-input .wrap button:focus {
     outline: none;
 }
@@ -1342,7 +1425,7 @@ main th a {
 }
 
 #cssmenu > ul > li.active > a:after {
-    background:rgb(76, 10, 89);
+    background: rgb(76, 10, 89);
 }
 
 #cssmenu > ul > li:hover > a:after,
@@ -1381,7 +1464,7 @@ main th a {
     border-radius: 13px;
     height: 10px;
     width: 10px;
-    background: rgb(76,10,89);
+    background: rgb(76, 10, 89);
     line-height: 11px;
     color: #FFF;
     font-size: 10px;
@@ -1392,6 +1475,7 @@ main th a {
     font-weight: bold;
     visibility: hidden;
 }
+
 /* ---------------------------------------------------
     TAG STYLE
 ----------------------------------------------------- */
@@ -1590,6 +1674,7 @@ textarea.textarea-commentaire:focus, textarea.textarea-commentaire:active, texta
     border: 3px solid red;
     background: rgba(76, 10, 89, 0.2);
 }
+
 /* ---------------------------------------------------
     TABLEAU DE BORD STYLE
 ----------------------------------------------------- */
@@ -1613,31 +1698,33 @@ tbody tr td span {
     text-align: left;
 }
 
-tbody tr td.diff-effect-plus span{
-    color: rgb(44,179,74);
+tbody tr td.diff-effect-plus span {
+    color: rgb(44, 179, 74);
 }
 
-tbody tr td.diff-effect-moins span{
+tbody tr td.diff-effect-moins span {
     color: red;
 
     padding-left: 0;
 }
 
 tbody tr td .plus-cible {
-    border: rgb(44,179,74) 1px solid;
-    color:rgb(44,179,74);
+    border: rgb(44, 179, 74) 1px solid;
+    color: rgb(44, 179, 74);
 }
 
 tbody tr td .moins-cible {
     border: white 1px solid;
-    color:white ;
+    color: white;
     background: red;
 }
+
 /* ---------------------------------------------------
     TABLE STYLE
 ----------------------------------------------------- */
 HEAD .table-dark {
 }
+
 .table-striped {
 
     margin-top: 20px;
@@ -1648,7 +1735,7 @@ HEAD .table-dark {
 }
 
 .grey {
-    color: rgb(150,150,150);
+    color: rgb(150, 150, 150);
 }
 
 .black {

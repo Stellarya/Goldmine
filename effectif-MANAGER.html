@@ -1,10 +1,244 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<html>
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Tableau de bord - Accueil</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/goldmine.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/util.css">
+
+    <link rel="stylesheet" type="text/css"
+          href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/smoothness/jquery-ui.css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"/>
+    <link href="css/search_plugin.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script src="tags-selector-tagselect/jquery.tagselect.js"></script>
+    <script type="text/javascript" src="js/piechart.js"></script>
+    <script type="text/javascript" src="js/goldmine.js"></script>
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+            integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+            crossorigin="anonymous"></script>
+    <!--<script src="js/json_test.js"></script>-->
+</head>
+
+<body>
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar" class="sidebar-wrapper " data-toggle="collapse" aria-expanded="false">
+        <div class="sidebar-header">
+            <img src="img/logo.png" height="150px" style="margin-top: -10px"/>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="Tableau-de-Bord-Accueil-MANAGER.html">
+                        <i class="fa fa-tachometer-alt"></i><span style="margin-left: 10px">
+                        Tableau de bord</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="evaluation-COLLABORATEUR.html">
+                        <i class="fas fa-star"></i><span style="margin-left: 7px;">
+                        Mes compétences</span>
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="effectif-MANAGER.html">
+                        <i class="fas fa-users"></i><span style="margin-left: 7px;">
+                        Effectifs</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Recherche-MANAGER.html">
+                        <i class="fas fa-search"></i><span style="margin-left: 10px;">
+                        Recherche</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content container">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div style="float:right;font-size:16px;color:#531055;">
+                    <i class="fa fa-user" style="margin-right:10px"></i> Mickaël Hebert
+                    <a href="evaluation-COLLABORATEUR.html"><i class="fa fa-sign-out-alt"
+                                                               style="font-weight:300;margin-left:20px"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="page-content violet">
+            <div class="container-fluid">
+                <div class="row">
+                    <header class="header col-12">
+
+                        <nav id="cssmenu">
+                            <h3 style="padding-left: 40px">Effectifs</h3>
+                        </nav>
+                    </header>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="btn-group" id="status" data-toggle="buttons">
+                                        <label class="btn btn-default btn-on btn-xs active" id="team-switch">
+                                            <input type="radio" value="1" name="multifeatured_module[module_id][status]"
+                                                   checked="checked">MON EQUIPE</label>
+                                        <label class="btn btn-default btn-off btn-xs" id="adventiel-switch">
+                                            <input type="radio" value="0"
+                                                   name="multifeatured_module[module_id][status]">ADVENTIEL</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7"></div>
+                    <div class="col-3">
+                        <select class="form-control" id="SelectLieu"
+                                style="margin-bottom: 15px; border-radius: 5px; padding-right: 5px; margin-left: 5px">
+                            <option id="tout_adventiel"> Tout Adventiel</option>
+                            <option> Studio Design</option>
+                            <option> Autres transverses</option>
+                            <option> Agence de Rennes</option>
+                            <option selected> BU X</option>
+                            <option id="bux"> BU X - Domaine Limagrain</option>
+                            <option> BU X - Domaine Agranet</option>
+                            <option> BU X - Domaine Equipementier</option>
+                            <option> BU X - Domaine Végétal</option>
+                            <option> BU X - Domaine Lait BZH, SGPI</option>
+                            <option> BU Y</option>
+                            <option> BU Y - Domaine Santé</option>
+                            <option> BU Y - Domaine Equarissage</option>
+                            <option> BU Y - Domaine Interprofession</option>
+                            <option> BU Y - Domaine Nutri. Animale, Porc/Volaille</option>
+                            <option> BU Y - Domaine Génétique</option>
+                            <option> BU Y - Domaine Equade, Edel</option>
+                            <option> Agence de Caen</option>
+                            <option> BU Z</option>
+                            <option> BU Z - Domaine A</option>
+                            <option> BU Z - Domaine B</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div id="divAlerte">
+                            <div class="table100">
+                                <table class="table" style="margin-bottom: 0">
+                                    <thead>
+                                    <tr>
+                                        <th class="table100-head1">Collab/Presta</th>
+                                        <th class="table100-head1">Nom</th>
+                                        <th class="table100-head1">Prénom</th>
+                                        <th class="table100-head1">Fonction</th>
+                                        <th class="table100-head1">Site</th>
+                                        <th class="table100-head1">Service</th>
+                                        <th class="table100-head1">Arrivée</th>
+                                        <th class="table100-head1">Départ</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Collaborateur</td>
+                                        <td>ALIGAND</td>
+                                        <td>Line</td>
+                                        <td>Développeur</td>
+                                        <td>Pacé</td>
+                                        <td>Studio Design</td>
+                                        <td>23/04/2018</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <a href="evaluation-MANAGER-profilCOLLAB.html">
+                                            <td>Collaborateur</td>
+                                            <td>EVANNO</td>
+                                            <td>Marie</td>
+                                            <td>Web Designer</td>
+                                            <td>Pacé</td>
+                                            <td>Studio Design</td>
+                                            <td>21/01/2019</td>
+                                            <td>28/06/2020</td>
+                                        </a>
+                                    </tr>
+                                    <tr class="adventiel-tr" style="display: none">
+                                        <td>Collaborteur</td>
+                                        <td>MORTAMET</td>
+                                        <td>Isabelle</td>
+                                        <td>Web Designer</td>
+                                        <td>Pacé</td>
+                                        <td>Studio Design</td>
+                                        <td>01/09/2016</td>
+                                        <td>-</td>
+
+                                    </tr>
+                                    <tr class="adventiel-tr" style="display: none">
+                                        <td>Collaborateur</td>
+                                        <td>HEBERT</td>
+                                        <td>Mickaël</td>
+                                        <td>Skill Manager</td>
+                                        <td>Pacé</td>
+                                        <td>Studio Design</td>
+                                        <td>xx/xx/xxxx</td>
+                                        <td>-</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script>
+    $("#adventiel-switch").change(function () {
+        $(".adventiel-tr").show();
+    });
+    $("#team-switch").change(function () {
+        $(".adventiel-tr").hide();
+    });
+
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
 </body>
+
 </html>

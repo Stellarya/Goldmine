@@ -3,27 +3,11 @@ $(document).ready(function () {
     $("select").change(function () {
         $("select #tout_adventiel:selected").each(function () {
             console.log('adventiel select');
-            $("#prestacollBUX").hide();
-            $("#chartBUX").hide();
-            $("#prestacollAdv").show();
-            $("#chartAdv").show();
+            $("#bux-charts").hide();
+            $("#adventiel-charts").show();
             $("#technoadv").show();
         });
-    });
-
-    $("select").change(function () {
-        $("select #bux:selected").each(function () {
-            console.log('bux select');
-            $("#prestacollBUX").show();
-            $("#chartBUX").show();
-            $("#prestacollAdv").hide();
-            $("#chartAdv").hide();
-
-        });
-    })
-        .trigger("change");
-
-
+    }).trigger("change");
 
     $("#starCDP2").click(function () {
         $(".cdp1").hide();
