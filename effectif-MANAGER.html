@@ -27,6 +27,8 @@
     <script src="tags-selector-tagselect/jquery.tagselect.js"></script>
     <script type="text/javascript" src="js/piechart.js"></script>
     <script type="text/javascript" src="js/goldmine.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
             integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
@@ -155,7 +157,7 @@
                     <div class="col-12">
                         <div id="divAlerte">
                             <div class="table100">
-                                <table class="table" style="margin-bottom: 0">
+                                <table class="table" id="table-effectif" style="margin-bottom: 0">
                                     <thead>
                                     <tr>
                                         <th class="table100-head1">Collab/Presta</th>
@@ -169,6 +171,26 @@
                                     </tr>
                                     </thead>
                                     <tbody>
+                                    <tr class="adventiel-tr" style="display: none">
+                                        <td>Collaborateur</td>
+                                        <td>ADAMCIK</td>
+                                        <td>Cyrille</td>
+                                        <td>Pilote</td>
+                                        <td>HSC</td>
+                                        <td>HSM</td>
+                                        <td>04/01/1991</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr class="adventiel-tr" style="display: none">
+                                        <td>Prestataire</td>
+                                        <td>ALABARBE</td>
+                                        <td>Guillaume</td>
+                                        <td>Développeur</td>
+                                        <td>HSC</td>
+                                        <td>BU6</td>
+                                        <td>13/06/2018</td>
+                                        <td>30/04/2019</td>
+                                    </tr>
                                     <tr>
                                         <td>Collaborateur</td>
                                         <td>ALIGAND</td>
@@ -177,6 +199,126 @@
                                         <td>Pacé</td>
                                         <td>Studio Design</td>
                                         <td>23/04/2018</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr class="adventiel-tr" style="display: none">
+                                        <td>Collaborateur</td>
+                                        <td>ALIX</td>
+                                        <td>Thomas</td>
+                                        <td>Admin Système</td>
+                                        <td>Pacé</td>
+                                        <td>HSM</td>
+                                        <td>14/02/2017</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr class="adventiel-tr" style="display: none">
+                                        <td>Collaborateur</td>
+                                        <td>ALLAIN TRAN</td>
+                                        <td>Christiane</td>
+                                        <td>Chef de Projet</td>
+                                        <td>Pacé</td>
+                                        <td>BUY</td>
+                                        <td>12/10/2015</td>
+                                        <td>11/06/2019</td>
+                                    </tr>
+                                    <tr class="adventiel-tr" style="display: none">
+                                        <td>Collaborateur</td>
+                                        <td>ANDRODIAS</td>
+                                        <td>Annabelle</td>
+                                        <td>Analyste</td>
+                                        <td>Pacé</td>
+                                        <td>BUY</td>
+                                        <td>02/01/2019</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr class="adventiel-tr" style="display: none">
+                                        <td>Collaborateur</td>
+                                        <td>AUDEON</td>
+                                        <td>Nicolas</td>
+                                        <td>Développeur</td>
+                                        <td>Pacé</td>
+                                        <td>BUY</td>
+                                        <td>19/03/2018</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr class="adventiel-tr" style="display: none">
+                                        <td>Collaborateur</td>
+                                        <td>AUVRAY</td>
+                                        <td>Bertrand</td>
+                                        <td>Responsable</td>
+                                        <td>HSC</td>
+                                        <td>HSM</td>
+                                        <td>01/07/1990</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr class="adventiel-tr" style="display: none">
+                                        <td>Prestataire</td>
+                                        <td>AYAD</td>
+                                        <td>Mohamed</td>
+                                        <td>Développeur</td>
+                                        <td>Pacé</td>
+                                        <td>SGPI</td>
+                                        <td>11/02/2019</td>
+                                        <td>31/05/2019</td>
+                                    </tr>
+                                    <tr class="adventiel-tr" style="display: none">
+                                        <td>Collaborateur</td>
+                                        <td>BACQUART</td>
+                                        <td>Johann</td>
+                                        <td>Intégrateur</td>
+                                        <td>Pacé</td>
+                                        <td>BUY</td>
+                                        <td>23/10/2017</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr class="adventiel-tr" style="display: none">
+                                        <td>Collaborateur</td>
+                                        <td>BARBIER</td>
+                                        <td>Ariane</td>
+                                        <td>Développeur</td>
+                                        <td>Pacé</td>
+                                        <td>SGPI</td>
+                                        <td>01/08/2017</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr class="adventiel-tr" style="display: none">
+                                        <td>Collaborateur</td>
+                                        <td>BACQUART</td>
+                                        <td>Johann</td>
+                                        <td>Intégrateur</td>
+                                        <td>Pacé</td>
+                                        <td>BUY</td>
+                                        <td>23/10/2017</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr class="adventiel-tr" style="display: none">
+                                        <td>Prestataire</td>
+                                        <td>BARBOT</td>
+                                        <td>Ronan</td>
+                                        <td>Développeur</td>
+                                        <td>Pacé</td>
+                                        <td>BUY</td>
+                                        <td>16/10/2017</td>
+                                        <td>31/03/2019</td>
+                                    </tr>
+                                    <tr class="adventiel-tr" style="display: none">
+                                        <td>Collaborateur</td>
+                                        <td>BAUDAIS</td>
+                                        <td>Mélanie</td>
+                                        <td>Développeur</td>
+                                        <td>Pacé</td>
+                                        <td>BUY</td>
+                                        <td>05/01/2018</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr class="adventiel-tr" style="display: none">
+                                        <td>Collaborateur</td>
+                                        <td>BAUDY</td>
+                                        <td>Jérôme</td>
+                                        <td>Responsable</td>
+                                        <td>Pacé</td>
+                                        <td>HSM</td>
+                                        <td>01/07/2000</td>
                                         <td>-</td>
                                     </tr>
                                     <tr>
@@ -191,7 +333,7 @@
                                             <td>28/06/2020</td>
                                         </a>
                                     </tr>
-                                    <tr class="adventiel-tr" style="display: none">
+                                    <tr>
                                         <td>Collaborteur</td>
                                         <td>MORTAMET</td>
                                         <td>Isabelle</td>
@@ -202,7 +344,7 @@
                                         <td>-</td>
 
                                     </tr>
-                                    <tr class="adventiel-tr" style="display: none">
+                                    <tr>
                                         <td>Collaborateur</td>
                                         <td>HEBERT</td>
                                         <td>Mickaël</td>
@@ -212,6 +354,7 @@
                                         <td>xx/xx/xxxx</td>
                                         <td>-</td>
                                     </tr>
+
                                     </tbody>
                                 </table>
                             </div>
@@ -225,6 +368,15 @@
 </div>
 
 <!-- Bootstrap JS -->
+<script>
+    $(document).ready(function() {
+
+        var table = $('#table-effectif').DataTable( {
+            orderCellsTop: true,
+            fixedHeader: true
+        } );
+    } );
+</script>
 <script>
     $("#adventiel-switch").change(function () {
         $(".adventiel-tr").show();
