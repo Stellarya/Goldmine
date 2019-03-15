@@ -28,6 +28,16 @@
     <script type="text/javascript" src="js/piechart.js"></script>
     <script type="text/javascript" src="js/goldmine.js"></script>
     <!-- Font Awesome JS -->
+    <script>
+        $(document).ready(function(){
+            $('#SelectLieu').on('change', function(){
+                var demovalue = $(this).val();
+                $("div.DivCharts").hide();
+                $("#show"+demovalue).show();
+                $("#divAlerte"+demovalue).show()
+            });
+        });
+    </script>
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
             integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
             crossorigin="anonymous"></script>
@@ -120,12 +130,12 @@
                     <div class="col-4">
                         <select class="form-control" id="SelectLieu"
                                 style="margin-bottom: 15px; border-radius: 5px; padding-right: 5px; margin-left: 5px">
-                            <option id="tout_adventiel"> Tout Adventiel</option>
-                            <option> Studio Design</option>
+                            <option name="tout_adventiel" value="One"> Tout Adventiel</option>
+                            <option selected name="studio_design" value="Two"> Studio Design</option>
                             <option> Autres transverses</option>
                             <option> Agence de Rennes</option>
-                            <option selected> BU X</option>
-                            <option id="bux"> BU X - Domaine Limagrain</option>
+                            <option> BU X</option>
+                            <option> BU X - Domaine Limagrain</option>
                             <option> BU X - Domaine Agranet</option>
                             <option> BU X - Domaine Equipementier</option>
                             <option> BU X - Domaine Végétal</option>
@@ -143,7 +153,7 @@
                             <option> BU Z - Domaine B</option>
 
                         </select>
-                        <div class="row" id="bux-charts">
+                        <div class="row DivCharts" id="showTwo">
                             <div class="col-12" style="padding-right: 5px">
                                 <div class="camembert" style="margin-bottom: 20px">
                                     <div id="chartContainerPrestaCollaBUX" style="height: 370px; width: 100%;"></div>
@@ -153,7 +163,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row" id="adventiel-charts" style="padding-right: 5px; display: none">
+                        <div class="row DivCharts" id="showOne" style="padding-right: 5px">
                             <div class="col-12" style="padding-right: 5px">
                                 <div class="camembert" style="margin-bottom: 20px;">
                                     <div id="chartContainerPrestaCollaAdv" style="height: 370px; width: 100%"></div>
@@ -165,7 +175,7 @@
                         </div>
                     </div>
                     <div class="col-8">
-                        <div id="divAlerte">
+                        <div id="divAlerteTwo"  class="DivCharts">
                             <h2><span>6</span> ALERTE(S)</h2>
                             <hr>
                             <table class="alertes">
@@ -197,6 +207,61 @@
                                 </tr>
                             </table>
                             <table class="alertes" id="technoadv" style="display: none">
+                                <tr>
+                                    <td class="technos" width="120px">Technos</td>
+                                    <td><a href="Tableau-de-Bord-Technos-MANAGER.html">Pas assez de référents pour J2EE (JAVA)</a></td>
+                                    <td width="10px" class="importance-orange"></td>
+                                </tr>
+                            </table>
+
+                            <table class="alertes">
+                                <tr>
+                                    <td class="technos" width="120px">Technos</td>
+                                    <td><a href="Tableau-de-Bord-Technos-MANAGER.html">Pas de référents pour CSS3 (WEB)</a></td>
+                                    <td width="10px" class="importance-orange"></td>
+                                </tr>
+                            </table>
+                            <table class="alertes">
+                                <tr>
+                                    <td class="technos" width="120px">Technos</td>
+                                    <td><a href="Tableau-de-Bord-Technos-MANAGER.html">Pas de référents pour Windows (OS)</a></td>
+                                    <td width="10px" class="importance-orange"></td>
+                                </tr>
+                            </table>
+
+                        </div>
+                        <div id="divAlerteOne" class="DivCharts" style="display: none">
+                            <h2><span>7</span> ALERTE(S)</h2>
+                            <hr>
+                            <table class="alertes">
+                                <tr>
+                                    <td class="entretien" width="120px">Entretien</td>
+                                    <td><a href="evaluation-MANAGER-profilCOLLAB.html">Pas d'entretiens prévu depuis 1 ans avec Marie Evanno</a></td>
+                                    <td width="10px" class="importance-red"></td>
+                                </tr>
+                            </table>
+                            <table class="alertes">
+                                <tr>
+                                    <td class="competenceTDB" width="120px">Compétences</td>
+                                    <td><a href="evaluation-MANAGER-profilCOLLAB.html">Compétences non actualisées depuis 1 ans pour Marie Evanno </a></td>
+                                    <td width="10px" class="importance-red"></td>
+                                </tr>
+                            </table>
+                            <table class="alertes">
+                                <tr>
+                                    <td class="technos" width="120px">Technos</td>
+                                    <td><a href="Tableau-de-Bord-Technos-MANAGER.html">Manque d'expert en Spring (JAVA)</a></td>
+                                    <td width="10px" class="importance-red"></td>
+                                </tr>
+                            </table>
+                            <table class="alertes">
+                                <tr>
+                                    <td class="appli" width="120px">Appli</td>
+                                    <td><a href="Tableau-de-Bord-Applis-MANAGER.html">Pas d'Analyste pour SPIE - Inventaire (INTERPROFESSION)</a></td>
+                                    <td width="10px" class="importance-red"></td>
+                                </tr>
+                            </table>
+                            <table class="alertes">
                                 <tr>
                                     <td class="technos" width="120px">Technos</td>
                                     <td><a href="Tableau-de-Bord-Technos-MANAGER.html">Pas assez de référents pour J2EE (JAVA)</a></td>

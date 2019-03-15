@@ -1,13 +1,21 @@
 $(document).ready(function () {
 
-    $("select").change(function () {
-        $("select #tout_adventiel:selected").each(function () {
-            console.log('adventiel select');
-            $("#bux-charts").hide();
-            $("#adventiel-charts").show();
-            $("#technoadv").show();
+    $(function() {
+        $('#SelectLieu').change(function(){
+            if($('#SelectLieu').val() == 'tout_adventiel') {
+                console.log('adventiel select');
+                $("#bux-charts").hide();
+                $("#adventiel-charts").show();
+                $("#technoadv").show();
+            } else if($('#SelectLieu').val() == 'studio-design') {
+                console.log('studio select');
+                $("#bux-charts").show();
+                $("#adventiel-charts").hide();
+                $("#technoadv").hide();
+            }
         });
-    }).trigger("change");
+    });
+
 
     $("#starCDP2").click(function () {
         $(".cdp1").hide();

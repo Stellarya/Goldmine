@@ -25,16 +25,24 @@
 
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
     <script src="tags-selector-tagselect/jquery.tagselect.js"></script>
-    <script type="text/javascript" src="js/piechart.js"></script>
     <script type="text/javascript" src="js/goldmine.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#MyTableToFilter tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
             integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
             crossorigin="anonymous"></script>
-    <!--<script src="js/json_test.js"></script>-->
-</head>
+
 
 <body>
 <div class="wrapper">
@@ -73,10 +81,8 @@
                         Recherche</span>
                     </a>
                 </li>
-
             </ul>
         </div>
-
     </nav>
 
     <!-- Page Content  -->
@@ -108,32 +114,15 @@
                     </header>
                 </div>
                 <div class="row">
-                    <div class="col-2">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="btn-group" id="status" data-toggle="buttons">
-                                        <label class="btn btn-default btn-on btn-xs active" id="team-switch">
-                                            <input type="radio" value="1" name="multifeatured_module[module_id][status]"
-                                                   checked="checked">MON EQUIPE</label>
-                                        <label class="btn btn-default btn-off btn-xs" id="adventiel-switch">
-                                            <input type="radio" value="0"
-                                                   name="multifeatured_module[module_id][status]">ADVENTIEL</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-7"></div>
                     <div class="col-3">
                         <select class="form-control" id="SelectLieu"
-                                style="margin-bottom: 15px; border-radius: 5px; padding-right: 5px; margin-left: 5px">
-                            <option id="tout_adventiel"> Tout Adventiel</option>
-                            <option> Studio Design</option>
+                                style="margin-bottom: 15px; padding-right: 5px; margin-left: 5px">
+                            <option name="tout_adventiel" value="tout_adventiel"> Tout Adventiel</option>
+                            <option selected name="studio_design" value="studio_design"> Studio Design</option>
                             <option> Autres transverses</option>
                             <option> Agence de Rennes</option>
-                            <option selected> BU X</option>
-                            <option id="bux"> BU X - Domaine Limagrain</option>
+                            <option> BU X</option>
+                            <option> BU X - Domaine Limagrain</option>
                             <option> BU X - Domaine Agranet</option>
                             <option> BU X - Domaine Equipementier</option>
                             <option> BU X - Domaine Végétal</option>
@@ -152,25 +141,59 @@
 
                         </select>
                     </div>
+                    <div class="col-1"></div>
+                    <div class="col-2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="btn-group" id="status" data-toggle="buttons">
+                                    <label class="btn btn-default btn-on btn-xs active" id="team-switch"
+                                           style="height: 40px; width: 120px; padding-top: 8px;">
+                                        <input type="radio" value="1" name="multifeatured_module[module_id][status]"
+                                               checked="checked">HISTORIQUE</label>
+                                    <label class="btn btn-default btn-off btn-xs" id="adventiel-switch"
+                                           style="height: 40px;  width: 110px;padding-top: 8px;">
+                                        <input type="radio" value="0"
+                                               name="multifeatured_module[module_id][status]">DATE</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <input type="date" class="form-control" id="today" disabled style="padding-right: 0">
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-3">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"
+                                      style="border-right: none; background: white"><i class="fas fa-search"></i></span>
+                            </div>
+                            <input type="text" class="form-control" id="myInput"
+                                   aria-label="Recipient's username"
+                                   aria-describedby="basic-addon2"
+                                   style="padding-left: 5px; border-left: none">
+                        </div>
+                    </div>
+
                 </div>
                 <div class="row">
                     <div class="col-12">
                         <div id="divAlerte">
                             <div class="table100">
                                 <table class="table" id="table-effectif" style="margin-bottom: 0">
-                                    <thead>
+                                    <thead id="theadToShow">
                                     <tr>
-                                        <th class="table100-head1">Collab/Presta</th>
-                                        <th class="table100-head1">Nom</th>
-                                        <th class="table100-head1">Prénom</th>
-                                        <th class="table100-head1">Fonction</th>
-                                        <th class="table100-head1">Site</th>
-                                        <th class="table100-head1">Service</th>
-                                        <th class="table100-head1">Arrivée</th>
-                                        <th class="table100-head1">Départ</th>
+                                        <th class="table100-head1" width="12%">Collab/Presta</th>
+                                        <th class="table100-head1" width="15%">Nom</th>
+                                        <th class="table100-head1" width="15%">Prénom</th>
+                                        <th class="table100-head1" width="12.5%">Fonction</th>
+                                        <th class="table100-head1" width="8%">Site</th>
+                                        <th class="table100-head1" width="12.5%">Service</th>
+                                        <th class="table100-head1" width="12.5%">Arrivée</th>
+                                        <th class="table100-head1" width="12.5%">Départ</th>
                                     </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody id="MyTableToFilter">
                                     <tr class="adventiel-tr" style="display: none">
                                         <td>Collaborateur</td>
                                         <td>ADAMCIK</td>
@@ -358,7 +381,6 @@
                                     </tbody>
                                 </table>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -369,20 +391,28 @@
 
 <!-- Bootstrap JS -->
 
+<script type="text/javascript" src="js/jquery.tablesorter.js"></script>
 <script>
     $("#adventiel-switch").change(function () {
         $(".adventiel-tr").show();
+        $("#today").prop('disabled', false);
     });
     $("#team-switch").change(function () {
         $(".adventiel-tr").hide();
+        $("#today").prop('disabled', true);
+
     });
 
 </script>
+
+<script>
+    let today = new Date().toISOString().substr(0, 10);
+    document.querySelector("#today").value = today;
+</script>
+
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
-<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
-<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
 </body>
 
 </html>

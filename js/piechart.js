@@ -1,8 +1,6 @@
 window.onload = function () {
     CanvasJS.addColorSet("adventielShades",
-        [//colorSet Array
-
-            "#89C34A",
+        [   "#89C34A",
             "#60CBF3",
             "#EA212D",
             "#C02188",
