@@ -28,12 +28,16 @@
     <script type="text/javascript" src="js/goldmine.js"></script>
 
     <script>
-        $(document).ready(function () {
-            $("#myInput").on("keyup", function () {
-                var value = $(this).val().toLowerCase();
-                $("#MyTableToFilter tr").filter(function () {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                });
+        $(document).ready(function(){
+            $('#SelectLieu').on('change', function(){
+                var demovalue = $(this).val();
+                $("div.DivCharts").hide();
+                if (demovalue == "One") {
+                    $(".show"+demovalue).show();
+                } else if (demovalue == "Two") {
+                    $(".showOne").hide();
+                }
+
             });
         });
     </script>
@@ -117,8 +121,8 @@
                     <div class="col-3">
                         <select class="form-control" id="SelectLieu"
                                 style="margin-bottom: 15px; padding-right: 5px; margin-left: 5px">
-                            <option name="tout_adventiel" value="tout_adventiel"> Tout Adventiel</option>
-                            <option selected name="studio_design" value="studio_design"> Studio Design</option>
+                            <option name="tout_adventiel" value="One"> Tout Adventiel</option>
+                            <option selected name="studio_design" value="Two"> Studio Design</option>
                             <option> Autres transverses</option>
                             <option> Agence de Rennes</option>
                             <option> BU X</option>
@@ -146,20 +150,21 @@
                         <div class="container">
                             <div class="row">
                                 <div class="btn-group" id="status" data-toggle="buttons">
-                                    <label class="btn btn-default btn-on btn-xs active" id="team-switch"
+                                    <label class="btn btn-default btn-on btn-xs " id="team-switch"
                                            style="height: 40px; width: 120px; padding-top: 8px;">
                                         <input type="radio" value="1" name="multifeatured_module[module_id][status]"
-                                               checked="checked">HISTORIQUE</label>
-                                    <label class="btn btn-default btn-off btn-xs" id="adventiel-switch"
+                                               >HISTORIQUE</label>
+
+                                    <label class="btn btn-default btn-off btn-xs active" id="adventiel-switch"
                                            style="height: 40px;  width: 110px;padding-top: 8px;">
                                         <input type="radio" value="0"
-                                               name="multifeatured_module[module_id][status]">DATE</label>
+                                               name="multifeatured_module[module_id][status]" checked="checked">DATE</label>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-2">
-                        <input type="date" class="form-control" id="today" disabled style="padding-right: 0">
+                        <input type="date" class="form-control" id="today" style="padding-right: 0">
                     </div>
                     <div class="col-1"></div>
                     <div class="col-3">
@@ -194,7 +199,7 @@
                                     </tr>
                                     </thead>
                                     <tbody id="MyTableToFilter">
-                                    <tr class="adventiel-tr" style="display: none">
+                                    <tr class="showOne" style="display: none">
                                         <td>Collaborateur</td>
                                         <td>ADAMCIK</td>
                                         <td>Cyrille</td>
@@ -204,7 +209,7 @@
                                         <td>04/01/1991</td>
                                         <td>-</td>
                                     </tr>
-                                    <tr class="adventiel-tr" style="display: none">
+                                    <tr class="showOne" style="display: none">
                                         <td>Prestataire</td>
                                         <td>ALABARBE</td>
                                         <td>Guillaume</td>
@@ -224,7 +229,7 @@
                                         <td>23/04/2018</td>
                                         <td>-</td>
                                     </tr>
-                                    <tr class="adventiel-tr" style="display: none">
+                                    <tr class="showOne" style="display: none">
                                         <td>Collaborateur</td>
                                         <td>ALIX</td>
                                         <td>Thomas</td>
@@ -234,7 +239,7 @@
                                         <td>14/02/2017</td>
                                         <td>-</td>
                                     </tr>
-                                    <tr class="adventiel-tr" style="display: none">
+                                    <tr class="showOne" style="display: none">
                                         <td>Collaborateur</td>
                                         <td>ALLAIN TRAN</td>
                                         <td>Christiane</td>
@@ -244,7 +249,7 @@
                                         <td>12/10/2015</td>
                                         <td>11/06/2019</td>
                                     </tr>
-                                    <tr class="adventiel-tr" style="display: none">
+                                    <tr class="showOne" style="display: none">
                                         <td>Collaborateur</td>
                                         <td>ANDRODIAS</td>
                                         <td>Annabelle</td>
@@ -254,7 +259,7 @@
                                         <td>02/01/2019</td>
                                         <td>-</td>
                                     </tr>
-                                    <tr class="adventiel-tr" style="display: none">
+                                    <tr class="showOne" style="display: none">
                                         <td>Collaborateur</td>
                                         <td>AUDEON</td>
                                         <td>Nicolas</td>
@@ -264,7 +269,7 @@
                                         <td>19/03/2018</td>
                                         <td>-</td>
                                     </tr>
-                                    <tr class="adventiel-tr" style="display: none">
+                                    <tr class="showOne" style="display: none">
                                         <td>Collaborateur</td>
                                         <td>AUVRAY</td>
                                         <td>Bertrand</td>
@@ -274,7 +279,7 @@
                                         <td>01/07/1990</td>
                                         <td>-</td>
                                     </tr>
-                                    <tr class="adventiel-tr" style="display: none">
+                                    <tr class="showOne" style="display: none">
                                         <td>Prestataire</td>
                                         <td>AYAD</td>
                                         <td>Mohamed</td>
@@ -284,7 +289,7 @@
                                         <td>11/02/2019</td>
                                         <td>31/05/2019</td>
                                     </tr>
-                                    <tr class="adventiel-tr" style="display: none">
+                                    <tr class="showOne" style="display: none">
                                         <td>Collaborateur</td>
                                         <td>BACQUART</td>
                                         <td>Johann</td>
@@ -294,7 +299,7 @@
                                         <td>23/10/2017</td>
                                         <td>-</td>
                                     </tr>
-                                    <tr class="adventiel-tr" style="display: none">
+                                    <tr class="showOne" style="display: none">
                                         <td>Collaborateur</td>
                                         <td>BARBIER</td>
                                         <td>Ariane</td>
@@ -304,7 +309,7 @@
                                         <td>01/08/2017</td>
                                         <td>-</td>
                                     </tr>
-                                    <tr class="adventiel-tr" style="display: none">
+                                    <tr class="showOne" style="display: none">
                                         <td>Collaborateur</td>
                                         <td>BACQUART</td>
                                         <td>Johann</td>
@@ -314,7 +319,7 @@
                                         <td>23/10/2017</td>
                                         <td>-</td>
                                     </tr>
-                                    <tr class="adventiel-tr" style="display: none">
+                                    <tr class="showOne" style="display: none">
                                         <td>Prestataire</td>
                                         <td>BARBOT</td>
                                         <td>Ronan</td>
@@ -324,7 +329,7 @@
                                         <td>16/10/2017</td>
                                         <td>31/03/2019</td>
                                     </tr>
-                                    <tr class="adventiel-tr" style="display: none">
+                                    <tr class="showOne" style="display: none">
                                         <td>Collaborateur</td>
                                         <td>BAUDAIS</td>
                                         <td>Mélanie</td>
@@ -334,7 +339,7 @@
                                         <td>05/01/2018</td>
                                         <td>-</td>
                                     </tr>
-                                    <tr class="adventiel-tr" style="display: none">
+                                    <tr class="showOne" style="display: none">
                                         <td>Collaborateur</td>
                                         <td>BAUDY</td>
                                         <td>Jérôme</td>
@@ -394,11 +399,9 @@
 <script type="text/javascript" src="js/jquery.tablesorter.js"></script>
 <script>
     $("#adventiel-switch").change(function () {
-        $(".adventiel-tr").show();
         $("#today").prop('disabled', false);
     });
     $("#team-switch").change(function () {
-        $(".adventiel-tr").hide();
         $("#today").prop('disabled', true);
 
     });
