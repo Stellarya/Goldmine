@@ -401,6 +401,7 @@ $(document).ready(function () {
 
     $('#sidebarCollapse').on('click', function () {
         $('#sidebar').toggleClass('active');
+        $('main').css('width','100%');
     });
 
     <!-- ************* Transformation tag en block ******************* -->

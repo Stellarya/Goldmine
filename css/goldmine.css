@@ -4,13 +4,13 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700";
 
 html {
-    height: 200%;
+    height: 100%;
 }
 
 body {
     font-family: 'roboto', sans-serif;
     background: #fafafa;
-    height: 200%;
+    height: 100%;
 }
 
 p {
@@ -32,10 +32,23 @@ a:focus {
 .navbar {
     padding: 4px 10px;
     background: #fff;
+    position: fixed;
+    display: flex;
+    z-index: 999999;
+    width: calc(100% - 195px);
+    margin-left: 195px;
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999999;
 }
 
 .navbar-btn {
@@ -188,7 +201,7 @@ table#table-effectif a:hover {
 .wrapper {
     display: flex;
     width: 100%;
-    height: 200%;
+    min-height: 100%;
     align-items: stretch;
 }
 
@@ -198,6 +211,8 @@ table#table-effectif a:hover {
     background: rgb(76, 10, 89);
     color: #fff;
     transition: all 0.3s;
+    position: fixed;
+    height: 100vh;
 }
 
 #sidebar.active {
@@ -1280,8 +1295,8 @@ main th a {
 .violet {
     background-color: rgba(76, 10, 89, 0.001);
     height: 100vh;
-    margin-top: 0px;
-    margin-left: 20px;
+    margin-top: 50px;
+    margin-left: 200px;
 }
 
 

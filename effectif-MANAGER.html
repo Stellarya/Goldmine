@@ -39,7 +39,7 @@
 <body>
 <div class="wrapper">
     <!-- Sidebar  -->
-    <nav id="sidebar" class="sidebar-wrapper " data-toggle="collapse" aria-expanded="false">
+    <nav id="sidebar" class="sidebar-wrapper fixed-top" data-toggle="collapse" aria-expanded="false">
         <div class="sidebar-header">
             <img src="img/logo.png" height="150px" style="margin-top: -10px"/>
         </div>
@@ -368,15 +368,7 @@
 </div>
 
 <!-- Bootstrap JS -->
-<script>
-    $(document).ready(function() {
 
-        var table = $('#table-effectif').DataTable( {
-            orderCellsTop: true,
-            fixedHeader: true
-        } );
-    } );
-</script>
 <script>
     $("#adventiel-switch").change(function () {
         $(".adventiel-tr").show();
