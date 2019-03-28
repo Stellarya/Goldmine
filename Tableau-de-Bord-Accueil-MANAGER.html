@@ -27,6 +27,11 @@
     <script src="tags-selector-tagselect/jquery.tagselect.js"></script>
     <script type="text/javascript" src="js/piechart.js"></script>
     <script type="text/javascript" src="js/goldmine.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="js/googlepiecharts.js"></script>
+    <script type="text/javascript" src="https://echarts.baidu.com/dist/echarts.min.js"></script>
+
+
     <!-- Font Awesome JS -->
     <script>
         $(document).ready(function(){
@@ -156,14 +161,14 @@
                         <div class="row DivCharts" id="showTwo">
                             <div class="col-12" style="padding-right: 5px">
                                 <div class="camembert" style="margin-bottom: 20px">
-                                    <div id="chartContainerPrestaCollaBUX" style="height: 370px; width: 100%;"></div>
+                                    <div id="chartStudioPrestaCollab" style="height: 400px; width: 100%;"></div>
                                 </div>
                                 <div class="camembert">
-                                    <div id="chartContainerBUX" style="height: 370px; width: 100%;"></div>
+                                    <div id="chartContainerStudio" style="height: 400px; width: 100%;"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row DivCharts" id="showOne" style="padding-right: 5px">
+                        <div class="row DivCharts" id="showOne" style="padding-right: 5px; display: none">
                             <div class="col-12" style="padding-right: 5px">
                                 <div class="camembert" style="margin-bottom: 20px;">
                                     <div id="chartContainerPrestaCollaAdv" style="height: 370px; width: 100%"></div>
@@ -299,6 +304,88 @@
         crossorigin="anonymous"></script>
 <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
 <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+<script type="text/javascript">
+    var myChartStudio = echarts.init(document.getElementById('chartContainerStudio'));
+
+    // specify chart configuration item and data
+    var optionStudio = {
+        tooltip : {
+            trigger: 'item',
+            formatter: "{b} : {c} ({d}%)"
+        },
+        series : [
+            {
+                type: 'pie',
+                radius : ['50%', '70%'],
+                center: ['50%', '50%'],
+                data:[
+                    {value:18, name:'Developpeur'},
+                    {value:10, name:'CDP'},
+                    {value:8, name:'Analyste'},
+                    {value:6, name:'Architecte'},
+                    {value:3, name:'DP'},
+                    {value:3, name:'RBU'},
+                    {value:3, name:'Expert Fonctionnel'}
+                ],
+                color:[
+                    "#89C34A",
+                    "#60CBF3",
+                    "#EA212D",
+                    "#C02188",
+                    "#104E9E",
+                    "#F59130",
+                    "#0096D5",
+                    "#752F8E",
+                    "#34B14F",
+                    "#FAB331"],
+                itemStyle: {
+                    emphasis: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                }
+            }
+        ]
+    };
+
+    // use configuration item and data specified to show chart
+    myChartStudio.setOption(optionStudio);
+
+    var myChartStudioPC = echarts.init(document.getElementById('chartStudioPrestaCollab'));
+
+    // specify chart configuration item and data
+    var optionStudioPC = {
+        tooltip : {
+            trigger: 'item',
+            formatter: "{b} : {c} ({d}%)"
+        },
+        series : [
+            {
+                type: 'pie',
+                radius : ['50%', '70%'],
+                center: ['50%', '50%'],
+                data:[
+                    {value:31, name:'Collab'},
+                    {value:10, name:'Presta'}
+                ],
+                color:[
+                    "#4C0958",
+                    "#FAB331"],
+                itemStyle: {
+                    emphasis: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                }
+            }
+        ]
+    };
+
+    // use configuration item and data specified to show chart
+    myChartStudioPC.setOption(optionStudioPC);
+</script>
 </body>
 
 </html>

@@ -20,7 +20,7 @@ window.onload = function () {
 
         ]);
 
-    var chart = new CanvasJS.Chart("chartContainerBUX", {
+    /*var chart = new CanvasJS.Chart("chartContainerBUX", {
 
         colorSet: "adventielShades",
         animationEnabled: true,
@@ -40,7 +40,7 @@ window.onload = function () {
             ]
         }]
     });
-    chart.render();
+    chart.render();*/
 
     var chartAdv = new CanvasJS.Chart("chartContainerAdv", {
 
@@ -66,7 +66,7 @@ window.onload = function () {
     });
     chartAdv.render();
 
-    var chartprestcoll = new CanvasJS.Chart("chartContainerPrestaCollaBUX", {
+    /*var chartprestcoll = new CanvasJS.Chart("chartContainerPrestaCollaBUX", {
 
         colorSet: "adventielPrestaColl",
         animationEnabled: true,
@@ -81,7 +81,7 @@ window.onload = function () {
             ]
         }]
     });
-    chartprestcoll.render();
+    chartprestcoll.render();*/
 
     var chartprestcollAdv = new CanvasJS.Chart("chartContainerPrestaCollaAdv", {
 
