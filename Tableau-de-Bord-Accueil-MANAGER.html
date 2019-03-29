@@ -25,10 +25,7 @@
 
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
     <script src="tags-selector-tagselect/jquery.tagselect.js"></script>
-    <script type="text/javascript" src="js/piechart.js"></script>
     <script type="text/javascript" src="js/goldmine.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript" src="js/googlepiecharts.js"></script>
     <script type="text/javascript" src="https://echarts.baidu.com/dist/echarts.min.js"></script>
 
 
@@ -171,10 +168,10 @@
                         <div class="row DivCharts" id="showOne" style="padding-right: 5px; display: none">
                             <div class="col-12" style="padding-right: 5px">
                                 <div class="camembert" style="margin-bottom: 20px;">
-                                    <div id="chartContainerPrestaCollaAdv" style="height: 370px; width: 100%"></div>
+                                    <div id="chartContainerPrestaCollaAdv" style="height: 400px; width: 530px"></div>
                                 </div>
                                 <div class="camembert">
-                                    <div id="chartContainerAdv" style="height: 370px; width: 100%"></div>
+                                    <div id="chartContainerAdv" style="height: 400px; width: 530px"></div>
                                 </div>
                             </div>
                         </div>
@@ -302,8 +299,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
-<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
-<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
 <script type="text/javascript">
     var myChartStudio = echarts.init(document.getElementById('chartContainerStudio'));
 
@@ -324,8 +319,8 @@
                     {value:8, name:'Analyste'},
                     {value:6, name:'Architecte'},
                     {value:3, name:'DP'},
-                    {value:3, name:'RBU'},
-                    {value:3, name:'Expert Fonctionnel'}
+                    {value:1, name:'RBU'},
+                    {value:1, name:'Expert Fonctionnel'}
                 ],
                 color:[
                     "#89C34A",
@@ -352,6 +347,54 @@
     // use configuration item and data specified to show chart
     myChartStudio.setOption(optionStudio);
 
+    var myChartAdv = echarts.init(document.getElementById('chartContainerAdv'));
+
+    // specify chart configuration item and data
+    var optionAdv = {
+        tooltip : {
+            trigger: 'item',
+            formatter: "{b} : {c} ({d}%)"
+        },
+        series : [
+            {
+                type: 'pie',
+                radius : ['50%', '70%'],
+                center: ['50%', '50%'],
+                data:[
+                    {value:47, name:'Developpeur'},
+                    {value:21, name:'CDP'},
+                    {value:17, name:'Analyste'},
+                    {value:16, name:'Architecte'},
+                    {value:5, name:'DP'},
+                    {value:1, name:'RBU'},
+                    {value:1, name:'Expert Fonctionnel'},
+                    {value:1, name:'Ingé. Méthode'},
+                    {value:1, name:'Ingé. Indus.'}
+                ],
+                color:[
+                    "#89C34A",
+                    "#60CBF3",
+                    "#EA212D",
+                    "#C02188",
+                    "#104E9E",
+                    "#F59130",
+                    "#0096D5",
+                    "#752F8E",
+                    "#34B14F",
+                    "#FAB331"],
+                itemStyle: {
+                    emphasis: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                }
+            }
+        ]
+    };
+
+    // use configuration item and data specified to show chart
+    myChartAdv.setOption(optionAdv);
     var myChartStudioPC = echarts.init(document.getElementById('chartStudioPrestaCollab'));
 
     // specify chart configuration item and data
@@ -385,6 +428,39 @@
 
     // use configuration item and data specified to show chart
     myChartStudioPC.setOption(optionStudioPC);
+    var myChartAdvPC = echarts.init(document.getElementById('chartContainerPrestaCollaAdv'));
+
+    // specify chart configuration item and data
+    var optionAdvPC = {
+        tooltip : {
+            trigger: 'item',
+            formatter: "{b} : {c} ({d}%)"
+        },
+        series : [
+            {
+                type: 'pie',
+                radius : ['50%', '70%'],
+                center: ['50%', '50%'],
+                data:[
+                    {value:141, name:'Collab'},
+                    {value:22, name:'Presta'}
+                ],
+                color:[
+                    "#4C0958",
+                    "#FAB331"],
+                itemStyle: {
+                    emphasis: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                }
+            }
+        ]
+    };
+
+    // use configuration item and data specified to show chart
+    myChartAdvPC.setOption(optionAdvPC);
 </script>
 </body>
 
