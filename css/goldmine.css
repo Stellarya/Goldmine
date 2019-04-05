@@ -680,6 +680,46 @@ table.tableTDB .rating-star {
     color: rgb(100, 100, 100);
 }
 
+#tag_test .rating .rating-star-darker-fixed {
+    float: right;
+}
+
+.rating-star-darker-fixed {
+    padding: 0 2px;
+    margin-top: 2px;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+}
+
+.rating-star-darker-fixed:after {
+    font-family: FontAwesome;
+    content: '\f005';
+}
+
+.cog:after {
+    font-family: FontAwesome;
+    content: '\f013';
+}
+
+.mobile:after {
+    font-family: FontAwesome;
+    content: '\f10b';
+}
+
+.rating-star-darker-fixed.checked ~ .rating-star-darker-fixed:after,
+.rating-star-darker-fixed.checked:after {
+    content: '\f005';
+    color: #e1a100;
+}
+
+.rating-star-darker-fixed.darker {
+    content: '\f005';
+    color: rgb(100, 100, 100);
+}
+
+
+
 /* ---------------------------------------------------
     RESET STARS
 ----------------------------------------------------- */
@@ -1650,7 +1690,8 @@ textarea.textarea-commentaire:focus, textarea.textarea-commentaire:active, texta
     MANAGER STYLE
 ----------------------------------------------------- */
 .note_manager {
-    width: 35px;
+    width: 25px;
+    text-align: center;
 
 }
 
