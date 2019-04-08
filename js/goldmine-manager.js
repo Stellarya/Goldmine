@@ -5,157 +5,157 @@ $(document).ready(function () {
 
     <!-- ************* Transformation tag en block ******************* -->
 
-    $("#plus_java").click(function () {
+    $("#tag_java").click(function () {
         $("#tag_java").hide();
         $("#block_java").show();
     });
 
-    $("#plus_web").click(function () {
+    $("#tag_web").click(function () {
         $("#tag_web").hide();
         $("#block_web").show();
     });
 
-    $("#plus_javascript").click(function () {
+    $("#tag_javascript").click(function () {
         $("#tag_javascript").hide();
         $("#block_javascript").show();
     });
 
-    $("#plus_php").click(function () {
+    $("#tag_php").click(function () {
         $("#tag_php").hide();
         $("#block_php").show();
     });
 
-    $("#plus_dotnet").click(function () {
+    $("#tag_dotnet").click(function () {
         $("#tag_dotnet").hide();
         $("#block_dotnet").show();
     });
 
-    $("#plus_langages").click(function () {
+    $("#tag_langages").click(function () {
         $("#tag_langages").hide();
         $("#block_langages").show();
     });
 
-    $("#plus_framework").click(function () {
+    $("#tag_framework").click(function () {
         $("#tag_framework").hide();
         $("#block_framework").show();
     });
 
-    $("#plus_reporting").click(function () {
+    $("#tag_reporting").click(function () {
         $("#tag_reporting").hide();
         $("#block_reporting").show();
     });
 
-    $("#plus_bdd").click(function () {
+    $("#tag_bdd").click(function () {
         $("#tag_bdd").hide();
         $("#block_bdd").show();
     });
 
-    $("#plus_svi").click(function () {
+    $("#tag_svi").click(function () {
         $("#tag_svi").hide();
         $("#block_svi").show();
     });
 
-    $("#plus_bus-messages").click(function () {
+    $("#tag_bus-messages").click(function () {
         $("#tag_bus-messages").hide();
         $("#block_bus-message").show();
     });
 
-    $("#plus_serveur-appli").click(function () {
+    $("#tag_serveur-appli").click(function () {
         $("#tag_serveur-appli").hide();
         $("#block_serveur-appli").show();
     });
 
-    $("#plus_virtualisation").click(function () {
+    $("#tag_virtualisation").click(function () {
         $("#tag_virtualisation").hide();
         $("#block_virtualisation").show();
     });
 
-    $("#plus_exploitation").click(function () {
+    $("#tag_exploitation").click(function () {
         $("#tag_exploitation").hide();
         $("#block_exploitation").show();
     });
 
-    $("#plus_os").click(function () {
+    $("#tag_os").click(function () {
         $("#tag_os").hide();
         $("#block_os").show();
     });
 
-    $("#plus_produits").click(function () {
+    $("#tag_produits").click(function () {
         $("#tag_produits").hide();
         $("#block_produits").show();
     });
 
-    $("#plus_outils").click(function () {
+    $("#tag_outils").click(function () {
         $("#tag_outils").hide();
         $("#block_outils").show();
     });
 
-    $("#plus_tests").click(function () {
+    $("#tag_tests").click(function () {
         $("#tag_tests").hide();
         $("#block_tests").show();
     });
 
-    $("#plus_kit-adventiel").click(function () {
+    $("#tag_kit-adventiel").click(function () {
         $("#tag_kit-adventiel").hide();
         $("#block_kit-adventiel").show();
     });
 
-    $("#plus_integrtion-continue").click(function () {
+    $("#tag_integration-continue").click(function () {
         $("#tag_integration-continue").hide();
         $("#block_integration-continue").show();
     });
 
-    $("#plus_protocoles").click(function () {
+    $("#tag_protocoles").click(function () {
         $("#tag_protocoles").hide();
         $("#block_protocoles").show();
     });
 
-    $("#plus_iot").click(function () {
+    $("#tag_iot").click(function () {
         $("#tag_iot").hide();
         $("#block_iot").show();
     });
 
-    $("#plus_reseau-lan").click(function () {
+    $("#tag_reseau-lan").click(function () {
         $("#tag_reseau-lan").hide();
         $("#block_reseau-lan").show();
     });
 
-    $("#plus_reseau-securite").click(function () {
+    $("#tag_reseau-securite").click(function () {
         $("#tag_reseau-securite").hide();
         $("#block_reseau-securite").show();
     });
 
-    $("#plus_reseau-toip").click(function () {
+    $("#tag_reseau-toip").click(function () {
         $("#tag_reseau-toip").hide();
         $("#block_reseau-toip").show();
     });
 
-    $("#plus_os-serveur").click(function () {
+    $("#tag_os-serveur").click(function () {
         $("#tag_os-serveur").hide();
         $("#block_os-serveurs").show();
     });
 
-    $("#plus_stockage").click(function () {
+    $("#tag_stockage").click(function () {
         $("#tag_stockage").hide();
         $("#block_stockage-san").show();
     });
 
-    $("#plus_messagerie").click(function () {
+    $("#tag_messagerie").click(function () {
         $("#tag_messagerie").hide();
         $("#block_messagerie").show();
     });
 
-    $("#plus_industrialisation").click(function () {
+    $("#tag_outillage-industrialisation").click(function () {
         $("#tag_outillage-industrialisation").hide();
         $("#block_outillage-industrialisation").show();
     });
 
-    $("#plus_divers").click(function () {
+    $("#tag_divers").click(function () {
         $("#tag_divers").hide();
         $("#block_diver").show();
     });
 
-    $("#plus_securite").click(function () {
+    $("#tag_securite").click(function () {
         $("#tag_securite").hide();
         $("#block_securite").show();
     });

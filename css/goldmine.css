@@ -1881,12 +1881,6 @@ tbody tr {
     font-weight: unset;
 }
 
-tbody tr:hover {
-    color: #555555;
-    background-color: white;
-    cursor: pointer;
-}
-
 .form-group {
     position: relative;
     padding-top: 1.5rem;

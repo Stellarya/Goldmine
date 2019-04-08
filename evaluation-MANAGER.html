@@ -120,7 +120,7 @@
                             </div>
                         </header>
                         <div style="text-align: center">
-                            <span href="#" id="pluscomp"><div
+                            <span href="#" id="pluscomp" style="cursor: pointer"><div
                                     style="color:#531055;padding:15px 10px;display:inline-block">Ajouter une nouvelle compétence  <i
                                     class="fa fa-plus"></i></div></span>
                         </div>
@@ -128,133 +128,111 @@
                             <div class="container-fluid">
                                 <nav>
                                     <ul>
-                                        <li id="tag_java" class="tag_competence" style="display:none">JAVA <span
-                                                id="plus_java"><i class="fas fa-plus-circle"></i></span>
+                                        <li id="tag_java" class="tag_competence" style="display:none; cursor: pointer">JAVA <span><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Spring boot, Spring batch, J2EE, Android, JSF, JSP/Struts, Swing </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_web" style="display:none">Web <span
-                                                id="plus_web"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_web" style="display:none; cursor: pointer">Web <span><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> HTML5, CSS3, WS REST, WS SOAP </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_javascript">Javascript <span
-                                                id="plus_javascript"><i class="fas fa-plus-circle"></i></span>
+                                        <li style="cursor: pointer" class="tag_competence plus_javascript" id="tag_javascript">Javascript <span class="plus_javascript"><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Javascript, Typescript, AngularJS, Angular2, NodeJS </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_php" style="display:none">PHP <span
-                                                id="plus_php"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_php" style="display:none; cursor: pointer">PHP <span><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> PHP, Symfony </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_dotnet">.Net <span id="plus_dotnet"><i
+                                        <li class="tag_competence" id="tag_dotnet" style="cursor: pointer">.Net <span><i
                                                 class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> C#, .ASP, ASP.Net, APS.Net MCV, WPF, WCF, Silverlight, Web API, Core.Net, Visual Basic, VBScript, VBA Access, Xamarin </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_langages">Langages <span
-                                                id="plus_langages"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_langages" style="cursor: pointer">Langages <span><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> C++, Python, Shell, Powershell, Perl, Groovy, R </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_framework" style="display:none">Framework
-                                            <span id="plus_framework"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_framework" style="display:none; cursor: pointer">Framework
+                                            <span><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Cordova, Electron,<br> Windev, Delphi 10</span>
                                         </li>
-                                        <li class="tag_competence" id="tag_reporting">BI/Reporting <span
-                                                id="plus_reporting"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_reporting" style="cursor: pointer">BI/Reporting <span><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> RPG, Crystalreport, Qlickview, BO,<br> Birt, Pentaho, Jasper,<br> Kibana, Grafana </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_bdd">BDD <span id="plus_bdd"><i
+                                        <li class="tag_competence" id="tag_bdd" style="cursor: pointer">BDD <span><i
                                                 class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> PL/SQL, Oracle, DB2, MySQL, SQL Server, PostgreSQL, SQL Lite, MongoDB, CouchBase, JSON, Redis </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_svi">SVI <span id="plus_svi"><i
+                                        <li class="tag_competence" id="tag_svi" style="cursor: pointer">SVI <span><i
                                                 class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> VoiceXML, Envox </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_bus-messages">Bus Messages <span
-                                                id="plus_bus-messages"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_bus-messages" style="cursor: pointer">Bus Messages <span><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip">RapidMQ, ActivMQ, <br> Kafka, MSQueue</span>
                                         </li>
-                                        <li class="tag_competence" id="tag_serveur-appli" style="display:none">Serveurs
-                                            d'appli <span id="plus_serveur-appli"><i
+                                        <li class="tag_competence" id="tag_serveur-appli" style="display:none; cursor: pointer">Serveurs
+                                            d'appli <span><i
                                                     class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip">IIS, Apache Tomcat, Wildfly, Glassfish, Node Webkit, Cassini, Nginx </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_virtualisation">Virtualisation <span
-                                                id="plus_virtualisation"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_virtualisation" style="cursor: pointer">Virtualisation <span><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> VMWare, Docker </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_exploitation">Exploitation <span
-                                                id="plus_exploitation"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_exploitation" style="cursor: pointer">Exploitation <span><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext"
                                                   data-toggle="tooltip">OpCon, Centreon/Nagios </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_os" style="display:none">OS <span
-                                                id="plus_os"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_os" style="display:none; cursor: pointer">OS <span><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Unix, Linux, Windows, MacOS, iOS </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_produits">Produits <span
-                                                id="plus_produits"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_produits" style="cursor: pointer">Produits <span><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Talend ETL, Talend ESB, MS SSIS, Elastic Stack, Media Transfer, Liferay6, Liferay 7, SharePoint, Drupal, Joomla!, Alfresco</span>
                                         </li>
-                                        <li class="tag_competence" id="tag_outils" style="display:none">Outils <span
-                                                id="plus_outils"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_outils" style="display:none; cursor: pointer">Outils <span><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip">PowerAMC, Entreprise Architect, Excel, IWS</span>
                                         </li>
-                                        <li class="tag_competence" id="tag_tests">Tests <span id="plus_tests"><i
+                                        <li class="tag_competence" id="tag_tests" style="cursor: pointer">Tests <span><i
                                                 class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Selenium/Sahi, JMeter, SoapUI, Junit, Nunit, Jprofiler </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_kit-adventiel">Kit Adventiel <span
-                                                id="plus_kit-adventiel"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_kit-adventiel" style="cursor: pointer">Kit Adventiel <span><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> JS Front, JS Back, Spring, JEE, .Net, Android </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_integration-continue">Integration continue
-                                            <span id="plus_integrtion-continue"><i
-                                                    class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_integration-continue" style="cursor: pointer">Integration continue
+                                            <span><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> TFS, PIC Adventiel, Jenkins, Sonar, Nexus, Maven, Puppet, Ansible, Gradle </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_protocoles">Protocoles <span
-                                                id="plus_protocoles"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_protocoles" style="cursor: pointer">Protocoles <span><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Sigfox, Lora </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_iot">IOT <span id="plus_iot"><i
+                                        <li class="tag_competence" id="tag_iot" style="cursor: pointer">IOT <span><i
                                                 class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Rasberry PI, Arduino, Capteurs, Beacon </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_reseau-lan">Réseau LAN/WAN <span
-                                                id="plus_reseau-lan"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_reseau-lan" style="cursor: pointer">Réseau LAN/WAN <span><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Switch HP, Switch Cisco, Routage/VLan/VxLan, BGP, Wi-Fi </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_reseau-securite">Réseau Sécurité <span
-                                                id="plus_reseau-securite"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_reseau-securite" style="cursor: pointer">Réseau Sécurité <span><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Firewall-ASA, Firewall-Fortinet, Firewall-PFSense, HA Proxy, Nginx, WAF(Forninet), Wallix, VPS/OpenVPN </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_reseau-toip">Réseau ToIP <span
-                                                id="plus_reseau-toip"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_reseau-toip" style="cursor: pointer">Réseau ToIP <span><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext"
                                                   data-toggle="tooltip"> Xivo, Asterisk, Jitsi </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_os-serveur">OS Serveur <span
-                                                id="plus_os-serveur"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_os-serveur" style="cursor: pointer">OS Serveur <span><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Windows Server 2012 R2/2016, W. Server-AD, W.Server-RDP, W.Server IIS, W.Server-HyperV, VMWare Esxi/Vcenter, Linux RedHat, Linux Debian, Unix AIX, AS/400 - OS/400, Linux CentOS 6/7 </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_stockage">Stockage (SAN) <span
-                                                id="plus_stockage"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_stockage" style="cursor: pointer">Stockage (SAN) <span><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext"
                                                   data-toggle="tooltip"> Switchs Brocade, Baies EMC </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_outillage-industrialisation">
-                                            Industrialisation <span id="plus_industrialisation"><i
+                                        <li class="tag_competence" id="tag_outillage-industrialisation" style="cursor: pointer">
+                                            Industrialisation <span><i
                                                 class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Puppet, Foreman, Ansible, Python</span>
                                         </li>
-                                        <li class="tag_competence" id="tag_messagerie">Messagerie <span
-                                                id="plus_messagerie"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_messagerie" style="cursor: pointer">Messagerie <span><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Exchange 2010/2016, AntiSpam, Office365 </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_securite">Sécurité <span
-                                                id="plus_securite"><i class="fas fa-plus-circle"></i></span>
+                                        <li class="tag_competence" id="tag_securite" style="cursor: pointer">Sécurité <span><i class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Antivirus-Eset, Cryptographie, ISO27001, ISO27005, RGPD </span>
                                         </li>
-                                        <li class="tag_competence" id="tag_divers">Divers <span id="plus_divers"><i
+                                        <li class="tag_competence" id="tag_divers" style="cursor: pointer">Divers <span><i
                                                 class="fas fa-plus-circle"></i></span>
                                             <span class="tooltiptext" data-toggle="tooltip"> Annuaire, Gluster, Kubernetes, SLX, GitLab iTop, IWS, APache, Galera, Jboss, SSO, GLPI/OCS</span>
                                         </li>
@@ -284,8 +262,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">Spring boot</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="45%">Spring boot</td>
+                                                        <td class="column2" width="45%">
                                                             <div class="rating">
                                                                 <span class="rating-star rating-fixed"
                                                                       title="expert"
@@ -299,7 +277,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="10%">
                                                             <input type="text" class="note_manager" id="java-1" max="4"
                                                                    step="1">
                                                         </td>
@@ -502,8 +480,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">HTML 5</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="45%">HTML 5</td>
+                                                        <td class="column2" width="45%">
                                                             <div class="rating">
                                                                 <span class="referent-R html-ref checked"
                                                                       title="référent" data-toggle="modal"
@@ -548,7 +526,7 @@
                                                             </div>
                                                         </td>
 
-                                                        <td class="column5">
+                                                        <td class="column5" width="10%">
                                                             <input type="text" class="note_manager" id="web-1" min="0"
                                                                    max="4" step="1">
                                                         </td>
@@ -739,8 +717,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">Javascript</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="45%">Javascript</td>
+                                                        <td class="column2" width="45%">
                                                             <div class="rating">
                                                                 <span class="rating-star rating-fixed" title="expert"
                                                                       data-value="4"></span>
@@ -754,7 +732,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="10%">
                                                             <input type="text" class="note_manager" id="javascript-1"
                                                                    min="0" max="4" step="1">
                                                         </td>
@@ -872,8 +850,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">PHP</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="45%">PHP</td>
+                                                        <td class="column2" width="45%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -887,7 +865,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="10%">
                                                             <input type="text" class="note_manager" id="php-1" min="0"
                                                                    max="4" step="1">
                                                         </td>
@@ -947,8 +925,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">C#</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="22.5%">C#</td>
+                                                        <td class="column2" width="22.5%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -962,12 +940,12 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="5%">
                                                             <input type="text" class="note_manager" id="dotnet-1"
                                                                    min="0" max="4" step="1">
                                                         </td>
-                                                        <td class="column3">Web API</td>
-                                                        <td class="column4">
+                                                        <td class="column3" width="22.5%">Web API</td>
+                                                        <td class="column4" width="22.5%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -981,7 +959,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="5%">
                                                             <input type="text" class="note_manager" id="dotnet-2"
                                                                    min="0" max="4" step="1">
                                                         </td>
@@ -1238,8 +1216,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">C++</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="45%">C++</td>
+                                                        <td class="column2" width="45%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -1253,7 +1231,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="10%">
                                                             <input type="text" class="note_manager" id="language-1"
                                                                    min="0" max="4" step="1">
                                                         </td>
@@ -1413,8 +1391,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">Cordova</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="45%">Cordova</td>
+                                                        <td class="column2" width="45%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -1429,7 +1407,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="10%">
                                                             <input type="text" class="note_manager" id="framework-1"
                                                                    min="0" max="4" step="1">
                                                         </td>
@@ -1528,8 +1506,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">RPG</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="22.5%">RPG</td>
+                                                        <td class="column2" width="22.5%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -1543,12 +1521,12 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="5%">
                                                             <input type="text" class="note_manager" id="reporting-1"
                                                                    min="0" max="4" step="1">
                                                         </td>
-                                                        <td class="column3">Kibana</td>
-                                                        <td class="column4">
+                                                        <td class="column3" width="22.5%">Kibana</td>
+                                                        <td class="column4" width="22.5%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -1562,7 +1540,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="5%">
                                                             <input type="text" class="note_manager" id="reporting-2"
                                                                    min="0" max="4" step="1">
                                                         </td>
@@ -1757,8 +1735,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">PL/SQL</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="22.5%">PL/SQL</td>
+                                                        <td class="column2" width="22.5%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -1772,12 +1750,12 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="5%">
                                                             <input type="text" class="note_manager" id="bdd-1" min="0"
                                                                    max="4" step="1">
                                                         </td>
-                                                        <td class="column3">MongoDB</td>
-                                                        <td class="column4">
+                                                        <td class="column3" width="22.5%">MongoDB</td>
+                                                        <td class="column4" width="22.5%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -1791,7 +1769,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="5%">
                                                             <input type="text" class="note_manager" id="bdd-2" min="0"
                                                                    max="4" step="1">
                                                         </td>
@@ -2020,8 +1998,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">VoiceXML</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="45%">VoiceXML</td>
+                                                        <td class="column2" width="45%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -2035,7 +2013,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="10%">
                                                             <input type="text" class="note_manager" id="svi-1" min="0"
                                                                    max="4" step="1">
                                                         </td>
@@ -2096,8 +2074,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">RapidMQ</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="45%">RapidMQ</td>
+                                                        <td class="column2" width="45%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -2111,7 +2089,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="10%">
                                                             <input type="text" class="note_manager" id="bus_message-1"
                                                                    min="0" max="4" step="1">
                                                         </td>
@@ -2210,8 +2188,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">IIS</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="45%">IIS</td>
+                                                        <td class="column2" width="45%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -2226,7 +2204,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="10%">
                                                             <input type="text" class="note_manager" id="serveu_appli-1"
                                                                    min="0" max="4" step="1">
                                                         </td>
@@ -2386,8 +2364,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">VMWare</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="45%">VMWare</td>
+                                                        <td class="column2" width="45%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -2401,7 +2379,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="10%">
                                                             <input type="text" class="note_manager"
                                                                    id="virtualisation-1" min="0" max="4" step="1">
                                                         </td>
@@ -2460,8 +2438,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">OpCon</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="22.5%">OpCon</td>
+                                                        <td class="column2" width="22.5%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -2475,12 +2453,12 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="5%">
                                                             <input type="text" class="note_manager" id="exploitation-1"
                                                                    min="0" max="4" step="1">
                                                         </td>
-                                                        <td class="column1">Scripts Bash</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="22.5%">Scripts Bash</td>
+                                                        <td class="column2" width="22.5%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -2494,7 +2472,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="5%">
                                                             <input type="text" class="note_manager" id="exploitation-2"
                                                                    min="0" max="4" step="1">
                                                         </td>
@@ -2671,8 +2649,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">UNIX</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="45%">UNIX</td>
+                                                        <td class="column2" width="45%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -2686,7 +2664,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="10%">
                                                             <input type="text" class="note_manager" id="os-1" min="0"
                                                                    max="4" step="1">
                                                         </td>
@@ -2813,8 +2791,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">Talend ETL</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="22.5%">Talend ETL</td>
+                                                        <td class="column2" width="22.5%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -2828,12 +2806,12 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="5%">
                                                             <input type="text" class="note_manager" id="produits-1"
                                                                    min="0" max="4" step="1">
                                                         </td>
-                                                        <td class="column3">SharePoint</td>
-                                                        <td class="column4">
+                                                        <td class="column3" width="22.5%">SharePoint</td>
+                                                        <td class="column4" width="22.5%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -2847,7 +2825,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="5%">
                                                             <input type="text" class="note_manager" id="produits-2"
                                                                    min="0" max="4" step="1">
                                                         </td>
@@ -3073,8 +3051,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">PowerAMC</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="45%">PowerAMC</td>
+                                                        <td class="column2" width="45%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -3088,7 +3066,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="10%">
                                                             <input type="text" class="note_manager" id="outils-1"
                                                                    min="0" max="4" step="1">
                                                         </td>
@@ -3187,8 +3165,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">Selenium, Sahi</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="45%">Selenium, Sahi</td>
+                                                        <td class="column2" width="45%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -3202,7 +3180,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="10%">
                                                             <input type="text" class="note_manager" id="tests-1" min="0"
                                                                    max="4" step="1">
                                                         </td>
@@ -3341,8 +3319,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">JS Front</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="45%">JS Front</td>
+                                                        <td class="column2" width="45%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -3356,7 +3334,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="10%">
                                                             <input type="text" class="note_manager" id="adventiel-1"
                                                                    min="0" max="4" step="1">
                                                         </td>
@@ -3495,8 +3473,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">Sigfox</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="45%">Sigfox</td>
+                                                        <td class="column2" width="45%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -3510,7 +3488,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="10%">
                                                             <input type="text" class="note_manager" id="protocole-1"
                                                                    min="0" max="4" step="1">
                                                         </td>
@@ -3569,8 +3547,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">TFS</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="22.5%">TFS</td>
+                                                        <td class="column2" width="22.5%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star  rating-fixed" title="expert"
@@ -3584,12 +3562,12 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="5%">
                                                             <input type="text" class="note_manager"
                                                                    id="integration_continue-1" min="0" max="4" step="1">
                                                         </td>
-                                                        <td class="column3">Ansible</td>
-                                                        <td class="column4">
+                                                        <td class="column3" width="22.5%">Ansible</td>
+                                                        <td class="column4" width="22.5%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -3603,7 +3581,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="5%">
                                                             <input type="text" class="note_manager"
                                                                    id="integration_continue-2" min="0" max="4" step="1">
                                                         </td>
@@ -3799,8 +3777,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">Rasberry PI</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="45%">Rasberry PI</td>
+                                                        <td class="column2" width="45%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -3814,7 +3792,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="10%">
                                                             <input type="text" class="note_manager" id="iot-1" min="0"
                                                                    max="4" step="1">
                                                         </td>
@@ -3913,8 +3891,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">Switch HP</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="22.5%">Switch HP</td>
+                                                        <td class="column2" width="22.5%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -3928,14 +3906,14 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="5%">
                                                             <input type="text" class="note_manager" id="reseau_lan-1"
                                                                    min="0" max="4" step="1">
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="column1">Switch Cisco</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="22.5%">Switch Cisco</td>
+                                                        <td class="column2" width="22.5%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -3949,7 +3927,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="5%">
                                                             <input type="text" class="note_manager" id="reseau_lan-2"
                                                                    min="0" max="4" step="1">
                                                         </td>
@@ -4047,8 +4025,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">Firewall - ASA</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="22.5%">Firewall - ASA</td>
+                                                        <td class="column2" width="22.5%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -4062,12 +4040,12 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="5%">
                                                             <input type="text" class="note_manager"
                                                                    id="reseau_securite-1" min="0" max="4" step="1">
                                                         </td>
-                                                        <td class="column3">VPS/OpenVPN</td>
-                                                        <td class="column4">
+                                                        <td class="column3" width="22.5%">VPS/OpenVPN</td>
+                                                        <td class="column4" width="22.5%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -4081,7 +4059,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="5%">
                                                             <input type="text" class="note_manager"
                                                                    id="reseau_securite-2" min="0" max="4" step="1">
                                                         </td>
@@ -4258,8 +4236,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">Xivo</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="45%">Xivo</td>
+                                                        <td class="column2" width="45%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -4273,7 +4251,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="10%">
                                                             <input type="text" class="note_manager" id="reseau_toip-1"
                                                                    min="0" max="4" step="1">
                                                         </td>
@@ -4353,8 +4331,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">Puppet</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="45%">Puppet</td>
+                                                        <td class="column2" width="45%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -4368,7 +4346,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="10%">
                                                             <input type="text" class="note_manager"
                                                                    id="industrialisation-1" min="0" max="4" step="1">
                                                         </td>
@@ -4467,8 +4445,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">W. Server 2012/2016</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="22.5%">W. Server 2012/2016</td>
+                                                        <td class="column2" width="22.5%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -4482,12 +4460,12 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="5%">
                                                             <input type="text" class="note_manager" id="os_serveurs-1"
                                                                    min="0" max="4" step="1">
                                                         </td>
-                                                        <td class="column3">Linux Debian</td>
-                                                        <td class="column4">
+                                                        <td class="column3" width="22.5%">Linux Debian</td>
+                                                        <td class="column4" width="22.5%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -4501,7 +4479,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="5%">
                                                             <input type="text" class="note_manager" id="os_serveurs-11"
                                                                    min="0" max="4" step="1">
                                                         </td>
@@ -4726,8 +4704,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">Switchs Brocade</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="45%">Switchs Brocade</td>
+                                                        <td class="column2" width="45%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -4741,7 +4719,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="5%">
                                                             <input type="text" class="note_manager" id="stockage-1"
                                                                    min="0" max="4" step="1">
                                                         </td>
@@ -4800,8 +4778,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">Exchange 2010-2016</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="45%">Exchange 2010-2016</td>
+                                                        <td class="column2" width="45%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -4816,7 +4794,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="5%">
                                                             <input type="text" class="note_manager" id="messagerie-1"
                                                                    min="0" max="4" step="1">
                                                         </td>
@@ -4897,8 +4875,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">Antivirus - Esset</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="45%">Antivirus - Esset</td>
+                                                        <td class="column2" width="45%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -4912,7 +4890,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="5%">
                                                             <input type="text" class="note_manager" id="securite-1"
                                                                    min="0" max="4" step="1">
                                                         </td>
@@ -5031,8 +5009,8 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="column1">Annuaires(LDAP...)</td>
-                                                        <td class="column2">
+                                                        <td class="column1" width="22.5%">Annuaires(LDAP...)</td>
+                                                        <td class="column2" width="22.5%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -5046,12 +5024,12 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="5%">
                                                             <input type="text" class="note_manager" id="divers-1"
                                                                    min="0" max="4" step="1">
                                                         </td>
-                                                        <td class="column3">Apache</td>
-                                                        <td class="column4">
+                                                        <td class="column3" width="22.5%">Apache</td>
+                                                        <td class="column4" width="22.5%">
                                                             <div class="rating">
 
                                                                 <span class="rating-star rating-fixed" title="expert"
@@ -5065,7 +5043,7 @@
                                                                       data-value="1"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="column5">
+                                                        <td class="column5" width="5%">
                                                             <input type="text" class="note_manager" id="divers-2"
                                                                    min="0" max="4" step="1">
                                                         </td>
