@@ -31,12 +31,12 @@
 
     <!-- Font Awesome JS -->
     <script>
-        $(document).ready(function(){
-            $('#SelectLieu').on('change', function(){
+        $(document).ready(function () {
+            $('#SelectLieu').on('change', function () {
                 var demovalue = $(this).val();
                 $("div.DivCharts").hide();
-                $("#show"+demovalue).show();
-                $("#divAlerte"+demovalue).show()
+                $("#show" + demovalue).show();
+                $("#divAlerte" + demovalue).show()
             });
         });
     </script>
@@ -177,112 +177,170 @@
                         </div>
                     </div>
                     <div class="col-8">
-                        <div id="divAlerteTwo"  class="DivCharts">
-                            <h2><span>6</span> ALERTE(S)</h2>
+                        <div id="divAlerteTwo" class="DivCharts">
+                            <div style="display: flex">
+                                <div style="margin-right: 40%"><h2><span>6</span> ALERTE(S)</h2></div>
+                                <div class="form-check" style="padding-left: 0; margin-right: 20px; margin-top: 10px">
+                                    <label class="container" style="font-size: 15px">Action requise
+                                        <input type="checkbox" checked id="action_rouge-6">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="form-check" style="padding-left: 0; margin-right: 20px; margin-top: 10px">
+                                    <label class="container" style="font-size: 15px">Alerte majeure
+                                        <input type="checkbox" checked id="action_orange-6">
+                                        <span class="checkmark"></span>
+                                    </label>
+
+                                </div>
+                                <div class="form-check" style="padding-left: 0; margin-right: 20px;  margin-top: 10px">
+                                    <label class="container" style="font-size: 15px">Alerte mineure
+                                        <input type="checkbox" checked id="action_jaune-6">
+                                        <span class="checkmark"></span>
+                                    </label>
+
+                                </div>
+                            </div>
                             <hr>
-                            <table class="alertes">
+                            <table class="alertes action-red table-hover">
                                 <tr>
                                     <td class="entretien" width="120px">Entretien</td>
-                                    <td><a href="evaluation-MANAGER-profilCOLLAB.html">Pas d'entretiens prévu depuis 1 ans avec Marie Evanno</a></td>
+                                    <td><a href="evaluation-MANAGER-profilCOLLAB.html">Pas d'entretiens prévu depuis 1
+                                        ans avec Marie Evanno</a></td>
                                     <td width="10px" class="importance-red"></td>
                                 </tr>
                             </table>
-                            <table class="alertes">
+                            <table class="alertes action-red table-hover">
                                 <tr>
                                     <td class="competenceTDB" width="120px">Compétences</td>
-                                    <td><a href="evaluation-MANAGER-profilCOLLAB.html">Compétences non actualisées depuis 1 ans pour Marie Evanno </a></td>
+                                    <td><a href="evaluation-MANAGER-profilCOLLAB.html">Compétences non actualisées
+                                        depuis 1 ans pour Marie Evanno </a></td>
                                     <td width="10px" class="importance-red"></td>
                                 </tr>
                             </table>
-                            <table class="alertes">
+                            <table class="alertes action-orange table-hover">
                                 <tr>
                                     <td class="technos" width="120px">Technos</td>
-                                    <td><a href="Tableau-de-Bord-Technos-MANAGER.html">Manque d'expert en Spring (JAVA)</a></td>
-                                    <td width="10px" class="importance-red"></td>
+                                    <td><a href="Tableau-de-Bord-Technos-MANAGER.html">Manque d'expert en Spring
+                                        (JAVA)</a></td>
+                                    <td width="10px" class="importance-orange"></td>
                                 </tr>
                             </table>
-                            <table class="alertes">
+                            <table class="alertes action-orange table-hover">
                                 <tr>
                                     <td class="appli" width="120px">Appli</td>
-                                    <td><a href="Tableau-de-Bord-Applis-MANAGER.html">Pas d'Analyste pour SPIE - Inventaire (INTERPROFESSION)</a></td>
-                                    <td width="10px" class="importance-red"></td>
+                                    <td><a href="Tableau-de-Bord-Applis-MANAGER.html">Pas d'Analyste pour SPIE -
+                                        Inventaire (INTERPROFESSION)</a></td>
+                                    <td width="10px" class="importance-orange"></td>
                                 </tr>
                             </table>
-                            <table class="alertes" id="technoadv" style="display: none">
+                            <table class="alertes action-orange table-hover" id="technoadv" style="display: none">
                                 <tr>
                                     <td class="technos" width="120px">Technos</td>
-                                    <td><a href="Tableau-de-Bord-Technos-MANAGER.html">Pas assez de référents pour J2EE (JAVA)</a></td>
+                                    <td><a href="Tableau-de-Bord-Technos-MANAGER.html">Pas assez de référents pour J2EE
+                                        (JAVA)</a></td>
                                     <td width="10px" class="importance-orange"></td>
                                 </tr>
                             </table>
 
-                            <table class="alertes">
+                            <table class="alertes action-yellow table-hover">
                                 <tr>
                                     <td class="technos" width="120px">Technos</td>
-                                    <td><a href="Tableau-de-Bord-Technos-MANAGER.html">Pas de référents pour CSS3 (WEB)</a></td>
-                                    <td width="10px" class="importance-orange"></td>
+                                    <td><a href="Tableau-de-Bord-Technos-MANAGER.html">Pas de référents pour CSS3
+                                        (WEB)</a></td>
+                                    <td width="10px" class="importance-yellow"></td>
                                 </tr>
                             </table>
-                            <table class="alertes">
+                            <table class="alertes action-yellow table-hover">
                                 <tr>
                                     <td class="technos" width="120px">Technos</td>
-                                    <td><a href="Tableau-de-Bord-Technos-MANAGER.html">Pas de référents pour Windows (OS)</a></td>
-                                    <td width="10px" class="importance-orange"></td>
+                                    <td><a href="Tableau-de-Bord-Technos-MANAGER.html">Pas de référents pour Windows
+                                        (OS)</a></td>
+                                    <td width="10px" class="importance-yellow"></td>
                                 </tr>
                             </table>
 
                         </div>
                         <div id="divAlerteOne" class="DivCharts" style="display: none">
-                            <h2><span>7</span> ALERTE(S)</h2>
+                            <div style="display: flex">
+                                <div style="margin-right: 40%"><h2><span>7</span> ALERTE(S)</h2></div>
+                                <div class="form-check" style="padding-left: 0; margin-right: 20px; margin-top: 10px">
+                                    <label class="container" style="font-size: 15px">Action requise
+                                        <input type="checkbox" checked id="action_rouge-7">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="form-check" style="padding-left: 0; margin-right: 20px; margin-top: 10px">
+                                    <label class="container" style="font-size: 15px">Alerte majeure
+                                        <input type="checkbox" checked id="action_orange-7">
+                                        <span class="checkmark"></span>
+                                    </label>
+
+                                </div>
+                                <div class="form-check" style="padding-left: 0; margin-right: 20px;  margin-top: 10px">
+                                    <label class="container" style="font-size: 15px">Alerte mineure
+                                        <input type="checkbox" checked id="action_jaune-7">
+                                        <span class="checkmark"></span>
+                                    </label>
+
+                                </div>
+                            </div>
                             <hr>
-                            <table class="alertes">
+                            <table class="alertes action-red table-hover">
                                 <tr>
                                     <td class="entretien" width="120px">Entretien</td>
-                                    <td><a href="evaluation-MANAGER-profilCOLLAB.html">Pas d'entretiens prévu depuis 1 ans avec Marie Evanno</a></td>
+                                    <td><a href="evaluation-MANAGER-profilCOLLAB.html">Pas d'entretiens prévu depuis 1
+                                        ans avec Marie Evanno</a></td>
                                     <td width="10px" class="importance-red"></td>
                                 </tr>
                             </table>
-                            <table class="alertes">
+                            <table class="alertes action-red table-hover">
                                 <tr>
                                     <td class="competenceTDB" width="120px">Compétences</td>
-                                    <td><a href="evaluation-MANAGER-profilCOLLAB.html">Compétences non actualisées depuis 1 ans pour Marie Evanno </a></td>
+                                    <td><a href="evaluation-MANAGER-profilCOLLAB.html">Compétences non actualisées
+                                        depuis 1 ans pour Marie Evanno </a></td>
                                     <td width="10px" class="importance-red"></td>
                                 </tr>
                             </table>
-                            <table class="alertes">
+                            <table class="alertes action-red table-hover">
                                 <tr>
                                     <td class="technos" width="120px">Technos</td>
-                                    <td><a href="Tableau-de-Bord-Technos-MANAGER.html">Manque d'expert en Spring (JAVA)</a></td>
+                                    <td><a href="Tableau-de-Bord-Technos-MANAGER.html">Manque d'expert en Spring
+                                        (JAVA)</a></td>
                                     <td width="10px" class="importance-red"></td>
                                 </tr>
                             </table>
-                            <table class="alertes">
+                            <table class="alertes action-orange table-hover">
                                 <tr>
                                     <td class="appli" width="120px">Appli</td>
-                                    <td><a href="Tableau-de-Bord-Applis-MANAGER.html">Pas d'Analyste pour SPIE - Inventaire (INTERPROFESSION)</a></td>
-                                    <td width="10px" class="importance-red"></td>
+                                    <td><a href="Tableau-de-Bord-Applis-MANAGER.html">Pas d'Analyste pour SPIE -
+                                        Inventaire (INTERPROFESSION)</a></td>
+                                    <td width="10px" class="importance-orange"></td>
                                 </tr>
                             </table>
-                            <table class="alertes">
+                            <table class="alertes action-orange table-hover">
                                 <tr>
                                     <td class="technos" width="120px">Technos</td>
-                                    <td><a href="Tableau-de-Bord-Technos-MANAGER.html">Pas assez de référents pour J2EE (JAVA)</a></td>
+                                    <td><a href="Tableau-de-Bord-Technos-MANAGER.html">Pas assez de référents pour J2EE
+                                        (JAVA)</a></td>
                                     <td width="10px" class="importance-orange"></td>
                                 </tr>
                             </table>
 
-                            <table class="alertes">
+                            <table class="alertes action-yellow table-hover">
                                 <tr>
                                     <td class="technos" width="120px">Technos</td>
-                                    <td><a href="Tableau-de-Bord-Technos-MANAGER.html">Pas de référents pour CSS3 (WEB)</a></td>
-                                    <td width="10px" class="importance-orange"></td>
+                                    <td><a href="Tableau-de-Bord-Technos-MANAGER.html">Pas de référents pour CSS3
+                                        (WEB)</a></td>
+                                    <td width="10px" class="importance-yellow"></td>
                                 </tr>
                             </table>
-                            <table class="alertes">
+                            <table class="alertes action-yellow table-hover">
                                 <tr>
                                     <td class="technos" width="120px">Technos</td>
-                                    <td><a href="Tableau-de-Bord-Technos-MANAGER.html">Pas de référents pour Windows (OS)</a></td>
-                                    <td width="10px" class="importance-orange"></td>
+                                    <td><a href="Tableau-de-Bord-Technos-MANAGER.html">Pas de référents pour Windows
+                                        (OS)</a></td>
+                                    <td width="10px" class="importance-yellow"></td>
                                 </tr>
                             </table>
 
@@ -300,29 +358,86 @@
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
 <script type="text/javascript">
+    $(function () {
+        $("#action_rouge-6").click(function () {
+            if ($(this).is(":checked")) {
+                $(".action-red").show();
+            } else {
+                $(".action-red").hide();
+            }
+        });
+    });
+    $(function () {
+        $("#action_orange-6").click(function () {
+            if ($(this).is(":checked")) {
+                $(".action-orange").show();
+            } else {
+                $(".action-orange").hide();
+            }
+        });
+    });
+    $(function () {
+        $("#action_jaune-6").click(function () {
+            if ($(this).is(":checked")) {
+                $(".action-yellow").show();
+            } else {
+                $(".action-yellow").hide();
+            }
+        });
+    });
+
+    $(function () {
+        $("#action_rouge-7").click(function () {
+            if ($(this).is(":checked")) {
+                $(".action-red").show();
+            } else {
+                $(".action-red").hide();
+            }
+        });
+    });
+    $(function () {
+        $("#action_orange-7").click(function () {
+            if ($(this).is(":checked")) {
+                $(".action-orange").show();
+            } else {
+                $(".action-orange").hide();
+            }
+        });
+    });
+    $(function () {
+        $("#action_jaune-7").click(function () {
+            if ($(this).is(":checked")) {
+                $(".action-yellow").show();
+            } else {
+                $(".action-yellow").hide();
+            }
+        });
+    });
+</script>
+<script type="text/javascript">
     var myChartStudio = echarts.init(document.getElementById('chartContainerStudio'));
 
     // specify chart configuration item and data
     var optionStudio = {
-        tooltip : {
+        tooltip: {
             trigger: 'item',
             formatter: "{b} : {c} ({d}%)"
         },
-        series : [
+        series: [
             {
                 type: 'pie',
-                radius : ['50%', '70%'],
+                radius: ['50%', '70%'],
                 center: ['50%', '50%'],
-                data:[
-                    {value:18, name:'Developpeur'},
-                    {value:10, name:'CDP'},
-                    {value:8, name:'Analyste'},
-                    {value:6, name:'Architecte'},
-                    {value:3, name:'DP'},
-                    {value:1, name:'RBU'},
-                    {value:1, name:'Expert Fonctionnel'}
+                data: [
+                    {value: 18, name: 'Developpeur'},
+                    {value: 10, name: 'CDP'},
+                    {value: 8, name: 'Analyste'},
+                    {value: 6, name: 'Architecte'},
+                    {value: 3, name: 'DP'},
+                    {value: 1, name: 'RBU'},
+                    {value: 1, name: 'Expert Fonctionnel'}
                 ],
-                color:[
+                color: [
                     "#89C34A",
                     "#60CBF3",
                     "#EA212D",
@@ -351,27 +466,27 @@
 
     // specify chart configuration item and data
     var optionAdv = {
-        tooltip : {
+        tooltip: {
             trigger: 'item',
             formatter: "{b} : {c} ({d}%)"
         },
-        series : [
+        series: [
             {
                 type: 'pie',
-                radius : ['50%', '70%'],
+                radius: ['50%', '70%'],
                 center: ['50%', '50%'],
-                data:[
-                    {value:47, name:'Developpeur'},
-                    {value:21, name:'CDP'},
-                    {value:17, name:'Analyste'},
-                    {value:16, name:'Architecte'},
-                    {value:5, name:'DP'},
-                    {value:1, name:'RBU'},
-                    {value:1, name:'Expert Fonctionnel'},
-                    {value:1, name:'Ingé. Méthode'},
-                    {value:1, name:'Ingé. Indus.'}
+                data: [
+                    {value: 47, name: 'Developpeur'},
+                    {value: 21, name: 'CDP'},
+                    {value: 17, name: 'Analyste'},
+                    {value: 16, name: 'Architecte'},
+                    {value: 5, name: 'DP'},
+                    {value: 1, name: 'RBU'},
+                    {value: 1, name: 'Expert Fonctionnel'},
+                    {value: 1, name: 'Ingé. Méthode'},
+                    {value: 1, name: 'Ingé. Indus.'}
                 ],
-                color:[
+                color: [
                     "#89C34A",
                     "#60CBF3",
                     "#EA212D",
@@ -399,20 +514,20 @@
 
     // specify chart configuration item and data
     var optionStudioPC = {
-        tooltip : {
+        tooltip: {
             trigger: 'item',
             formatter: "{b} : {c} ({d}%)"
         },
-        series : [
+        series: [
             {
                 type: 'pie',
-                radius : ['50%', '70%'],
+                radius: ['50%', '70%'],
                 center: ['50%', '50%'],
-                data:[
-                    {value:31, name:'Collab'},
-                    {value:10, name:'Presta'}
+                data: [
+                    {value: 31, name: 'Collab'},
+                    {value: 10, name: 'Presta'}
                 ],
-                color:[
+                color: [
                     "#4C0958",
                     "#FAB331"],
                 itemStyle: {
@@ -432,20 +547,20 @@
 
     // specify chart configuration item and data
     var optionAdvPC = {
-        tooltip : {
+        tooltip: {
             trigger: 'item',
             formatter: "{b} : {c} ({d}%)"
         },
-        series : [
+        series: [
             {
                 type: 'pie',
-                radius : ['50%', '70%'],
+                radius: ['50%', '70%'],
                 center: ['50%', '50%'],
-                data:[
-                    {value:141, name:'Collab'},
-                    {value:22, name:'Presta'}
+                data: [
+                    {value: 141, name: 'Collab'},
+                    {value: 22, name: 'Presta'}
                 ],
-                color:[
+                color: [
                     "#4C0958",
                     "#FAB331"],
                 itemStyle: {

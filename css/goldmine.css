@@ -155,7 +155,10 @@ table#table-effectif a:hover {
 }
 
 .importance-orange {
-    background-color: #ffc60c;
+    background-color: orange;
+}
+.importance-yellow {
+    background-color: rgb(250,230,0);
 }
 
 .alerteLigne span {
