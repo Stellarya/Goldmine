@@ -114,7 +114,7 @@
                                         </li>
                                         <li style="margin-left: 20px"><a href="#"><i class="fas fa-briefcase" style="margin-right: 10px"></i> METIER</a></li>
                                         <li style="margin-left: 20px"><a href="evaluation-appli-MANAGER.html"><i class="fas fa-mobile-alt" style="margin-right: 10px"></i> APPLICATIONS</a></li>
-                                        <li style="margin-left: 20px"><a href="#"><i class="fas fa-globe-europ" style="margin-right: 10px"></i> LANGUES</a></li>
+                                        <li style="margin-left: 20px"><a href="#"><i class="fas fa-globe-europe" style="margin-right: 10px"></i> LANGUES</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -599,14 +599,14 @@
                                                     <tr></tr>
                                                     <tr>
                                                         <td colspan="3"
-                                                            style="text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF" id="message-scroll"
+                                                            style="cursor: pointer; text-align:right;color:#939090;font-size:13px;padding-right:10px;background:#FFF" id="message-scroll"
                                                             data-toggle="modal" data-target="#WebChatModal">
                                                             <div style="display:inline;margin:3px;color:rgb(128, 128, 128);position:relative">
                                                                 <span class="notif"> 1</span> <i class="far fa-comment"
                                                                                                  style="font-size:17px;margin-right:10px"> </i>
-                                                            </div>
+                                                            </div><span id="libelleCommentaire">
 
-                                                            commentaire
+                                                            commentaire</span>
                                                         </td>
                                                         <div class="modal fade" id="WebChatModal" tabindex="-1"
                                                              role="dialog" aria-labelledby="exampleModalCenterTitle"
@@ -614,8 +614,9 @@
                                                             <div class="modal-dialog modal-dialog-centered"
                                                                  role="document">
                                                                 <div class="modal-content">
-                                                                    <div class="panel-header">
-                                                                        WEB
+                                                                    <div class="panel-header" style="display: flex">
+                                                                        <div style="width:95%; margin: 0">WEB </div>
+                                                                        <div style="width:5%; margin: 0; cursor: pointer" id="cross_comm"><i class="fas fa-times"></i></div>
                                                                     </div>
 
                                                                     <div class="panel-body collab">
@@ -5302,12 +5303,19 @@
     });
 
     $(document).ready(function () {
+        $("#cross_comm").click(function () {
+            $('#WebChatModal').modal('hide');
+        });
+    });
+
+    $(document).ready(function () {
         $(".referent-R.html-ref").click(function showAlert() {
             setTimeout(function () {
                 $('#HtmlDangerModal').modal('hide');
             }, 3000);
         });
     });
+
 
     AndroidSuccessModal
     $(document).ready(function () {

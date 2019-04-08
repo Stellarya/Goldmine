@@ -612,7 +612,7 @@ table.tableTDB .rating-star {
 .rating-star.checked:not(.rating-fixed):hover ~ .rating-star.checked:after,
 .rating-star.checked:not(.rating-fixed):hover:after {
     content: '\f005';
-    color: rgb(200, 200, 200);
+    color: rgb(220, 220, 220);
 }
 
 
@@ -728,7 +728,7 @@ table.tableTDB .rating-star {
     display: inline-block;
     position: relative;
     font-size: 17px;
-    color: rgb(200, 200, 200);
+    color: rgb(220, 220, 220);
 }
 
 .reset-star {
@@ -738,7 +738,7 @@ table.tableTDB .rating-star {
 .reset-star:after {
     font-family: FontAwesome;
     content: '\f056';
-    color: rgb(200, 200, 200);
+    color: rgb(220, 220, 220);
 }
 
 .reset-star.checked ~ .reset-star:after,
@@ -1594,7 +1594,10 @@ ul li span .fa-minus-circle {
 /* ---------------------------------------------------
     COMMENTAIRES
 ----------------------------------------------------- */
-
+#libelleCommentaire:hover {
+    color: rgb(76,10,89);
+    font-weight: bold;
+}
 /* Popup container - can be anything you want */
 .popup {
     position: relative;
