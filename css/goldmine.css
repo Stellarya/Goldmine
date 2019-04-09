@@ -157,8 +157,9 @@ table#table-effectif a:hover {
 .importance-orange {
     background-color: orange;
 }
+
 .importance-yellow {
-    background-color: rgb(250,230,0);
+    background-color: rgb(250, 230, 0);
 }
 
 .alerteLigne span {
@@ -548,6 +549,14 @@ div.btn-style {
     float: right;
 }
 
+.rating {
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    color: #FFCA00;
+}
+
 .rating-star {
     padding: 0 2px;
     margin-top: 2px;
@@ -574,6 +583,11 @@ table.tableTDB .rating-star {
     content: '\f005';
 }
 
+.rating-star-fixed:after {
+    font-family: FontAwesome;
+    content: '\f005';
+}
+
 .cog:after {
     font-family: FontAwesome;
     content: '\f013';
@@ -590,6 +604,12 @@ table.tableTDB .rating-star {
     color: #ffc107;
 }
 
+.rating-star-fixed.checked ~ .rating-star-fixed:after,
+.rating-star-fixed.checked:after {
+    content: '\f005';
+    color: #ffc107;
+}
+
 .rating-star.darker {
     content: '\f005';
     color: rgb(100, 100, 100);
@@ -598,6 +618,12 @@ table.tableTDB .rating-star {
 
 .rating:hover .rating-star:after {
     content: '\f005';
+}
+
+.rating-star:hover ~ .rating-star:after,
+.rating-star:hover:after {
+    content: '\f005' !important;
+
 }
 
 .rating-star:not(.rating-fixed):hover ~ .rating-star:after,
@@ -610,12 +636,6 @@ table.tableTDB .rating-star {
 .rating-star.checked.darker:not(.rating-fixed):hover:after {
     content: '\f005';
     color: rgb(100, 100, 100);
-}
-
-.rating-star.checked:not(.rating-fixed):hover ~ .rating-star.checked:after,
-.rating-star.checked:not(.rating-fixed):hover:after {
-    content: '\f005';
-    color: rgb(220, 220, 220);
 }
 
 
@@ -722,7 +742,6 @@ table.tableTDB .rating-star {
 }
 
 
-
 /* ---------------------------------------------------
     RESET STARS
 ----------------------------------------------------- */
@@ -732,6 +751,14 @@ table.tableTDB .rating-star {
     position: relative;
     font-size: 17px;
     color: rgb(220, 220, 220);
+}
+
+.rating-star-fixed {
+    padding: 0 2px;
+    margin-top: 2px;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
 }
 
 .reset-star {
@@ -1598,9 +1625,10 @@ ul li span .fa-minus-circle {
     COMMENTAIRES
 ----------------------------------------------------- */
 #libelleCommentaire:hover {
-    color: rgb(76,10,89);
+    color: rgb(76, 10, 89);
     font-weight: bold;
 }
+
 /* Popup container - can be anything you want */
 .popup {
     position: relative;
@@ -1951,118 +1979,6 @@ input:placeholder-shown + label {
     padding-right: 62px;
 }
 
-
-@media screen and (max-width: 992px) {
-    table {
-        display: block;
-    }
-
-    table > *, table tr, table td, table th {
-        display: block;
-    }
-
-    table thead {
-        display: none;
-    }
-
-    table tbody tr {
-        height: auto;
-        padding: 20px 0;
-    }
-
-    table tbody tr td {
-        padding-left: 40% !important;
-        margin-bottom: 24px;
-    }
-
-    table tbody tr td:last-child {
-        margin-bottom: 0;
-    }
-
-    table tbody tr td:before {
-        font-size: 14px;
-        color: #999999;
-        line-height: 1.2;
-        font-weight: unset;
-        position: absolute;
-        width: 40%;
-        left: 30px;
-        top: 0;
-    }
-
-    table tbody tr td:nth-child(1):before {
-        content: "Nom";
-    }
-
-    table tbody tr td:nth-child(2):before {
-        content: "Prenom";
-    }
-
-    table tbody tr td:nth-child(3):before {
-        content: "Fonction";
-    }
-
-    table tbody tr td:nth-child(4):before {
-        content: "Compétence 1";
-    }
-
-    table tbody tr td:nth-child(5):before {
-        content: "Compétence 2";
-    }
-
-    table tbody tr td:nth-child(6):before {
-        content: "Compétence 3";
-    }
-
-    table.table_comp tbody tr td:nth-child(1):before {
-        content: "Compétence";
-    }
-
-    table.table_comp tbody tr td:nth-child(2):before {
-        content: "Note";
-    }
-
-    table.table_comp tbody tr td:nth-child(3):before {
-        content: "Compétence";
-    }
-
-    table.table_comp tbody tr td:nth-child(4):before {
-        content: "Note";
-    }
-
-    table.table_comp tbody tr td:nth-child(5):before {
-        content: "Compétence";
-    }
-
-    table.table_comp tbody tr td:nth-child(6):before {
-        content: "Note";
-    }
-
-    .column4,
-    .column5,
-    .column6 {
-        text-align: left;
-    }
-
-    .column4,
-    .column5,
-    .column6,
-    .column1,
-    .column2 {
-        width: 100%;
-    }
-
-    tbody tr {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 576px) {
-    .container-table100 {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-}
 
 /* ---------------------------------------------------
     MEDIAQUERIES

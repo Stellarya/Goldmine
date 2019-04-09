@@ -291,8 +291,17 @@ $(document).ready(function () {
             $(this).find('svg').attr('data-icon', 'cog');
         } else {
             $(this).find('svg').attr('data-icon', 'chevron-down');
-        }
-        ;
+        };
+    });
+
+    $('#appli-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else if ($(this).find('svg').attr('data-icon') === 'cog') {
+            $(this).find('svg').attr('data-icon', 'cog');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
     });
 
     $('#java-accordion').click(function () {
@@ -399,8 +408,86 @@ $(document).ready(function () {
             $(this).find('svg').attr('data-icon', 'chevron-up');
         } else {
             $(this).find('svg').attr('data-icon', 'chevron-down');
-        }
-        ;
+        };
+    });
+
+    $('#limagrain-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
+    });
+
+    $('#Agranet-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
+    });
+    $('#equipement-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
+    });
+    $('#vegetal-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
+    });
+    $('#laitBzh-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
+    });
+    $('#petfood-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
+    });
+    $('#sante-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
+    });
+    $('#equarissage-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
+    });
+    $('#interpro-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
+    });
+    $('#nutriAn-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
+    });
+    $('#equade-accordion').click(function () {
+        if ($(this).find('svg').attr('data-icon') === 'chevron-down') {
+            $(this).find('svg').attr('data-icon', 'chevron-up');
+        } else {
+            $(this).find('svg').attr('data-icon', 'chevron-down');
+        };
     });
 
     function disable() {
