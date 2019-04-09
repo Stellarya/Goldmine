@@ -26,7 +26,13 @@ $(function () {
             html_tag_hidden.show();
             $(html_tag_hidden.children()[0]).html(thehtml);
             $('#nav-test').append(html_tag_hidden);
-        }
+        },
+        select: showLabel,
+
     });
+    function showLabel(event, ui) {
+        $('.colAngular').hide();
+        $('.angularJS').show();
+    }
 });
 
