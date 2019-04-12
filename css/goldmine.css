@@ -490,10 +490,19 @@ div.btn-style {
     background-color: rgb(76, 10, 89);
 }
 
-.checkedCheckmark, .container:hover input ~ .checkedCheckmark {
-    background-color: rgb(76, 10, 89);
-
+.container input:checked ~ .checkmark#checkMarkRed {
+    background-color: #EA212D;
 }
+
+.container input:checked ~ .checkmark#checkMarkOrange {
+    background-color: orange;
+}
+
+.container input:checked ~ .checkmark#checkMarkYellow {
+    background-color: rgb(250,230,0);
+}
+
+
 
 .angularJS {
     display: none;
@@ -691,17 +700,6 @@ table.tableTDB .rating-star {
     color: #e1a100;
 }
 
-.rating-star-darker.checked:hover ~ .rating-star.checked:after,
-.rating-star-darker.checked:hover:after {
-    content: '\f005';
-    color: rgb(100, 100, 100);
-}
-
-.rating-star-darker.checked:hover ~ .rating-star-darker.checked:after,
-.rating-star-darker.checked:hover:after {
-    content: '\f005';
-    color: rgb(100, 100, 100);
-}
 
 #tag_test .rating .rating-star-darker-fixed {
     float: right;
