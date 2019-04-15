@@ -22,9 +22,6 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"/>
     <link href="css/search_plugin.css" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
-
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
 
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
     <script src="tags-selector-tagselect/jquery.tagselect.js"></script>
@@ -152,23 +149,28 @@
                     <div class="col-2">
                         <div class="container">
                             <div class="row">
-                                <div class="btn-group" id="status" data-toggle="buttons">
-                                    <label class="btn btn-default btn-on btn-xs " id="team-switch"
+
+                                <div class="btn-group" id="status" data-toggle="buttons"
+                                     style="border: solid 1px lightgray">
+                                    <label class="btn btn-default btn-on btn-xs " id="histo-switch"
                                            style="height: 40px; width: 120px; padding-top: 8px;">
                                         <input type="radio" value="1" name="multifeatured_module[module_id][status]"
                                         >HISTORIQUE</label>
 
-                                    <label class="btn btn-default btn-off btn-xs active" id="adventiel-switch"
+                                    <label class="btn btn-default btn-off btn-xs active" id="date-switch"
                                            style="height: 40px;  width: 110px;padding-top: 8px;">
                                         <input type="radio" value="0"
                                                name="multifeatured_module[module_id][status]"
                                                checked="checked">DATE</label>
+                                    <input type="date" class="form-control" id="today" style="padding-right: 0">
                                 </div>
+
+
                             </div>
                         </div>
                     </div>
                     <div class="col-2">
-                        <input type="date" class="form-control" id="today" style="padding-right: 0">
+
                     </div>
                     <div class="col-1"></div>
                     <div class="col-3">
@@ -361,8 +363,10 @@
                                         <td><a href="evaluation-MANAGER-profilCOLLAB.html">Web Designer</a></td>
                                         <td><a href="evaluation-MANAGER-profilCOLLAB.html">Pacé</a></td>
                                         <td><a href="evaluation-MANAGER-profilCOLLAB.html">Studio Design</a></td>
-                                        <td  class="date-entrée"><a href="evaluation-MANAGER-profilCOLLAB.html">21/01/2019</a></td>
-                                        <td  class="date-sortie"><a href="evaluation-MANAGER-profilCOLLAB.html">28/06/2020</a></td>
+                                        <td class="date-entrée"><a href="evaluation-MANAGER-profilCOLLAB.html">21/01/2019</a>
+                                        </td>
+                                        <td class="date-sortie"><a href="evaluation-MANAGER-profilCOLLAB.html">28/06/2020</a>
+                                        </td>
 
                                     </tr>
                                     <tr>
@@ -400,13 +404,14 @@
 
 <!-- Bootstrap JS -->
 
-<script type="text/javascript" src="js/jquery.tablesorter.js"></script>
 <script>
-    $("#adventiel-switch").change(function () {
+    $("#date-switch").change(function () {
         $("#today").prop('disabled', false);
+        $("#today").val(today);
     });
-    $("#team-switch").change(function () {
+    $("#histo-switch").change(function () {
         $("#today").prop('disabled', true);
+        $('#today').val('');
 
     });
 
