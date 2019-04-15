@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var tTech = ["Angular","Delphi", "Spring", "HTML", "J2EE"];
+    var tTech = ["AngularJS","Delphi", "Spring", "HTML", "J2EE"];
     $('#autoSuggest').autocomplete({
         source: tTech,
         select: showLabel,

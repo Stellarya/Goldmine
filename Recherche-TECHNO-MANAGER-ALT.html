@@ -25,10 +25,13 @@
 
 
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
-    <script type="text/javascript" src="js/currency-autocomplete.js"></script>
+    <script type="text/javascript" src="js/goldmine-research-page.js"></script>
     <script src="tags-selector-tagselect/jquery.tagselect.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/autocomplete-v2.js"></script>
     <!-- Font Awesome JS -->
+    <script src="js/jquery_research.js"></script>
+    <!--<script src="js/json_test.js"></script>-->
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
     <!--<script src="js/json_test.js"></script>-->
 </head>
@@ -43,7 +46,7 @@
 
         <div class="sidebar-menu">
             <ul class="list-unstyled components">
-                <li class="active">
+                <li>
                     <a href="Tableau-de-Bord-Accueil-MANAGER.html">
                         <i class="fa fa-tachometer-alt"></i><span style="margin-left: 10px">
                         Tableau de bord</span>
@@ -64,7 +67,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li class="active">
                     <a href="Recherche-MANAGER.html">
                         <i class="fas fa-search"></i><span style="margin-left: 10px;">
                         Recherche</span>
@@ -103,10 +106,8 @@
                         <nav id="cssmenu">
                             <h3 style="padding-left: 40px">Tableau de bord</h3>
                             <ul>
-                                <li style="margin-left: 310px"><a
-                                        href="Tableau-de-Bord-Accueil-MANAGER.html"><i class="fas fa-chart-pie" style="margin-right: 10px"></i> SYNTHESE</a></li>
-                                <li  class="active" style="margin-left: 20px"><a href="Tableau-de-Bord-Technos-MANAGER.html"><i class="fas fa-cog" style="margin-right: 10px"></i> TECHNIQUE</a></li>
-                                <li style="margin-left: 20px"><a href="Tableau-de-Bord-Applis-MANAGER.html"><i class="fas fa-mobile-alt" style="margin-right: 10px"></i> APPLICATIONS</a>
+                                <li  class="active" style="margin-left: 310px"><a href="Recherche-TECHNO-MANAGER-ALT.html"><i class="fas fa-cog" style="margin-right: 10px"></i>PAR TECHNO</a></li>
+                                <li style="margin-left: 20px"><a href="Recherche-APPLI-MANAGER-ALT.html"><i class="fas fa-mobile-alt" style="margin-right: 10px"></i>PAR APPLICATION</a>
                                 </li>
                             </ul>
 
@@ -114,38 +115,12 @@
 
                     </header>
                     <div class="col-2">
-                        <select class="form-control" id="SelectLieu"
-                                style="margin-bottom: 15px; border-radius: 5px; padding-right: 5px">
-                            <option> Tout Adventiel</option>
-                            <option> Studio Design</option>
-                            <option> Autres transverses</option>
-                            <option> Agence de Rennes</option>
-                            <option> BU X</option>
-                            <option> BU X - Domaine Limagrain</option>
-                            <option> BU X - Domaine Agranet</option>
-                            <option> BU X - Domaine Equipementier</option>
-                            <option> BU X - Domaine Végétal</option>
-                            <option> BU X - Domaine Lait BZH, SGPI</option>
-                            <option> BU Y</option>
-                            <option> BU Y - Domaine Santé</option>
-                            <option> BU Y - Domaine Equarissage</option>
-                            <option> BU Y - Domaine Interprofession</option>
-                            <option> BU Y - Domaine Nutri. Animale, Porc/Volaille</option>
-                            <option> BU Y - Domaine Génétique</option>
-                            <option> BU Y - Domaine Equade, Edel</option>
-                            <option> Agence de Caen</option>
-                            <option> BU Z</option>
-                            <option> BU Z - Domaine A</option>
-                            <option> BU Z - Domaine B</option>
-
-                        </select>
-
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1"
                                       style="border-right: none; background: white"><i class="fas fa-search"></i></span>
                             </div>
-                            <input type="text" class="form-control" id="autocomplete" aria-label="Recipient's username"
+                            <input type="text" class="form-control" id="autoSuggest" aria-label="Recipient's username"
                                    aria-describedby="basic-addon2"
                                    style="padding-left: 5px; border-left: none">
                         </div>
@@ -440,376 +415,583 @@
                             <div class="limiter">
                                 <div class="wrap-table100">
                                     <div class="table100">
-                                        <table class="table tableResults" id="table_TDB" style="margin-bottom: 0">
+                                        <table class="table table-hover tableResults" id="table_comps" style="margin-bottom: 0">
                                             <thead style="border: none">
                                             <tr>
-                                                <th rowspan="2" class="table100-head1" scope="col" width="2.5%"
+                                                <th rowspan="2" class="table100-head1" scope="col" width="10%"
+                                                    style="vertical-align: middle; padding-top: 1px">Nom
+                                                </th>
+                                                <th rowspan="2" class="table100-head1" scope="col" width="7%"
+                                                    style="vertical-align: middle; padding-top: 1px">Prenom
+                                                </th>
+                                                <th rowspan="2" class="table100-head1" scope="col" width="10%"
+                                                    style="vertical-align: middle; padding-top: 1px; text-align: center">
+                                                    <div class="multiselect">
+                                                        <div class="selectBox" onclick="showCheckboxesService()">
+                                                            Service <span><i class="fas fa-chevron-down"></i></span>
+
+                                                        </div>
+                                                        <div id="checkboxesService">
+                                                            <div class="form-check" style="padding-left: 0px">
+                                                                <label class="container" style="font-size: 15px">BU Y
+                                                                    <input type="checkbox" checked id="Service-1">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+
+                                                            </div>
+                                                            <div class="form-check" style="padding-left: 0px">
+                                                                <label class="container" style="font-size: 15px">BU Z
+                                                                    <input type="checkbox" checked id="Service-2">
+                                                                    <span class="checkmark">
+                                                            </span>
+                                                                </label>
+
+                                                            </div>
+                                                            <div class="form-check" style="padding-left: 0px">
+                                                                <label class="container" style="font-size:15px ">Studio Design
+                                                                    <input type="checkbox" checked id="Service-Studio">
+                                                                    <span class="checkmark">
+                                                            </span>
+                                                                </label>
+
+                                                            </div>
+                                                            <div class="form-check" style="padding-left: 0px">
+                                                                <label class="container" style="font-size:15px ">DT
+                                                                    <input type="checkbox" checked id="Service-4">
+                                                                    <span class="checkmark">
+                                                            </span>
+                                                                </label>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <th rowspan="2" class="table100-head1" scope="col" width="10%"
                                                     style="vertical-align: middle; padding-top: 1px">
-                                                </th>
-                                                <th rowspan="2" class="table100-head1" scope="col" width="15%"
-                                                    style="vertical-align: middle; padding-top: 1px">Catégorie
-                                                </th>
-                                                <th rowspan="2" class="table100-head1" scope="col" width="15%"
-                                                    style="vertical-align: middle; padding-top: 1px">Compétence
-                                                </th>
 
-                                                <th colspan="3" class="3stars" width="15%"
-                                                    style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">
-                                                    <div class="rating">
-                                                        <span class="rating-star-darker-fixed rating-fixed darker"
-                                                              title="expert"
-                                                              data-value="4" style="margin-right: 5px;margin-left: 5px; cursor: auto"></span>
-                                                        <span class="rating-star-darker-fixed star rating-fixed checked" title="autonome"
-                                                              data-value="3" style="margin-right: 5px;margin-left: 5px; cursor: auto"></span>
-                                                        <span class="rating-star-darker-fixed rating-fixed checked"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2" style="margin-right: 5px;margin-left: 5px; cursor: auto"></span>
-                                                        <span class="rating-star-darker-fixed rating-fixed checked" title="notions"
-                                                              data-value="1" style="margin-right: 5px;margin-left: 5px; cursor: auto"></span>
+                                                    <div class="multiselect">
+                                                        <div class="selectBox" onclick="showCheckboxesFonction()">
+                                                            Fonction <span><i class="fas fa-chevron-down"></i></span>
+
+                                                        </div>
+                                                        <div id="checkboxes">
+                                                            <div class="form-check" style="padding-left: 0px">
+                                                                <label class="container" style="font-size: 15px">Architecture
+                                                                    <input type="checkbox" checked id="Archi">
+                                                                    <span class="checkmark" >
+                                                            </span>
+                                                                </label>
+
+                                                            </div>
+                                                            <div class="form-check" style="padding-left: 0px">
+                                                                <label class="container" style="font-size: 15px">Développeur
+                                                                    <input type="checkbox" checked id="Dev">
+                                                                    <span class="checkmark" >
+                                                            </span>
+                                                                </label>
+
+                                                            </div>
+                                                            <div class="form-check" style="padding-left: 0px">
+                                                                <label class="container" style="font-size:15px ">CDP
+                                                                    <input type="checkbox" checked id="CDP">
+                                                                    <span class="checkmark" >
+                                                            </span>
+                                                                </label>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <th class="table100-head1" scope="col" width="8%">
+                                                    <div class="form-check" style="padding-left: 0px">
+                                                        <label class="container">Collab.
+                                                            <input type="checkbox" id="chkCollab" checked>
+                                                            <span class="checkmark" id="Collab">
+                                                            </span>
+                                                        </label>
 
                                                     </div>
                                                 </th>
-                                                <th colspan="3" class="4stars" width="15%"
-                                                    style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">
-                                                    <div class="rating">
-                                                        <span class="rating-star-darker-fixed rating-fixed checked"
-                                                              title="expert"
-                                                              data-value="4" style="margin-right: 5px;margin-left: 5px; cursor: auto"></span>
-                                                        <span class="rating-star-darker-fixed rating-fixed checked" title="autonome"
-                                                              data-value="3" style="margin-right: 5px;margin-left: 5px; cursor: auto"></span>
-                                                        <span class="rating-star-darker-fixed rating-fixed checked"
-                                                              title="peut intervenir avec de l'aide"
-                                                              data-value="2" style="margin-right: 5px;margin-left: 5px; cursor: auto"></span>
-                                                        <span class="rating-star-darker-fixed rating-fixed checked" title="notions"
-                                                              data-value="1" style="margin-right: 5px;margin-left: 5px; cursor: auto"></span>
 
-                                                    </div>
+                                                <th class="table100-head1 spring" scope="col" width="11%"
+                                                    style="text-align: center; font-size: 15px"><i class="fas fa-cog"></i> Spring <span id="minus_spring-header" style="color: rgb(200,200,200)" class="block_col_2">
+                                                    <i class="fas fa-minus-circle"></i></span>
                                                 </th>
-                                                <th rowspan="2" class="table100-head1" scope="col" width="37.5%"
-                                                    style="vertical-align: middle; padding-top: 1px">Référents
+                                                <th class="table100-head1 htmlcss" scope="col" width="11%"
+                                                    style="text-align: center; font-size: 15px"><i class="fas fa-cog" style="font-size: 15px"></i> HTML/CSS <span id="minus_htmlcss-header" style="color: rgb(200,200,200)"
+                                                                                                                                                                  class="block_col_2"> <i
+                                                        class="fas fa-minus-circle"></i></span>
                                                 </th>
+                                                <th class="table100-head1 angularJS" scope="col" width="11%"
+                                                    style="text-align: center; font-size: 15px"><i class="fas fa-cog" style="font-size: 15px"></i> AngularJS <span id="minus_angular" style="color: rgb(200,200,200)"
+                                                                                                                                                                   class="block_col_2"> <i
+                                                        class="fas fa-minus-circle"></i></span>
+                                                </th>
+
+                                                <th class="table100-head1 colSpring" style="display: none; text-align: center" scope="col" width="11%">-</th>
+                                                <th class="table100-head1 colHtml" style="display: none; text-align: center" scope="col" width="11%">-</th>
+                                                <th class="table100-head1 colAngular" scope="col" width="11%"
+                                                    style="text-align: center">-</th>
+                                                <th class="table100-head1" scope="col" width="11%"
+                                                    style="text-align: center">-</th>
+                                                <th class="table100-head1" scope="col" width="11%"
+                                                    style="text-align: center">-</th>
 
                                             </tr>
-                                            <tr style="height: 0px; top: -10px">
-                                                <th scope="col"
-                                                    style="vertical-align: middle; padding-top: 1px; text-align: center"
-                                                    width="5%"></th>
-                                                <th scope="col"
-                                                    style="vertical-align: middle; padding-top: 1px; text-align: center"
-                                                    width="5%">Cible
-                                                </th>
-                                                <th scope="col"
-                                                    style="vertical-align: middle; padding-top: 1px; text-align: center"
-                                                    width="5%"></th>
+                                            <tr style="height: 0px">
+                                                <th  style="padding-top: 0px !important; padding-bottom: 0px">
+                                                    <div class="form-check" style="padding-left: 0px">
+                                                        <label class="container">Presta.
+                                                            <input type="checkbox" checked id="chkPresta">
+                                                            <span class="checkmark"></span>
+                                                        </label>
 
-                                                <th scope="col"
-                                                    style="vertical-align: middle; padding-top: 1px; text-align: center"
-                                                    width="5%"></th>
-                                                <th scope="col"
-                                                    style="vertical-align: middle; padding-top: 1px; text-align: center"
-                                                    width="5%">Cible
+                                                    </div>
                                                 </th>
-                                                <th scope="col"
-                                                    style="vertical-align: middle; padding-top: 1px; text-align: center"
-                                                    width="5%"></th>
+                                                <th class="spring" style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">
+                                                    <div class="rating">
+                                                        <span class="rating-star-darker darker" title="expert"
+                                                              data-value="4"></span>
+                                                        <span class="rating-star-darker darker" id="star3Spring" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star-darker checked darker" id="star2Spring"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star-darker checked darker" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </th>
+                                                <th class="htmlcss" style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">
+                                                    <div class="rating">
+                                                    <span class="rating-star-darker darker" title="expert"
+                                                          data-value="4"></span>
+                                                        <span class="rating-star-darker checked darker" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star-darker checked darker"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star-darker checked darker" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </th>
+                                                <th class="angularJS" style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">
+                                                    <div class="rating">
+                                                        <span class="rating-star-darker darker" title="expert"
+                                                              data-value="4"></span>
+                                                        <span class="rating-star-darker darker" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star-darker checked darker"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star-darker checked darker" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </th>
+
+                                                <th class="colSpring table100-head1" style="text-align: center; display: none; padding-top: 0px !important; padding-bottom: 0px !important;" scope="col" width="11%">-</th>
+                                                <th class="colHtml table100-head1" style="text-align: center; display: none; padding-top: 0px !important; padding-bottom: 0px !important;" scope="col" width="11%">-</th>
+                                                <th class="colAngular table100-head1" style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">-</th>
+                                                <th class="table100-head1" style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">-</th>
+                                                <th class="table100-head1" style="text-align: center; padding-top: 0px !important; padding-bottom: 0px !important;">-</th>
                                             </tr>
                                             </thead>
-                                            <tbody>
-                                            <tr class="rawSpring">
-                                                <td class="grey">
-                                                    <span id="minus_spring">
-                                                        <i class="fas fa-minus-circle"></i>
-                                                    </span>
+                                            <tbody style="cursor: pointer">
+                                            <tr class="collabs service-1 architecte black" id="german" style="cursor: pointer">
+                                                <td>German</td>
+                                                <td>Christian</td>
+                                                <td style="text-align: center">BU Y</td>
+                                                <td>Architecte</td>
+                                                <td>Collaborateur</td>
+                                                <td class="spring" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
                                                 </td>
-                                                <td>Java</td>
-                                                <td>Spring</td>
-                                                <td class="effectif-reel" style="padding-right: 0">
-                                                    <span id="eff-reel-3-spring">5 </span>
-                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                <td class="htmlcss" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
                                                 </td>
-                                                <td>
-                                                    <input type="number" id="input-eff-3-spring" class="input-cible plus-cible" style="border: 1px solid grey" min="0">
+                                                <td class="angularJS" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                    </div>
                                                 </td>
-                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-3-spring">
-                                                    <span id="signe-operateur-3-spring"></span>
-                                                    <span id="chiffre-difference-3-spring"></span>
-                                                </td>
-                                                <td class="effectif-reel" style="padding-right: 0">
-                                                    <span id="eff-reel-4-spring">3 </span>
-                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
-                                                </td>
-                                                <td>
-                                                    <input type="number" id="input-eff-4-spring" class="input-cible moins-cible" min="0" value="7">
-                                                </td>
-                                                <td style="padding-left: 0; color: red" id="diff-effect-4-spring">
-                                                    <span id="signe-operateur-4-spring">-</span>
-                                                    <span id="chiffre-difference-4-spring">4</span>
-                                                </td>
-                                                <td class="grey">Wilhelm FY, Christian GERMAN, Samuel GRU</td>
-
+                                                <td class="colSpring" style="text-align: center; display: none">-</td>
+                                                <td class="colHtml" style="text-align: center; display: none">-</td>
+                                                <td class="colAngular" style="text-align: center">-</td>
+                                                <td style="text-align: center;">-</td>
+                                                <td style="text-align: center">-</td>
                                             </tr>
-                                            <tr class="rawj2ee">
-                                                <td class="grey">
-                                                    <span id="minus_j2ee">
-                                                        <i class="fas fa-minus-circle"></i>
-                                                    </span>
+                                            <tr class="collabs service-1 architecte black" id="dariel"  style="cursor: pointer">
+                                                <td>Dariel</td>
+                                                <td>Eric</td>
+                                                <td style="text-align: center">BU Y</td>
+                                                <td>Architecte</td>
+                                                <td>Collaborateur</td>
+                                                <td class="spring" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                    </div>
                                                 </td>
-                                                <td>Java</td>
-                                                <td>J2EE</td>
-                                                <td class="effectif-reel" style="padding-right: 0">
-                                                    <span id="eff-reel-3-j2ee">6 </span>
-                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                <td class="htmlcss" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                    </div>
                                                 </td>
-                                                <td>
-                                                    <input type="number" id="input-eff-3-j2ee" class="input-cible plus-cible" min="0" value="4">
+                                                <td class="angularJS" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                    </div>
                                                 </td>
-                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-3-j2ee">
-                                                    <span id="signe-operateur-3-j2ee">+</span>
-                                                    <span id="chiffre-difference-3-j2ee">2</span>
-                                                </td>
-                                                <td class="effectif-reel" style="padding-right: 0">
-                                                    <span id="eff-reel-4-j2ee">7 </span>
-                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
-                                                </td>
-                                                <td>
-                                                    <input type="number" id="input-eff-4-j2ee" class="input-cible plus-cible" min="0" value="5">
-                                                </td>
-                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-4-j2ee">
-                                                    <span id="signe-operateur-4-j2ee">+</span>
-                                                    <span id="chiffre-difference-4-j2ee"2></span>
-                                                </td>
-                                                <td class="grey">Thierry FLAGEUL</td>
-
+                                                <td class="colSpring" style="text-align: center; display: none">-</td>
+                                                <td class="colHtml" style="text-align: center; display: none">-</td>
+                                                <td class="colAngular" style="text-align: center">-</td>
+                                                <td style="text-align: center">-</td>
+                                                <td style="text-align: center">-</td>
                                             </tr>
-                                            <tr class="rawcss">
-                                                <td class="grey">
-                                                    <span id="minus_css">
-                                                        <i class="fas fa-minus-circle"></i>
-                                                    </span>
+                                            <tr class="collabs service-1 developpeur black" id="reynaud" style="cursor: pointer">
+                                                <td>Reynaud</td>
+                                                <td>Antony</td>
+                                                <td style="text-align: center">BU Y</td>
+                                                <td>Developpeur</td>
+                                                <td>Collaborateur</td>
+                                                <td class="spring" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                    </div>
                                                 </td>
-                                                <td>Java</td>
-                                                <td>Swing</td>
-                                                <td class="effectif-reel" style="padding-right: 0">
-                                                    <span id="eff-reel-3-css">7 </span>
-                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                <td class="htmlcss" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixedr"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                    </div>
                                                 </td>
-                                                <td>
-                                                    <input type="number" id="input-eff-3-css" class="input-cible plus-cible" min="0" value="7">
+                                                <td class="angularJS" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                    </div>
                                                 </td>
-                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-3-css">
-                                                    <span id="signe-operateur-3-css">=</span>
-                                                    <span id="chiffre-difference-3-css"></span>
-                                                </td>
-                                                <td class="effectif-reel" style="padding-right: 0">
-                                                    <span id="eff-reel-4-css">7 </span>
-                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
-                                                </td>
-                                                <td>
-                                                    <input type="number" id="input-eff-4-css" class="input-cible plus-cible" min="0" value="7">
-                                                </td>
-                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-4-css">
-                                                    <span id="signe-operateur-4-css">=</span>
-                                                    <span id="chiffre-difference-4-css"></span>
-                                                </td>
-                                                <td style="font-weight: bold; color: red">Pas de réferent</td>
+                                                <td class="colSpring" style="text-align: center; display: none">-</td>
+                                                <td class="colHtml" style="text-align: center; display: none">-</td>
+                                                <td class="colAngular" style="text-align: center">-</td>
+                                                <td style="text-align: center">-</td>
+                                                <td style="text-align: center">-</td>
                                             </tr>
-                                            <tr class="rawhtml">
-                                                <td class="grey">
-                                                    <span id="minus_html">
-                                                        <i class="fas fa-minus-circle"></i>
-                                                    </span>
+                                            <tr class="collabs service-1 developpeur grey" id="audeon" style="cursor: pointer">
+                                                <td>Audeon</td>
+                                                <td>Nicolas</td>
+                                                <td style="text-align: center">BU Y</td>
+                                                <td>Développeur</td>
+                                                <td>Collaborateur</td>
+                                                <td class="spring" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                    </div>
                                                 </td>
-                                                <td>Web</td>
-                                                <td>HTML 5</td>
-                                                <td class="effectif-reel" style="padding-right: 0">
-                                                    <span id="eff-reel-3-html">9 </span>
-                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                <td class="htmlcss" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                    </div>
                                                 </td>
-                                                <td>
-                                                    <input type="number" id="input-eff-3-html" class="input-cible plus-cible" min="0" value="9">
+                                                <td class="angularJS" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                    </div>
                                                 </td>
-                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-3-html">
-                                                    <span id="signe-operateur-3-html">=</span>
-                                                    <span id="chiffre-difference-3-html"></span>
-                                                </td>
-                                                <td class="effectif-reel" style="padding-right: 0">
-                                                    <span id="eff-reel-4-html">9 </span>
-                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
-                                                </td>
-                                                <td>
-                                                    <input type="number" id="input-eff-4-html" class="input-cible plus-cible" min="0" value="5">
-                                                </td>
-                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-4-html">
-                                                    <span id="signe-operateur-4-html">+</span>
-                                                    <span id="chiffre-difference-4-html">4</span>
-                                                </td>
-                                                <td class="grey">Isabelle MORTAMET, Donatien LEBARBIER</td>
 
+                                                <td class="colSpring" style="text-align: center; display: none">-</td>
+                                                <td class="colHtml" style="text-align: center; display: none">-</td>
+                                                <td class="colAngular" style="text-align: center">-</td>
+                                                <td style="text-align: center">-</td>
+                                                <td style="text-align: center">-</td>
                                             </tr>
-                                            <tr class="rawangularjs">
-                                                <td class="grey">
-                                                    <span id="minus_angularjs">
-                                                        <i class="fas fa-minus-circle"></i>
-                                                    </span>
+                                            <tr id="lefebvre" class="service-1 developpeur Presta grey" style="cursor: pointer">
+                                                <td>Lefebvre</td>
+                                                <td>Damien</td>
+                                                <td style="text-align: center">BU Y</td>
+                                                <td>Développeur</td>
+                                                <td>Prestataire</td>
+                                                <td class="spring" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                    </div>
                                                 </td>
-                                                <td>Javascript</td>
-                                                <td>AngularJS</td>
-                                                <td class="effectif-reel" style="padding-right: 0">
-                                                    <span id="eff-reel-3-angularjs">3 </span>
-                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                <td class="htmlcss" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                    </div>
                                                 </td>
-                                                <td>
-                                                    <input type="number" id="input-eff-3-angularjs" class="input-cible plus-cible" min="0" value="2">
+                                                <td class="angularJS" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                    </div>
                                                 </td>
-                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-3-angularjs">
-                                                    <span id="signe-operateur-3-angularjs">+</span>
-                                                    <span id="chiffre-difference-3-angularjs">1</span>
-                                                </td>
-                                                <td class="effectif-reel" style="padding-right: 0">
-                                                    <span id="eff-reel-4-angularjs">2 </span>
-                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
-                                                </td>
-                                                <td>
-                                                    <input type="number" id="input-eff-4-angularjs" class="input-cible plus-cible" min="0" value="2">
-                                                </td>
-                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-4-angularjs">
-                                                    <span id="signe-operateur-4-angularjs">=</span>
-                                                    <span id="chiffre-difference-4-angularjs"></span>
-                                                </td>
-                                                <td class="grey">Donatien LEBARBIER</td>
-
+                                                <td class="colSpring" style="text-align: center; display: none">-</td>
+                                                <td class="colHtml" style="text-align: center; display: none">-</td>
+                                                <td class="colAngular" style="text-align: center">-</td>
+                                                <td style="text-align: center">-</td>
+                                                <td style="text-align: center">-</td>
                                             </tr>
-                                            <tr class="rawjs">
-                                                <td class="grey">
-                                                    <span id="minus_js">
-                                                        <i class="fas fa-minus-circle"></i>
-                                                    </span>
+                                            <tr class="collabs service-4 architecte grey even" id="flageul" style="cursor: pointer">
+                                                <td>DAGUIN</td>
+                                                <td>Thierry</td>
+                                                <td style="text-align: center">DT</td>
+                                                <td>Architecte</td>
+                                                <td>Collaborateur</td>
+                                                <td class="spring" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                    </div>
                                                 </td>
-                                                <td>Javascript</td>
-                                                <td>Javascript</td>
-                                                <td class="effectif-reel" style="padding-right: 0">
-                                                    <span id="eff-reel-3-js">2 </span>
-                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                <td class="htmlcss" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                    </div>
                                                 </td>
-                                                <td>
-                                                    <input type="number" id="input-eff-3-js" class="input-cible moins-cible" min="0" value="5">
+                                                <td class="angularJS" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                    </div>
                                                 </td>
-                                                <td style="padding-left: 0; color: red" id="diff-effect-3-js">
-                                                    <span id="signe-operateur-3-js">-</span>
-                                                    <span id="chiffre-difference-3-js">3</span>
-                                                </td>
-                                                <td class="effectif-reel" style="padding-right: 0">
-                                                    <span id="eff-reel-4-js">2 </span>
-                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
-                                                </td>
-                                                <td>
-                                                    <input type="number" id="input-eff-4-js" class="input-cible plus-cible" min="0" value="1">
-                                                </td>
-                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-4-js">
-                                                    <span id="signe-operateur-4-js">+</span>
-                                                    <span id="chiffre-difference-4-js">1</span>
-                                                </td>
-                                                <td class="grey">Isabelle MORTAMET, Donatien LEBARBIER</td>
-
+                                                <td class="colSpring" style="text-align: center; display: none">-</td>
+                                                <td class="colHtml" style="text-align: center; display: none">-</td>
+                                                <td class="colAngular" style="text-align: center">-</td>
+                                                <td style="text-align: center">-</td>
+                                                <td style="text-align: center">-</td>
                                             </tr>
-                                            <tr class="rawplsql">
-                                                <td class="grey">
-                                                    <span id="minus_plsql">
-                                                        <i class="fas fa-minus-circle"></i>
-                                                    </span>
+                                            <tr class="collabs service-2 developpeur grey odd" id="vanderlinden" style="cursor: pointer">
+                                                <td>Van Der Linden</td>
+                                                <td>Julien</td>
+                                                <td style="text-align: center">BU Z</td>
+                                                <td>Développeur</td>
+                                                <td>Collaborateur</td>
+                                                <td class="spring" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                    </div>
                                                 </td>
-                                                <td>BDD</td>
-                                                <td>PL/SQL</td>
-                                                <td class="effectif-reel" style="padding-right: 0">
-                                                    <span id="eff-reel-3-plsql">11 </span>
-                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                <td class="htmlcss" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                    </div>
                                                 </td>
-                                                <td>
-                                                    <input type="number" id="input-eff-3-plsql" class="input-cible plus-cible" min="0" value="3">
+                                                <td class="angularJS" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                    </div>
                                                 </td>
-                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-3-plsql">
-                                                    <span id="signe-operateur-3-plsql">+</span>
-                                                    <span id="chiffre-difference-3-plsql">8</span>
-                                                </td>
-                                                <td class="effectif-reel" style="padding-right: 0">
-                                                    <span id="eff-reel-4-plsql">1 </span>
-                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
-                                                </td>
-                                                <td>
-                                                    <input type="number" id="input-eff-4-plsql" class="input-cible plus-cible" min="0" value="1">
-                                                </td>
-                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-4-plsql">
-                                                    <span id="signe-operateur-4-plsql">=</span>
-                                                    <span id="chiffre-difference-4-plsql"></span>
-                                                </td>
-                                                <td class="grey">Hugues VINCENT, Bernard SERANDOUR, Thierry DAGUIN</td>
-
+                                                <td class="colSpring" style="text-align: center; display: none">-</td>
+                                                <td class="colHtml" style="text-align: center; display: none">-</td>
+                                                <td class="colAngular" style="text-align: center">-</td>
+                                                <td style="text-align: center">-</td>
+                                                <td style="text-align: center">-</td>
                                             </tr>
-                                            <tr class="rawcsharp">
-                                                <td class="grey">
-                                                    <span id="minus_csharp">
-                                                        <i class="fas fa-minus-circle"></i>
-                                                    </span>
+                                            <tr class="collabs service-2 chef-de-projet grey even" id="bouvet" style="cursor: pointer">
+                                                <td>Bouvet</td>
+                                                <td>Philippe</td>
+                                                <td style="text-align: center">BU Z</td>
+                                                <td>Chef de Projet</td>
+                                                <td>Collaborateur</td>
+                                                <td class="spring" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                    </div>
                                                 </td>
-                                                <td>.Net</td>
-                                                <td>C#</td>
-                                                <td class="effectif-reel" style="padding-right: 0">
-                                                    <span id="eff-reel-3-csharp">13 </span>
-                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                <td class="htmlcss" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                    </div>
                                                 </td>
-                                                <td>
-                                                    <input type="number" id="input-eff-3-csharp" class="input-cible plus-cible" min="0" value="7">
+                                                <td class="angularJS" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                    </div>
                                                 </td>
-                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-3-csharp">
-                                                    <span id="signe-operateur-3-csharp">+</span>
-                                                    <span id="chiffre-difference-3-csharp">6</span>
-                                                </td>
-                                                <td class="effectif-reel" style="padding-right: 0">
-                                                    <span id="eff-reel-4-cshparp">6 </span>
-                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
-                                                </td>
-                                                <td>
-                                                    <input type="number" id="input-eff-4-csharp" class="input-cible plus-cible" min="0" value="5">
-                                                </td>
-                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-4-csharp">
-                                                    <span id="signe-operateur-4-csharp">+</span>
-                                                    <span id="chiffre-difference-4-csharp">1</span>
-                                                </td>
-                                                <td class="grey">Gwendall GARNIER</td>
-
+                                                <td class="colSpring" style="text-align: center; display: none">-</td>
+                                                <td class="colHtml" style="text-align: center; display: none">-</td>
+                                                <td class="colAngular" style="text-align: center">-</td>
+                                                <td style="text-align: center">-</td>
+                                                <td style="text-align: center">-</td>
                                             </tr>
-                                            <tr class="rawwindows">
-                                                <td class="grey">
-                                                    <span id="minus_windows">
-                                                        <i class="fas fa-minus-circle"></i>
-                                                    </span>
+                                            <tr class="collabs service-studio developpeur grey odd" id="aligand" style="cursor: pointer">
+                                                <td>Aligand</td>
+                                                <td>Line</td>
+                                                <td style="text-align: center">Studio Design</td>
+                                                <td>Développeur</td>
+                                                <td>Collaborateur</td>
+                                                <td class="spring" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                    </div>
                                                 </td>
-                                                <td>OS</td>
-                                                <td>Windows</td>
-                                                <td class="effectif-reel" style="padding-right: 0">
-                                                    <span id="eff-reel-3-windows">5 </span>
-                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                <td class="htmlcss" class="colEmplty" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                    </div>
                                                 </td>
-                                                <td>
-                                                    <input type="number" id="input-eff-3-windows" class="input-cible plus-cible" min="0" value="5">
+                                                <td class="angularJS" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                    </div>
                                                 </td>
-                                                <td style="padding-left: 0; color: rgb(44,179,74)" id="diff-effect-3-windows">
-                                                    <span id="signe-operateur-3-windows">=</span>
-                                                    <span id="chiffre-difference-3-windows"></span>
+                                                <td class="colSpring" style="text-align: center; display: none">-</td>
+                                                <td class="colHtml" style="text-align: center; display: none">-</td>
+                                                <td class="colAngular" style="text-align: center">-</td>
+                                                <td style="text-align: center">-</td>
+                                                <td style="text-align: center">-</td>
+                                            </tr>
+                                            <tr class="collabs service-studio developpeur grey even" id="evanno" style="cursor: pointer">
+                                                <td>Evanno</td>
+                                                <td>Marie</td>
+                                                <td style="text-align: center">Studio Design</td>
+                                                <td>Développeur</td>
+                                                <td>Collaborateur</td>
+                                                <td class="spring" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                    </div>
                                                 </td>
-                                                <td class="effectif-reel" style="padding-right: 0">
-                                                    <span id="eff-reel-4-windows">1 </span>
-                                                    <i class="fas fa-user" style="font-size: 13px; padding-bottom: 1px"></i>
+                                                <td class="htmlcss" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                    </div>
                                                 </td>
-                                                <td>
-                                                    <input type="number" id="input-eff-4-windows" class="input-cible moins-cible" min="0" value="5">
+                                                <td class="angularJS" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                    </div>
                                                 </td>
-                                                <td style="padding-left: 0; color: red" id="diff-effect-4-windows">
-                                                    <span id="signe-operateur-4-windows">-</span>
-                                                    <span id="chiffre-difference-4-windows">4</span>
+                                                <td class="colSpring" style="text-align: center; display: none">-</td>
+                                                <td class="colHtml" style="text-align: center; display: none">-</td>
+                                                <td class="colAngular" style="text-align: center">-</td>
+                                                <td style="text-align: center">-</td>
+                                                <td style="text-align: center">-</td>
+                                            </tr>
+                                            <tr class="collabs service-2 architecte grey odd" id="garnier" style="cursor: pointer">
+                                                <td>Garnier</td>
+                                                <td>Gwendall</td>
+                                                <td style="text-align: center">BU Z</td>
+                                                <td>Architecte</td>
+                                                <td>Collaborateur</td>
+                                                <td class="spring" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                    </div>
                                                 </td>
-                                                <td style="font-weight: bold; color: red">Pas de réferent</td>
-
+                                                <td class="htmlcss" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="angularJS" style="text-align: center">
+                                                    <div class="rating-style">
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star-fixed rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="colSpring" style="text-align: center; display: none">-</td>
+                                                <td class="colHtml" style="text-align: center; display: none">-</td>
+                                                <td class="colAngular" style="text-align: center">-</td>
+                                                <td style="text-align: center">-</td>
+                                                <td style="text-align: center">-</td>
                                             </tr>
                                             </tbody>
                                         </table>
