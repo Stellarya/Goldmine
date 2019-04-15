@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Tableau de bord - Appli</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/goldmine.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/util.css">
+
+    <link rel="stylesheet" type="text/css"
+          href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/smoothness/jquery-ui.css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"/>
+    <link href="css/search_plugin.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+    <script type="text/javascript" src="js/currency-autocomplete.js"></script>
+    <script src="tags-selector-tagselect/jquery.tagselect.js"></script>
+    <script type="text/javascript" src="js/goldmine.js"></script>
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+            integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+            crossorigin="anonymous"></script>
+    <!--<script src="js/json_test.js"></script>-->
+</head>
+
+<body>
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar" class="sidebar-wrapper " data-toggle="collapse" aria-expanded="false">
+        <div class="sidebar-header">
+            <img src="img/logo.png" height="150px" style="margin-top: -10px"/>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="Tableau-de-Bord-Accueil-MANAGER.html">
+                        <i class="fa fa-tachometer-alt"></i><span style="margin-left: 10px">
+                        Tableau de bord</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="evaluation-COLLABORATEUR.html">
+                        <i class="fas fa-user"></i><span style="margin-left: 14px;">
+                        Mon Profil</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="effectif-MANAGER.html">
+                        <i class="fas fa-users"></i><span style="margin-left: 7px;">
+                        Effectifs</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Recherche-MANAGER.html">
+                        <i class="fas fa-search"></i><span style="margin-left: 10px;">
+                        Recherche</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content container">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div style="float:right;font-size:16px;color:#531055;">
+                    <i class="fa fa-user" style="margin-right:10px"></i> Mickaël Hebert
+                    <a href="evaluation-COLLABORATEUR.html"><i class="fa fa-sign-out-alt"
+                                                               style="font-weight:300;margin-left:20px"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="page-content violet">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <header class="header col-12">
+
+                        <nav id="cssmenu">
+                            <h3 style="padding-left: 40px">Tableau de bord</h3>
+                            <ul>
+                                <li style="margin-left: 285px"><a
+                                        href="Tableau-de-Bord-Accueil-MANAGER.html"><i class="fas fa-chart-pie" style="margin-right: 10px"></i> SYNTHESE</a></li>
+                                <li style="margin-left: 20px"><a href="Tableau-de-Bord-Technos-MANAGER.html"><i class="fas fa-cog" style="margin-right: 10px"></i> TECHNIQUE</a></li>
+                                <li class="active"  style="margin-left: 20px"><a href="Tableau-de-Bord-Applis-MANAGER.html"><i class="fas fa-mobile-alt" style="margin-right: 10px"></i> APPLICATIONS</a>
+                                </li>
+                            </ul>
+
+                        </nav>
+
+                    </header>
+                    <div class="col-2">
+
+                        <select class="form-control" id="SelectLieu"
+                                style="margin-bottom: 15px; border-radius: 5px; padding-right: 5px">
+                            <option> Tout Adventiel</option>
+                            <option> Studio Design</option>
+                            <option> Autres transverses</option>
+                            <option> Agence de Rennes</option>
+                            <option> BU X</option>
+                            <option> BU X - Domaine Limagrain</option>
+                            <option> BU X - Domaine Agranet</option>
+                            <option> BU X - Domaine Equipementier</option>
+                            <option> BU X - Domaine Végétal</option>
+                            <option> BU X - Domaine Lait BZH, SGPI</option>
+                            <option> BU Y</option>
+                            <option> BU Y - Domaine Santé</option>
+                            <option> BU Y - Domaine Equarissage</option>
+                            <option> BU Y - Domaine Interprofession</option>
+                            <option> BU Y - Domaine Nutri. Animale, Porc/Volaille</option>
+                            <option> BU Y - Domaine Génétique</option>
+                            <option> BU Y - Domaine Equade, Edel</option>
+                            <option> Agence de Caen</option>
+                            <option> BU Z</option>
+                            <option> BU Z - Domaine A</option>
+                            <option> BU Z - Domaine B</option>
+
+                        </select>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"
+                                      style="border-right: none; background: white"><i class="fas fa-search"></i></span>
+                            </div>
+                            <input type="text" class="form-control" id="autocomplete" aria-label="Recipient's username"
+                                   aria-describedby="basic-addon2"
+                                   style="padding-left: 5px; border-left: none">
+                        </div>
+
+                        <div id="accordion">
+
+                            <div class="card bg-light mb-3">
+                                <div class="card-header" id="heading-java">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed faq-links" data-toggle="collapse"
+                                                data-target="#collapse-java" id="java-accordion" aria-expanded="true"
+                                                aria-controls="collapse-java" style="width: 100%">
+                                            <div  style="display: flex; width: 100%">
+                                                <div style="width:95%; margin: 0; text-align: left">Limagrain </div>
+                                                <div style="width:5%; margin: 0; cursor: pointer"><i
+                                                        class="javachevron fas fa-chevron-down"></i></div>
+                                            </div>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-java" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">Appli 1
+                                                <input type="checkbox">
+                                                <span class="checkmark">
+                                                </span>
+                                            </label>
+
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">Appli 2
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3">
+                                <div class="card-header" id="heading-Web">
+                                    <h5 class="mb-0">
+                                        <button id="web-accordion" class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-web" aria-expanded="false"
+                                                aria-controls="collapse-web" style="width: 100%">
+                                            <div  style="display: flex; width: 100%">
+                                                <div style="width:95%; margin: 0; text-align: left">Agranet </div>
+                                                <div style="width:5%; margin: 0; cursor: pointer"><i
+                                                        class="javachevron fas fa-chevron-down"></i></div>
+                                            </div>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-web" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">Agranet
+                                                <input type="checkbox" id="checkAgranet">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3">
+                                <div class="card-header" id="heading-php">
+                                    <h5 class="mb-0">
+                                        <button id="php-accordion" class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-php" aria-expanded="false"
+                                                aria-controls="collapse-php" style="width: 100%">
+                                            <div  style="display: flex; width: 100%">
+                                                <div style="width:95%; margin: 0; text-align: left">Equipementier </div>
+                                                <div style="width:5%; margin: 0; cursor: pointer"><i
+                                                        class="javachevron fas fa-chevron-down"></i></div>
+                                            </div>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-php" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">SULKY - Web, mobilité et ISOBUS
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3">
+                                <div class="card-header" id="heading-javascript">
+                                    <h5 class="mb-0">
+                                        <button id="js-accordion" class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-javascript" aria-expanded="false"
+                                                aria-controls="collapse-javascript" style="width: 100%">
+                                            <div  style="display: flex; width: 100%">
+                                                <div style="width:95%; margin: 0; text-align: left">Végétal </div>
+                                                <div style="width:5%; margin: 0; cursor: pointer"><i
+                                                        class="javachevron fas fa-chevron-down"></i></div>
+                                            </div>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-javascript" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">CRAB - Hectare/MesParcelles
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">PALMERIT - Phenopalm
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">ARVALIS - SmartLAI
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">ARVALIS - SimulBox
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">Clair de Lune/xxx Phytogest
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">LOGEP - Emeraude Plants
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3">
+                                <div class="card-header" id="heading-bdd">
+                                    <h5 class="mb-0">
+                                        <button id="bdd-accordion" class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-bdd" aria-expanded="false"
+                                                aria-controls="collapse-bdd" style="width: 100%">
+                                            <div  style="display: flex; width: 100%">
+                                                <div style="width:95%; margin: 0; text-align: left">Lait BZH, SGPI </div>
+                                                <div style="width:5%; margin: 0; cursor: pointer"><i
+                                                        class="javachevron fas fa-chevron-down"></i></div>
+                                            </div>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-bdd" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">BCELO - ActivParage
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">BCELO - ActivSanté
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">BCELO - Bilan Santé Mamelle
+                                                <input type="checkbox" checked id="checkbsm">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">BCELO - Chaine Assemblage
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">BCELO - GTW
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">BCELO - Infocentre
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">BCELO - OditLait
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">BCELO - Portlait
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">BCELO - Rationneur
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">BCELO - SIEL/ValoSIEL
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">BCELO - SoclePDA/PC
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">BCEL - LCD
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">BCEL - Oriautomate
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">CECAB - Monitoring
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">EILYPS - ESI
+                                                <input type="checkbox"  checked id="checkesi">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">EILYPS - Rationneur
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">EILYPS - Portail
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">EILYPS - Chaine Assemblage
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3">
+                                <div class="card-header" id="heading-framework">
+                                    <h5 class="mb-0">
+                                        <button id="framework-accordion" class="btn btn-link collapsed"
+                                                data-toggle="collapse"
+                                                data-target="#collapse-framework" aria-expanded="false"
+                                                aria-controls="collapse-framework" style="width: 100%">
+                                            <div  style="display: flex; width: 100%">
+                                                <div style="width:95%; margin: 0; text-align: left">Petfood & New Bizz </div>
+                                                <div style="width:5%; margin: 0; cursor: pointer"><i
+                                                        class="javachevron fas fa-chevron-down"></i></div>
+                                            </div>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-framework" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container"> Appli 1
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3">
+                                <div class="card-header" id="heading-langages">
+                                    <h5 class="mb-0">
+                                        <button id="langages-accordion" class="btn btn-link collapsed"
+                                                data-toggle="collapse"
+                                                data-target="#collapse-langages" aria-expanded="false"
+                                                aria-controls="collapse-langages" style="width: 100%">
+                                            <div  style="display: flex; width: 100%">
+                                                <div style="width:95%; margin: 0; text-align: left">Santé </div>
+                                                <div style="width:5%; margin: 0; cursor: pointer"><i
+                                                        class="javachevron fas fa-chevron-down"></i></div>
+                                            </div>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-langages" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">Appli 1
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3">
+                                <div class="card-header" id="heading-produits">
+                                    <h5 class="mb-0">
+                                        <button id="produits-accordion" class="btn btn-link collapsed"
+                                                data-toggle="collapse"
+                                                data-target="#collapse-produits" aria-expanded="false"
+                                                aria-controls="collapse-produits" style="width: 100%">
+                                            <div  style="display: flex; width: 100%">
+                                                <div style="width:95%; margin: 0; text-align: left">Equarissage </div>
+                                                <div style="width:5%; margin: 0; cursor: pointer"><i
+                                                        class="javachevron fas fa-chevron-down"></i></div>
+                                            </div>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-produits" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">SARIA - SVI
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">SARIA - Demandes enlèvements
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">SARIA - Portail
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">SARIA - SVI HAU
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">SARIA Enlèvements SOPA
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">SARIA - SVI SOPA
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">ATEMAX - Demandes enlèvements
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">ATEMAX - Application mobile
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">ATEMAX - SVI
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3" style="color: rgb(76,10,58)">
+                                <div class="card-header" id="heading-dotnet">
+                                    <h5 class="mb-0">
+                                        <button id="dotnet-accordion" class="btn btn-link collapsed"
+                                                data-toggle="collapse"
+                                                data-target="#collapse-dotnet" aria-expanded="false"
+                                                aria-controls="collapse-dotnet" style="width: 100%">
+                                            <div  style="display: flex; width: 100%">
+                                                <div style="width:95%; margin: 0; text-align: left">Interprofession </div>
+                                                <div style="width:5%; margin: 0; cursor: pointer"><i
+                                                        class="javachevron fas fa-chevron-down"></i></div>
+                                            </div>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-dotnet" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">SPIE - PointFocal
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">SPIE - Inventaire
+                                                <input type="checkbox" checked id="checkspie">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">SPIE - Demat
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">SPIE - Equarissage
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">SPIE - Echantillonnage
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">SPIE - Statistiques
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">HUBIXEO
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">CNIEL - Infolabo
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">CNIEL - Big Data
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3" style="color: rgb(76,10,58)">
+                                <div class="card-header" id="heading-os">
+                                    <h5 class="mb-0">
+                                        <button id="os-accordion" class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-os" aria-expanded="false"
+                                                aria-controls="collapse-ost" style="width: 100%">
+                                            <div  style="display: flex; width: 100%">
+                                                <div style="width:95%; margin: 0; text-align: left">Nutri. Animale, Porc/Vola... </div>
+                                                <div style="width:5%; margin: 0; cursor: pointer"><i
+                                                        class="javachevron fas fa-chevron-down"></i></div>
+                                            </div>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-os" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">GROUPE MICHEL - Certiferme
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">Terres du Sud - Anatis
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">OVS PB - Epiporc
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">TECHNA - Easymap
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">AVRIL PA - Agrafab
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">PORC ARMOR - Portail
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="card bg-light mb-3" style="color: rgb(76,10,58)">
+                                <div class="card-header" id="heading-genetique">
+                                    <h5 class="mb-0">
+                                        <button id="genetique-accordion" class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-genetique" aria-expanded="false"
+                                                aria-controls="collapse-ost" style="width: 100%">
+                                            <div  style="display: flex; width: 100%">
+                                                <div style="width:95%; margin: 0; text-align: left">Génétique </div>
+                                                <div style="width:5%; margin: 0; cursor: pointer"><i
+                                                        class="javachevron fas fa-chevron-down"></i></div>
+                                            </div>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-genetique" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">EVOLUTION - Génétique
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">EVOLUTION - DSA
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">Origin+
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">PNSMADR BURUNDI - Ibis
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3" style="color: rgb(76,10,58)">
+                                <div class="card-header" id="heading-equade">
+                                    <h5 class="mb-0">
+                                        <button id="equade-accordion" class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse-equade" aria-expanded="false"
+                                                aria-controls="collapse-ost" style="width: 100%">
+                                            <div  style="display: flex; width: 100%">
+                                                <div style="width:95%; margin: 0; text-align: left">EQUADE, EDEL </div>
+                                                <div style="width:5%; margin: 0; cursor: pointer"><i
+                                                        class="javachevron fas fa-chevron-down"></i></div>
+                                            </div>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-equade" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">EDEL v4
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">EDEL v5
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">ETOILE
+                                                <input type="checkbox" checked id="checketoile">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">Portail EDE BZH
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="padding-left: 0px">
+                                            <label class="container">Portail EDE AMA
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10" id="resultat-recherche">
+                        <div class="col-12">
+                            <div class="limiter">
+                                <div class="wrap-table100">
+                                    <div class="table100">
+                                        <table class="table tableResults tableTDB" id="table_TDB" style="margin-bottom: 0">
+                                            <thead style="border: none">
+                                            <tr>
+                                                <th class="table100-head1" scope="col" width="2.5%"
+                                                    style="vertical-align: middle; padding-top: 1px">
+                                                </th>
+                                                <th class="table100-head1" scope="col" width="12.5%"
+                                                    style="vertical-align: middle; padding-top: 1px">Application
+                                                </th>
+                                                <th class="table100-head1 borderleft" scope="col" width="11,62%"
+                                                    style="vertical-align: middle; padding-top: 1px">Chef de Projet
+                                                </th>
+                                                <th class="table100-head1" scope="col" width="9,62%"
+                                                    style="vertical-align: middle; padding-top: 1px">
+                                                    <div class="rating">
+                                                        <span class="rating-star-darker darker" id="starCDP4" title="expert"
+                                                              data-value="4"></span>
+                                                        <span class="rating-star-darker checked darker" id="starCDP3" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star-darker checked darker" id="starCDP2"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star-darker checked darker"  id="starCDP1" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </th>
+                                                <th class="table100-head1 borderleft" scope="col" width="11.62%"
+                                                    style="vertical-align: middle; padding-top: 1px">Analyste
+                                                </th>
+                                                <th class="table100-head1" scope="col" width="9,62%"
+                                                    style="vertical-align: middle; padding-top: 1px">
+                                                    <div class="rating">
+                                                        <span class="rating-star-darker darker"  id="starAF4" title="expert"
+                                                              data-value="4"></span>
+                                                        <span class="rating-star-darker checked darker"  id="starAF3" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star-darker checked darker" id="starAF2"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star-darker checked darker" id="starAF1" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </th>
+                                                <th class="table100-head1 borderleft" scope="col" width="11.62%"
+                                                    style="vertical-align: middle; padding-top: 1px">Architecte
+                                                </th>
+                                                <th class="table100-head1" scope="col" width="9,62%"
+                                                    style="vertical-align: middle; padding-top: 1px">
+                                                    <div class="rating">
+                                                        <span class="rating-star-darker darker" id="starA4" title="expert"
+                                                              data-value="4"></span>
+                                                        <span class="rating-star-darker checked darker" id="starA3" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star-darker checked darker" id="starA2"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star-darker checked darker" id="starA1" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </th>
+                                                <th class="table100-head1 borderleft" scope="col" width="11.62%"
+                                                    style="vertical-align: middle; padding-top: 1px">Développeur
+                                                </th>
+                                                <th class="table100-head1" scope="col" width="9,62%"
+                                                    style="vertical-align: middle; padding-top: 1px">
+                                                    <div class="rating">
+                                                        <span class="rating-star-darker darker" id="starDev4" title="expert"
+                                                              data-value="4"></span>
+                                                        <span class="rating-star-darker checked darker" id="starDev3" title="autonome"
+                                                              data-value="3"></span>
+                                                        <span class="rating-star-darker checked darker" id="starDev2"
+                                                              title="peut intervenir avec de l'aide"
+                                                              data-value="2"></span>
+                                                        <span class="rating-star-darker checked darker" id="starDev1" title="notions"
+                                                              data-value="1"></span>
+                                                    </div>
+                                                </th>
+
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr class="rawSPIE odd">
+                                                <td class="grey">
+                                                    <span id="minus_spie">
+                                                        <i class="fas fa-minus-circle"></i>
+                                                    </span>
+                                                </td>
+                                                <td style="cursor: default">SPIE - Inventaire</td>
+                                                <td class="borderleft cdp3" width="11.62%">Philippe B.</td>
+                                                <td class="cdp3" width="9.62%" style="cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td rowspan="2" colspan="2" class="borderleft" style="text-align: center; padding-top: 17px; cursor: default" ><i class="fas fa-exclamation-triangle" style="font-size: 25px; color: red"></i> <span style="color: red; margin-left: 10px;font-weight: bold">Pas d'Analyse Fonctionnel</span></td>
+                                                <td class="borderleft archi3" width="11.62%">Samuel G.</td>
+                                                <td class="archi3" width="9.62%" style="cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td width="11.62%" class="borderleft dev3">Florent M.</td>
+                                                <td class="dev3" width="9.62%%" style="cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="rawSPIE odd">
+                                                <td style="cursor: default"></td>
+                                                <td style="cursor: default"></td>
+                                                <td class="borderleft cdp1" width="11.62%" style="display: none">Denis O.</td>
+                                                <td class="cdp1" width="9.62%" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellcdp1"></td>
+                                                <td style="cursor: default" class="cellcdp1"></td>
+                                                <td style="cursor: default"></td>
+                                                <td style="cursor: default"></td>
+                                                <td width="11.62%" class="borderleft dev1" style="display: none">Yohann G.</td>
+                                                <td class="dev1" width="9.62%%" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft celldev1"></td>
+                                                <td style="cursor: default" class="celldev1"></td>
+                                            </tr>
+                                            <tr class="rawEtoile even">
+                                                <td class="grey">
+                                                    <span id="minus_etoile">
+                                                        <i class="fas fa-minus-circle"></i>
+                                                    </span>
+                                                </td>
+                                                <td style="cursor: default">ETOILE</td>
+                                                <td class="borderleft">Philippe B.</td>
+                                                <td style="cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="margin-left: 3px; margin-top: -4px; cursor: default; float: right; font-family: 'Roboto', sans-serif; color: rgb(76, 10, 89);font-weight: bolder; font-size: 20px"> R </span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td width="11.62%" class="borderleft">Vincent V.</td>
+                                                <td width="9.62%" style="cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="borderleft">Thierry F.</td>
+                                                <td style="cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="borderleft">Gwenola C.</td>
+                                                <td style="cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="rawEtoile even">
+                                                <td style="cursor: default" class="raw2"></td>
+                                                <td style="cursor: default" class="raw2"></td>
+                                                <td class="borderleft grey cdp2" style="display: none">Nathalie M.</td>
+                                                <td class="cdp2" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellcdp2"></td>
+                                                <td style="cursor: default" class="cellcdp2"></td>
+                                                <td class="borderleft grey analy3">Veronique V.</td>
+                                                <td class="analy3" style="cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="borderleft cellanaly3" style="display: none; cursor: default"></td>
+                                                <td class="cellanaly3" style="display: none; cursor: default"></td>
+                                                <td class="borderleft archi1" style="display: none">Wilhelm F.</td>
+                                                <td class="archi1" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellarchi1"></td>
+                                                <td style="cursor: default" class="cellarchi1"></td>
+                                                <td class="borderleft dev3">Mélanie B.</td>
+                                                <td class="dev3" style="cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="borderleft celldev3" style="display: none; cursor: default"></td>
+                                                <td class="celldev3" style="display: none; cursor: default"></td>
+                                            </tr>
+                                            <tr class="rawEtoile even">
+                                                <td style="cursor: default" class="raw3"></td>
+                                                <td style="cursor: default" class="raw3"></td>
+                                                <td class="borderleft grey cdp2"  style="display: none">Arlette H.</td>
+                                                <td class="cdp2"  style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellcdp2"></td>
+                                                <td style="cursor: default" class="cellcdp2"></td>
+                                                <td class="borderleft grey analy2" style="display: none">Clotilde P.</td>
+                                                <td class="analy2" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellanaly2"></td>
+                                                <td style="cursor: default" class="cellanaly2"></td>
+                                                <td class="borderleft archi1" style="display: none">Donatien L.</td>
+                                                <td class="archi1" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellarchi1"></td>
+                                                <td style="cursor: default" class="cellarchi1"></td>
+                                                <td class="borderleft grey dev3">Cyrille P.</td>
+                                                <td class="dev3" style="cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="borderleft celldev3" style="display: none; cursor: default"></td>
+                                                <td class="celldev3" style="display: none; cursor: default"></td>
+                                            </tr>
+                                            <tr class="rawEtoile even raw4" style="display: none">
+                                                <td class="raw4" style="display: none; cursor: default"></td>
+                                                <td class="raw4" style="display: none;cursor: default"></td>
+                                                <td class="borderleft cdp1" style="display: none">Denis O.</td>
+                                                <td class="cdp1" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellcdp1"></td>
+                                                <td style="cursor: default" class="cellcdp1"></td>
+                                                <td class="borderleft raw4" style="display: none; cursor: default;"></td>
+                                                <td class="raw4" style="display: none; cursor: default"></td>
+                                                <td class="borderleft grey archi1" id="jerome" style="display: none">Jérome P.</td>
+                                                <td class="archi1" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellarchi1"></td>
+                                                <td style="cursor: default" class="cellarchi1"></td>
+                                                <td class="borderleft dev2"  style="display: none">Raphaël E.</td>
+                                                <td class="dev2" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft celldev2"></td>
+                                                <td style="cursor: default" class="celldev2"></td>
+                                            </tr>
+                                            <tr class="rawEtoile even raw5" style="display: none">
+                                                <td class="raw5" style="display: none; cursor: default"></td>
+                                                <td class="raw5" style="display: none; cursor: default"></td>
+                                                <td class="borderleft cdp1" style="display: none">Nicolas B.</td>
+                                                <td class="cdp1" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellcdp1"></td>
+                                                <td style="cursor: default" class="cellcdp1"></td>
+                                                <td class="borderleft raw5" style="display: none; cursor: default"></td>
+                                                <td class="raw5" style="display: none; cursor: default"></td>
+                                                <td class="borderleft raw5" style="display: none; cursor: default"></td>
+                                                <td class="raw5" style="display: none; cursor: default"></td>
+                                                <td class="borderleft dev2" style="display: none">Raphaël H.</td>
+                                                <td class="dev2" style="display: none; cursor: default;">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft celldev2"></td>
+                                                <td style="cursor: default" class="celldev2"></td>
+                                            </tr>
+                                            <tr class="rawEtoile even raw6" style="display: none">
+                                                <td class="raw6" style="display: none; cursor: default"></td>
+                                                <td class="raw6" style="display: none; cursor: default"></td>
+                                                <td class="borderleft cdp1" style="display: none">Christophe H.</td>
+                                                <td class="cdp1" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellcdp1"></td>
+                                                <td style="cursor: default" class="cellcdp1"></td>
+                                                <td class="borderleft raw6" style="display: none; cursor: default"></td>
+                                                <td class="raw6" style="display: none; cursor: default"></td>
+                                                <td class="borderleft raw6" style="display: none; cursor: default"></td>
+                                                <td class="raw6" style="display: none; cursor: default"></td>
+                                                <td class="borderleft dev2" style="display: none">Jérome V.</td>
+                                                <td class="dev2" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft celldev2"></td>
+                                                <td style="cursor: default" class="celldev2"></td>
+                                            </tr>
+                                            <tr class="rawEtoile even raw7" style="display: none">
+                                                <td class="raw7" style="display: none; cursor: default"></td>
+                                                <td class="raw7" style="display: none; cursor: default"></td>
+                                                <td class="borderleft cdp1" style="display: none">Privel H.</td>
+                                                <td class="cdp1" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellcdp1"></td>
+                                                <td style="cursor: default" class="cellcdp1"></td>
+                                                <td class="borderleft raw7" style="display: none; cursor: default"></td>
+                                                <td class="raw7" style="display: none; cursor: default"></td>
+                                                <td class="borderleft raw7" style="display: none; cursor: default"></td>
+                                                <td class="raw7" style="display: none; cursor: default"></td>
+                                                <td class="borderleft grey dev2" style="display: none">Xavier F.</td>
+                                                <td class="dev2" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft celldev2"></td>
+                                                <td style="cursor: default" class="celldev2"></td>
+                                            </tr>
+                                            <tr class="rawEtoile even raw8" style="display: none">
+                                                <td class="raw8" style="display: none; cursor: default"></td>
+                                                <td class="raw8" style="display: none; cursor: default"></td>
+                                                <td class="borderleft cdp1" style="display: none">David R.</td>
+                                                <td class="cdp1" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellcdp1"></td>
+                                                <td style="cursor: default" class="cellcdp1"></td>
+                                                <td class="borderleft raw8" style="display: none; cursor: default"></td>
+                                                <td class="raw8" style="display: none; cursor: default"></td>
+                                                <td class="borderleft raw8" style="display: none; cursor: default"></td>
+                                                <td class="raw8" style="display: none; cursor: default"></td>
+                                                <td class="borderleft dev2" style="display: none">Kévin H.</td>
+                                                <td class="dev2" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft celldev2"></td>
+                                                <td style="cursor: default" class="celldev2"></td>
+                                            </tr>
+                                            <tr class="rawEtoile even raw9" style="display: none">
+                                                <td class="raw9" style="display: none; cursor: default"></td>
+                                                <td class="raw9" style="display: none; cursor: default"></td>
+                                                <td class="borderleft grey cdp1" style="display: none">Joël H.</td>
+                                                <td class="cdp1" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellcdp1"></td>
+                                                <td style="cursor: default" class="cellcdp1"></td>
+                                                <td class="borderleft raw9" style="display: none; cursor: default"></td>
+                                                <td class="raw9" style="display: none; cursor: default;"></td>
+                                                <td class="borderleft raw9" style="display: none; cursor: default"></td>
+                                                <td class="raw9" style="display: none; cursor: default"></td>
+                                                <td class="borderleft dev2" style="display: none">Mathieu S.</td>
+                                                <td class="dev2" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft celldev2"></td>
+                                                <td style="cursor: default" class="celldev2"></td>
+                                            </tr>
+                                            <tr class="rawBSM odd">
+                                                <td class="grey">
+                                                    <span id="minus_bsm">
+                                                        <i class="fas fa-minus-circle"></i>
+                                                    </span>
+                                                </td>
+                                                <td style="cursor: default">BCELO</td>
+                                                <td class="borderleft cdp1" style="display: none">Sylvain B.</td>
+                                                <td class="cdp1" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td colspan="2" class="borderleft" id="absenceCDPAuto" style="text-align: center; cursor: default" ><i class="fas fa-exclamation-triangle" style="font-size: 25px; color: red"></i> <span style="color: red; margin-left: 10px;font-weight: bold">Pas de CDP</span></td>
+                                                <td class="borderleft">Antony L.</td>
+                                                <td style="cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="borderleft">Eric D.</td>
+                                                <td style="cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="borderleft dev2" style="display: none">Sébastien B.</td>
+                                                <td class="dev2" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td colspan="2" class="borderleft" id="absenceDevAuto" style="text-align: center; cursor: default" ><i class="fas fa-exclamation-triangle" style="font-size: 25px; color: red"></i> <span style="color: red; margin-left: 10px;font-weight: bold">Pas de Développeur</span></td>
+                                            </tr>
+                                            <tr class="rawBSM odd">
+                                                <td style="cursor: default"></td>
+                                                <td style="cursor: default">Bilan Santé Mamelle</td>
+                                                <td style="cursor: default" class="borderleft"></td>
+                                                <td style="cursor: default"></td>
+                                                <td class="borderleft">Christiane P.</td>
+                                                <td style="cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="borderleft archi2" style="display: none">Thierry F.</td>
+                                                <td class="archi2" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellarchi2"></td>
+                                                <td style="cursor: default" class="cellarchi2"></td>
+                                                <td class="borderleft dev1" style="display: none">Frédéric B.</td>
+                                                <td class="dev1" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+
+                                                <td style="cursor: default" class="borderleft celldev1"></td>
+                                                <td style="cursor: default" class="celldev1"></td>
+                                            </tr>
+                                            <tr class="rawBSM odd">
+                                                <td style="cursor: default"></td>
+                                                <td style="cursor: default"></td>
+                                                <td style="cursor: default" class="borderleft"></td>
+                                                <td style="cursor: default"></td>
+                                                <td class="borderleft">Franck B.</td>
+                                                <td style="cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft"></td>
+                                                <td style="cursor: default"></td>
+                                                <td style="cursor: default" class="borderleft"></td>
+                                                <td style="cursor: default"></td>
+                                            </tr>
+                                            <tr class="rawBSM odd raw4bcelo" style="display: none">
+                                                <td style="cursor: default" class="raw4bcelo"></td>
+                                                <td style="cursor: default" class="raw4bcelo"></td>
+                                                <td style="cursor: default" class="borderleft raw4bcelo"></td>
+                                                <td style="cursor: default" class="raw4bcelo"></td>
+                                                <td class="borderleft analy1" style="display: none">Hervé L.</td>
+                                                <td class="analy1" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellanaly1"></td>
+                                                <td style="cursor: default" class="cellanaly1"></td>
+                                                <td style="cursor: default" class="borderleft raw4bcelo"></td>
+                                                <td style="cursor: default" class="raw4bcelo"></td>
+                                                <td style="cursor: default" class="borderleft raw4bcelo"></td>
+                                                <td style="cursor: default" class="raw4bcelo"></td>
+                                            </tr>
+                                            <tr class="rawEsi even">
+                                                <td class="grey">
+                                                    <span id="minus_esi">
+                                                        <i class="fas fa-minus-circle"></i>
+                                                    </span>
+                                                </td>
+                                                <td style="cursor: default">EILYPS - ESI</td>
+                                                <td class="borderleft cdp1" style="display: none">Valérie P.</td>
+                                                <td class="cdp1" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td colspan="2" class="borderleft" id="absenceCDPEilAuto" style="text-align: center; cursor: default" ><i class="fas fa-exclamation-triangle" style="font-size: 25px; color: red"></i> <span style="color: red; margin-left: 10px;font-weight: bold">Pas de CDP</span></td>
+                                                <td class="borderleft analy3">Hervé L.</td>
+                                                <td style="cursor: default" class="analy3">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="borderleft">Christian G.</td>
+                                                <td style="cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="borderleft">Sébastien V.</td>
+                                                <td style="cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star checked rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star checked rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="rawEsi even">
+                                                <td style="cursor: default"></td>
+                                                <td style="cursor: default"></td>
+                                                <td style="cursor: default" class="borderleft"></td>
+                                                <td style="cursor: default"></td>
+                                                <td class="borderleft analy3">Chrtistine P.</td>
+                                                <td style="cursor: default" class="analy3">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="borderleft archi2" style="display: none">Eric D.</td>
+                                                <td class="archi2" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellarchi2"></td>
+                                                <td style="cursor: default" class="cellarchi2"></td>
+                                                <td class="borderleft">Yohann G.</td>
+                                                <td style="cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="margin-left: 3px; cursor: default; margin-top: -4px; float: right; font-family: 'Roboto', sans-serif; color: rgb(76, 10, 89);font-weight: bolder; font-size: 20px"> R </span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="rawAgranet" style="display: none">
+                                                <td class="grey">
+                                                    <span id="minus_agranet">
+                                                        <i class="fas fa-minus-circle"></i>
+                                                    </span>
+                                                </td>
+                                                <td style="cursor: default">Agranet</td>
+                                                <td class="borderleft cdp2" style="display: none">Nicolas B.</td>
+                                                <td class="cdp2" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star checked rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td colspan="2" class="borderleft" id="absenceCDPAgraAuto" style="text-align: center; cursor: default" ><i class="fas fa-exclamation-triangle" style="font-size: 25px; color: red"></i> <span style="color: red; margin-left: 10px;font-weight: bold">Pas de CDP</span></td>
+                                                <td class="borderleft analy2" style="display: none">Marie-Anne B.</td>
+                                                <td class="analy2" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star checked rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td colspan="2" class="borderleft" id="absenceAnaAgraAuto" style="text-align: center; cursor: default" ><i class="fas fa-exclamation-triangle" style="font-size: 25px; color: red"></i> <span style="color: red; margin-left: 10px;font-weight: bold">Pas d'Analyste</span></td>
+                                                <td class="borderleft archi1" style="display: none">Thierry F.</td>
+                                                <td class="archi1" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td colspan="2" class="borderleft" id="absenceArchiAgraAuto" style="text-align: center; cursor: default" ><i class="fas fa-exclamation-triangle" style="font-size: 25px; color: red"></i> <span style="color: red; margin-left: 10px;font-weight: bold">Pas d'Architecte</span></td>
+                                                <td class="borderleft">Mathieu S.</td>
+                                                <td style="cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star checked rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star checked rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star checked rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="rawAgranet" style="display: none">
+                                                <td style="cursor: default"></td>
+                                                <td style="cursor: default"></td>
+                                                <td class="borderleft cdp2" style="display: none">Privel H.</td>
+                                                <td class="cdp2" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star checked rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellcdp2"></td>
+                                                <td style="cursor: default" class="cellcdp2"></td>
+                                                <td class="borderleft analy2" style="display: none">Franck B.</td>
+                                                <td class="analy2" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star checked rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellanaly2"></td>
+                                                <td style="cursor: default" class="cellanaly2"></td>
+                                                <td class="borderleft archi1" style="display: none">Wilhelm F.</td>
+                                                <td class="archi1" style="display: none; cursor: default;">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellarchi1"></td>
+                                                <td style="cursor: default" class="cellarchi1"></td>
+                                                <td class="borderleft dev3">Raphaël E.</td>
+                                                <td style="cursor: default" class="dev3">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star checked rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star checked rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="borderleft celldev3" style="display: none; cursor: default"></td>
+                                                <td class="celldev3" style="display: none; cursor: default"></td>
+                                            </tr>
+                                            <tr class="rawAgranet" style="display: none">
+                                                <td style="cursor: default"></td>
+                                                <td style="cursor: default"></td>
+                                                <td class="borderleft cdp1" style="display: none">Denis O.</td>
+                                                <td class="cdp1" style="display: none; cursor: default">
+                                                    <div style="cursor: default"v class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellcdp1"></td>
+                                                <td style="cursor: default" class="cellcdp1"></td>
+                                                <td class="borderleft analy2" style="display: none">Agathe F.</td>
+                                                <td class="analy2" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star checked rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellanaly2"></td>
+                                                <td style="cursor: default" class="cellanaly2"></td>
+                                                <td class="borderleft archi1" style="display: none">Donatien L.</td>
+                                                <td class="archi1" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellarchi1"></td>
+                                                <td style="cursor: default" class="cellarchi1"></td>
+                                                <td class="borderleft dev3">Yohann G.</td>
+                                                <td style="cursor: default" class="dev3">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star checked rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star checked rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="borderleft celldev3" style="display: none; cursor: default"></td>
+                                                <td class="celldev3" style="display: none; cursor: default;"></td>
+                                            </tr>
+                                            <tr class="rawAgranet rawAgra4" style="display: none">
+                                                <td style="cursor: default" class=" rawAgra4"></td>
+                                                <td style="cursor: default" class=" rawAgra4"></td>
+                                                <td class="borderleft cdp1" style="display: none">Alexandre L.</td>
+                                                <td class="cdp1" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellcdp1  rawAgra4"></td>
+                                                <td style="cursor: default" class="cellcdp1 rawAgra4"></td>
+                                                <td class="borderleft analy2" style="display: none">Jerome V.</td>
+                                                <td class="analy2" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star checked rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellanaly2 rawAgra4"></td>
+                                                <td style="cursor: default" class="cellanaly2 rawAgra4"></td>
+                                                <td style="cursor: default" class="borderleft rawAgra4"></td>
+                                                <td style="cursor: default" class=" rawAgra4"></td>
+                                                <td class="borderleft dev2" style="display: none">Sebastien V.</td>
+                                                <td class="dev2" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star checked rating-fixed checked"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft celldev2 rawAgra4"></td>
+                                                <td style="cursor: default" class="celldev2 rawAgra4"></td>
+                                            </tr>
+                                            <tr class="rawAgranet rawAgra5" style="display: none">
+                                                <td style="cursor: default" class="rawAgra5"></td>
+                                                <td style="cursor: default" class="rawAgra5"></td>
+                                                <td class="borderleft cdp1" style="display: none">David R.</td>
+                                                <td class="cdp1" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellcdp1 rawAgra5"></td>
+                                                <td style="cursor: default" class="cellcdp1 rawAgra5"></td>
+                                                <td class="borderleft analy1" style="display: none">Antony L.</td>
+                                                <td class="analy1" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft cellanaly1rawAgra5"></td>
+                                                <td style="cursor: default" class="cellanaly1 rawAgra5"></td>
+                                                <td style="cursor: default" class="borderleft rawAgra5"></td>
+                                                <td style="cursor: default" class="rawAgra5"></td>
+                                                <td class="borderleft dev1" style="display: none">Sebastien F.</td>
+                                                <td class="dev1" style="display: none; cursor: default">
+                                                    <div style="cursor: default" class="rating">
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed"></span>
+                                                        <span style="cursor: default" class="rating-star rating-fixed checked"></span>
+                                                    </div>
+                                                </td>
+                                                <td style="cursor: default" class="borderleft celldev1 rawAgra5"></td>
+                                                <td style="cursor: default" class="celldev1 rawAgra5"></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+<script src="js/choices.js"></script>
+
+<script>
+
+    $(function (){
+        $("#starCDP2").click(function () {
+            if ($("#jerome").is(":visible")) {
+                $(".raw4").show();
+            } else {
+                $(".raw4").hide();
+            }
+        });
+    });
+
+    $(function () {
+        $("#minus_spie").click(function () {
+            $(".rawSPIE").hide();
+            $("#checkspie").prop('checked', false);
+        });
+    });
+
+    $(function () {
+        $("#minus_etoile").click(function () {
+            $(".rawEtoile").hide();
+            $("#checketoile").prop('checked', false);
+        });
+    });
+
+    $(function () {
+        $("#minus_bsm").click(function () {
+            $(".rawBSM").hide();
+            $("#checkbsm").prop('checked', false);
+            $(".rawEsi").toggleClass('impair');
+        });
+    });
+
+    $(function () {
+        $("#minus_esi").click(function () {
+            $(".rawEsi").hide();
+            $("#checkesi").prop('checked', false);
+        });
+    });
+
+    $(function () {
+        $("#checkspie").click(function () {
+            if ($(this).is(":checked")) {
+                $(".rawSPIE").show();
+            } else {
+                $(".rawSPIE").hide();
+            }
+        });
+    });
+
+    $(function () {
+        $("#checkbsm").click(function () {
+            if ($(this).is(":checked")) {
+                $(".rawBSM").show();
+                $(".rawEsi").css('background-color','white');
+                $(".rawAgranet").css('background-color','#f5f5f5');
+            } else {
+                $(".rawBSM").hide();
+                $(".rawEsi").css('background-color','#f5f5f5');
+                $(".rawAgranet").css('background-color','white');
+            }
+        });
+    });
+
+    $(function () {
+        $("#checketoile").click(function () {
+            if ($(this).is(":checked")) {
+                $(".rawEtoile").show();
+                $(".rawBSM").css('background-color','#f5f5f5');
+                $(".rawEsi").css('background-color','white');
+                $(".rawAgranet").css('background-color','#f5f5f5');
+            } else {
+                $(".rawEtoile").hide();
+                $(".rawBSM").css('background-color','white');
+                $(".rawEsi").css('background-color','#f5f5f5');
+                $(".rawAgranet").css('background-color','white');
+            }
+        });
+    });
+
+    $(function () {
+        $("#checkAgranet").click(function () {
+            if ($(this).is(":checked")) {
+                $(".rawAgranet").show();
+            } else {
+                $(".rawAgranet").hide();
+                if ($(".rawBSM").is(":visible")) {
+                    $(".rawAgranet").css('background-color','#f5f5f5');
+                } else {
+                    $(".rawAgranet").css('background-color','white');
+                }
+            }
+        });
+    });
+
+    $(function () {
+        $("#checkesi").click(function () {
+            if ($(this).is(":checked")) {
+                $(".rawEsi").show();
+            } else {
+                $(".rawEsi").hide();
+            }
+        });
+    });
+
+
+    $(function () {
+        $("#checkwindows").click(function () {
+            if ($(this).is(":checked")) {
+                $(".rawwindows").show();
+            } else {
+                $(".rawwindows").hide();
+            }
+        });
+    });
+
+    const customSelects = document.querySelectorAll("select");
+    const deleteBtn = document.getElementById('delete');
+    for (let i = 0; i < customSelects.length; i++) {
+        customSelects[i].addEventListener('addItem', function (event) {
+            if (event.detail.value) {
+                let parent = this.parentNode.parentNode
+                parent.classList.add('valid')
+                parent.classList.remove('invalid')
+            } else {
+                let parent = this.parentNode.parentNode
+                parent.classList.add('invalid')
+                parent.classList.remove('valid')
+            }
+        }, false);
+    }
+
+
+</script>
+<script type="text/javascript">
+    var expanded = false;
+
+    function showCheckboxesService() {
+        var checkboxes = document.getElementById("checkboxesService");
+        if (!expanded) {
+            checkboxes.style.display = "block";
+            expanded = true;
+        } else {
+            checkboxes.style.display = "none";
+            expanded = false;
+        }
+    }
+
+    function showCheckboxesFonction() {
+        var checkboxes = document.getElementById("#eff-ree");
+        if (!expanded) {
+            checkboxes.style.display = "block";
+            expanded = true;
+        } else {
+            checkboxes.style.display = "none";
+            expanded = false;
+        }
+    }
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+</body>
+</html>
