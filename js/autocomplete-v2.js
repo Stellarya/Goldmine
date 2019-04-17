@@ -18,11 +18,11 @@ $(document).ready(function() {
     });
 
     function showLabelApp(event, ui) {
-        $('.col-BSM').show();
         $('.rawBSM').show();
         $('.raw4bcelo').hide();
-        $('.col-SPIE').hide();
         $('.rawSPIE').hide();
+        $('#appli-spie').hide();
+        $('#appli-bsm').show();
         $("#checkspie").prop('checked', false);
         $("#checkbsm").prop('checked', true);
     }

@@ -296,7 +296,19 @@ ul.CTAs a {
 #block_equarissage, #block_equarissage, #block_interpro, #block_nutriani, #block_genetique, #block_equade {
     display: none;
 }
-
+/* ---------------------------------------------------
+    INFOBULLES
+----------------------------------------------------- */
+.badge-goldmine {
+    color: grey;
+    font-weight: bold;
+    background: lightgrey;
+    border-radius: 3px;
+    padding: 4px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    top: 5px;
+}
 
 /* ---------------------------------------------------
     INFOBULLES
