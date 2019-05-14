@@ -331,7 +331,7 @@
                                                             </div>
                                                         </td>
                                                         <td>
-                                                            <input type="text" class="note_manager" id="java-3" min="0"
+                                                            <input type="text" class="note_manager activeinput" id="java-3" value="3" min="0"
                                                                    max="4" step="1">
                                                         </td>
                                                     </tr>
@@ -534,7 +534,7 @@
                                                         </td>
 
                                                         <td class="column5" width="10%">
-                                                            <input type="text" class="note_manager" id="web-1" min="0"
+                                                            <input type="text" class="note_manager activeinput" value="4" id="web-1" min="0"
                                                                    max="4" step="1">
                                                         </td>
                                                     </tr>
@@ -5323,8 +5323,6 @@
         });
     });
 
-
-    AndroidSuccessModal
     $(document).ready(function () {
         $(".referent-R.android-ref").click(function showAlert() {
             setTimeout(function () {
